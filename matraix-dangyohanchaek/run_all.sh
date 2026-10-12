@@ -10,7 +10,7 @@
 # 환경 변수
 #   MATRAIX_DIR     MatrAIx-Persona-8B 클론 위치 (없으면 자동 클론)
 #   MODEL           페르소나 모델 (기본: 파이프라인 기본값 anthropic/claude-sonnet-4-6)
-#   SAMPLE_SIZE     여정당 페르소나 수 (기본 50, 5의 배수 권장)
+#   SAMPLE_SIZE     여정당 페르소나 수 (기본 50, 5의 배수 권장. 구간당 올림(SAMPLE_SIZE/5)명)
 #   MAX_COST_USD    여정당 비용 상한 (기본 5)
 #   CONCURRENCY     동시 실행 trial 수 (기본 4)
 #   SEED            표집 시드 (기본 42, 같은 시드 = 같은 페르소나)
@@ -25,6 +25,10 @@ CONCURRENCY="${CONCURRENCY:-4}"
 SEED="${SEED:-42}"
 JOURNEYS="${JOURNEYS:-1 2 3 4 5 6}"
 DATASET=persona/datasets/matraix-persona-1m
+# 경력 구간 수 (build_tasks.py의 EXPERIENCE_BINS). 공식 1M 인덱스 표집은 equalTotal에서 구간당 1명만
+# 뽑고 sampleSize를 무시하므로, perCell로 구간당 인원을 직접 지정한다.
+N_BINS=5
+PER_BIN=$(( (SAMPLE_SIZE + N_BINS - 1) / N_BINS ))
 
 # Claude Code 클라우드 환경에서는 ANTHROPIC_API_KEY 대신 MATRAIX_ANTHROPIC_API_KEY로 넣을 수 있다.
 export ANTHROPIC_API_KEY="${MATRAIX_ANTHROPIC_API_KEY:-${ANTHROPIC_API_KEY:-}}"
@@ -50,13 +54,15 @@ uv run python "$HERE/build_tasks.py" --matraix "$MATRAIX_DIR"
 job_dirs=()
 for n in $JOURNEYS; do
   task=$(ls -d application/tasks/dangyohanchaek-j"$n"-* | head -1)
-  job="dk-j${n}-n${SAMPLE_SIZE}-s${SEED}"
+  job="dk-j${n}-pc${PER_BIN}-s${SEED}"
   echo "=== 여정 $n: $task → jobs/$job"
   uv run python application/scripts/generate_application_job.py \
     --task "$task" \
     --execution-mode auto \
     --dataset "$DATASET" \
     --sample-size "$SAMPLE_SIZE" \
+    --stratified-allocation perCell \
+    --sample-size-per-value-group "$PER_BIN" \
     --seed "$SEED" \
     --model-name "$MODEL" \
     --n-concurrent-trials "$CONCURRENCY" \
