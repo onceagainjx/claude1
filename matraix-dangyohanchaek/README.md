@@ -28,6 +28,7 @@ MatrAIx Persona 1M 공개 데이터에서 `role_function = Teaching`인 페르�
 
 ```bash
 export ANTHROPIC_API_KEY=...      # 채팅이나 저장소에 붙여 넣지 말 것
+                                  # (Claude Code 클라우드 환경에서는 MATRAIX_ANTHROPIC_API_KEY 이름도 가능)
 SAMPLE_SIZE=10 ./run_all.sh       # 시험 실행: 여정당 10명
 ./run_all.sh                      # 본 실행: 여정당 50명 × 6개 여정 = 300회
 ```

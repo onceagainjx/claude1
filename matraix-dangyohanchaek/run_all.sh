@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 「당교한책」 6개 여정을 MatrAIx 공식 Survey 파이프라인으로 일괄 실행하고 보고서를 만든다.
 #
-# 필요: ANTHROPIC_API_KEY 환경 변수, huggingface.co 접속(Persona 1M 다운로드), uv
+# 필요: ANTHROPIC_API_KEY(또는 MATRAIX_ANTHROPIC_API_KEY) 환경 변수, huggingface.co 접속(Persona 1M 다운로드), uv
 #
 #   ./run_all.sh                     # 6개 여정 × 50명 (경력 5개 구간 × 10명)
 #   SAMPLE_SIZE=10 ./run_all.sh      # 시험 실행 (구간당 2명)
@@ -26,7 +26,9 @@ SEED="${SEED:-42}"
 JOURNEYS="${JOURNEYS:-1 2 3 4 5 6}"
 DATASET=persona/datasets/matraix-persona-1m
 
-: "${ANTHROPIC_API_KEY:?ANTHROPIC_API_KEY 환경 변수를 설정하세요}"
+# Claude Code 클라우드 환경에서는 ANTHROPIC_API_KEY 대신 MATRAIX_ANTHROPIC_API_KEY로 넣을 수 있다.
+export ANTHROPIC_API_KEY="${MATRAIX_ANTHROPIC_API_KEY:-${ANTHROPIC_API_KEY:-}}"
+: "${ANTHROPIC_API_KEY:?ANTHROPIC_API_KEY 또는 MATRAIX_ANTHROPIC_API_KEY 환경 변수를 설정하세요}"
 
 # 1. 공식 저장소와 의존성
 if [ ! -d "$MATRAIX_DIR/.git" ]; then
