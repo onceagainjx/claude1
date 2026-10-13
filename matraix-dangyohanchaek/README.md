@@ -49,7 +49,7 @@ SAMPLE_SIZE=10 ./run_all.sh       # 시험 실행: 여정당 10명
 2. Persona 1M 공개 데이터 다운로드 (huggingface.co, 최초 1회)
 3. `build_tasks.py`로 6개 Survey 과제 생성
 4. 여정마다 공식 `generate_application_job.py`로 표집한 뒤 `matraix run`으로 일괄 실행. 여정당 비용 상한은
-   `MAX_COST_USD`(기본 $5)
+   `MAX_COST_USD`(기본 $6, 50명 기준 여정당 약 $3.6~4.2, 6개 여정 약 $24)
 5. `report.py`로 `report/report.html`(비교 보고서)과 `report/answers.csv`(원자료) 생성
 
 ## 보고서 구성 (`report/report.html`)

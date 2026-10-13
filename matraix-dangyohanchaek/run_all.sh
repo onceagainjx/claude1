@@ -13,18 +13,20 @@
 #   MATRAIX_DIR     MatrAIx-Persona-8B 클론 위치 (없으면 자동 클론)
 #   MODEL           페르소나 모델 (기본: 파이프라인 기본값 anthropic/claude-sonnet-4-6)
 #   SAMPLE_SIZE     여정당 페르소나 수 (기본 50, 5의 배수 권장. 구간당 올림(SAMPLE_SIZE/5)명)
-#   MAX_COST_USD    여정당 비용 상한 (기본 5)
+#   MAX_COST_USD    여정당 비용 상한 (기본 6. 50명 기준 여정당 약 $3.6~4.2)
 #   CONCURRENCY     동시 실행 trial 수 (기본 4)
 #   SEED            표집 시드 (기본 42, 같은 시드 = 같은 페르소나)
+#   RUN_TAG         job 이름 끝에 붙일 꼬리표 (같은 설정을 새로 다시 돌릴 때. 없으면 이전 job을 이어서 실행)
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MATRAIX_DIR="${MATRAIX_DIR:-$HERE/.matraix}"
 MODEL="${MODEL:-anthropic/claude-sonnet-4-6}"
 SAMPLE_SIZE="${SAMPLE_SIZE:-50}"
-MAX_COST_USD="${MAX_COST_USD:-5}"
+MAX_COST_USD="${MAX_COST_USD:-6}"
 CONCURRENCY="${CONCURRENCY:-4}"
 SEED="${SEED:-42}"
+RUN_TAG="${RUN_TAG:-}"
 JOURNEYS="${JOURNEYS:-1 2 3 4 5 6}"
 DATASET=persona/datasets/matraix-persona-1m
 # 경력 구간 수 (build_tasks.py의 EXPERIENCE_BINS). 구간당 인원은 build_pool.py가 성별로 나눠 뽑는다.
@@ -60,7 +62,7 @@ echo "=== 페르소나 ${#persona_ids[@]}명: $POOL"
 job_dirs=()
 for n in $JOURNEYS; do
   task=$(ls -d application/tasks/dangyohanchaek-j"$n"-* | head -1)
-  job="dk-j${n}-kr-elem-pc${PER_BIN}-s${SEED}"
+  job="dk-j${n}-kr-elem-pc${PER_BIN}-s${SEED}${RUN_TAG:+-$RUN_TAG}"
   echo "=== 여정 $n: $task → jobs/$job"
   uv run python application/scripts/generate_application_job.py \
     --task "$task" \
