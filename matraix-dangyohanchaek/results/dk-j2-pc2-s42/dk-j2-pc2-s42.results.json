@@ -1,0 +1,1310 @@
+{
+  "schemaVersion": "MatraixJobResults.v1",
+  "jobName": "dk-j2-pc2-s42",
+  "jobDir": "/home/user/claude1/matraix-dangyohanchaek/.matraix/jobs/dk-j2-pc2-s42",
+  "generatedAt": "2026-10-12T12:39:39Z",
+  "deterministic": true,
+  "appType": "survey",
+  "ledger": {
+    "coverage": {
+      "trials": 10,
+      "completed": 10,
+      "errored": 0,
+      "running": 0,
+      "pending": 0
+    },
+    "usage": {
+      "n_input_tokens": 77679,
+      "n_output_tokens": 20654,
+      "n_cache_tokens": null,
+      "cost_usd": 0.542847
+    },
+    "rewards": {
+      "count": 10,
+      "mean": 1.0,
+      "histogram": {
+        "pass": 10
+      }
+    },
+    "trials": [
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__2du6FDC",
+        "persona_id": "wiki-f238fa8b1fd1",
+        "persona_name": "Noah Martinez",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 4359,
+          "n_output_tokens": 1541,
+          "n_cache_tokens": null,
+          "cost_usd": 0.036192
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__2du6FDC/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "I think my students would remember my insistence on discipline and high standards, but also my genuine enthusiasm for the subject matter. I always believed that physical education and engineering principles could teach young people how to push through difficulty and discover what they're truly capable of. If I had to guess, they'd say I was demanding but fair — someone who never let them quit on themselves. I also think they'd remember that I genuinely cared whether they understood, not just whether they passed.",
+          "answer_j2_q1_fit": 4,
+          "answer_j2_q2": "Several experiences shaped me as a teacher. Early in my career, a senior colleague — a veteran civil engineering professor — modeled what it looked like to hold students to rigorous standards while remaining deeply invested in their growth. A particular cohort of students I coached on an intramural football team also influenced me enormously; watching them apply teamwork principles in the classroom changed how I thought about collaborative learning. And a period when the university restructured its STEM curriculum pushed me to rethink how I designed courses from the ground up.",
+          "answer_j2_q2_fit": 4,
+          "answer_j2_q3": "The most pivotal experience was working alongside that senior colleague, Dr. Harmon, who mentored me in my early years. He had a way of conducting office hours that I had never seen before — he refused to give answers directly, instead asking questions until the student arrived at the solution themselves. At first I thought it was unnecessarily difficult. But when I tried it myself, I saw students retain material in a way that lectures alone never produced. That shift in pedagogy — from telling to guiding — fundamentally changed my teaching identity.",
+          "answer_j2_q3_fit": 4,
+          "answer_j2_q4": "From Dr. Harmon, I learned that the teacher's role is not to be the source of all answers but to be the architect of the conditions in which students discover answers themselves. I became much more skilled at designing problems with just the right level of challenge — hard enough to require real effort, achievable enough not to break confidence. In practice, this showed up in how I structured exams, labs, and even informal class discussions. I became known for asking 'What do you think?' before offering any guidance.",
+          "answer_j2_q4_fit": 4,
+          "answer_j2_q5": "I came to hold a deep conviction that every student is capable of more than they believe — and that it is the teacher's job to hold that belief on their behalf until they can hold it themselves. I also developed a kind of patient persistence: I stopped expecting transformation to happen quickly and started trusting the slow accumulation of effort. In sports terms, I think of it as coaching for the long season, not the single game. That mindset made me more steady, less reactive, and more genuinely optimistic about students who struggled.",
+          "answer_j2_q5_fit": 4,
+          "answer_j2_q6": "Title: 'Load-Bearing: What I Built and What Held.' In structural engineering, a load-bearing element is the one that carries the weight of everything above it without being seen. I think that's what good teaching is — invisible infrastructure. The title reflects both my professional background and my belief that the most important work I did as a teacher was rarely dramatic. It was the steady, unglamorous act of being present, being consistent, and building the kind of trust that allows students to take risks. The 'what held' part acknowledges that not everything I tried worked — but the relationships did.",
+          "answer_j2_q6_fit": 3,
+          "answer_j2_meaning": 4,
+          "answer_j2_burden": 2,
+          "answer_j2_timing": 5,
+          "answer_j2_hard": [
+            "j2_q6"
+          ],
+          "answer_j2_hard_reason": "too_abstract",
+          "answer_j2_revise": "For teachers with five or fewer years of experience, j2_q3 (전환점이 된 경험) may feel premature — they may not yet have experienced a clear turning point. I would revise it to: '지금까지 교사로서 가장 기억에 남는 순간이나 학생과의 경험은 무엇인가요? 그것이 나에게 어떤 의미였나요?' This keeps the reflective spirit but grounds it in accessible, recent experience rather than requiring a defined career-altering event.",
+          "answer_j2_add": "Now that I am retired, the question I find myself sitting with is what it means to have finished. Not failed, not quit — finished. There is something I would have liked this journey to address: how do you make sense of a teaching career in retrospect? How do you know if the work mattered? I carried high standards and deep investment for decades, and yet I rarely got to see the long arc of what students did with what I gave them. I would have welcomed a question about how to find peace with that uncertainty."
+        },
+        "group_values": {
+          "years_experience": "11-20"
+        },
+        "survey_answers": {
+          "j2_q1": "I think my students would remember my insistence on discipline and high standards, but also my genuine enthusiasm for the subject matter. I always believed that physical education and engineering principles could teach young people how to push through difficulty and discover what they're truly capable of. If I had to guess, they'd say I was demanding but fair — someone who never let them quit on themselves. I also think they'd remember that I genuinely cared whether they understood, not just whether they passed.",
+          "j2_q1_fit": 4,
+          "j2_q2": "Several experiences shaped me as a teacher. Early in my career, a senior colleague — a veteran civil engineering professor — modeled what it looked like to hold students to rigorous standards while remaining deeply invested in their growth. A particular cohort of students I coached on an intramural football team also influenced me enormously; watching them apply teamwork principles in the classroom changed how I thought about collaborative learning. And a period when the university restructured its STEM curriculum pushed me to rethink how I designed courses from the ground up.",
+          "j2_q2_fit": 4,
+          "j2_q3": "The most pivotal experience was working alongside that senior colleague, Dr. Harmon, who mentored me in my early years. He had a way of conducting office hours that I had never seen before — he refused to give answers directly, instead asking questions until the student arrived at the solution themselves. At first I thought it was unnecessarily difficult. But when I tried it myself, I saw students retain material in a way that lectures alone never produced. That shift in pedagogy — from telling to guiding — fundamentally changed my teaching identity.",
+          "j2_q3_fit": 4,
+          "j2_q4": "From Dr. Harmon, I learned that the teacher's role is not to be the source of all answers but to be the architect of the conditions in which students discover answers themselves. I became much more skilled at designing problems with just the right level of challenge — hard enough to require real effort, achievable enough not to break confidence. In practice, this showed up in how I structured exams, labs, and even informal class discussions. I became known for asking 'What do you think?' before offering any guidance.",
+          "j2_q4_fit": 4,
+          "j2_q5": "I came to hold a deep conviction that every student is capable of more than they believe — and that it is the teacher's job to hold that belief on their behalf until they can hold it themselves. I also developed a kind of patient persistence: I stopped expecting transformation to happen quickly and started trusting the slow accumulation of effort. In sports terms, I think of it as coaching for the long season, not the single game. That mindset made me more steady, less reactive, and more genuinely optimistic about students who struggled.",
+          "j2_q5_fit": 4,
+          "j2_q6": "Title: 'Load-Bearing: What I Built and What Held.' In structural engineering, a load-bearing element is the one that carries the weight of everything above it without being seen. I think that's what good teaching is — invisible infrastructure. The title reflects both my professional background and my belief that the most important work I did as a teacher was rarely dramatic. It was the steady, unglamorous act of being present, being consistent, and building the kind of trust that allows students to take risks. The 'what held' part acknowledges that not everything I tried worked — but the relationships did.",
+          "j2_q6_fit": 3,
+          "j2_meaning": 4,
+          "j2_burden": 2,
+          "j2_timing": 5,
+          "j2_hard": [
+            "j2_q6"
+          ],
+          "j2_hard_reason": "too_abstract",
+          "j2_revise": "For teachers with five or fewer years of experience, j2_q3 (전환점이 된 경험) may feel premature — they may not yet have experienced a clear turning point. I would revise it to: '지금까지 교사로서 가장 기억에 남는 순간이나 학생과의 경험은 무엇인가요? 그것이 나에게 어떤 의미였나요?' This keeps the reflective spirit but grounds it in accessible, recent experience rather than requiring a defined career-altering event.",
+          "j2_add": "Now that I am retired, the question I find myself sitting with is what it means to have finished. Not failed, not quit — finished. There is something I would have liked this journey to address: how do you make sense of a teaching career in retrospect? How do you know if the work mattered? I carried high standards and deep investment for decades, and yet I rarely got to see the long arc of what students did with what I gave them. I would have welcomed a question about how to find peace with that uncertainty."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__Qc6m3DV",
+        "persona_id": "synthetic-b964a05fbd6b",
+        "persona_name": "Camila Lopez",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10486,
+          "n_output_tokens": 2442,
+          "n_cache_tokens": null,
+          "cost_usd": 0.06808800000000001
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__Qc6m3DV/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "아이들은 아마 내가 절대 대충 넘어가지 않았다는 걸 기억할 거예요. 틀린 건 틀렸다고, 모르는 건 같이 찾아보자고 했던 그 태도요. 그리고 수업 중에 갑자기 전혀 다른 나라 이야기를 꺼내던 것도요. 제가 여러 나라에서 살아봤으니까 그 경험들이 자연스럽게 흘러나왔거든요. 아이들이 그걸 좋아했는지 싫어했는지는 모르겠지만, 적어도 잊지는 못할 거라고 생각해요.",
+          "answer_j2_q1_fit": 3,
+          "answer_j2_q2": "교사가 된 초기에 가장 크게 영향을 준 건 제가 경험했던 상실이에요. 가까운 사람을 잃고 나서 교실에 들어섰을 때, 아이들이 얼마나 살아있는 존재인지가 갑자기 선명하게 보였어요. 그 전까지는 커리큘럼을 어떻게 전달할지만 생각했는데, 그 이후로는 이 아이 앞에 내가 지금 어떤 사람으로 서 있는가를 먼저 생각하게 됐어요. 또 제가 속했던 지역 공동체 활동도 영향이 컸어요. 교실 밖에서 사람들을 조직하고 목소리를 모으는 경험이 교실 안에서 아이들의 말을 듣는 방식을 바꿔놨거든요.",
+          "answer_j2_q2_fit": 4,
+          "answer_j2_q3": "전환점은 제가 겪은 두 번째 큰 상실이었어요. 첫 번째 상실은 저를 흔들었지만, 두 번째는 저를 완전히 다시 세웠어요. 그 시기에 저는 교직을 그만둘까 진지하게 고민했어요. 그런데 그때 제 수업을 듣던 한 학생이 짧은 쪽지를 줬어요. 내용은 별것 아니었는데, 그 쪽지가 저한테는 엄청 무거웠어요. 내가 여기 있어야 하는 이유를 그 아이가 모르면서 알려준 거잖아요. 그 이후로 저는 교사라는 역할을 생존의 방식이 아니라 선택의 방식으로 보게 됐어요.",
+          "answer_j2_q3_fit": 4,
+          "answer_j2_q4": "그 경험에서 배운 건 존재 자체가 가르친다는 거예요. 제가 무너진 상태에서도 교실에 나타났을 때, 아이들은 그걸 봤어요. 말로 하지 않아도요. 그게 오히려 더 강한 메시지였던 것 같아요. 교사로서 드러난 모습은 아마 흔들려도 자리를 지키는 사람이었을 거예요. 그리고 그 이후로 저는 아이들이 힘든 내색을 할 때 예전보다 훨씬 빠르게 알아채게 됐어요. 그게 제가 할 수 있게 된 것 중 하나예요.",
+          "answer_j2_q4_fit": 4,
+          "answer_j2_q5": "지금 제가 가진 태도는 완벽하지 않아도 정직하게 있자는 거예요. 모르면 모른다고 하고, 틀리면 틀렸다고 하고, 힘들면 힘들다고 할 수 있는 교사요. 그게 아이들한테 더 진짜로 보인다고 믿어요. 그리고 한 아이도 그냥 지나치지 않겠다는 마음가짐도 생겼어요. 제가 지나쳤다면 어땠을까 하는 생각이 아직도 가끔 드니까요.",
+          "answer_j2_q5_fit": 4,
+          "answer_j2_q6": "제목은 「무너지면서 서 있었다」로 하고 싶어요. 교사로서 제 이야기는 완성된 사람이 아이들을 이끄는 이야기가 아니에요. 계속 흔들리면서도 매일 교실 문을 열었던 이야기예요. 그 역설이 제 교직의 핵심이라고 생각해요. 강해서가 아니라 그냥 거기 있었기 때문에 뭔가를 전달할 수 있었던 사람의 이야기요.",
+          "answer_j2_q6_fit": 3,
+          "answer_j2_meaning": 4,
+          "answer_j2_burden": 3,
+          "answer_j2_timing": 3,
+          "answer_j2_hard": [
+            "j2_q1",
+            "j2_q6"
+          ],
+          "answer_j2_hard_reason": "premise_mismatch",
+          "answer_j2_revise": "j2_q1을 바꾸고 싶어요. '시간이 지난 후에 기억하게 될'이라는 표현은 경력이 짧은 교사에게 너무 먼 미래를 상상하게 해요. 대신 이렇게 바꾸면 어떨까요. '지금 내가 가르치는 아이들이 오늘 수업에서 나를 어떤 사람으로 느끼고 있을까요?' 그게 훨씬 지금 연차에서 실감 나는 질문이에요.",
+          "answer_j2_add": "교직과 개인 삶의 경계가 무너질 때 어떻게 버티는가에 대해 더 이야기하고 싶어요. 저는 상실을 겪으면서 교사로 있었는데, 그 시기에 제가 어떻게 교실을 유지했는지, 그게 옳은 방식이었는지 아직도 모르겠어요. 그 고민을 나눌 수 있는 질문이 이 여정 안에 있었으면 좋겠어요."
+        },
+        "group_values": {
+          "years_experience": "3-5"
+        },
+        "survey_answers": {
+          "j2_q1": "아이들은 아마 내가 절대 대충 넘어가지 않았다는 걸 기억할 거예요. 틀린 건 틀렸다고, 모르는 건 같이 찾아보자고 했던 그 태도요. 그리고 수업 중에 갑자기 전혀 다른 나라 이야기를 꺼내던 것도요. 제가 여러 나라에서 살아봤으니까 그 경험들이 자연스럽게 흘러나왔거든요. 아이들이 그걸 좋아했는지 싫어했는지는 모르겠지만, 적어도 잊지는 못할 거라고 생각해요.",
+          "j2_q1_fit": 3,
+          "j2_q2": "교사가 된 초기에 가장 크게 영향을 준 건 제가 경험했던 상실이에요. 가까운 사람을 잃고 나서 교실에 들어섰을 때, 아이들이 얼마나 살아있는 존재인지가 갑자기 선명하게 보였어요. 그 전까지는 커리큘럼을 어떻게 전달할지만 생각했는데, 그 이후로는 이 아이 앞에 내가 지금 어떤 사람으로 서 있는가를 먼저 생각하게 됐어요. 또 제가 속했던 지역 공동체 활동도 영향이 컸어요. 교실 밖에서 사람들을 조직하고 목소리를 모으는 경험이 교실 안에서 아이들의 말을 듣는 방식을 바꿔놨거든요.",
+          "j2_q2_fit": 4,
+          "j2_q3": "전환점은 제가 겪은 두 번째 큰 상실이었어요. 첫 번째 상실은 저를 흔들었지만, 두 번째는 저를 완전히 다시 세웠어요. 그 시기에 저는 교직을 그만둘까 진지하게 고민했어요. 그런데 그때 제 수업을 듣던 한 학생이 짧은 쪽지를 줬어요. 내용은 별것 아니었는데, 그 쪽지가 저한테는 엄청 무거웠어요. 내가 여기 있어야 하는 이유를 그 아이가 모르면서 알려준 거잖아요. 그 이후로 저는 교사라는 역할을 생존의 방식이 아니라 선택의 방식으로 보게 됐어요.",
+          "j2_q3_fit": 4,
+          "j2_q4": "그 경험에서 배운 건 존재 자체가 가르친다는 거예요. 제가 무너진 상태에서도 교실에 나타났을 때, 아이들은 그걸 봤어요. 말로 하지 않아도요. 그게 오히려 더 강한 메시지였던 것 같아요. 교사로서 드러난 모습은 아마 흔들려도 자리를 지키는 사람이었을 거예요. 그리고 그 이후로 저는 아이들이 힘든 내색을 할 때 예전보다 훨씬 빠르게 알아채게 됐어요. 그게 제가 할 수 있게 된 것 중 하나예요.",
+          "j2_q4_fit": 4,
+          "j2_q5": "지금 제가 가진 태도는 완벽하지 않아도 정직하게 있자는 거예요. 모르면 모른다고 하고, 틀리면 틀렸다고 하고, 힘들면 힘들다고 할 수 있는 교사요. 그게 아이들한테 더 진짜로 보인다고 믿어요. 그리고 한 아이도 그냥 지나치지 않겠다는 마음가짐도 생겼어요. 제가 지나쳤다면 어땠을까 하는 생각이 아직도 가끔 드니까요.",
+          "j2_q5_fit": 4,
+          "j2_q6": "제목은 「무너지면서 서 있었다」로 하고 싶어요. 교사로서 제 이야기는 완성된 사람이 아이들을 이끄는 이야기가 아니에요. 계속 흔들리면서도 매일 교실 문을 열었던 이야기예요. 그 역설이 제 교직의 핵심이라고 생각해요. 강해서가 아니라 그냥 거기 있었기 때문에 뭔가를 전달할 수 있었던 사람의 이야기요.",
+          "j2_q6_fit": 3,
+          "j2_meaning": 4,
+          "j2_burden": 3,
+          "j2_timing": 3,
+          "j2_hard": [
+            "j2_q1",
+            "j2_q6"
+          ],
+          "j2_hard_reason": "premise_mismatch",
+          "j2_revise": "j2_q1을 바꾸고 싶어요. '시간이 지난 후에 기억하게 될'이라는 표현은 경력이 짧은 교사에게 너무 먼 미래를 상상하게 해요. 대신 이렇게 바꾸면 어떨까요. '지금 내가 가르치는 아이들이 오늘 수업에서 나를 어떤 사람으로 느끼고 있을까요?' 그게 훨씬 지금 연차에서 실감 나는 질문이에요.",
+          "j2_add": "교직과 개인 삶의 경계가 무너질 때 어떻게 버티는가에 대해 더 이야기하고 싶어요. 저는 상실을 겪으면서 교사로 있었는데, 그 시기에 제가 어떻게 교실을 유지했는지, 그게 옳은 방식이었는지 아직도 모르겠어요. 그 고민을 나눌 수 있는 질문이 이 여정 안에 있었으면 좋겠어요."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__QpfNyD5",
+        "persona_id": "wiki-69c7a3a38dce",
+        "persona_name": "Priya Iyer",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 4299,
+          "n_output_tokens": 1174,
+          "n_cache_tokens": null,
+          "cost_usd": 0.030507
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__QpfNyD5/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "My students will likely remember my insistence on discipline and precision. In cricket coaching, I never allowed shortcuts. They will remember that I held them to high standards consistently, and that I expected them to hold themselves accountable. I believe they will also remember that I valued team performance over individual glory.",
+          "answer_j2_q1_fit": 4,
+          "answer_j2_q2": "The national-level coaching community I joined mid-career had the greatest influence on me. Exposure to coaches from South Africa and Bangladesh broadened my understanding of how different cultures approach athletic discipline and team cohesion. One senior coach in particular challenged me to think beyond technique and consider the mental conditioning of young athletes.",
+          "answer_j2_q2_fit": 4,
+          "answer_j2_q3": "The most significant turning point was when a student I had trained for two years suffered a serious injury just before a national selection trial. Managing that situation — supporting the student, reassessing training methods, and communicating with the team — forced me to rethink what responsible coaching means. It shifted my focus from performance outcomes to athlete welfare as a foundation for sustainable performance.",
+          "answer_j2_q3_fit": 4,
+          "answer_j2_q4": "I learned that discipline without care is insufficient. I became more attentive to individual physical and psychological readiness. As a coach, this showed in how I structured training loads and in how I communicated with students individually rather than only addressing the team collectively. I also became more systematic about injury prevention protocols.",
+          "answer_j2_q4_fit": 4,
+          "answer_j2_q5": "I developed a mindset that preparation and process matter more than results alone. I became more patient in allowing athletes to develop at their own pace within a structured framework. At the same time, I maintained high expectations. The balance between firmness and attentiveness became central to how I approached every session.",
+          "answer_j2_q5_fit": 3,
+          "answer_j2_q6": "Title: 'The Field Does Not Lie.' In cricket, the field reveals everything — preparation, character, teamwork, and honesty. This title reflects my belief that coaching is ultimately about creating conditions where truth is visible: the truth of effort, of readiness, and of collective commitment. My career as a coach has been an attempt to build that kind of honest, accountable environment for every student I worked with.",
+          "answer_j2_q6_fit": 3,
+          "answer_j2_meaning": 4,
+          "answer_j2_burden": 2,
+          "answer_j2_timing": 4,
+          "answer_j2_hard": [
+            "j2_q5",
+            "j2_q6"
+          ],
+          "answer_j2_hard_reason": "too_abstract",
+          "answer_j2_revise": "For teachers with five or fewer years of experience, j2_q6 (the book title question) may be premature. I would revise it to: 'If you were to write one chapter about your teaching so far, what would that chapter be about and why?' This grounds the reflection in a specific, manageable period rather than implying a complete career narrative.",
+          "answer_j2_add": "I would want to discuss what it means to transition out of active coaching while still feeling a strong sense of responsibility toward the sport and toward former students. The question of how a retired coach maintains relevance and continues to contribute to a community is something this journey did not address."
+        },
+        "group_values": {
+          "years_experience": "6-10"
+        },
+        "survey_answers": {
+          "j2_q1": "My students will likely remember my insistence on discipline and precision. In cricket coaching, I never allowed shortcuts. They will remember that I held them to high standards consistently, and that I expected them to hold themselves accountable. I believe they will also remember that I valued team performance over individual glory.",
+          "j2_q1_fit": 4,
+          "j2_q2": "The national-level coaching community I joined mid-career had the greatest influence on me. Exposure to coaches from South Africa and Bangladesh broadened my understanding of how different cultures approach athletic discipline and team cohesion. One senior coach in particular challenged me to think beyond technique and consider the mental conditioning of young athletes.",
+          "j2_q2_fit": 4,
+          "j2_q3": "The most significant turning point was when a student I had trained for two years suffered a serious injury just before a national selection trial. Managing that situation — supporting the student, reassessing training methods, and communicating with the team — forced me to rethink what responsible coaching means. It shifted my focus from performance outcomes to athlete welfare as a foundation for sustainable performance.",
+          "j2_q3_fit": 4,
+          "j2_q4": "I learned that discipline without care is insufficient. I became more attentive to individual physical and psychological readiness. As a coach, this showed in how I structured training loads and in how I communicated with students individually rather than only addressing the team collectively. I also became more systematic about injury prevention protocols.",
+          "j2_q4_fit": 4,
+          "j2_q5": "I developed a mindset that preparation and process matter more than results alone. I became more patient in allowing athletes to develop at their own pace within a structured framework. At the same time, I maintained high expectations. The balance between firmness and attentiveness became central to how I approached every session.",
+          "j2_q5_fit": 3,
+          "j2_q6": "Title: 'The Field Does Not Lie.' In cricket, the field reveals everything — preparation, character, teamwork, and honesty. This title reflects my belief that coaching is ultimately about creating conditions where truth is visible: the truth of effort, of readiness, and of collective commitment. My career as a coach has been an attempt to build that kind of honest, accountable environment for every student I worked with.",
+          "j2_q6_fit": 3,
+          "j2_meaning": 4,
+          "j2_burden": 2,
+          "j2_timing": 4,
+          "j2_hard": [
+            "j2_q5",
+            "j2_q6"
+          ],
+          "j2_hard_reason": "too_abstract",
+          "j2_revise": "For teachers with five or fewer years of experience, j2_q6 (the book title question) may be premature. I would revise it to: 'If you were to write one chapter about your teaching so far, what would that chapter be about and why?' This grounds the reflection in a specific, manageable period rather than implying a complete career narrative.",
+          "j2_add": "I would want to discuss what it means to transition out of active coaching while still feeling a strong sense of responsibility toward the sport and toward former students. The question of how a retired coach maintains relevance and continues to contribute to a community is something this journey did not address."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__RBCAvK4",
+        "persona_id": "wiki-6c7d3cb2ca47",
+        "persona_name": "Jun Sato",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 6815,
+          "n_output_tokens": 3164,
+          "n_cache_tokens": null,
+          "cost_usd": 0.06790500000000001
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__RBCAvK4/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "제 학생들은 아마도 제가 질문을 두려워하지 않도록 격려했던 태도를 기억할 것이라고 생각합니다. 저는 항상 '틀린 질문은 없다'는 원칙을 강조했고, 학생이 스스로 사고의 경계를 넓혀가는 순간을 함께 기뻐했습니다. 또한 음악과 기술, 인문학을 넘나드는 학제적 접근 방식—강의실에서 바흐의 대위법을 알고리즘 설계와 연결 짓던 순간들—이 학생들에게 인상 깊게 남아 있을 것이라 믿습니다. 그리고 학생 한 명 한 명의 이름과 관심사를 기억하고, 그들의 성장에 진심으로 관심을 가졌던 모습도 기억해 주기를 바랍니다.",
+          "answer_j2_q1_fit": 5,
+          "answer_j2_q2": "교사가 된 이후 저에게 가장 큰 영향을 준 것은 세 가지입니다. 첫째, 제가 직접 창업한 에듀테크 스타트업 경험입니다. 교육 현장과 산업 현장 사이의 간극을 몸소 체험하면서, 교실 안의 이론이 얼마나 빠르게 현실과 괴리될 수 있는지 깨달았습니다. 둘째, 한국과 미국 양쪽 교육 시스템을 오가며 만난 다양한 학습자 공동체입니다. 문화적 맥락이 학습 방식에 얼마나 깊이 영향을 미치는지 실감했습니다. 셋째, 오랫동안 함께한 자원봉사 활동에서 만난 비전통적 학습자들입니다. 그들은 제게 '교육의 목적'에 대해 근본적으로 다시 생각하게 만들었습니다.",
+          "answer_j2_q2_fit": 5,
+          "answer_j2_q3": "가장 큰 전환점은 제가 교수 초기에 담당했던 한 학생과의 경험이었습니다. 매우 뛰어난 능력을 가졌지만 극심한 완벽주의로 인해 스스로 무너지고 있던 학생이었습니다. 저는 그 학생에게 기술적 피드백만을 제공하고 있었고, 정작 그가 필요로 했던 것—자신의 실패를 학습의 일부로 받아들이는 관점—을 제공하지 못했습니다. 그 학생이 결국 학업을 중단했을 때, 저는 교사로서 '성과 중심의 가르침'이 얼마나 불완전한지 뼈저리게 깨달았습니다. 그 이후 저는 커리큘럼 설계 방식과 학생 상담 방식을 전면적으로 재검토하기 시작했습니다.",
+          "answer_j2_q3_fit": 5,
+          "answer_j2_q4": "그 경험으로부터 저는 '가르침은 지식의 전달이 아니라 관계의 구축'이라는 것을 배웠습니다. 구체적으로는 두 가지 능력이 생겼습니다. 하나는 학생의 학업적 어려움 이면에 있는 심리적·정서적 맥락을 읽는 능력이고, 다른 하나는 실패를 교육적 자원으로 재구성하는 커리큘럼 설계 역량입니다. 교사로서 이는 수업 중 의도적으로 '불완전한 해답'을 제시하고, 학생들이 그 불완전함을 함께 수정해가는 과정을 설계하는 방식으로 드러났습니다. 또한 오피스아워를 단순한 질의응답 시간이 아니라 학생의 사고 과정을 탐색하는 시간으로 운영하기 시작했습니다.",
+          "answer_j2_q4_fit": 5,
+          "answer_j2_q5": "저는 '겸손한 전문가'가 되어야 한다는 마음가짐을 갖게 되었습니다. 20년 이상의 경력과 다양한 학문적 성취에도 불구하고, 학생 앞에 설 때마다 저는 여전히 배우는 사람이라는 태도를 유지하려 합니다. 또한 '인내는 교육적 덕목'이라는 믿음이 깊어졌습니다—빠른 이해보다 깊은 이해를, 효율적인 수업보다 의미 있는 수업을 우선시하게 되었습니다. 그리고 학제적 사고를 두려워하지 않는 태도, 즉 음악 이론으로 컴퓨터 과학을 설명하고 인지과학으로 교육학을 재해석하는 것이 오히려 학습의 핵심이라는 확신을 갖게 되었습니다.",
+          "answer_j2_q5_fit": 4,
+          "answer_j2_q6": "제목: 『경계 위에 서서: 연결을 가르친 20년의 기록』\n\n이 제목에는 두 가지 의미가 담겨 있습니다. 첫째, 저는 항상 학문적 경계, 문화적 경계, 언어적 경계 위에 서 있었습니다. 한국계 미국인으로서, 음악가이자 컴퓨터 과학자로서, 연구자이자 교육자로서—저의 정체성 자체가 경계에 위치해 있었고, 그 경계가 오히려 저의 가장 큰 교육적 자산이 되었습니다. 둘째, '연결을 가르쳤다'는 표현은 제가 추구한 교육의 본질을 담고 있습니다. 지식과 지식 사이의 연결, 학생과 세계 사이의 연결, 과거의 지혜와 미래의 가능성 사이의 연결—저는 그 연결의 순간을 만들어내는 것이 교사의 역할이라고 믿어왔습니다.",
+          "answer_j2_q6_fit": 4,
+          "answer_j2_meaning": 5,
+          "answer_j2_burden": 2,
+          "answer_j2_timing": 5,
+          "answer_j2_hard": [
+            "j2_q5",
+            "j2_q6"
+          ],
+          "answer_j2_hard_reason": "too_abstract",
+          "answer_j2_revise": "j2_q3 (전환점이 된 경험) 질문을 다음과 같이 바꾸면 좋겠습니다. 현재 문구는 '전환점'이라는 단어가 경력이 짧은 교사에게는 아직 식별하기 어려운 개념일 수 있습니다. 대안: '교사가 된 이후 가장 기억에 남는 수업 장면이나 학생과의 대화를 떠올려 보세요. 그 순간이 당신에게 어떤 의미였나요?' 또한 j2_q6 (책 제목 짓기)은 경력 초기 교사에게 부담스러울 수 있으므로, '지금까지의 나의 교직 생활을 한 문장으로 표현한다면 어떤 문장이 될까요?'로 낮은 진입장벽의 형식으로 바꾸는 것을 제안합니다.",
+          "answer_j2_add": "저는 이 여정에서 '교사로서의 노화(aging as an educator)'에 대한 이야기를 나누고 싶습니다. 20년 이상 가르치면서 저는 학생들과의 세대 간 거리가 점점 넓어지는 것을 느낍니다. 제가 형성기를 보낸 1980년대의 감각과, 지금 Z세대·알파세대 학생들의 감각 사이의 간극을 어떻게 교육적 자산으로 전환할 것인가—이것이 제가 현재 가장 진지하게 고민하는 주제입니다. 경험과 지혜는 쌓였지만, 동시에 '나는 여전히 이 시대의 학생들에게 유의미한 교사인가'라는 질문을 스스로에게 계속 던지고 있습니다."
+        },
+        "group_values": {
+          "years_experience": "20+"
+        },
+        "survey_answers": {
+          "j2_q1": "제 학생들은 아마도 제가 질문을 두려워하지 않도록 격려했던 태도를 기억할 것이라고 생각합니다. 저는 항상 '틀린 질문은 없다'는 원칙을 강조했고, 학생이 스스로 사고의 경계를 넓혀가는 순간을 함께 기뻐했습니다. 또한 음악과 기술, 인문학을 넘나드는 학제적 접근 방식—강의실에서 바흐의 대위법을 알고리즘 설계와 연결 짓던 순간들—이 학생들에게 인상 깊게 남아 있을 것이라 믿습니다. 그리고 학생 한 명 한 명의 이름과 관심사를 기억하고, 그들의 성장에 진심으로 관심을 가졌던 모습도 기억해 주기를 바랍니다.",
+          "j2_q1_fit": 5,
+          "j2_q2": "교사가 된 이후 저에게 가장 큰 영향을 준 것은 세 가지입니다. 첫째, 제가 직접 창업한 에듀테크 스타트업 경험입니다. 교육 현장과 산업 현장 사이의 간극을 몸소 체험하면서, 교실 안의 이론이 얼마나 빠르게 현실과 괴리될 수 있는지 깨달았습니다. 둘째, 한국과 미국 양쪽 교육 시스템을 오가며 만난 다양한 학습자 공동체입니다. 문화적 맥락이 학습 방식에 얼마나 깊이 영향을 미치는지 실감했습니다. 셋째, 오랫동안 함께한 자원봉사 활동에서 만난 비전통적 학습자들입니다. 그들은 제게 '교육의 목적'에 대해 근본적으로 다시 생각하게 만들었습니다.",
+          "j2_q2_fit": 5,
+          "j2_q3": "가장 큰 전환점은 제가 교수 초기에 담당했던 한 학생과의 경험이었습니다. 매우 뛰어난 능력을 가졌지만 극심한 완벽주의로 인해 스스로 무너지고 있던 학생이었습니다. 저는 그 학생에게 기술적 피드백만을 제공하고 있었고, 정작 그가 필요로 했던 것—자신의 실패를 학습의 일부로 받아들이는 관점—을 제공하지 못했습니다. 그 학생이 결국 학업을 중단했을 때, 저는 교사로서 '성과 중심의 가르침'이 얼마나 불완전한지 뼈저리게 깨달았습니다. 그 이후 저는 커리큘럼 설계 방식과 학생 상담 방식을 전면적으로 재검토하기 시작했습니다.",
+          "j2_q3_fit": 5,
+          "j2_q4": "그 경험으로부터 저는 '가르침은 지식의 전달이 아니라 관계의 구축'이라는 것을 배웠습니다. 구체적으로는 두 가지 능력이 생겼습니다. 하나는 학생의 학업적 어려움 이면에 있는 심리적·정서적 맥락을 읽는 능력이고, 다른 하나는 실패를 교육적 자원으로 재구성하는 커리큘럼 설계 역량입니다. 교사로서 이는 수업 중 의도적으로 '불완전한 해답'을 제시하고, 학생들이 그 불완전함을 함께 수정해가는 과정을 설계하는 방식으로 드러났습니다. 또한 오피스아워를 단순한 질의응답 시간이 아니라 학생의 사고 과정을 탐색하는 시간으로 운영하기 시작했습니다.",
+          "j2_q4_fit": 5,
+          "j2_q5": "저는 '겸손한 전문가'가 되어야 한다는 마음가짐을 갖게 되었습니다. 20년 이상의 경력과 다양한 학문적 성취에도 불구하고, 학생 앞에 설 때마다 저는 여전히 배우는 사람이라는 태도를 유지하려 합니다. 또한 '인내는 교육적 덕목'이라는 믿음이 깊어졌습니다—빠른 이해보다 깊은 이해를, 효율적인 수업보다 의미 있는 수업을 우선시하게 되었습니다. 그리고 학제적 사고를 두려워하지 않는 태도, 즉 음악 이론으로 컴퓨터 과학을 설명하고 인지과학으로 교육학을 재해석하는 것이 오히려 학습의 핵심이라는 확신을 갖게 되었습니다.",
+          "j2_q5_fit": 4,
+          "j2_q6": "제목: 『경계 위에 서서: 연결을 가르친 20년의 기록』\n\n이 제목에는 두 가지 의미가 담겨 있습니다. 첫째, 저는 항상 학문적 경계, 문화적 경계, 언어적 경계 위에 서 있었습니다. 한국계 미국인으로서, 음악가이자 컴퓨터 과학자로서, 연구자이자 교육자로서—저의 정체성 자체가 경계에 위치해 있었고, 그 경계가 오히려 저의 가장 큰 교육적 자산이 되었습니다. 둘째, '연결을 가르쳤다'는 표현은 제가 추구한 교육의 본질을 담고 있습니다. 지식과 지식 사이의 연결, 학생과 세계 사이의 연결, 과거의 지혜와 미래의 가능성 사이의 연결—저는 그 연결의 순간을 만들어내는 것이 교사의 역할이라고 믿어왔습니다.",
+          "j2_q6_fit": 4,
+          "j2_meaning": 5,
+          "j2_burden": 2,
+          "j2_timing": 5,
+          "j2_hard": [
+            "j2_q5",
+            "j2_q6"
+          ],
+          "j2_hard_reason": "too_abstract",
+          "j2_revise": "j2_q3 (전환점이 된 경험) 질문을 다음과 같이 바꾸면 좋겠습니다. 현재 문구는 '전환점'이라는 단어가 경력이 짧은 교사에게는 아직 식별하기 어려운 개념일 수 있습니다. 대안: '교사가 된 이후 가장 기억에 남는 수업 장면이나 학생과의 대화를 떠올려 보세요. 그 순간이 당신에게 어떤 의미였나요?' 또한 j2_q6 (책 제목 짓기)은 경력 초기 교사에게 부담스러울 수 있으므로, '지금까지의 나의 교직 생활을 한 문장으로 표현한다면 어떤 문장이 될까요?'로 낮은 진입장벽의 형식으로 바꾸는 것을 제안합니다.",
+          "j2_add": "저는 이 여정에서 '교사로서의 노화(aging as an educator)'에 대한 이야기를 나누고 싶습니다. 20년 이상 가르치면서 저는 학생들과의 세대 간 거리가 점점 넓어지는 것을 느낍니다. 제가 형성기를 보낸 1980년대의 감각과, 지금 Z세대·알파세대 학생들의 감각 사이의 간극을 어떻게 교육적 자산으로 전환할 것인가—이것이 제가 현재 가장 진지하게 고민하는 주제입니다. 경험과 지혜는 쌓였지만, 동시에 '나는 여전히 이 시대의 학생들에게 유의미한 교사인가'라는 질문을 스스로에게 계속 던지고 있습니다."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__SWEKpwm",
+        "persona_id": "wiki-51ae8aa5af85",
+        "persona_name": "Valentina Santos",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 4491,
+          "n_output_tokens": 2425,
+          "n_cache_tokens": null,
+          "cost_usd": 0.049847999999999996
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__SWEKpwm/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "아직 교사로서의 경력이 매우 짧지만, 제가 가르친 학생들이 저를 기억한다면 아마도 '끝까지 포기하지 않도록 격려해 준 선생님'으로 기억해 주었으면 합니다. 저는 스포츠 현장에서 가르치면서 항상 학생들이 자신의 한계를 스스로 설정하지 않도록 독려하려 노력했습니다. 규율과 열정을 동시에 보여주는 교사로 기억되고 싶습니다.",
+          "answer_j2_q1_fit": 2,
+          "answer_j2_q2": "교사가 된 이후 가장 큰 영향을 미친 것은 제가 직접 운동선수로 활동하며 만난 코치들과 팀 동료들입니다. 브라질에서 축구를 하면서 겪었던 훈련 문화, 스페인에서 생활하며 접한 다른 교육 방식, 그리고 미국에서 경험한 스포츠 과학 기반의 코칭 접근법이 저에게 큰 자극이 되었습니다. 또한 초보 교사로서 함께 일하는 선배 동료들의 조언이 실질적인 도움이 되고 있습니다.",
+          "answer_j2_q2_fit": 3,
+          "answer_j2_q3": "스페인에서 생활하던 시기에 현지 스포츠 아카데미에서 보조 코치 역할을 처음 맡게 된 경험이 가장 큰 전환점이었습니다. 언어도 완전히 익숙하지 않은 환경에서 다양한 배경을 가진 청소년들을 지도해야 했는데, 그 과정에서 '가르친다는 것'이 단순히 기술을 전달하는 것이 아니라 신뢰를 쌓는 과정임을 처음으로 깨달았습니다. 그 경험이 저를 교사의 길로 이끈 결정적인 계기가 되었습니다.",
+          "answer_j2_q3_fit": 3,
+          "answer_j2_q4": "그 경험을 통해 저는 학생 각각의 맥락을 이해하는 것이 얼마나 중요한지를 배웠습니다. 문화적 배경, 개인적 상황, 동기 수준이 모두 다른 학생들에게 같은 방식으로 접근하면 효과가 없다는 것을 몸소 느꼈습니다. 이후 저는 학생을 관찰하고 먼저 경청하는 태도를 갖추게 되었고, 지도 현장에서도 개별 피드백을 중시하는 교사의 모습으로 드러나고 있습니다.",
+          "answer_j2_q4_fit": 3,
+          "answer_j2_q5": "저는 '겸손한 경쟁심'을 가진 교사가 되어야 한다는 마음가짐을 갖게 되었습니다. 학생들이 최선을 다하도록 자극하되, 그 기준이 타인과의 비교가 아니라 어제의 자신과의 비교여야 한다는 것을 믿게 되었습니다. 또한 교사 스스로도 끊임없이 배우는 자세를 유지해야 한다는 것을 강하게 느끼고 있습니다. 학생 앞에서 모르는 것을 인정하고 함께 탐구하는 것이 오히려 더 큰 가르침이 될 수 있다고 생각합니다.",
+          "answer_j2_q5_fit": 4,
+          "answer_j2_q6": "제목: 『아직 첫 페이지』\n\n저는 교사로서의 여정이 이제 막 시작되었다고 느낍니다. 아직 쌓인 이야기가 많지 않지만, 그 첫 페이지를 어떻게 쓰느냐가 이후의 모든 장을 결정한다고 생각합니다. 이 제목에는 '나는 아직 성장 중이며, 그것이 부끄럽지 않다'는 의미와 함께 '학생들과 함께 이야기를 만들어 가는 중'이라는 설렘이 담겨 있습니다.",
+          "answer_j2_q6_fit": 4,
+          "answer_j2_meaning": 4,
+          "answer_j2_burden": 3,
+          "answer_j2_timing": 2,
+          "answer_j2_hard": [
+            "j2_q1",
+            "j2_q3"
+          ],
+          "answer_j2_hard_reason": "lack_experience",
+          "answer_j2_revise": "j2_q1 (학생들이 기억하는 교사의 모습): '시간이 지난 후'라는 전제가 초임 교사에게는 부담스럽습니다. '내가 학생들에게 어떤 교사로 기억되고 싶은가?'로 바꾸면, 현재의 희망과 방향성을 이야기할 수 있어 더 접근하기 쉬울 것 같습니다.\n\nj2_q3 (전환점이 된 경험): '전환점'이라는 표현이 큰 사건을 전제하는 것처럼 느껴집니다. '교사가 된 이후 가장 인상 깊었던 작은 순간이나 경험은 무엇인가요?'로 바꾸면 초임 교사도 부담 없이 답할 수 있을 것 같습니다.",
+          "answer_j2_add": "초임 교사로서 '잘 가르치고 있는가'에 대한 불안감을 어떻게 다루어야 하는지가 가장 큰 고민입니다. 성취 지향적인 성격 때문에 스스로에게 높은 기준을 세우지만, 교직 초기에는 그 기준을 충족하고 있는지 확인할 방법이 마땅하지 않습니다. 이 여정에서 '초임 교사가 느끼는 불안과 자기 효능감'에 관한 질문도 다루어 주었으면 합니다."
+        },
+        "group_values": {
+          "years_experience": "0-2"
+        },
+        "survey_answers": {
+          "j2_q1": "아직 교사로서의 경력이 매우 짧지만, 제가 가르친 학생들이 저를 기억한다면 아마도 '끝까지 포기하지 않도록 격려해 준 선생님'으로 기억해 주었으면 합니다. 저는 스포츠 현장에서 가르치면서 항상 학생들이 자신의 한계를 스스로 설정하지 않도록 독려하려 노력했습니다. 규율과 열정을 동시에 보여주는 교사로 기억되고 싶습니다.",
+          "j2_q1_fit": 2,
+          "j2_q2": "교사가 된 이후 가장 큰 영향을 미친 것은 제가 직접 운동선수로 활동하며 만난 코치들과 팀 동료들입니다. 브라질에서 축구를 하면서 겪었던 훈련 문화, 스페인에서 생활하며 접한 다른 교육 방식, 그리고 미국에서 경험한 스포츠 과학 기반의 코칭 접근법이 저에게 큰 자극이 되었습니다. 또한 초보 교사로서 함께 일하는 선배 동료들의 조언이 실질적인 도움이 되고 있습니다.",
+          "j2_q2_fit": 3,
+          "j2_q3": "스페인에서 생활하던 시기에 현지 스포츠 아카데미에서 보조 코치 역할을 처음 맡게 된 경험이 가장 큰 전환점이었습니다. 언어도 완전히 익숙하지 않은 환경에서 다양한 배경을 가진 청소년들을 지도해야 했는데, 그 과정에서 '가르친다는 것'이 단순히 기술을 전달하는 것이 아니라 신뢰를 쌓는 과정임을 처음으로 깨달았습니다. 그 경험이 저를 교사의 길로 이끈 결정적인 계기가 되었습니다.",
+          "j2_q3_fit": 3,
+          "j2_q4": "그 경험을 통해 저는 학생 각각의 맥락을 이해하는 것이 얼마나 중요한지를 배웠습니다. 문화적 배경, 개인적 상황, 동기 수준이 모두 다른 학생들에게 같은 방식으로 접근하면 효과가 없다는 것을 몸소 느꼈습니다. 이후 저는 학생을 관찰하고 먼저 경청하는 태도를 갖추게 되었고, 지도 현장에서도 개별 피드백을 중시하는 교사의 모습으로 드러나고 있습니다.",
+          "j2_q4_fit": 3,
+          "j2_q5": "저는 '겸손한 경쟁심'을 가진 교사가 되어야 한다는 마음가짐을 갖게 되었습니다. 학생들이 최선을 다하도록 자극하되, 그 기준이 타인과의 비교가 아니라 어제의 자신과의 비교여야 한다는 것을 믿게 되었습니다. 또한 교사 스스로도 끊임없이 배우는 자세를 유지해야 한다는 것을 강하게 느끼고 있습니다. 학생 앞에서 모르는 것을 인정하고 함께 탐구하는 것이 오히려 더 큰 가르침이 될 수 있다고 생각합니다.",
+          "j2_q5_fit": 4,
+          "j2_q6": "제목: 『아직 첫 페이지』\n\n저는 교사로서의 여정이 이제 막 시작되었다고 느낍니다. 아직 쌓인 이야기가 많지 않지만, 그 첫 페이지를 어떻게 쓰느냐가 이후의 모든 장을 결정한다고 생각합니다. 이 제목에는 '나는 아직 성장 중이며, 그것이 부끄럽지 않다'는 의미와 함께 '학생들과 함께 이야기를 만들어 가는 중'이라는 설렘이 담겨 있습니다.",
+          "j2_q6_fit": 4,
+          "j2_meaning": 4,
+          "j2_burden": 3,
+          "j2_timing": 2,
+          "j2_hard": [
+            "j2_q1",
+            "j2_q3"
+          ],
+          "j2_hard_reason": "lack_experience",
+          "j2_revise": "j2_q1 (학생들이 기억하는 교사의 모습): '시간이 지난 후'라는 전제가 초임 교사에게는 부담스럽습니다. '내가 학생들에게 어떤 교사로 기억되고 싶은가?'로 바꾸면, 현재의 희망과 방향성을 이야기할 수 있어 더 접근하기 쉬울 것 같습니다.\n\nj2_q3 (전환점이 된 경험): '전환점'이라는 표현이 큰 사건을 전제하는 것처럼 느껴집니다. '교사가 된 이후 가장 인상 깊었던 작은 순간이나 경험은 무엇인가요?'로 바꾸면 초임 교사도 부담 없이 답할 수 있을 것 같습니다.",
+          "j2_add": "초임 교사로서 '잘 가르치고 있는가'에 대한 불안감을 어떻게 다루어야 하는지가 가장 큰 고민입니다. 성취 지향적인 성격 때문에 스스로에게 높은 기준을 세우지만, 교직 초기에는 그 기준을 충족하고 있는지 확인할 방법이 마땅하지 않습니다. 이 여정에서 '초임 교사가 느끼는 불안과 자기 효능감'에 관한 질문도 다루어 주었으면 합니다."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__SXx39DU",
+        "persona_id": "wiki-7dc0b3aa9839",
+        "persona_name": "Clara Rossi",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 6398,
+          "n_output_tokens": 1534,
+          "n_cache_tokens": null,
+          "cost_usd": 0.042204
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__SXx39DU/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "I believe my students will remember, above all, the seriousness with which I listened to them. Not merely to their words, but to what lay beneath — their uncertainties, their half-formed questions, their silences. I hope they will recall that I treated literature and language not as instruments of examination but as living things, capable of bearing the weight of a human life. Perhaps they will remember that I never pretended certainty where none existed, and that I asked them to think rather than to agree.",
+          "answer_j2_q1_fit": 4,
+          "answer_j2_q2": "Several forces have shaped me profoundly as a teacher. The death of my father compelled me to reckon with impermanence in ways that altered how I speak about literature and meaning in the classroom. My years living in Germany and Italy exposed me to pedagogical traditions quite different from those I had known, and I found myself borrowing and questioning in equal measure. A small community of lay theologians I encountered during my spiritual conversion also left a deep mark — they taught me that genuine inquiry requires humility, and that the teacher who ceases to be a learner has already failed.",
+          "answer_j2_q2_fit": 4,
+          "answer_j2_q3": "The death of my father was the single greatest turning point. I was in the midst of a particularly demanding period of teaching when it occurred, and I found myself unable to maintain the professional distance I had previously considered a virtue. Grief entered the classroom with me, uninvited, and I had to decide whether to suppress it or to allow it to inform my teaching honestly. I chose the latter. That choice transformed how I approach the relationship between personal experience and intellectual work — I stopped treating them as separate territories.",
+          "answer_j2_q3_fit": 5,
+          "answer_j2_q4": "From that experience of loss I learned that vulnerability, when held with discipline, is not a weakness in a teacher but a form of integrity. I became capable of sitting with students in their own moments of confusion or sorrow without rushing toward resolution. In practice, this appeared as a willingness to pause — to allow a poem or a passage to breathe rather than immediately explaining it away. Students began to bring me their real questions, not merely the ones they believed I wished to hear.",
+          "answer_j2_q4_fit": 4,
+          "answer_j2_q5": "I have come to hold what I might call a posture of attentive patience — a conviction that understanding cannot be forced, only cultivated. I approach each student and each text with the assumption that something essential remains to be discovered, regardless of how familiar the territory appears. Alongside this, my faith has instilled in me a sense of responsibility that extends beyond academic outcomes: I believe I am, in some measure, accountable for the moral and imaginative formation of those I teach. This is a weight I carry seriously, though not, I hope, oppressively.",
+          "answer_j2_q5_fit": 4,
+          "answer_j2_q6": "Title: 'The Margin and the Text.' In the study of literature, the margin is where the reader writes back — where personal response meets the authored word. My teaching life has been lived in that margin: between languages, between cultures, between grief and gratitude, between faith and doubt. I have never been entirely at home in any single tradition, and I have come to regard that displacement not as a deficiency but as the very condition that has made me attentive. The title also suggests humility: the teacher is not the text itself, but the one who helps others learn to read it.",
+          "answer_j2_q6_fit": 4,
+          "answer_j2_meaning": 4,
+          "answer_j2_burden": 3,
+          "answer_j2_timing": 5,
+          "answer_j2_hard": [
+            "j2_q1"
+          ],
+          "answer_j2_hard_reason": "too_abstract",
+          "answer_j2_revise": "For teachers with fewer than five years of experience, I would revise j2_q1 from asking what students will remember 'after time has passed' — which presupposes a long retrospective arc — to something more immediate: 'What do you hope a student feels when they leave your classroom today?' Similarly, j2_q3, which asks for a 'turning point,' might feel premature for early-career teachers. I would reframe it as: 'Has there been a moment — however small — that made you reconsider how you teach or why you teach? Describe it.' This lowers the threshold without sacrificing depth.",
+          "answer_j2_add": "I find myself wishing this journey had addressed the tension between institutional obligation and genuine pedagogical vocation. Much of my inner life as a teacher has been shaped by the friction between what I am required to do and what I believe education truly demands. The questions here tend to assume a relatively autonomous teacher; I would welcome space to examine how one preserves intellectual and moral integrity within systems that do not always honour it."
+        },
+        "group_values": {
+          "years_experience": "20+"
+        },
+        "survey_answers": {
+          "j2_q1": "I believe my students will remember, above all, the seriousness with which I listened to them. Not merely to their words, but to what lay beneath — their uncertainties, their half-formed questions, their silences. I hope they will recall that I treated literature and language not as instruments of examination but as living things, capable of bearing the weight of a human life. Perhaps they will remember that I never pretended certainty where none existed, and that I asked them to think rather than to agree.",
+          "j2_q1_fit": 4,
+          "j2_q2": "Several forces have shaped me profoundly as a teacher. The death of my father compelled me to reckon with impermanence in ways that altered how I speak about literature and meaning in the classroom. My years living in Germany and Italy exposed me to pedagogical traditions quite different from those I had known, and I found myself borrowing and questioning in equal measure. A small community of lay theologians I encountered during my spiritual conversion also left a deep mark — they taught me that genuine inquiry requires humility, and that the teacher who ceases to be a learner has already failed.",
+          "j2_q2_fit": 4,
+          "j2_q3": "The death of my father was the single greatest turning point. I was in the midst of a particularly demanding period of teaching when it occurred, and I found myself unable to maintain the professional distance I had previously considered a virtue. Grief entered the classroom with me, uninvited, and I had to decide whether to suppress it or to allow it to inform my teaching honestly. I chose the latter. That choice transformed how I approach the relationship between personal experience and intellectual work — I stopped treating them as separate territories.",
+          "j2_q3_fit": 5,
+          "j2_q4": "From that experience of loss I learned that vulnerability, when held with discipline, is not a weakness in a teacher but a form of integrity. I became capable of sitting with students in their own moments of confusion or sorrow without rushing toward resolution. In practice, this appeared as a willingness to pause — to allow a poem or a passage to breathe rather than immediately explaining it away. Students began to bring me their real questions, not merely the ones they believed I wished to hear.",
+          "j2_q4_fit": 4,
+          "j2_q5": "I have come to hold what I might call a posture of attentive patience — a conviction that understanding cannot be forced, only cultivated. I approach each student and each text with the assumption that something essential remains to be discovered, regardless of how familiar the territory appears. Alongside this, my faith has instilled in me a sense of responsibility that extends beyond academic outcomes: I believe I am, in some measure, accountable for the moral and imaginative formation of those I teach. This is a weight I carry seriously, though not, I hope, oppressively.",
+          "j2_q5_fit": 4,
+          "j2_q6": "Title: 'The Margin and the Text.' In the study of literature, the margin is where the reader writes back — where personal response meets the authored word. My teaching life has been lived in that margin: between languages, between cultures, between grief and gratitude, between faith and doubt. I have never been entirely at home in any single tradition, and I have come to regard that displacement not as a deficiency but as the very condition that has made me attentive. The title also suggests humility: the teacher is not the text itself, but the one who helps others learn to read it.",
+          "j2_q6_fit": 4,
+          "j2_meaning": 4,
+          "j2_burden": 3,
+          "j2_timing": 5,
+          "j2_hard": [
+            "j2_q1"
+          ],
+          "j2_hard_reason": "too_abstract",
+          "j2_revise": "For teachers with fewer than five years of experience, I would revise j2_q1 from asking what students will remember 'after time has passed' — which presupposes a long retrospective arc — to something more immediate: 'What do you hope a student feels when they leave your classroom today?' Similarly, j2_q3, which asks for a 'turning point,' might feel premature for early-career teachers. I would reframe it as: 'Has there been a moment — however small — that made you reconsider how you teach or why you teach? Describe it.' This lowers the threshold without sacrificing depth.",
+          "j2_add": "I find myself wishing this journey had addressed the tension between institutional obligation and genuine pedagogical vocation. Much of my inner life as a teacher has been shaped by the friction between what I am required to do and what I believe education truly demands. The questions here tend to assume a relatively autonomous teacher; I would welcome space to examine how one preserves intellectual and moral integrity within systems that do not always honour it."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__fuwzARP",
+        "persona_id": "synthetic-7313d4d701f5",
+        "persona_name": "Min Nakamura",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10313,
+          "n_output_tokens": 3123,
+          "n_cache_tokens": null,
+          "cost_usd": 0.07778399999999999
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__fuwzARP/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "아이들은 아마도 제가 논리적인 설명을 매우 중요시했던 모습을 기억할 것 같습니다 😊 저는 언제나 '왜 그런가'를 함께 생각하도록 유도하는 편이었고, 답을 그냥 주기보다는 과정을 함께 걸어가려 했습니다. 물론 때로는 그 과정이 너무 길어서 아이들이 지쳐하기도 했겠지만요 😅 그리고 아마 제가 감정을 잘 드러내지 않으면서도 학생 한 명 한 명의 상황에 조용히 귀를 기울였던 태도도 기억에 남지 않을까 생각합니다. 말보다 행동으로 관심을 표현하는 편이었으니까요.",
+          "answer_j2_q1_fit": 3,
+          "answer_j2_q2": "교사가 된 초기에 가장 큰 영향을 준 것은 제가 직접 경험한 상실이었습니다. 소중한 사람을 잃은 이후 저는 학생들과의 관계를 전혀 다른 시선으로 바라보게 되었습니다 😔 또한 교육 현장에서 만난 선배 교사 한 분이 계셨는데, 그분은 학생의 실수를 꾸짖기보다 그 실수 안에 담긴 의도를 먼저 물어보는 분이셨습니다. 그 모습이 제게 깊은 인상을 남겼습니다. 그리고 제가 속했던 소규모 교사 학습 공동체도 빼놓을 수 없는데, 그 안에서 서로의 수업을 솔직하게 비평하고 격려하는 문화가 저를 많이 성장시켰습니다.",
+          "answer_j2_q2_fit": 3,
+          "answer_j2_q3": "가장 큰 전환점은 역시 개인적인 상실의 경험이었습니다. 가까운 사람을 잃고 나서 저는 한동안 교단에 서는 것 자체가 무의미하게 느껴졌습니다. 그런데 어느 날 한 학생이 수업 후에 남아서 '선생님, 요즘 많이 힘들어 보여요'라고 조용히 말을 건넸습니다. 그 말이 저를 흔들었습니다 😶 제가 학생을 돌본다고 생각했는데, 사실은 학생도 저를 돌보고 있었던 것입니다. 그 순간부터 저는 교사와 학생의 관계를 일방적인 것이 아니라 상호적인 것으로 이해하게 되었고, 그것이 이후 제 수업 방식과 태도 전반을 바꾸는 계기가 되었습니다.",
+          "answer_j2_q3_fit": 4,
+          "answer_j2_q4": "그 경험으로부터 저는 '취약함을 인정하는 것이 약함이 아니다'라는 것을 배웠습니다. 이전에는 교사로서 항상 완전하고 안정된 모습을 보여야 한다고 생각했는데, 그 학생의 말 한마디가 그 생각을 뒤집었습니다. 이후 저는 수업 중에 모르는 것이 있으면 솔직하게 '나도 잘 모르겠다, 함께 찾아보자'고 말할 수 있게 되었습니다 😌 또한 학생의 감정 상태를 수업 내용보다 먼저 살피는 습관이 생겼고, 논리적 설명 이전에 먼저 연결되려는 태도를 갖게 되었습니다. 그것이 교사로서의 저를 훨씬 더 인간적으로 만들어 준 것 같습니다.",
+          "answer_j2_q4_fit": 4,
+          "answer_j2_q5": "저는 '기다리는 교사'가 되려는 마음가짐을 갖게 되었습니다. 빠른 답을 요구하기보다, 학생이 스스로 생각에 도달할 때까지 조용히 옆에 있어 주는 것이 교사의 역할이라는 것을 깨달았습니다. 물론 저 자신은 인내심이 그리 강한 편이 아니라서 😅 이것이 쉬운 일은 아닙니다. 그러나 적어도 그것이 옳은 방향이라는 것을 알고 있기에, 스스로를 계속 돌아보게 됩니다. 또한 어떤 상황에서도 학생의 인격을 먼저 존중하겠다는 태도가 생겼습니다. 성적이나 결과보다 그 사람 자체를 보려는 마음이라고 할 수 있겠습니다.",
+          "answer_j2_q5_fit": 3,
+          "answer_j2_q6": "제목은 「아직 다 읽지 못한 책」으로 하겠습니다 📖 저는 교사로서의 여정이 아직 한참 진행 중이라는 느낌을 항상 갖고 있습니다. 어떤 챕터는 아직 쓰이지 않았고, 어떤 페이지는 이미 지나쳤지만 다시 돌아가 읽고 싶습니다. 그리고 무엇보다 이 책은 제가 혼자 쓴 것이 아니라, 함께한 학생들과 동료들이 각자의 방식으로 한 줄씩 써 넣은 공동 저작물이라고 생각합니다. 완성되지 않았다는 것이 부족함이 아니라, 여전히 살아있다는 증거라고 생각하고 싶습니다 😊",
+          "answer_j2_q6_fit": 3,
+          "answer_j2_meaning": 3,
+          "answer_j2_burden": 3,
+          "answer_j2_timing": 3,
+          "answer_j2_hard": [
+            "j2_q1",
+            "j2_q6"
+          ],
+          "answer_j2_hard_reason": "premise_mismatch",
+          "answer_j2_revise": "j2_q1 질문을 바꾼다면, '내가 가르친 아이들은 시간이 지난 후 나의 특징 중 어떤 것을 기억하게 될까요?'보다는 '지금 내 학생들이 나를 어떤 교사로 느끼고 있을 것 같나요? 나는 그들에게 어떻게 기억되고 싶나요?'로 바꾸면 좋겠습니다. 5년 차 이하 교사에게는 '이미 지나간 시간'이 아닌 '지금 이 순간'을 기준으로 성찰할 수 있는 질문이 더 접근하기 쉽고 현실적으로 느껴질 것 같습니다 😊 j2_q6도 마찬가지로, '지금까지의 경험을 제목으로 붙인다면'보다 '지금 이 시기의 나를 한 문장으로 표현한다면'처럼 현재 시제로 바꾸면 더 자연스러울 것 같습니다.",
+          "answer_j2_add": "저는 요즘 '교사로서의 나'와 '개인으로서의 나' 사이의 경계를 어떻게 설정해야 하는가에 대한 고민이 많습니다. 상실을 경험한 이후 그 두 정체성이 자꾸 뒤섞이는 느낌이 들고, 수업 중에 감정이 올라올 때 어떻게 해야 하는지 아직 잘 모르겠습니다 😔 또한 교직 경력이 짧은 상태에서 이미 '나는 어떤 교사인가'를 정의해야 한다는 압박감이 때때로 느껴지는데, 그 압박 자체가 성장에 도움이 되는 것인지 아니면 오히려 방해가 되는 것인지도 이 여정에서 함께 다루어 주면 좋겠다는 생각이 들었습니다."
+        },
+        "group_values": {
+          "years_experience": "3-5"
+        },
+        "survey_answers": {
+          "j2_q1": "아이들은 아마도 제가 논리적인 설명을 매우 중요시했던 모습을 기억할 것 같습니다 😊 저는 언제나 '왜 그런가'를 함께 생각하도록 유도하는 편이었고, 답을 그냥 주기보다는 과정을 함께 걸어가려 했습니다. 물론 때로는 그 과정이 너무 길어서 아이들이 지쳐하기도 했겠지만요 😅 그리고 아마 제가 감정을 잘 드러내지 않으면서도 학생 한 명 한 명의 상황에 조용히 귀를 기울였던 태도도 기억에 남지 않을까 생각합니다. 말보다 행동으로 관심을 표현하는 편이었으니까요.",
+          "j2_q1_fit": 3,
+          "j2_q2": "교사가 된 초기에 가장 큰 영향을 준 것은 제가 직접 경험한 상실이었습니다. 소중한 사람을 잃은 이후 저는 학생들과의 관계를 전혀 다른 시선으로 바라보게 되었습니다 😔 또한 교육 현장에서 만난 선배 교사 한 분이 계셨는데, 그분은 학생의 실수를 꾸짖기보다 그 실수 안에 담긴 의도를 먼저 물어보는 분이셨습니다. 그 모습이 제게 깊은 인상을 남겼습니다. 그리고 제가 속했던 소규모 교사 학습 공동체도 빼놓을 수 없는데, 그 안에서 서로의 수업을 솔직하게 비평하고 격려하는 문화가 저를 많이 성장시켰습니다.",
+          "j2_q2_fit": 3,
+          "j2_q3": "가장 큰 전환점은 역시 개인적인 상실의 경험이었습니다. 가까운 사람을 잃고 나서 저는 한동안 교단에 서는 것 자체가 무의미하게 느껴졌습니다. 그런데 어느 날 한 학생이 수업 후에 남아서 '선생님, 요즘 많이 힘들어 보여요'라고 조용히 말을 건넸습니다. 그 말이 저를 흔들었습니다 😶 제가 학생을 돌본다고 생각했는데, 사실은 학생도 저를 돌보고 있었던 것입니다. 그 순간부터 저는 교사와 학생의 관계를 일방적인 것이 아니라 상호적인 것으로 이해하게 되었고, 그것이 이후 제 수업 방식과 태도 전반을 바꾸는 계기가 되었습니다.",
+          "j2_q3_fit": 4,
+          "j2_q4": "그 경험으로부터 저는 '취약함을 인정하는 것이 약함이 아니다'라는 것을 배웠습니다. 이전에는 교사로서 항상 완전하고 안정된 모습을 보여야 한다고 생각했는데, 그 학생의 말 한마디가 그 생각을 뒤집었습니다. 이후 저는 수업 중에 모르는 것이 있으면 솔직하게 '나도 잘 모르겠다, 함께 찾아보자'고 말할 수 있게 되었습니다 😌 또한 학생의 감정 상태를 수업 내용보다 먼저 살피는 습관이 생겼고, 논리적 설명 이전에 먼저 연결되려는 태도를 갖게 되었습니다. 그것이 교사로서의 저를 훨씬 더 인간적으로 만들어 준 것 같습니다.",
+          "j2_q4_fit": 4,
+          "j2_q5": "저는 '기다리는 교사'가 되려는 마음가짐을 갖게 되었습니다. 빠른 답을 요구하기보다, 학생이 스스로 생각에 도달할 때까지 조용히 옆에 있어 주는 것이 교사의 역할이라는 것을 깨달았습니다. 물론 저 자신은 인내심이 그리 강한 편이 아니라서 😅 이것이 쉬운 일은 아닙니다. 그러나 적어도 그것이 옳은 방향이라는 것을 알고 있기에, 스스로를 계속 돌아보게 됩니다. 또한 어떤 상황에서도 학생의 인격을 먼저 존중하겠다는 태도가 생겼습니다. 성적이나 결과보다 그 사람 자체를 보려는 마음이라고 할 수 있겠습니다.",
+          "j2_q5_fit": 3,
+          "j2_q6": "제목은 「아직 다 읽지 못한 책」으로 하겠습니다 📖 저는 교사로서의 여정이 아직 한참 진행 중이라는 느낌을 항상 갖고 있습니다. 어떤 챕터는 아직 쓰이지 않았고, 어떤 페이지는 이미 지나쳤지만 다시 돌아가 읽고 싶습니다. 그리고 무엇보다 이 책은 제가 혼자 쓴 것이 아니라, 함께한 학생들과 동료들이 각자의 방식으로 한 줄씩 써 넣은 공동 저작물이라고 생각합니다. 완성되지 않았다는 것이 부족함이 아니라, 여전히 살아있다는 증거라고 생각하고 싶습니다 😊",
+          "j2_q6_fit": 3,
+          "j2_meaning": 3,
+          "j2_burden": 3,
+          "j2_timing": 3,
+          "j2_hard": [
+            "j2_q1",
+            "j2_q6"
+          ],
+          "j2_hard_reason": "premise_mismatch",
+          "j2_revise": "j2_q1 질문을 바꾼다면, '내가 가르친 아이들은 시간이 지난 후 나의 특징 중 어떤 것을 기억하게 될까요?'보다는 '지금 내 학생들이 나를 어떤 교사로 느끼고 있을 것 같나요? 나는 그들에게 어떻게 기억되고 싶나요?'로 바꾸면 좋겠습니다. 5년 차 이하 교사에게는 '이미 지나간 시간'이 아닌 '지금 이 순간'을 기준으로 성찰할 수 있는 질문이 더 접근하기 쉽고 현실적으로 느껴질 것 같습니다 😊 j2_q6도 마찬가지로, '지금까지의 경험을 제목으로 붙인다면'보다 '지금 이 시기의 나를 한 문장으로 표현한다면'처럼 현재 시제로 바꾸면 더 자연스러울 것 같습니다.",
+          "j2_add": "저는 요즘 '교사로서의 나'와 '개인으로서의 나' 사이의 경계를 어떻게 설정해야 하는가에 대한 고민이 많습니다. 상실을 경험한 이후 그 두 정체성이 자꾸 뒤섞이는 느낌이 들고, 수업 중에 감정이 올라올 때 어떻게 해야 하는지 아직 잘 모르겠습니다 😔 또한 교직 경력이 짧은 상태에서 이미 '나는 어떤 교사인가'를 정의해야 한다는 압박감이 때때로 느껴지는데, 그 압박 자체가 성장에 도움이 되는 것인지 아니면 오히려 방해가 되는 것인지도 이 여정에서 함께 다루어 주면 좋겠다는 생각이 들었습니다."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__gm6H7tB",
+        "persona_id": "synthetic-51b456aa9e9e",
+        "persona_name": "Diego Santos",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10429,
+          "n_output_tokens": 1867,
+          "n_cache_tokens": null,
+          "cost_usd": 0.059292000000000004
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__gm6H7tB/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "아마 아이들은 내가 항상 솔직했다는 것을 기억할 것입니다. 틀린 것을 틀렸다고 말하고, 모르는 것은 모른다고 인정했습니다. 그리고 수업 중에 실제 현장 경험에서 나온 이야기를 많이 했기 때문에, 교과서 밖의 이야기를 해주는 교사로 기억될 것 같습니다.",
+          "answer_j2_q1_fit": 3,
+          "answer_j2_q2": "교사로 일하면서 가장 큰 영향을 받은 것은 건강 위기였습니다. 만성 질환 진단을 받은 이후 수업 방식과 학생을 대하는 방식이 달라졌습니다. 또한 다양한 산업 현장에서 쌓은 경험이 교실 안으로 들어오면서 가르치는 내용의 깊이가 달라졌습니다. 지역 공동체에서 공직 활동을 한 것도 학생들에게 시민으로서의 책임감을 이야기할 때 실질적인 근거가 되었습니다.",
+          "answer_j2_q2_fit": 4,
+          "answer_j2_q3": "교직 중반에 겪은 큰 사고에 가까운 경험이 전환점이었습니다. 그 일 이후 시간과 에너지를 어디에 쓸 것인지 다시 생각하게 되었고, 학생 한 명 한 명에게 더 집중하게 되었습니다. 이전에는 커리큘럼을 완수하는 것이 목표였다면, 그 이후에는 학생이 무엇을 이해하고 나가는가가 더 중요해졌습니다.",
+          "answer_j2_q3_fit": 4,
+          "answer_j2_q4": "그 경험에서 배운 것은 완벽한 수업보다 진실된 수업이 더 오래 남는다는 것입니다. 내가 할 수 있게 된 것은 실패나 불확실성을 학생 앞에서 인정하는 것입니다. 교사로서는 덜 권위적이지만 더 신뢰받는 모습으로 드러났습니다. 학생들이 질문을 두려워하지 않는 분위기가 생겼습니다.",
+          "answer_j2_q4_fit": 3,
+          "answer_j2_q5": "기다리는 태도를 갖게 되었습니다. 학생이 이해하는 데 걸리는 시간이 각자 다르다는 것을 받아들이게 되었고, 빠른 결과보다 과정을 보려는 마음가짐이 생겼습니다. 또한 내가 먼저 배우는 사람이어야 한다는 생각이 강해졌습니다.",
+          "answer_j2_q5_fit": 3,
+          "answer_j2_q6": "제목: 「늦게 피는 것들에 대하여」. 나 자신도 늦게 여러 분야를 거쳐 교직에 왔고, 학생들도 저마다의 속도가 있다는 것을 배웠습니다. 빠른 것이 좋은 것이 아니라, 제대로 피는 것이 중요하다는 생각이 내 교직 경험 전체를 관통합니다.",
+          "answer_j2_q6_fit": 3,
+          "answer_j2_meaning": 4,
+          "answer_j2_burden": 2,
+          "answer_j2_timing": 4,
+          "answer_j2_hard": [
+            "j2_q5",
+            "j2_q6"
+          ],
+          "answer_j2_hard_reason": "too_abstract",
+          "answer_j2_revise": "j2_q6의 '한 권의 책 제목'은 경력이 짧은 교사에게 너무 큰 단위의 정리를 요구합니다. 대신 '지금까지 가장 기억에 남는 수업 한 장면을 떠올려 보세요. 그 장면의 제목을 붙인다면?'으로 바꾸면 더 구체적이고 답하기 쉬울 것입니다.",
+          "answer_j2_add": "은퇴 후에도 가르치는 일을 계속해야 하는가에 대한 고민이 있습니다. 교직을 떠난 이후에도 교사로서의 정체성이 남아 있는지, 그것이 짐인지 자산인지 이 여정에서 다루어졌으면 했습니다."
+        },
+        "group_values": {
+          "years_experience": "11-20"
+        },
+        "survey_answers": {
+          "j2_q1": "아마 아이들은 내가 항상 솔직했다는 것을 기억할 것입니다. 틀린 것을 틀렸다고 말하고, 모르는 것은 모른다고 인정했습니다. 그리고 수업 중에 실제 현장 경험에서 나온 이야기를 많이 했기 때문에, 교과서 밖의 이야기를 해주는 교사로 기억될 것 같습니다.",
+          "j2_q1_fit": 3,
+          "j2_q2": "교사로 일하면서 가장 큰 영향을 받은 것은 건강 위기였습니다. 만성 질환 진단을 받은 이후 수업 방식과 학생을 대하는 방식이 달라졌습니다. 또한 다양한 산업 현장에서 쌓은 경험이 교실 안으로 들어오면서 가르치는 내용의 깊이가 달라졌습니다. 지역 공동체에서 공직 활동을 한 것도 학생들에게 시민으로서의 책임감을 이야기할 때 실질적인 근거가 되었습니다.",
+          "j2_q2_fit": 4,
+          "j2_q3": "교직 중반에 겪은 큰 사고에 가까운 경험이 전환점이었습니다. 그 일 이후 시간과 에너지를 어디에 쓸 것인지 다시 생각하게 되었고, 학생 한 명 한 명에게 더 집중하게 되었습니다. 이전에는 커리큘럼을 완수하는 것이 목표였다면, 그 이후에는 학생이 무엇을 이해하고 나가는가가 더 중요해졌습니다.",
+          "j2_q3_fit": 4,
+          "j2_q4": "그 경험에서 배운 것은 완벽한 수업보다 진실된 수업이 더 오래 남는다는 것입니다. 내가 할 수 있게 된 것은 실패나 불확실성을 학생 앞에서 인정하는 것입니다. 교사로서는 덜 권위적이지만 더 신뢰받는 모습으로 드러났습니다. 학생들이 질문을 두려워하지 않는 분위기가 생겼습니다.",
+          "j2_q4_fit": 3,
+          "j2_q5": "기다리는 태도를 갖게 되었습니다. 학생이 이해하는 데 걸리는 시간이 각자 다르다는 것을 받아들이게 되었고, 빠른 결과보다 과정을 보려는 마음가짐이 생겼습니다. 또한 내가 먼저 배우는 사람이어야 한다는 생각이 강해졌습니다.",
+          "j2_q5_fit": 3,
+          "j2_q6": "제목: 「늦게 피는 것들에 대하여」. 나 자신도 늦게 여러 분야를 거쳐 교직에 왔고, 학생들도 저마다의 속도가 있다는 것을 배웠습니다. 빠른 것이 좋은 것이 아니라, 제대로 피는 것이 중요하다는 생각이 내 교직 경험 전체를 관통합니다.",
+          "j2_q6_fit": 3,
+          "j2_meaning": 4,
+          "j2_burden": 2,
+          "j2_timing": 4,
+          "j2_hard": [
+            "j2_q5",
+            "j2_q6"
+          ],
+          "j2_hard_reason": "too_abstract",
+          "j2_revise": "j2_q6의 '한 권의 책 제목'은 경력이 짧은 교사에게 너무 큰 단위의 정리를 요구합니다. 대신 '지금까지 가장 기억에 남는 수업 한 장면을 떠올려 보세요. 그 장면의 제목을 붙인다면?'으로 바꾸면 더 구체적이고 답하기 쉬울 것입니다.",
+          "j2_add": "은퇴 후에도 가르치는 일을 계속해야 하는가에 대한 고민이 있습니다. 교직을 떠난 이후에도 교사로서의 정체성이 남아 있는지, 그것이 짐인지 자산인지 이 여정에서 다루어졌으면 했습니다."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__wgu7HEU",
+        "persona_id": "synthetic-4ff4e002cf70",
+        "persona_name": "Rohan Iyer",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10081,
+          "n_output_tokens": 1578,
+          "n_cache_tokens": null,
+          "cost_usd": 0.053913
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__wgu7HEU/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "아이들은 아마 내가 항상 솔직했던 것을 기억할 것 같아요. 모르는 건 모른다고 했고, 틀리면 같이 고쳐나갔으니까요. 그리고 수업 중에 갑자기 엉뚱한 비유를 들던 것도요.",
+          "answer_j2_q1_fit": 2,
+          "answer_j2_q2": "교사가 된 지 얼마 안 됐지만, 건강 문제로 한동안 쉬었던 시간이 저한테 많은 영향을 줬어요. 그때 아이들 앞에 서는 것이 얼마나 소중한지 새삼 느꼈고, 같은 시기에 만난 선배 교사 한 분도 큰 힘이 됐어요.",
+          "answer_j2_q2_fit": 3,
+          "answer_j2_q3": "건강 문제로 교단을 잠시 떠났던 경험이 가장 큰 전환점이었어요. 아프고 나서 돌아왔을 때, 교실이 다르게 보였어요. 아이들 한 명 한 명이 더 선명하게 보이기 시작했달까요.",
+          "answer_j2_q3_fit": 3,
+          "answer_j2_q4": "몸이 힘들 때 오히려 '왜 가르치는가'를 진지하게 생각하게 됐어요. 그 이후로 수업을 준비할 때 덜 형식적으로, 더 솔직하게 하려고 노력해요. 아이들이 질문할 때 예전보다 훨씬 반갑게 받아들이는 것 같아요.",
+          "answer_j2_q4_fit": 3,
+          "answer_j2_q5": "서두르지 않으려는 마음이 생겼어요. 아이가 이해하는 속도를 기다리는 것, 그게 교사로서 제가 가장 지키고 싶은 태도예요. 완벽한 수업보다 진심 있는 수업이 낫다고 생각하게 됐고요.",
+          "answer_j2_q5_fit": 3,
+          "answer_j2_q6": "제목은 '아직 1장'이에요. 교사로서의 이야기가 이제 막 시작됐고, 실수도 많고 배울 것도 많지만, 그게 부끄럽지 않다는 의미를 담고 싶었어요. 1장이라서 오히려 설레는 마음이요.",
+          "answer_j2_q6_fit": 2,
+          "answer_j2_meaning": 3,
+          "answer_j2_burden": 3,
+          "answer_j2_timing": 2,
+          "answer_j2_hard": [
+            "j2_q1",
+            "j2_q6"
+          ],
+          "answer_j2_hard_reason": "lack_experience",
+          "answer_j2_revise": "j2_q1을 '지금 내 학생들이 나에 대해 어떻게 말할 것 같나요?'로 바꾸면 좋겠어요. '시간이 지난 후'라는 표현이 경력이 짧은 교사에게는 너무 멀게 느껴지거든요. 지금 당장의 관계에서 출발하면 답하기 훨씬 쉬울 것 같아요.",
+          "answer_j2_add": "실수했을 때 어떻게 회복하는가에 대해 이야기하고 싶어요. 초임 교사는 실수가 많은데, 그걸 어떻게 받아들이고 다음 수업으로 넘어가는지가 저한테는 지금 가장 현실적인 고민이에요."
+        },
+        "group_values": {
+          "years_experience": "0-2"
+        },
+        "survey_answers": {
+          "j2_q1": "아이들은 아마 내가 항상 솔직했던 것을 기억할 것 같아요. 모르는 건 모른다고 했고, 틀리면 같이 고쳐나갔으니까요. 그리고 수업 중에 갑자기 엉뚱한 비유를 들던 것도요.",
+          "j2_q1_fit": 2,
+          "j2_q2": "교사가 된 지 얼마 안 됐지만, 건강 문제로 한동안 쉬었던 시간이 저한테 많은 영향을 줬어요. 그때 아이들 앞에 서는 것이 얼마나 소중한지 새삼 느꼈고, 같은 시기에 만난 선배 교사 한 분도 큰 힘이 됐어요.",
+          "j2_q2_fit": 3,
+          "j2_q3": "건강 문제로 교단을 잠시 떠났던 경험이 가장 큰 전환점이었어요. 아프고 나서 돌아왔을 때, 교실이 다르게 보였어요. 아이들 한 명 한 명이 더 선명하게 보이기 시작했달까요.",
+          "j2_q3_fit": 3,
+          "j2_q4": "몸이 힘들 때 오히려 '왜 가르치는가'를 진지하게 생각하게 됐어요. 그 이후로 수업을 준비할 때 덜 형식적으로, 더 솔직하게 하려고 노력해요. 아이들이 질문할 때 예전보다 훨씬 반갑게 받아들이는 것 같아요.",
+          "j2_q4_fit": 3,
+          "j2_q5": "서두르지 않으려는 마음이 생겼어요. 아이가 이해하는 속도를 기다리는 것, 그게 교사로서 제가 가장 지키고 싶은 태도예요. 완벽한 수업보다 진심 있는 수업이 낫다고 생각하게 됐고요.",
+          "j2_q5_fit": 3,
+          "j2_q6": "제목은 '아직 1장'이에요. 교사로서의 이야기가 이제 막 시작됐고, 실수도 많고 배울 것도 많지만, 그게 부끄럽지 않다는 의미를 담고 싶었어요. 1장이라서 오히려 설레는 마음이요.",
+          "j2_q6_fit": 2,
+          "j2_meaning": 3,
+          "j2_burden": 3,
+          "j2_timing": 2,
+          "j2_hard": [
+            "j2_q1",
+            "j2_q6"
+          ],
+          "j2_hard_reason": "lack_experience",
+          "j2_revise": "j2_q1을 '지금 내 학생들이 나에 대해 어떻게 말할 것 같나요?'로 바꾸면 좋겠어요. '시간이 지난 후'라는 표현이 경력이 짧은 교사에게는 너무 멀게 느껴지거든요. 지금 당장의 관계에서 출발하면 답하기 훨씬 쉬울 것 같아요.",
+          "j2_add": "실수했을 때 어떻게 회복하는가에 대해 이야기하고 싶어요. 초임 교사는 실수가 많은데, 그걸 어떻게 받아들이고 다음 수업으로 넘어가는지가 저한테는 지금 가장 현실적인 고민이에요."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j2-my-story-as-te__xmznfRu",
+        "persona_id": "synthetic-8cb3d8df7f7a",
+        "persona_name": "Anika Das",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10008,
+          "n_output_tokens": 1806,
+          "n_cache_tokens": null,
+          "cost_usd": 0.057114
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j2-my-story-as-te__xmznfRu/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j2_q1": "아이들은 아마도 내가 늘 솔직했다는 점을 기억할 것입니다. 모르는 것은 모른다고 말했고, 틀렸을 때는 인정했습니다. 또한 수업 중에도 웃음을 잃지 않으려 했던 태도, 그리고 학생 한 명 한 명의 이름을 끝까지 기억하려 했던 노력도 기억해 주기를 바랍니다.",
+          "answer_j2_q1_fit": 3,
+          "answer_j2_q2": "교사 초기에 함께 일했던 선배 교사 한 분이 가장 큰 영향을 주었습니다. 그분은 교과 지식보다 학생과의 관계를 먼저 생각하는 분이었습니다. 또한 NGO 활동을 통해 만난 농촌 지역 학부모 공동체도 제가 교육의 사회적 맥락을 이해하는 데 큰 역할을 했습니다.",
+          "answer_j2_q2_fit": 4,
+          "answer_j2_q3": "가장 큰 전환점은 제가 운영하던 소규모 교육 사업이 실패했던 경험입니다. 그 과정에서 학생들에게 '결과보다 과정'을 강조하면서 정작 저 자신은 결과에만 집착했다는 사실을 깨달았습니다. 그 실패 이후 교사로서의 태도가 근본적으로 바뀌었습니다.",
+          "answer_j2_q3_fit": 4,
+          "answer_j2_q4": "실패를 통해 겸손함을 배웠습니다. 이후 수업에서 정답을 강요하기보다 학생이 스스로 생각하는 시간을 더 많이 허용하게 되었습니다. 또한 학생의 실수를 질책하지 않고, 그 실수 안에서 배움의 실마리를 함께 찾는 방식으로 수업 방식이 변화했습니다.",
+          "answer_j2_q4_fit": 3,
+          "answer_j2_q5": "교사는 완성된 존재가 아니라 학생과 함께 계속 배워가는 존재라는 마음가짐을 갖게 되었습니다. 권위보다 신뢰를, 지식 전달보다 질문을 소중히 여기게 되었습니다. 무엇보다 인내심을 가지고 기다리는 태도가 중요하다는 것을 몸으로 익혔습니다.",
+          "answer_j2_q5_fit": 4,
+          "answer_j2_q6": "제목: 「아직 끝나지 않은 수업」. 교사로서의 삶은 매 학기 끝나도 완결되지 않습니다. 학생도, 저 자신도 여전히 배우는 중이며, 교실 밖에서도 수업은 계속됩니다. 이 제목에는 완성을 향해 달려가기보다 과정 자체를 살아가는 교사의 자세를 담았습니다.",
+          "answer_j2_q6_fit": 3,
+          "answer_j2_meaning": 4,
+          "answer_j2_burden": 2,
+          "answer_j2_timing": 3,
+          "answer_j2_hard": [
+            "j2_q5",
+            "j2_q6"
+          ],
+          "answer_j2_hard_reason": "too_abstract",
+          "answer_j2_revise": "j2_q3(전환점이 된 경험)의 경우, 5년 차 이하 교사에게는 '전환점'이라는 표현이 부담스러울 수 있습니다. '지금까지 교직 생활에서 가장 오래 기억에 남는 하루나 순간은 무엇인가요?'처럼 구체적이고 작은 단위의 경험을 묻는 방식으로 바꾸면 답하기 훨씬 수월할 것입니다.",
+          "answer_j2_add": "교사로서 번아웃을 경험한 이후 어떻게 다시 의미를 찾았는지, 그 회복의 과정에 대해 이야기 나누고 싶습니다. 또한 가르치는 일과 개인 삶의 균형을 어떻게 유지하는지도 함께 탐색하고 싶은 주제입니다."
+        },
+        "group_values": {
+          "years_experience": "6-10"
+        },
+        "survey_answers": {
+          "j2_q1": "아이들은 아마도 내가 늘 솔직했다는 점을 기억할 것입니다. 모르는 것은 모른다고 말했고, 틀렸을 때는 인정했습니다. 또한 수업 중에도 웃음을 잃지 않으려 했던 태도, 그리고 학생 한 명 한 명의 이름을 끝까지 기억하려 했던 노력도 기억해 주기를 바랍니다.",
+          "j2_q1_fit": 3,
+          "j2_q2": "교사 초기에 함께 일했던 선배 교사 한 분이 가장 큰 영향을 주었습니다. 그분은 교과 지식보다 학생과의 관계를 먼저 생각하는 분이었습니다. 또한 NGO 활동을 통해 만난 농촌 지역 학부모 공동체도 제가 교육의 사회적 맥락을 이해하는 데 큰 역할을 했습니다.",
+          "j2_q2_fit": 4,
+          "j2_q3": "가장 큰 전환점은 제가 운영하던 소규모 교육 사업이 실패했던 경험입니다. 그 과정에서 학생들에게 '결과보다 과정'을 강조하면서 정작 저 자신은 결과에만 집착했다는 사실을 깨달았습니다. 그 실패 이후 교사로서의 태도가 근본적으로 바뀌었습니다.",
+          "j2_q3_fit": 4,
+          "j2_q4": "실패를 통해 겸손함을 배웠습니다. 이후 수업에서 정답을 강요하기보다 학생이 스스로 생각하는 시간을 더 많이 허용하게 되었습니다. 또한 학생의 실수를 질책하지 않고, 그 실수 안에서 배움의 실마리를 함께 찾는 방식으로 수업 방식이 변화했습니다.",
+          "j2_q4_fit": 3,
+          "j2_q5": "교사는 완성된 존재가 아니라 학생과 함께 계속 배워가는 존재라는 마음가짐을 갖게 되었습니다. 권위보다 신뢰를, 지식 전달보다 질문을 소중히 여기게 되었습니다. 무엇보다 인내심을 가지고 기다리는 태도가 중요하다는 것을 몸으로 익혔습니다.",
+          "j2_q5_fit": 4,
+          "j2_q6": "제목: 「아직 끝나지 않은 수업」. 교사로서의 삶은 매 학기 끝나도 완결되지 않습니다. 학생도, 저 자신도 여전히 배우는 중이며, 교실 밖에서도 수업은 계속됩니다. 이 제목에는 완성을 향해 달려가기보다 과정 자체를 살아가는 교사의 자세를 담았습니다.",
+          "j2_q6_fit": 3,
+          "j2_meaning": 4,
+          "j2_burden": 2,
+          "j2_timing": 3,
+          "j2_hard": [
+            "j2_q5",
+            "j2_q6"
+          ],
+          "j2_hard_reason": "too_abstract",
+          "j2_revise": "j2_q3(전환점이 된 경험)의 경우, 5년 차 이하 교사에게는 '전환점'이라는 표현이 부담스러울 수 있습니다. '지금까지 교직 생활에서 가장 오래 기억에 남는 하루나 순간은 무엇인가요?'처럼 구체적이고 작은 단위의 경험을 묻는 방식으로 바꾸면 답하기 훨씬 수월할 것입니다.",
+          "j2_add": "교사로서 번아웃을 경험한 이후 어떻게 다시 의미를 찾았는지, 그 회복의 과정에 대해 이야기 나누고 싶습니다. 또한 가르치는 일과 개인 삶의 균형을 어떻게 유지하는지도 함께 탐색하고 싶은 주제입니다."
+        }
+      }
+    ]
+  },
+  "lens": {
+    "kind": "survey",
+    "primarySummary": "Question j2_add: I find myself wishing this journey had addressed the tension between institutional obligation and genuine pedagogical vocation. Much of my inner life as a teacher has been shaped by the friction between what I am required to do and what I believe education truly demands. The questions here tend to assume a relatively autonomous teacher; I would welcome space to examine how one preserves intellectual and moral integrity within systems that do not always honour it. 10% · I would want to discuss what it means to transition out of active coaching while still feeling a strong sense of responsibility toward the sport and toward former students. The question of how a retired coach maintains relevance and continues to contribute to a community is something this journey did not address. 10% · Now that I am retired, the question I find myself sitting with is what it means to have finished. Not failed, not quit — finished. There is something I would have liked this journey to address: how do you make sense of a teaching career in retrospect? How do you know if the work mattered? I carried high standards and deep investment for decades, and yet I rarely got to see the long arc of what students did with what I gave them. I would have welcomed a question about how to find peace with that uncertainty. 10% · 교사로서 번아웃을 경험한 이후 어떻게 다시 의미를 찾았는지, 그 회복의 과정에 대해 이야기 나누고 싶습니다. 또한 가르치는 일과 개인 삶의 균형을 어떻게 유지하는지도 함께 탐색하고 싶은 주제입니다. 10%",
+    "distributions": [
+      {
+        "key": "j2_add",
+        "label": "Question j2_add",
+        "counts": {
+          "I find myself wishing this journey had addressed the tension between institutional obligation and genuine pedagogical vocation. Much of my inner life as a teacher has been shaped by the friction between what I am required to do and what I believe education truly demands. The questions here tend to assume a relatively autonomous teacher; I would welcome space to examine how one preserves intellectual and moral integrity within systems that do not always honour it.": 1,
+          "I would want to discuss what it means to transition out of active coaching while still feeling a strong sense of responsibility toward the sport and toward former students. The question of how a retired coach maintains relevance and continues to contribute to a community is something this journey did not address.": 1,
+          "Now that I am retired, the question I find myself sitting with is what it means to have finished. Not failed, not quit — finished. There is something I would have liked this journey to address: how do you make sense of a teaching career in retrospect? How do you know if the work mattered? I carried high standards and deep investment for decades, and yet I rarely got to see the long arc of what students did with what I gave them. I would have welcomed a question about how to find peace with that uncertainty.": 1,
+          "교사로서 번아웃을 경험한 이후 어떻게 다시 의미를 찾았는지, 그 회복의 과정에 대해 이야기 나누고 싶습니다. 또한 가르치는 일과 개인 삶의 균형을 어떻게 유지하는지도 함께 탐색하고 싶은 주제입니다.": 1,
+          "교직과 개인 삶의 경계가 무너질 때 어떻게 버티는가에 대해 더 이야기하고 싶어요. 저는 상실을 겪으면서 교사로 있었는데, 그 시기에 제가 어떻게 교실을 유지했는지, 그게 옳은 방식이었는지 아직도 모르겠어요. 그 고민을 나눌 수 있는 질문이 이 여정 안에 있었으면 좋겠어요.": 1,
+          "실수했을 때 어떻게 회복하는가에 대해 이야기하고 싶어요. 초임 교사는 실수가 많은데, 그걸 어떻게 받아들이고 다음 수업으로 넘어가는지가 저한테는 지금 가장 현실적인 고민이에요.": 1,
+          "은퇴 후에도 가르치는 일을 계속해야 하는가에 대한 고민이 있습니다. 교직을 떠난 이후에도 교사로서의 정체성이 남아 있는지, 그것이 짐인지 자산인지 이 여정에서 다루어졌으면 했습니다.": 1,
+          "저는 요즘 '교사로서의 나'와 '개인으로서의 나' 사이의 경계를 어떻게 설정해야 하는가에 대한 고민이 많습니다. 상실을 경험한 이후 그 두 정체성이 자꾸 뒤섞이는 느낌이 들고, 수업 중에 감정이 올라올 때 어떻게 해야 하는지 아직 잘 모르겠습니다 😔 또한 교직 경력이 짧은 상태에서 이미 '나는 어떤 교사인가'를 정의해야 한다는 압박감이 때때로 느껴지는데, 그 압박 자체가 성장에 도움이 되는 것인지 아니면 오히려 방해가 되는 것인지도 이 여정에서 함께 다루어 주면 좋겠다는 생각이 들었습니다.": 1,
+          "저는 이 여정에서 '교사로서의 노화(aging as an educator)'에 대한 이야기를 나누고 싶습니다. 20년 이상 가르치면서 저는 학생들과의 세대 간 거리가 점점 넓어지는 것을 느낍니다. 제가 형성기를 보낸 1980년대의 감각과, 지금 Z세대·알파세대 학생들의 감각 사이의 간극을 어떻게 교육적 자산으로 전환할 것인가—이것이 제가 현재 가장 진지하게 고민하는 주제입니다. 경험과 지혜는 쌓였지만, 동시에 '나는 여전히 이 시대의 학생들에게 유의미한 교사인가'라는 질문을 스스로에게 계속 던지고 있습니다.": 1,
+          "초임 교사로서 '잘 가르치고 있는가'에 대한 불안감을 어떻게 다루어야 하는지가 가장 큰 고민입니다. 성취 지향적인 성격 때문에 스스로에게 높은 기준을 세우지만, 교직 초기에는 그 기준을 충족하고 있는지 확인할 방법이 마땅하지 않습니다. 이 여정에서 '초임 교사가 느끼는 불안과 자기 효능감'에 관한 질문도 다루어 주었으면 합니다.": 1
+        }
+      },
+      {
+        "key": "j2_burden",
+        "label": "Question j2_burden",
+        "counts": {
+          "2": 5,
+          "3": 5
+        }
+      },
+      {
+        "key": "j2_hard",
+        "label": "Question j2_hard",
+        "counts": {
+          "['j2_q5', 'j2_q6']": 4,
+          "['j2_q1', 'j2_q6']": 3,
+          "['j2_q1', 'j2_q3']": 1,
+          "['j2_q1']": 1,
+          "['j2_q6']": 1
+        }
+      },
+      {
+        "key": "j2_hard_reason",
+        "label": "Question j2_hard_reason",
+        "counts": {
+          "too_abstract": 6,
+          "lack_experience": 2,
+          "premise_mismatch": 2
+        }
+      },
+      {
+        "key": "j2_meaning",
+        "label": "Question j2_meaning",
+        "counts": {
+          "4": 7,
+          "3": 2,
+          "5": 1
+        }
+      },
+      {
+        "key": "j2_q1",
+        "label": "Question j2_q1",
+        "counts": {
+          "I believe my students will remember, above all, the seriousness with which I listened to them. Not merely to their words, but to what lay beneath — their uncertainties, their half-formed questions, their silences. I hope they will recall that I treated literature and language not as instruments of examination but as living things, capable of bearing the weight of a human life. Perhaps they will remember that I never pretended certainty where none existed, and that I asked them to think rather than to agree.": 1,
+          "I think my students would remember my insistence on discipline and high standards, but also my genuine enthusiasm for the subject matter. I always believed that physical education and engineering principles could teach young people how to push through difficulty and discover what they're truly capable of. If I had to guess, they'd say I was demanding but fair — someone who never let them quit on themselves. I also think they'd remember that I genuinely cared whether they understood, not just whether they passed.": 1,
+          "My students will likely remember my insistence on discipline and precision. In cricket coaching, I never allowed shortcuts. They will remember that I held them to high standards consistently, and that I expected them to hold themselves accountable. I believe they will also remember that I valued team performance over individual glory.": 1,
+          "아마 아이들은 내가 항상 솔직했다는 것을 기억할 것입니다. 틀린 것을 틀렸다고 말하고, 모르는 것은 모른다고 인정했습니다. 그리고 수업 중에 실제 현장 경험에서 나온 이야기를 많이 했기 때문에, 교과서 밖의 이야기를 해주는 교사로 기억될 것 같습니다.": 1,
+          "아이들은 아마 내가 절대 대충 넘어가지 않았다는 걸 기억할 거예요. 틀린 건 틀렸다고, 모르는 건 같이 찾아보자고 했던 그 태도요. 그리고 수업 중에 갑자기 전혀 다른 나라 이야기를 꺼내던 것도요. 제가 여러 나라에서 살아봤으니까 그 경험들이 자연스럽게 흘러나왔거든요. 아이들이 그걸 좋아했는지 싫어했는지는 모르겠지만, 적어도 잊지는 못할 거라고 생각해요.": 1,
+          "아이들은 아마 내가 항상 솔직했던 것을 기억할 것 같아요. 모르는 건 모른다고 했고, 틀리면 같이 고쳐나갔으니까요. 그리고 수업 중에 갑자기 엉뚱한 비유를 들던 것도요.": 1,
+          "아이들은 아마도 내가 늘 솔직했다는 점을 기억할 것입니다. 모르는 것은 모른다고 말했고, 틀렸을 때는 인정했습니다. 또한 수업 중에도 웃음을 잃지 않으려 했던 태도, 그리고 학생 한 명 한 명의 이름을 끝까지 기억하려 했던 노력도 기억해 주기를 바랍니다.": 1,
+          "아이들은 아마도 제가 논리적인 설명을 매우 중요시했던 모습을 기억할 것 같습니다 😊 저는 언제나 '왜 그런가'를 함께 생각하도록 유도하는 편이었고, 답을 그냥 주기보다는 과정을 함께 걸어가려 했습니다. 물론 때로는 그 과정이 너무 길어서 아이들이 지쳐하기도 했겠지만요 😅 그리고 아마 제가 감정을 잘 드러내지 않으면서도 학생 한 명 한 명의 상황에 조용히 귀를 기울였던 태도도 기억에 남지 않을까 생각합니다. 말보다 행동으로 관심을 표현하는 편이었으니까요.": 1,
+          "아직 교사로서의 경력이 매우 짧지만, 제가 가르친 학생들이 저를 기억한다면 아마도 '끝까지 포기하지 않도록 격려해 준 선생님'으로 기억해 주었으면 합니다. 저는 스포츠 현장에서 가르치면서 항상 학생들이 자신의 한계를 스스로 설정하지 않도록 독려하려 노력했습니다. 규율과 열정을 동시에 보여주는 교사로 기억되고 싶습니다.": 1,
+          "제 학생들은 아마도 제가 질문을 두려워하지 않도록 격려했던 태도를 기억할 것이라고 생각합니다. 저는 항상 '틀린 질문은 없다'는 원칙을 강조했고, 학생이 스스로 사고의 경계를 넓혀가는 순간을 함께 기뻐했습니다. 또한 음악과 기술, 인문학을 넘나드는 학제적 접근 방식—강의실에서 바흐의 대위법을 알고리즘 설계와 연결 짓던 순간들—이 학생들에게 인상 깊게 남아 있을 것이라 믿습니다. 그리고 학생 한 명 한 명의 이름과 관심사를 기억하고, 그들의 성장에 진심으로 관심을 가졌던 모습도 기억해 주기를 바랍니다.": 1
+        }
+      },
+      {
+        "key": "j2_q1_fit",
+        "label": "Question j2_q1_fit",
+        "counts": {
+          "3": 4,
+          "4": 3,
+          "2": 2,
+          "5": 1
+        }
+      },
+      {
+        "key": "j2_q2",
+        "label": "Question j2_q2",
+        "counts": {
+          "Several experiences shaped me as a teacher. Early in my career, a senior colleague — a veteran civil engineering professor — modeled what it looked like to hold students to rigorous standards while remaining deeply invested in their growth. A particular cohort of students I coached on an intramural football team also influenced me enormously; watching them apply teamwork principles in the classroom changed how I thought about collaborative learning. And a period when the university restructured its STEM curriculum pushed me to rethink how I designed courses from the ground up.": 1,
+          "Several forces have shaped me profoundly as a teacher. The death of my father compelled me to reckon with impermanence in ways that altered how I speak about literature and meaning in the classroom. My years living in Germany and Italy exposed me to pedagogical traditions quite different from those I had known, and I found myself borrowing and questioning in equal measure. A small community of lay theologians I encountered during my spiritual conversion also left a deep mark — they taught me that genuine inquiry requires humility, and that the teacher who ceases to be a learner has already failed.": 1,
+          "The national-level coaching community I joined mid-career had the greatest influence on me. Exposure to coaches from South Africa and Bangladesh broadened my understanding of how different cultures approach athletic discipline and team cohesion. One senior coach in particular challenged me to think beyond technique and consider the mental conditioning of young athletes.": 1,
+          "교사 초기에 함께 일했던 선배 교사 한 분이 가장 큰 영향을 주었습니다. 그분은 교과 지식보다 학생과의 관계를 먼저 생각하는 분이었습니다. 또한 NGO 활동을 통해 만난 농촌 지역 학부모 공동체도 제가 교육의 사회적 맥락을 이해하는 데 큰 역할을 했습니다.": 1,
+          "교사가 된 이후 가장 큰 영향을 미친 것은 제가 직접 운동선수로 활동하며 만난 코치들과 팀 동료들입니다. 브라질에서 축구를 하면서 겪었던 훈련 문화, 스페인에서 생활하며 접한 다른 교육 방식, 그리고 미국에서 경험한 스포츠 과학 기반의 코칭 접근법이 저에게 큰 자극이 되었습니다. 또한 초보 교사로서 함께 일하는 선배 동료들의 조언이 실질적인 도움이 되고 있습니다.": 1,
+          "교사가 된 이후 저에게 가장 큰 영향을 준 것은 세 가지입니다. 첫째, 제가 직접 창업한 에듀테크 스타트업 경험입니다. 교육 현장과 산업 현장 사이의 간극을 몸소 체험하면서, 교실 안의 이론이 얼마나 빠르게 현실과 괴리될 수 있는지 깨달았습니다. 둘째, 한국과 미국 양쪽 교육 시스템을 오가며 만난 다양한 학습자 공동체입니다. 문화적 맥락이 학습 방식에 얼마나 깊이 영향을 미치는지 실감했습니다. 셋째, 오랫동안 함께한 자원봉사 활동에서 만난 비전통적 학습자들입니다. 그들은 제게 '교육의 목적'에 대해 근본적으로 다시 생각하게 만들었습니다.": 1,
+          "교사가 된 지 얼마 안 됐지만, 건강 문제로 한동안 쉬었던 시간이 저한테 많은 영향을 줬어요. 그때 아이들 앞에 서는 것이 얼마나 소중한지 새삼 느꼈고, 같은 시기에 만난 선배 교사 한 분도 큰 힘이 됐어요.": 1,
+          "교사가 된 초기에 가장 크게 영향을 준 건 제가 경험했던 상실이에요. 가까운 사람을 잃고 나서 교실에 들어섰을 때, 아이들이 얼마나 살아있는 존재인지가 갑자기 선명하게 보였어요. 그 전까지는 커리큘럼을 어떻게 전달할지만 생각했는데, 그 이후로는 이 아이 앞에 내가 지금 어떤 사람으로 서 있는가를 먼저 생각하게 됐어요. 또 제가 속했던 지역 공동체 활동도 영향이 컸어요. 교실 밖에서 사람들을 조직하고 목소리를 모으는 경험이 교실 안에서 아이들의 말을 듣는 방식을 바꿔놨거든요.": 1,
+          "교사가 된 초기에 가장 큰 영향을 준 것은 제가 직접 경험한 상실이었습니다. 소중한 사람을 잃은 이후 저는 학생들과의 관계를 전혀 다른 시선으로 바라보게 되었습니다 😔 또한 교육 현장에서 만난 선배 교사 한 분이 계셨는데, 그분은 학생의 실수를 꾸짖기보다 그 실수 안에 담긴 의도를 먼저 물어보는 분이셨습니다. 그 모습이 제게 깊은 인상을 남겼습니다. 그리고 제가 속했던 소규모 교사 학습 공동체도 빼놓을 수 없는데, 그 안에서 서로의 수업을 솔직하게 비평하고 격려하는 문화가 저를 많이 성장시켰습니다.": 1,
+          "교사로 일하면서 가장 큰 영향을 받은 것은 건강 위기였습니다. 만성 질환 진단을 받은 이후 수업 방식과 학생을 대하는 방식이 달라졌습니다. 또한 다양한 산업 현장에서 쌓은 경험이 교실 안으로 들어오면서 가르치는 내용의 깊이가 달라졌습니다. 지역 공동체에서 공직 활동을 한 것도 학생들에게 시민으로서의 책임감을 이야기할 때 실질적인 근거가 되었습니다.": 1
+        }
+      },
+      {
+        "key": "j2_q2_fit",
+        "label": "Question j2_q2_fit",
+        "counts": {
+          "4": 6,
+          "3": 3,
+          "5": 1
+        }
+      },
+      {
+        "key": "j2_q3",
+        "label": "Question j2_q3",
+        "counts": {
+          "The death of my father was the single greatest turning point. I was in the midst of a particularly demanding period of teaching when it occurred, and I found myself unable to maintain the professional distance I had previously considered a virtue. Grief entered the classroom with me, uninvited, and I had to decide whether to suppress it or to allow it to inform my teaching honestly. I chose the latter. That choice transformed how I approach the relationship between personal experience and intellectual work — I stopped treating them as separate territories.": 1,
+          "The most pivotal experience was working alongside that senior colleague, Dr. Harmon, who mentored me in my early years. He had a way of conducting office hours that I had never seen before — he refused to give answers directly, instead asking questions until the student arrived at the solution themselves. At first I thought it was unnecessarily difficult. But when I tried it myself, I saw students retain material in a way that lectures alone never produced. That shift in pedagogy — from telling to guiding — fundamentally changed my teaching identity.": 1,
+          "The most significant turning point was when a student I had trained for two years suffered a serious injury just before a national selection trial. Managing that situation — supporting the student, reassessing training methods, and communicating with the team — forced me to rethink what responsible coaching means. It shifted my focus from performance outcomes to athlete welfare as a foundation for sustainable performance.": 1,
+          "가장 큰 전환점은 역시 개인적인 상실의 경험이었습니다. 가까운 사람을 잃고 나서 저는 한동안 교단에 서는 것 자체가 무의미하게 느껴졌습니다. 그런데 어느 날 한 학생이 수업 후에 남아서 '선생님, 요즘 많이 힘들어 보여요'라고 조용히 말을 건넸습니다. 그 말이 저를 흔들었습니다 😶 제가 학생을 돌본다고 생각했는데, 사실은 학생도 저를 돌보고 있었던 것입니다. 그 순간부터 저는 교사와 학생의 관계를 일방적인 것이 아니라 상호적인 것으로 이해하게 되었고, 그것이 이후 제 수업 방식과 태도 전반을 바꾸는 계기가 되었습니다.": 1,
+          "가장 큰 전환점은 제가 교수 초기에 담당했던 한 학생과의 경험이었습니다. 매우 뛰어난 능력을 가졌지만 극심한 완벽주의로 인해 스스로 무너지고 있던 학생이었습니다. 저는 그 학생에게 기술적 피드백만을 제공하고 있었고, 정작 그가 필요로 했던 것—자신의 실패를 학습의 일부로 받아들이는 관점—을 제공하지 못했습니다. 그 학생이 결국 학업을 중단했을 때, 저는 교사로서 '성과 중심의 가르침'이 얼마나 불완전한지 뼈저리게 깨달았습니다. 그 이후 저는 커리큘럼 설계 방식과 학생 상담 방식을 전면적으로 재검토하기 시작했습니다.": 1,
+          "가장 큰 전환점은 제가 운영하던 소규모 교육 사업이 실패했던 경험입니다. 그 과정에서 학생들에게 '결과보다 과정'을 강조하면서 정작 저 자신은 결과에만 집착했다는 사실을 깨달았습니다. 그 실패 이후 교사로서의 태도가 근본적으로 바뀌었습니다.": 1,
+          "건강 문제로 교단을 잠시 떠났던 경험이 가장 큰 전환점이었어요. 아프고 나서 돌아왔을 때, 교실이 다르게 보였어요. 아이들 한 명 한 명이 더 선명하게 보이기 시작했달까요.": 1,
+          "교직 중반에 겪은 큰 사고에 가까운 경험이 전환점이었습니다. 그 일 이후 시간과 에너지를 어디에 쓸 것인지 다시 생각하게 되었고, 학생 한 명 한 명에게 더 집중하게 되었습니다. 이전에는 커리큘럼을 완수하는 것이 목표였다면, 그 이후에는 학생이 무엇을 이해하고 나가는가가 더 중요해졌습니다.": 1,
+          "스페인에서 생활하던 시기에 현지 스포츠 아카데미에서 보조 코치 역할을 처음 맡게 된 경험이 가장 큰 전환점이었습니다. 언어도 완전히 익숙하지 않은 환경에서 다양한 배경을 가진 청소년들을 지도해야 했는데, 그 과정에서 '가르친다는 것'이 단순히 기술을 전달하는 것이 아니라 신뢰를 쌓는 과정임을 처음으로 깨달았습니다. 그 경험이 저를 교사의 길로 이끈 결정적인 계기가 되었습니다.": 1,
+          "전환점은 제가 겪은 두 번째 큰 상실이었어요. 첫 번째 상실은 저를 흔들었지만, 두 번째는 저를 완전히 다시 세웠어요. 그 시기에 저는 교직을 그만둘까 진지하게 고민했어요. 그런데 그때 제 수업을 듣던 한 학생이 짧은 쪽지를 줬어요. 내용은 별것 아니었는데, 그 쪽지가 저한테는 엄청 무거웠어요. 내가 여기 있어야 하는 이유를 그 아이가 모르면서 알려준 거잖아요. 그 이후로 저는 교사라는 역할을 생존의 방식이 아니라 선택의 방식으로 보게 됐어요.": 1
+        }
+      },
+      {
+        "key": "j2_q3_fit",
+        "label": "Question j2_q3_fit",
+        "counts": {
+          "4": 6,
+          "3": 2,
+          "5": 2
+        }
+      },
+      {
+        "key": "j2_q4",
+        "label": "Question j2_q4",
+        "counts": {
+          "From Dr. Harmon, I learned that the teacher's role is not to be the source of all answers but to be the architect of the conditions in which students discover answers themselves. I became much more skilled at designing problems with just the right level of challenge — hard enough to require real effort, achievable enough not to break confidence. In practice, this showed up in how I structured exams, labs, and even informal class discussions. I became known for asking 'What do you think?' before offering any guidance.": 1,
+          "From that experience of loss I learned that vulnerability, when held with discipline, is not a weakness in a teacher but a form of integrity. I became capable of sitting with students in their own moments of confusion or sorrow without rushing toward resolution. In practice, this appeared as a willingness to pause — to allow a poem or a passage to breathe rather than immediately explaining it away. Students began to bring me their real questions, not merely the ones they believed I wished to hear.": 1,
+          "I learned that discipline without care is insufficient. I became more attentive to individual physical and psychological readiness. As a coach, this showed in how I structured training loads and in how I communicated with students individually rather than only addressing the team collectively. I also became more systematic about injury prevention protocols.": 1,
+          "그 경험에서 배운 건 존재 자체가 가르친다는 거예요. 제가 무너진 상태에서도 교실에 나타났을 때, 아이들은 그걸 봤어요. 말로 하지 않아도요. 그게 오히려 더 강한 메시지였던 것 같아요. 교사로서 드러난 모습은 아마 흔들려도 자리를 지키는 사람이었을 거예요. 그리고 그 이후로 저는 아이들이 힘든 내색을 할 때 예전보다 훨씬 빠르게 알아채게 됐어요. 그게 제가 할 수 있게 된 것 중 하나예요.": 1,
+          "그 경험에서 배운 것은 완벽한 수업보다 진실된 수업이 더 오래 남는다는 것입니다. 내가 할 수 있게 된 것은 실패나 불확실성을 학생 앞에서 인정하는 것입니다. 교사로서는 덜 권위적이지만 더 신뢰받는 모습으로 드러났습니다. 학생들이 질문을 두려워하지 않는 분위기가 생겼습니다.": 1,
+          "그 경험으로부터 저는 '가르침은 지식의 전달이 아니라 관계의 구축'이라는 것을 배웠습니다. 구체적으로는 두 가지 능력이 생겼습니다. 하나는 학생의 학업적 어려움 이면에 있는 심리적·정서적 맥락을 읽는 능력이고, 다른 하나는 실패를 교육적 자원으로 재구성하는 커리큘럼 설계 역량입니다. 교사로서 이는 수업 중 의도적으로 '불완전한 해답'을 제시하고, 학생들이 그 불완전함을 함께 수정해가는 과정을 설계하는 방식으로 드러났습니다. 또한 오피스아워를 단순한 질의응답 시간이 아니라 학생의 사고 과정을 탐색하는 시간으로 운영하기 시작했습니다.": 1,
+          "그 경험으로부터 저는 '취약함을 인정하는 것이 약함이 아니다'라는 것을 배웠습니다. 이전에는 교사로서 항상 완전하고 안정된 모습을 보여야 한다고 생각했는데, 그 학생의 말 한마디가 그 생각을 뒤집었습니다. 이후 저는 수업 중에 모르는 것이 있으면 솔직하게 '나도 잘 모르겠다, 함께 찾아보자'고 말할 수 있게 되었습니다 😌 또한 학생의 감정 상태를 수업 내용보다 먼저 살피는 습관이 생겼고, 논리적 설명 이전에 먼저 연결되려는 태도를 갖게 되었습니다. 그것이 교사로서의 저를 훨씬 더 인간적으로 만들어 준 것 같습니다.": 1,
+          "그 경험을 통해 저는 학생 각각의 맥락을 이해하는 것이 얼마나 중요한지를 배웠습니다. 문화적 배경, 개인적 상황, 동기 수준이 모두 다른 학생들에게 같은 방식으로 접근하면 효과가 없다는 것을 몸소 느꼈습니다. 이후 저는 학생을 관찰하고 먼저 경청하는 태도를 갖추게 되었고, 지도 현장에서도 개별 피드백을 중시하는 교사의 모습으로 드러나고 있습니다.": 1,
+          "몸이 힘들 때 오히려 '왜 가르치는가'를 진지하게 생각하게 됐어요. 그 이후로 수업을 준비할 때 덜 형식적으로, 더 솔직하게 하려고 노력해요. 아이들이 질문할 때 예전보다 훨씬 반갑게 받아들이는 것 같아요.": 1,
+          "실패를 통해 겸손함을 배웠습니다. 이후 수업에서 정답을 강요하기보다 학생이 스스로 생각하는 시간을 더 많이 허용하게 되었습니다. 또한 학생의 실수를 질책하지 않고, 그 실수 안에서 배움의 실마리를 함께 찾는 방식으로 수업 방식이 변화했습니다.": 1
+        }
+      },
+      {
+        "key": "j2_q4_fit",
+        "label": "Question j2_q4_fit",
+        "counts": {
+          "4": 5,
+          "3": 4,
+          "5": 1
+        }
+      },
+      {
+        "key": "j2_q5",
+        "label": "Question j2_q5",
+        "counts": {
+          "I came to hold a deep conviction that every student is capable of more than they believe — and that it is the teacher's job to hold that belief on their behalf until they can hold it themselves. I also developed a kind of patient persistence: I stopped expecting transformation to happen quickly and started trusting the slow accumulation of effort. In sports terms, I think of it as coaching for the long season, not the single game. That mindset made me more steady, less reactive, and more genuinely optimistic about students who struggled.": 1,
+          "I developed a mindset that preparation and process matter more than results alone. I became more patient in allowing athletes to develop at their own pace within a structured framework. At the same time, I maintained high expectations. The balance between firmness and attentiveness became central to how I approached every session.": 1,
+          "I have come to hold what I might call a posture of attentive patience — a conviction that understanding cannot be forced, only cultivated. I approach each student and each text with the assumption that something essential remains to be discovered, regardless of how familiar the territory appears. Alongside this, my faith has instilled in me a sense of responsibility that extends beyond academic outcomes: I believe I am, in some measure, accountable for the moral and imaginative formation of those I teach. This is a weight I carry seriously, though not, I hope, oppressively.": 1,
+          "교사는 완성된 존재가 아니라 학생과 함께 계속 배워가는 존재라는 마음가짐을 갖게 되었습니다. 권위보다 신뢰를, 지식 전달보다 질문을 소중히 여기게 되었습니다. 무엇보다 인내심을 가지고 기다리는 태도가 중요하다는 것을 몸으로 익혔습니다.": 1,
+          "기다리는 태도를 갖게 되었습니다. 학생이 이해하는 데 걸리는 시간이 각자 다르다는 것을 받아들이게 되었고, 빠른 결과보다 과정을 보려는 마음가짐이 생겼습니다. 또한 내가 먼저 배우는 사람이어야 한다는 생각이 강해졌습니다.": 1,
+          "서두르지 않으려는 마음이 생겼어요. 아이가 이해하는 속도를 기다리는 것, 그게 교사로서 제가 가장 지키고 싶은 태도예요. 완벽한 수업보다 진심 있는 수업이 낫다고 생각하게 됐고요.": 1,
+          "저는 '겸손한 경쟁심'을 가진 교사가 되어야 한다는 마음가짐을 갖게 되었습니다. 학생들이 최선을 다하도록 자극하되, 그 기준이 타인과의 비교가 아니라 어제의 자신과의 비교여야 한다는 것을 믿게 되었습니다. 또한 교사 스스로도 끊임없이 배우는 자세를 유지해야 한다는 것을 강하게 느끼고 있습니다. 학생 앞에서 모르는 것을 인정하고 함께 탐구하는 것이 오히려 더 큰 가르침이 될 수 있다고 생각합니다.": 1,
+          "저는 '겸손한 전문가'가 되어야 한다는 마음가짐을 갖게 되었습니다. 20년 이상의 경력과 다양한 학문적 성취에도 불구하고, 학생 앞에 설 때마다 저는 여전히 배우는 사람이라는 태도를 유지하려 합니다. 또한 '인내는 교육적 덕목'이라는 믿음이 깊어졌습니다—빠른 이해보다 깊은 이해를, 효율적인 수업보다 의미 있는 수업을 우선시하게 되었습니다. 그리고 학제적 사고를 두려워하지 않는 태도, 즉 음악 이론으로 컴퓨터 과학을 설명하고 인지과학으로 교육학을 재해석하는 것이 오히려 학습의 핵심이라는 확신을 갖게 되었습니다.": 1,
+          "저는 '기다리는 교사'가 되려는 마음가짐을 갖게 되었습니다. 빠른 답을 요구하기보다, 학생이 스스로 생각에 도달할 때까지 조용히 옆에 있어 주는 것이 교사의 역할이라는 것을 깨달았습니다. 물론 저 자신은 인내심이 그리 강한 편이 아니라서 😅 이것이 쉬운 일은 아닙니다. 그러나 적어도 그것이 옳은 방향이라는 것을 알고 있기에, 스스로를 계속 돌아보게 됩니다. 또한 어떤 상황에서도 학생의 인격을 먼저 존중하겠다는 태도가 생겼습니다. 성적이나 결과보다 그 사람 자체를 보려는 마음이라고 할 수 있겠습니다.": 1,
+          "지금 제가 가진 태도는 완벽하지 않아도 정직하게 있자는 거예요. 모르면 모른다고 하고, 틀리면 틀렸다고 하고, 힘들면 힘들다고 할 수 있는 교사요. 그게 아이들한테 더 진짜로 보인다고 믿어요. 그리고 한 아이도 그냥 지나치지 않겠다는 마음가짐도 생겼어요. 제가 지나쳤다면 어땠을까 하는 생각이 아직도 가끔 드니까요.": 1
+        }
+      },
+      {
+        "key": "j2_q5_fit",
+        "label": "Question j2_q5_fit",
+        "counts": {
+          "4": 6,
+          "3": 4
+        }
+      },
+      {
+        "key": "j2_q6",
+        "label": "Question j2_q6",
+        "counts": {
+          "Title: 'Load-Bearing: What I Built and What Held.' In structural engineering, a load-bearing element is the one that carries the weight of everything above it without being seen. I think that's what good teaching is — invisible infrastructure. The title reflects both my professional background and my belief that the most important work I did as a teacher was rarely dramatic. It was the steady, unglamorous act of being present, being consistent, and building the kind of trust that allows students to take risks. The 'what held' part acknowledges that not everything I tried worked — but the relationships did.": 1,
+          "Title: 'The Field Does Not Lie.' In cricket, the field reveals everything — preparation, character, teamwork, and honesty. This title reflects my belief that coaching is ultimately about creating conditions where truth is visible: the truth of effort, of readiness, and of collective commitment. My career as a coach has been an attempt to build that kind of honest, accountable environment for every student I worked with.": 1,
+          "Title: 'The Margin and the Text.' In the study of literature, the margin is where the reader writes back — where personal response meets the authored word. My teaching life has been lived in that margin: between languages, between cultures, between grief and gratitude, between faith and doubt. I have never been entirely at home in any single tradition, and I have come to regard that displacement not as a deficiency but as the very condition that has made me attentive. The title also suggests humility: the teacher is not the text itself, but the one who helps others learn to read it.": 1,
+          "제목: 「늦게 피는 것들에 대하여」. 나 자신도 늦게 여러 분야를 거쳐 교직에 왔고, 학생들도 저마다의 속도가 있다는 것을 배웠습니다. 빠른 것이 좋은 것이 아니라, 제대로 피는 것이 중요하다는 생각이 내 교직 경험 전체를 관통합니다.": 1,
+          "제목: 「아직 끝나지 않은 수업」. 교사로서의 삶은 매 학기 끝나도 완결되지 않습니다. 학생도, 저 자신도 여전히 배우는 중이며, 교실 밖에서도 수업은 계속됩니다. 이 제목에는 완성을 향해 달려가기보다 과정 자체를 살아가는 교사의 자세를 담았습니다.": 1,
+          "제목: 『경계 위에 서서: 연결을 가르친 20년의 기록』\n\n이 제목에는 두 가지 의미가 담겨 있습니다. 첫째, 저는 항상 학문적 경계, 문화적 경계, 언어적 경계 위에 서 있었습니다. 한국계 미국인으로서, 음악가이자 컴퓨터 과학자로서, 연구자이자 교육자로서—저의 정체성 자체가 경계에 위치해 있었고, 그 경계가 오히려 저의 가장 큰 교육적 자산이 되었습니다. 둘째, '연결을 가르쳤다'는 표현은 제가 추구한 교육의 본질을 담고 있습니다. 지식과 지식 사이의 연결, 학생과 세계 사이의 연결, 과거의 지혜와 미래의 가능성 사이의 연결—저는 그 연결의 순간을 만들어내는 것이 교사의 역할이라고 믿어왔습니다.": 1,
+          "제목: 『아직 첫 페이지』\n\n저는 교사로서의 여정이 이제 막 시작되었다고 느낍니다. 아직 쌓인 이야기가 많지 않지만, 그 첫 페이지를 어떻게 쓰느냐가 이후의 모든 장을 결정한다고 생각합니다. 이 제목에는 '나는 아직 성장 중이며, 그것이 부끄럽지 않다'는 의미와 함께 '학생들과 함께 이야기를 만들어 가는 중'이라는 설렘이 담겨 있습니다.": 1,
+          "제목은 '아직 1장'이에요. 교사로서의 이야기가 이제 막 시작됐고, 실수도 많고 배울 것도 많지만, 그게 부끄럽지 않다는 의미를 담고 싶었어요. 1장이라서 오히려 설레는 마음이요.": 1,
+          "제목은 「무너지면서 서 있었다」로 하고 싶어요. 교사로서 제 이야기는 완성된 사람이 아이들을 이끄는 이야기가 아니에요. 계속 흔들리면서도 매일 교실 문을 열었던 이야기예요. 그 역설이 제 교직의 핵심이라고 생각해요. 강해서가 아니라 그냥 거기 있었기 때문에 뭔가를 전달할 수 있었던 사람의 이야기요.": 1,
+          "제목은 「아직 다 읽지 못한 책」으로 하겠습니다 📖 저는 교사로서의 여정이 아직 한참 진행 중이라는 느낌을 항상 갖고 있습니다. 어떤 챕터는 아직 쓰이지 않았고, 어떤 페이지는 이미 지나쳤지만 다시 돌아가 읽고 싶습니다. 그리고 무엇보다 이 책은 제가 혼자 쓴 것이 아니라, 함께한 학생들과 동료들이 각자의 방식으로 한 줄씩 써 넣은 공동 저작물이라고 생각합니다. 완성되지 않았다는 것이 부족함이 아니라, 여전히 살아있다는 증거라고 생각하고 싶습니다 😊": 1
+        }
+      },
+      {
+        "key": "j2_q6_fit",
+        "label": "Question j2_q6_fit",
+        "counts": {
+          "3": 6,
+          "4": 3,
+          "2": 1
+        }
+      },
+      {
+        "key": "j2_revise",
+        "label": "Question j2_revise",
+        "counts": {
+          "For teachers with fewer than five years of experience, I would revise j2_q1 from asking what students will remember 'after time has passed' — which presupposes a long retrospective arc — to something more immediate: 'What do you hope a student feels when they leave your classroom today?' Similarly, j2_q3, which asks for a 'turning point,' might feel premature for early-career teachers. I would reframe it as: 'Has there been a moment — however small — that made you reconsider how you teach or why you teach? Describe it.' This lowers the threshold without sacrificing depth.": 1,
+          "For teachers with five or fewer years of experience, j2_q3 (전환점이 된 경험) may feel premature — they may not yet have experienced a clear turning point. I would revise it to: '지금까지 교사로서 가장 기억에 남는 순간이나 학생과의 경험은 무엇인가요? 그것이 나에게 어떤 의미였나요?' This keeps the reflective spirit but grounds it in accessible, recent experience rather than requiring a defined career-altering event.": 1,
+          "For teachers with five or fewer years of experience, j2_q6 (the book title question) may be premature. I would revise it to: 'If you were to write one chapter about your teaching so far, what would that chapter be about and why?' This grounds the reflection in a specific, manageable period rather than implying a complete career narrative.": 1,
+          "j2_q1 (학생들이 기억하는 교사의 모습): '시간이 지난 후'라는 전제가 초임 교사에게는 부담스럽습니다. '내가 학생들에게 어떤 교사로 기억되고 싶은가?'로 바꾸면, 현재의 희망과 방향성을 이야기할 수 있어 더 접근하기 쉬울 것 같습니다.\n\nj2_q3 (전환점이 된 경험): '전환점'이라는 표현이 큰 사건을 전제하는 것처럼 느껴집니다. '교사가 된 이후 가장 인상 깊었던 작은 순간이나 경험은 무엇인가요?'로 바꾸면 초임 교사도 부담 없이 답할 수 있을 것 같습니다.": 1,
+          "j2_q1 질문을 바꾼다면, '내가 가르친 아이들은 시간이 지난 후 나의 특징 중 어떤 것을 기억하게 될까요?'보다는 '지금 내 학생들이 나를 어떤 교사로 느끼고 있을 것 같나요? 나는 그들에게 어떻게 기억되고 싶나요?'로 바꾸면 좋겠습니다. 5년 차 이하 교사에게는 '이미 지나간 시간'이 아닌 '지금 이 순간'을 기준으로 성찰할 수 있는 질문이 더 접근하기 쉽고 현실적으로 느껴질 것 같습니다 😊 j2_q6도 마찬가지로, '지금까지의 경험을 제목으로 붙인다면'보다 '지금 이 시기의 나를 한 문장으로 표현한다면'처럼 현재 시제로 바꾸면 더 자연스러울 것 같습니다.": 1,
+          "j2_q1을 '지금 내 학생들이 나에 대해 어떻게 말할 것 같나요?'로 바꾸면 좋겠어요. '시간이 지난 후'라는 표현이 경력이 짧은 교사에게는 너무 멀게 느껴지거든요. 지금 당장의 관계에서 출발하면 답하기 훨씬 쉬울 것 같아요.": 1,
+          "j2_q1을 바꾸고 싶어요. '시간이 지난 후에 기억하게 될'이라는 표현은 경력이 짧은 교사에게 너무 먼 미래를 상상하게 해요. 대신 이렇게 바꾸면 어떨까요. '지금 내가 가르치는 아이들이 오늘 수업에서 나를 어떤 사람으로 느끼고 있을까요?' 그게 훨씬 지금 연차에서 실감 나는 질문이에요.": 1,
+          "j2_q3 (전환점이 된 경험) 질문을 다음과 같이 바꾸면 좋겠습니다. 현재 문구는 '전환점'이라는 단어가 경력이 짧은 교사에게는 아직 식별하기 어려운 개념일 수 있습니다. 대안: '교사가 된 이후 가장 기억에 남는 수업 장면이나 학생과의 대화를 떠올려 보세요. 그 순간이 당신에게 어떤 의미였나요?' 또한 j2_q6 (책 제목 짓기)은 경력 초기 교사에게 부담스러울 수 있으므로, '지금까지의 나의 교직 생활을 한 문장으로 표현한다면 어떤 문장이 될까요?'로 낮은 진입장벽의 형식으로 바꾸는 것을 제안합니다.": 1,
+          "j2_q3(전환점이 된 경험)의 경우, 5년 차 이하 교사에게는 '전환점'이라는 표현이 부담스러울 수 있습니다. '지금까지 교직 생활에서 가장 오래 기억에 남는 하루나 순간은 무엇인가요?'처럼 구체적이고 작은 단위의 경험을 묻는 방식으로 바꾸면 답하기 훨씬 수월할 것입니다.": 1,
+          "j2_q6의 '한 권의 책 제목'은 경력이 짧은 교사에게 너무 큰 단위의 정리를 요구합니다. 대신 '지금까지 가장 기억에 남는 수업 한 장면을 떠올려 보세요. 그 장면의 제목을 붙인다면?'으로 바꾸면 더 구체적이고 답하기 쉬울 것입니다.": 1
+        }
+      },
+      {
+        "key": "j2_timing",
+        "label": "Question j2_timing",
+        "counts": {
+          "3": 3,
+          "5": 3,
+          "2": 2,
+          "4": 2
+        }
+      }
+    ],
+    "metrics": [
+      {
+        "key": "answered_trials",
+        "label": "Trials with answers",
+        "value": 10,
+        "unit": null
+      }
+    ],
+    "source": "structured_output"
+  },
+  "groupBy": [
+    "years_experience"
+  ],
+  "groupedDistributions": {
+    "years_experience": {
+      "0-2": {
+        "j2_add": {
+          "실수했을 때 어떻게 회복하는가에 대해 이야기하고 싶어요. 초임 교사는 실수가 많은데, 그걸 어떻게 받아들이고 다음 수업으로 넘어가는지가 저한테는 지금 가장 현실적인 고민이에요.": 1,
+          "초임 교사로서 '잘 가르치고 있는가'에 대한 불안감을 어떻게 다루어야 하는지가 가장 큰 고민입니다. 성취 지향적인 성격 때문에 스스로에게 높은 기준을 세우지만, 교직 초기에는 그 기준을 충족하고 있는지 확인할 방법이 마땅하지 않습니다. 이 여정에서 '초임 교사가 느끼는 불안과 자기 효능감'에 관한 질문도 다루어 주었으면 합니다.": 1
+        },
+        "j2_burden": {
+          "3": 2
+        },
+        "j2_hard": {
+          "['j2_q1', 'j2_q3']": 1,
+          "['j2_q1', 'j2_q6']": 1
+        },
+        "j2_hard_reason": {
+          "lack_experience": 2
+        },
+        "j2_meaning": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q1": {
+          "아이들은 아마 내가 항상 솔직했던 것을 기억할 것 같아요. 모르는 건 모른다고 했고, 틀리면 같이 고쳐나갔으니까요. 그리고 수업 중에 갑자기 엉뚱한 비유를 들던 것도요.": 1,
+          "아직 교사로서의 경력이 매우 짧지만, 제가 가르친 학생들이 저를 기억한다면 아마도 '끝까지 포기하지 않도록 격려해 준 선생님'으로 기억해 주었으면 합니다. 저는 스포츠 현장에서 가르치면서 항상 학생들이 자신의 한계를 스스로 설정하지 않도록 독려하려 노력했습니다. 규율과 열정을 동시에 보여주는 교사로 기억되고 싶습니다.": 1
+        },
+        "j2_q1_fit": {
+          "2": 2
+        },
+        "j2_q2": {
+          "교사가 된 이후 가장 큰 영향을 미친 것은 제가 직접 운동선수로 활동하며 만난 코치들과 팀 동료들입니다. 브라질에서 축구를 하면서 겪었던 훈련 문화, 스페인에서 생활하며 접한 다른 교육 방식, 그리고 미국에서 경험한 스포츠 과학 기반의 코칭 접근법이 저에게 큰 자극이 되었습니다. 또한 초보 교사로서 함께 일하는 선배 동료들의 조언이 실질적인 도움이 되고 있습니다.": 1,
+          "교사가 된 지 얼마 안 됐지만, 건강 문제로 한동안 쉬었던 시간이 저한테 많은 영향을 줬어요. 그때 아이들 앞에 서는 것이 얼마나 소중한지 새삼 느꼈고, 같은 시기에 만난 선배 교사 한 분도 큰 힘이 됐어요.": 1
+        },
+        "j2_q2_fit": {
+          "3": 2
+        },
+        "j2_q3": {
+          "건강 문제로 교단을 잠시 떠났던 경험이 가장 큰 전환점이었어요. 아프고 나서 돌아왔을 때, 교실이 다르게 보였어요. 아이들 한 명 한 명이 더 선명하게 보이기 시작했달까요.": 1,
+          "스페인에서 생활하던 시기에 현지 스포츠 아카데미에서 보조 코치 역할을 처음 맡게 된 경험이 가장 큰 전환점이었습니다. 언어도 완전히 익숙하지 않은 환경에서 다양한 배경을 가진 청소년들을 지도해야 했는데, 그 과정에서 '가르친다는 것'이 단순히 기술을 전달하는 것이 아니라 신뢰를 쌓는 과정임을 처음으로 깨달았습니다. 그 경험이 저를 교사의 길로 이끈 결정적인 계기가 되었습니다.": 1
+        },
+        "j2_q3_fit": {
+          "3": 2
+        },
+        "j2_q4": {
+          "그 경험을 통해 저는 학생 각각의 맥락을 이해하는 것이 얼마나 중요한지를 배웠습니다. 문화적 배경, 개인적 상황, 동기 수준이 모두 다른 학생들에게 같은 방식으로 접근하면 효과가 없다는 것을 몸소 느꼈습니다. 이후 저는 학생을 관찰하고 먼저 경청하는 태도를 갖추게 되었고, 지도 현장에서도 개별 피드백을 중시하는 교사의 모습으로 드러나고 있습니다.": 1,
+          "몸이 힘들 때 오히려 '왜 가르치는가'를 진지하게 생각하게 됐어요. 그 이후로 수업을 준비할 때 덜 형식적으로, 더 솔직하게 하려고 노력해요. 아이들이 질문할 때 예전보다 훨씬 반갑게 받아들이는 것 같아요.": 1
+        },
+        "j2_q4_fit": {
+          "3": 2
+        },
+        "j2_q5": {
+          "서두르지 않으려는 마음이 생겼어요. 아이가 이해하는 속도를 기다리는 것, 그게 교사로서 제가 가장 지키고 싶은 태도예요. 완벽한 수업보다 진심 있는 수업이 낫다고 생각하게 됐고요.": 1,
+          "저는 '겸손한 경쟁심'을 가진 교사가 되어야 한다는 마음가짐을 갖게 되었습니다. 학생들이 최선을 다하도록 자극하되, 그 기준이 타인과의 비교가 아니라 어제의 자신과의 비교여야 한다는 것을 믿게 되었습니다. 또한 교사 스스로도 끊임없이 배우는 자세를 유지해야 한다는 것을 강하게 느끼고 있습니다. 학생 앞에서 모르는 것을 인정하고 함께 탐구하는 것이 오히려 더 큰 가르침이 될 수 있다고 생각합니다.": 1
+        },
+        "j2_q5_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q6": {
+          "제목: 『아직 첫 페이지』\n\n저는 교사로서의 여정이 이제 막 시작되었다고 느낍니다. 아직 쌓인 이야기가 많지 않지만, 그 첫 페이지를 어떻게 쓰느냐가 이후의 모든 장을 결정한다고 생각합니다. 이 제목에는 '나는 아직 성장 중이며, 그것이 부끄럽지 않다'는 의미와 함께 '학생들과 함께 이야기를 만들어 가는 중'이라는 설렘이 담겨 있습니다.": 1,
+          "제목은 '아직 1장'이에요. 교사로서의 이야기가 이제 막 시작됐고, 실수도 많고 배울 것도 많지만, 그게 부끄럽지 않다는 의미를 담고 싶었어요. 1장이라서 오히려 설레는 마음이요.": 1
+        },
+        "j2_q6_fit": {
+          "2": 1,
+          "4": 1
+        },
+        "j2_revise": {
+          "j2_q1 (학생들이 기억하는 교사의 모습): '시간이 지난 후'라는 전제가 초임 교사에게는 부담스럽습니다. '내가 학생들에게 어떤 교사로 기억되고 싶은가?'로 바꾸면, 현재의 희망과 방향성을 이야기할 수 있어 더 접근하기 쉬울 것 같습니다.\n\nj2_q3 (전환점이 된 경험): '전환점'이라는 표현이 큰 사건을 전제하는 것처럼 느껴집니다. '교사가 된 이후 가장 인상 깊었던 작은 순간이나 경험은 무엇인가요?'로 바꾸면 초임 교사도 부담 없이 답할 수 있을 것 같습니다.": 1,
+          "j2_q1을 '지금 내 학생들이 나에 대해 어떻게 말할 것 같나요?'로 바꾸면 좋겠어요. '시간이 지난 후'라는 표현이 경력이 짧은 교사에게는 너무 멀게 느껴지거든요. 지금 당장의 관계에서 출발하면 답하기 훨씬 쉬울 것 같아요.": 1
+        },
+        "j2_timing": {
+          "2": 2
+        }
+      },
+      "11-20": {
+        "j2_add": {
+          "Now that I am retired, the question I find myself sitting with is what it means to have finished. Not failed, not quit — finished. There is something I would have liked this journey to address: how do you make sense of a teaching career in retrospect? How do you know if the work mattered? I carried high standards and deep investment for decades, and yet I rarely got to see the long arc of what students did with what I gave them. I would have welcomed a question about how to find peace with that uncertainty.": 1,
+          "은퇴 후에도 가르치는 일을 계속해야 하는가에 대한 고민이 있습니다. 교직을 떠난 이후에도 교사로서의 정체성이 남아 있는지, 그것이 짐인지 자산인지 이 여정에서 다루어졌으면 했습니다.": 1
+        },
+        "j2_burden": {
+          "2": 2
+        },
+        "j2_hard": {
+          "['j2_q5', 'j2_q6']": 1,
+          "['j2_q6']": 1
+        },
+        "j2_hard_reason": {
+          "too_abstract": 2
+        },
+        "j2_meaning": {
+          "4": 2
+        },
+        "j2_q1": {
+          "I think my students would remember my insistence on discipline and high standards, but also my genuine enthusiasm for the subject matter. I always believed that physical education and engineering principles could teach young people how to push through difficulty and discover what they're truly capable of. If I had to guess, they'd say I was demanding but fair — someone who never let them quit on themselves. I also think they'd remember that I genuinely cared whether they understood, not just whether they passed.": 1,
+          "아마 아이들은 내가 항상 솔직했다는 것을 기억할 것입니다. 틀린 것을 틀렸다고 말하고, 모르는 것은 모른다고 인정했습니다. 그리고 수업 중에 실제 현장 경험에서 나온 이야기를 많이 했기 때문에, 교과서 밖의 이야기를 해주는 교사로 기억될 것 같습니다.": 1
+        },
+        "j2_q1_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q2": {
+          "Several experiences shaped me as a teacher. Early in my career, a senior colleague — a veteran civil engineering professor — modeled what it looked like to hold students to rigorous standards while remaining deeply invested in their growth. A particular cohort of students I coached on an intramural football team also influenced me enormously; watching them apply teamwork principles in the classroom changed how I thought about collaborative learning. And a period when the university restructured its STEM curriculum pushed me to rethink how I designed courses from the ground up.": 1,
+          "교사로 일하면서 가장 큰 영향을 받은 것은 건강 위기였습니다. 만성 질환 진단을 받은 이후 수업 방식과 학생을 대하는 방식이 달라졌습니다. 또한 다양한 산업 현장에서 쌓은 경험이 교실 안으로 들어오면서 가르치는 내용의 깊이가 달라졌습니다. 지역 공동체에서 공직 활동을 한 것도 학생들에게 시민으로서의 책임감을 이야기할 때 실질적인 근거가 되었습니다.": 1
+        },
+        "j2_q2_fit": {
+          "4": 2
+        },
+        "j2_q3": {
+          "The most pivotal experience was working alongside that senior colleague, Dr. Harmon, who mentored me in my early years. He had a way of conducting office hours that I had never seen before — he refused to give answers directly, instead asking questions until the student arrived at the solution themselves. At first I thought it was unnecessarily difficult. But when I tried it myself, I saw students retain material in a way that lectures alone never produced. That shift in pedagogy — from telling to guiding — fundamentally changed my teaching identity.": 1,
+          "교직 중반에 겪은 큰 사고에 가까운 경험이 전환점이었습니다. 그 일 이후 시간과 에너지를 어디에 쓸 것인지 다시 생각하게 되었고, 학생 한 명 한 명에게 더 집중하게 되었습니다. 이전에는 커리큘럼을 완수하는 것이 목표였다면, 그 이후에는 학생이 무엇을 이해하고 나가는가가 더 중요해졌습니다.": 1
+        },
+        "j2_q3_fit": {
+          "4": 2
+        },
+        "j2_q4": {
+          "From Dr. Harmon, I learned that the teacher's role is not to be the source of all answers but to be the architect of the conditions in which students discover answers themselves. I became much more skilled at designing problems with just the right level of challenge — hard enough to require real effort, achievable enough not to break confidence. In practice, this showed up in how I structured exams, labs, and even informal class discussions. I became known for asking 'What do you think?' before offering any guidance.": 1,
+          "그 경험에서 배운 것은 완벽한 수업보다 진실된 수업이 더 오래 남는다는 것입니다. 내가 할 수 있게 된 것은 실패나 불확실성을 학생 앞에서 인정하는 것입니다. 교사로서는 덜 권위적이지만 더 신뢰받는 모습으로 드러났습니다. 학생들이 질문을 두려워하지 않는 분위기가 생겼습니다.": 1
+        },
+        "j2_q4_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q5": {
+          "I came to hold a deep conviction that every student is capable of more than they believe — and that it is the teacher's job to hold that belief on their behalf until they can hold it themselves. I also developed a kind of patient persistence: I stopped expecting transformation to happen quickly and started trusting the slow accumulation of effort. In sports terms, I think of it as coaching for the long season, not the single game. That mindset made me more steady, less reactive, and more genuinely optimistic about students who struggled.": 1,
+          "기다리는 태도를 갖게 되었습니다. 학생이 이해하는 데 걸리는 시간이 각자 다르다는 것을 받아들이게 되었고, 빠른 결과보다 과정을 보려는 마음가짐이 생겼습니다. 또한 내가 먼저 배우는 사람이어야 한다는 생각이 강해졌습니다.": 1
+        },
+        "j2_q5_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q6": {
+          "Title: 'Load-Bearing: What I Built and What Held.' In structural engineering, a load-bearing element is the one that carries the weight of everything above it without being seen. I think that's what good teaching is — invisible infrastructure. The title reflects both my professional background and my belief that the most important work I did as a teacher was rarely dramatic. It was the steady, unglamorous act of being present, being consistent, and building the kind of trust that allows students to take risks. The 'what held' part acknowledges that not everything I tried worked — but the relationships did.": 1,
+          "제목: 「늦게 피는 것들에 대하여」. 나 자신도 늦게 여러 분야를 거쳐 교직에 왔고, 학생들도 저마다의 속도가 있다는 것을 배웠습니다. 빠른 것이 좋은 것이 아니라, 제대로 피는 것이 중요하다는 생각이 내 교직 경험 전체를 관통합니다.": 1
+        },
+        "j2_q6_fit": {
+          "3": 2
+        },
+        "j2_revise": {
+          "For teachers with five or fewer years of experience, j2_q3 (전환점이 된 경험) may feel premature — they may not yet have experienced a clear turning point. I would revise it to: '지금까지 교사로서 가장 기억에 남는 순간이나 학생과의 경험은 무엇인가요? 그것이 나에게 어떤 의미였나요?' This keeps the reflective spirit but grounds it in accessible, recent experience rather than requiring a defined career-altering event.": 1,
+          "j2_q6의 '한 권의 책 제목'은 경력이 짧은 교사에게 너무 큰 단위의 정리를 요구합니다. 대신 '지금까지 가장 기억에 남는 수업 한 장면을 떠올려 보세요. 그 장면의 제목을 붙인다면?'으로 바꾸면 더 구체적이고 답하기 쉬울 것입니다.": 1
+        },
+        "j2_timing": {
+          "4": 1,
+          "5": 1
+        }
+      },
+      "20+": {
+        "j2_add": {
+          "I find myself wishing this journey had addressed the tension between institutional obligation and genuine pedagogical vocation. Much of my inner life as a teacher has been shaped by the friction between what I am required to do and what I believe education truly demands. The questions here tend to assume a relatively autonomous teacher; I would welcome space to examine how one preserves intellectual and moral integrity within systems that do not always honour it.": 1,
+          "저는 이 여정에서 '교사로서의 노화(aging as an educator)'에 대한 이야기를 나누고 싶습니다. 20년 이상 가르치면서 저는 학생들과의 세대 간 거리가 점점 넓어지는 것을 느낍니다. 제가 형성기를 보낸 1980년대의 감각과, 지금 Z세대·알파세대 학생들의 감각 사이의 간극을 어떻게 교육적 자산으로 전환할 것인가—이것이 제가 현재 가장 진지하게 고민하는 주제입니다. 경험과 지혜는 쌓였지만, 동시에 '나는 여전히 이 시대의 학생들에게 유의미한 교사인가'라는 질문을 스스로에게 계속 던지고 있습니다.": 1
+        },
+        "j2_burden": {
+          "2": 1,
+          "3": 1
+        },
+        "j2_hard": {
+          "['j2_q1']": 1,
+          "['j2_q5', 'j2_q6']": 1
+        },
+        "j2_hard_reason": {
+          "too_abstract": 2
+        },
+        "j2_meaning": {
+          "4": 1,
+          "5": 1
+        },
+        "j2_q1": {
+          "I believe my students will remember, above all, the seriousness with which I listened to them. Not merely to their words, but to what lay beneath — their uncertainties, their half-formed questions, their silences. I hope they will recall that I treated literature and language not as instruments of examination but as living things, capable of bearing the weight of a human life. Perhaps they will remember that I never pretended certainty where none existed, and that I asked them to think rather than to agree.": 1,
+          "제 학생들은 아마도 제가 질문을 두려워하지 않도록 격려했던 태도를 기억할 것이라고 생각합니다. 저는 항상 '틀린 질문은 없다'는 원칙을 강조했고, 학생이 스스로 사고의 경계를 넓혀가는 순간을 함께 기뻐했습니다. 또한 음악과 기술, 인문학을 넘나드는 학제적 접근 방식—강의실에서 바흐의 대위법을 알고리즘 설계와 연결 짓던 순간들—이 학생들에게 인상 깊게 남아 있을 것이라 믿습니다. 그리고 학생 한 명 한 명의 이름과 관심사를 기억하고, 그들의 성장에 진심으로 관심을 가졌던 모습도 기억해 주기를 바랍니다.": 1
+        },
+        "j2_q1_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j2_q2": {
+          "Several forces have shaped me profoundly as a teacher. The death of my father compelled me to reckon with impermanence in ways that altered how I speak about literature and meaning in the classroom. My years living in Germany and Italy exposed me to pedagogical traditions quite different from those I had known, and I found myself borrowing and questioning in equal measure. A small community of lay theologians I encountered during my spiritual conversion also left a deep mark — they taught me that genuine inquiry requires humility, and that the teacher who ceases to be a learner has already failed.": 1,
+          "교사가 된 이후 저에게 가장 큰 영향을 준 것은 세 가지입니다. 첫째, 제가 직접 창업한 에듀테크 스타트업 경험입니다. 교육 현장과 산업 현장 사이의 간극을 몸소 체험하면서, 교실 안의 이론이 얼마나 빠르게 현실과 괴리될 수 있는지 깨달았습니다. 둘째, 한국과 미국 양쪽 교육 시스템을 오가며 만난 다양한 학습자 공동체입니다. 문화적 맥락이 학습 방식에 얼마나 깊이 영향을 미치는지 실감했습니다. 셋째, 오랫동안 함께한 자원봉사 활동에서 만난 비전통적 학습자들입니다. 그들은 제게 '교육의 목적'에 대해 근본적으로 다시 생각하게 만들었습니다.": 1
+        },
+        "j2_q2_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j2_q3": {
+          "The death of my father was the single greatest turning point. I was in the midst of a particularly demanding period of teaching when it occurred, and I found myself unable to maintain the professional distance I had previously considered a virtue. Grief entered the classroom with me, uninvited, and I had to decide whether to suppress it or to allow it to inform my teaching honestly. I chose the latter. That choice transformed how I approach the relationship between personal experience and intellectual work — I stopped treating them as separate territories.": 1,
+          "가장 큰 전환점은 제가 교수 초기에 담당했던 한 학생과의 경험이었습니다. 매우 뛰어난 능력을 가졌지만 극심한 완벽주의로 인해 스스로 무너지고 있던 학생이었습니다. 저는 그 학생에게 기술적 피드백만을 제공하고 있었고, 정작 그가 필요로 했던 것—자신의 실패를 학습의 일부로 받아들이는 관점—을 제공하지 못했습니다. 그 학생이 결국 학업을 중단했을 때, 저는 교사로서 '성과 중심의 가르침'이 얼마나 불완전한지 뼈저리게 깨달았습니다. 그 이후 저는 커리큘럼 설계 방식과 학생 상담 방식을 전면적으로 재검토하기 시작했습니다.": 1
+        },
+        "j2_q3_fit": {
+          "5": 2
+        },
+        "j2_q4": {
+          "From that experience of loss I learned that vulnerability, when held with discipline, is not a weakness in a teacher but a form of integrity. I became capable of sitting with students in their own moments of confusion or sorrow without rushing toward resolution. In practice, this appeared as a willingness to pause — to allow a poem or a passage to breathe rather than immediately explaining it away. Students began to bring me their real questions, not merely the ones they believed I wished to hear.": 1,
+          "그 경험으로부터 저는 '가르침은 지식의 전달이 아니라 관계의 구축'이라는 것을 배웠습니다. 구체적으로는 두 가지 능력이 생겼습니다. 하나는 학생의 학업적 어려움 이면에 있는 심리적·정서적 맥락을 읽는 능력이고, 다른 하나는 실패를 교육적 자원으로 재구성하는 커리큘럼 설계 역량입니다. 교사로서 이는 수업 중 의도적으로 '불완전한 해답'을 제시하고, 학생들이 그 불완전함을 함께 수정해가는 과정을 설계하는 방식으로 드러났습니다. 또한 오피스아워를 단순한 질의응답 시간이 아니라 학생의 사고 과정을 탐색하는 시간으로 운영하기 시작했습니다.": 1
+        },
+        "j2_q4_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j2_q5": {
+          "I have come to hold what I might call a posture of attentive patience — a conviction that understanding cannot be forced, only cultivated. I approach each student and each text with the assumption that something essential remains to be discovered, regardless of how familiar the territory appears. Alongside this, my faith has instilled in me a sense of responsibility that extends beyond academic outcomes: I believe I am, in some measure, accountable for the moral and imaginative formation of those I teach. This is a weight I carry seriously, though not, I hope, oppressively.": 1,
+          "저는 '겸손한 전문가'가 되어야 한다는 마음가짐을 갖게 되었습니다. 20년 이상의 경력과 다양한 학문적 성취에도 불구하고, 학생 앞에 설 때마다 저는 여전히 배우는 사람이라는 태도를 유지하려 합니다. 또한 '인내는 교육적 덕목'이라는 믿음이 깊어졌습니다—빠른 이해보다 깊은 이해를, 효율적인 수업보다 의미 있는 수업을 우선시하게 되었습니다. 그리고 학제적 사고를 두려워하지 않는 태도, 즉 음악 이론으로 컴퓨터 과학을 설명하고 인지과학으로 교육학을 재해석하는 것이 오히려 학습의 핵심이라는 확신을 갖게 되었습니다.": 1
+        },
+        "j2_q5_fit": {
+          "4": 2
+        },
+        "j2_q6": {
+          "Title: 'The Margin and the Text.' In the study of literature, the margin is where the reader writes back — where personal response meets the authored word. My teaching life has been lived in that margin: between languages, between cultures, between grief and gratitude, between faith and doubt. I have never been entirely at home in any single tradition, and I have come to regard that displacement not as a deficiency but as the very condition that has made me attentive. The title also suggests humility: the teacher is not the text itself, but the one who helps others learn to read it.": 1,
+          "제목: 『경계 위에 서서: 연결을 가르친 20년의 기록』\n\n이 제목에는 두 가지 의미가 담겨 있습니다. 첫째, 저는 항상 학문적 경계, 문화적 경계, 언어적 경계 위에 서 있었습니다. 한국계 미국인으로서, 음악가이자 컴퓨터 과학자로서, 연구자이자 교육자로서—저의 정체성 자체가 경계에 위치해 있었고, 그 경계가 오히려 저의 가장 큰 교육적 자산이 되었습니다. 둘째, '연결을 가르쳤다'는 표현은 제가 추구한 교육의 본질을 담고 있습니다. 지식과 지식 사이의 연결, 학생과 세계 사이의 연결, 과거의 지혜와 미래의 가능성 사이의 연결—저는 그 연결의 순간을 만들어내는 것이 교사의 역할이라고 믿어왔습니다.": 1
+        },
+        "j2_q6_fit": {
+          "4": 2
+        },
+        "j2_revise": {
+          "For teachers with fewer than five years of experience, I would revise j2_q1 from asking what students will remember 'after time has passed' — which presupposes a long retrospective arc — to something more immediate: 'What do you hope a student feels when they leave your classroom today?' Similarly, j2_q3, which asks for a 'turning point,' might feel premature for early-career teachers. I would reframe it as: 'Has there been a moment — however small — that made you reconsider how you teach or why you teach? Describe it.' This lowers the threshold without sacrificing depth.": 1,
+          "j2_q3 (전환점이 된 경험) 질문을 다음과 같이 바꾸면 좋겠습니다. 현재 문구는 '전환점'이라는 단어가 경력이 짧은 교사에게는 아직 식별하기 어려운 개념일 수 있습니다. 대안: '교사가 된 이후 가장 기억에 남는 수업 장면이나 학생과의 대화를 떠올려 보세요. 그 순간이 당신에게 어떤 의미였나요?' 또한 j2_q6 (책 제목 짓기)은 경력 초기 교사에게 부담스러울 수 있으므로, '지금까지의 나의 교직 생활을 한 문장으로 표현한다면 어떤 문장이 될까요?'로 낮은 진입장벽의 형식으로 바꾸는 것을 제안합니다.": 1
+        },
+        "j2_timing": {
+          "5": 2
+        }
+      },
+      "3-5": {
+        "j2_add": {
+          "교직과 개인 삶의 경계가 무너질 때 어떻게 버티는가에 대해 더 이야기하고 싶어요. 저는 상실을 겪으면서 교사로 있었는데, 그 시기에 제가 어떻게 교실을 유지했는지, 그게 옳은 방식이었는지 아직도 모르겠어요. 그 고민을 나눌 수 있는 질문이 이 여정 안에 있었으면 좋겠어요.": 1,
+          "저는 요즘 '교사로서의 나'와 '개인으로서의 나' 사이의 경계를 어떻게 설정해야 하는가에 대한 고민이 많습니다. 상실을 경험한 이후 그 두 정체성이 자꾸 뒤섞이는 느낌이 들고, 수업 중에 감정이 올라올 때 어떻게 해야 하는지 아직 잘 모르겠습니다 😔 또한 교직 경력이 짧은 상태에서 이미 '나는 어떤 교사인가'를 정의해야 한다는 압박감이 때때로 느껴지는데, 그 압박 자체가 성장에 도움이 되는 것인지 아니면 오히려 방해가 되는 것인지도 이 여정에서 함께 다루어 주면 좋겠다는 생각이 들었습니다.": 1
+        },
+        "j2_burden": {
+          "3": 2
+        },
+        "j2_hard": {
+          "['j2_q1', 'j2_q6']": 2
+        },
+        "j2_hard_reason": {
+          "premise_mismatch": 2
+        },
+        "j2_meaning": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q1": {
+          "아이들은 아마 내가 절대 대충 넘어가지 않았다는 걸 기억할 거예요. 틀린 건 틀렸다고, 모르는 건 같이 찾아보자고 했던 그 태도요. 그리고 수업 중에 갑자기 전혀 다른 나라 이야기를 꺼내던 것도요. 제가 여러 나라에서 살아봤으니까 그 경험들이 자연스럽게 흘러나왔거든요. 아이들이 그걸 좋아했는지 싫어했는지는 모르겠지만, 적어도 잊지는 못할 거라고 생각해요.": 1,
+          "아이들은 아마도 제가 논리적인 설명을 매우 중요시했던 모습을 기억할 것 같습니다 😊 저는 언제나 '왜 그런가'를 함께 생각하도록 유도하는 편이었고, 답을 그냥 주기보다는 과정을 함께 걸어가려 했습니다. 물론 때로는 그 과정이 너무 길어서 아이들이 지쳐하기도 했겠지만요 😅 그리고 아마 제가 감정을 잘 드러내지 않으면서도 학생 한 명 한 명의 상황에 조용히 귀를 기울였던 태도도 기억에 남지 않을까 생각합니다. 말보다 행동으로 관심을 표현하는 편이었으니까요.": 1
+        },
+        "j2_q1_fit": {
+          "3": 2
+        },
+        "j2_q2": {
+          "교사가 된 초기에 가장 크게 영향을 준 건 제가 경험했던 상실이에요. 가까운 사람을 잃고 나서 교실에 들어섰을 때, 아이들이 얼마나 살아있는 존재인지가 갑자기 선명하게 보였어요. 그 전까지는 커리큘럼을 어떻게 전달할지만 생각했는데, 그 이후로는 이 아이 앞에 내가 지금 어떤 사람으로 서 있는가를 먼저 생각하게 됐어요. 또 제가 속했던 지역 공동체 활동도 영향이 컸어요. 교실 밖에서 사람들을 조직하고 목소리를 모으는 경험이 교실 안에서 아이들의 말을 듣는 방식을 바꿔놨거든요.": 1,
+          "교사가 된 초기에 가장 큰 영향을 준 것은 제가 직접 경험한 상실이었습니다. 소중한 사람을 잃은 이후 저는 학생들과의 관계를 전혀 다른 시선으로 바라보게 되었습니다 😔 또한 교육 현장에서 만난 선배 교사 한 분이 계셨는데, 그분은 학생의 실수를 꾸짖기보다 그 실수 안에 담긴 의도를 먼저 물어보는 분이셨습니다. 그 모습이 제게 깊은 인상을 남겼습니다. 그리고 제가 속했던 소규모 교사 학습 공동체도 빼놓을 수 없는데, 그 안에서 서로의 수업을 솔직하게 비평하고 격려하는 문화가 저를 많이 성장시켰습니다.": 1
+        },
+        "j2_q2_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q3": {
+          "가장 큰 전환점은 역시 개인적인 상실의 경험이었습니다. 가까운 사람을 잃고 나서 저는 한동안 교단에 서는 것 자체가 무의미하게 느껴졌습니다. 그런데 어느 날 한 학생이 수업 후에 남아서 '선생님, 요즘 많이 힘들어 보여요'라고 조용히 말을 건넸습니다. 그 말이 저를 흔들었습니다 😶 제가 학생을 돌본다고 생각했는데, 사실은 학생도 저를 돌보고 있었던 것입니다. 그 순간부터 저는 교사와 학생의 관계를 일방적인 것이 아니라 상호적인 것으로 이해하게 되었고, 그것이 이후 제 수업 방식과 태도 전반을 바꾸는 계기가 되었습니다.": 1,
+          "전환점은 제가 겪은 두 번째 큰 상실이었어요. 첫 번째 상실은 저를 흔들었지만, 두 번째는 저를 완전히 다시 세웠어요. 그 시기에 저는 교직을 그만둘까 진지하게 고민했어요. 그런데 그때 제 수업을 듣던 한 학생이 짧은 쪽지를 줬어요. 내용은 별것 아니었는데, 그 쪽지가 저한테는 엄청 무거웠어요. 내가 여기 있어야 하는 이유를 그 아이가 모르면서 알려준 거잖아요. 그 이후로 저는 교사라는 역할을 생존의 방식이 아니라 선택의 방식으로 보게 됐어요.": 1
+        },
+        "j2_q3_fit": {
+          "4": 2
+        },
+        "j2_q4": {
+          "그 경험에서 배운 건 존재 자체가 가르친다는 거예요. 제가 무너진 상태에서도 교실에 나타났을 때, 아이들은 그걸 봤어요. 말로 하지 않아도요. 그게 오히려 더 강한 메시지였던 것 같아요. 교사로서 드러난 모습은 아마 흔들려도 자리를 지키는 사람이었을 거예요. 그리고 그 이후로 저는 아이들이 힘든 내색을 할 때 예전보다 훨씬 빠르게 알아채게 됐어요. 그게 제가 할 수 있게 된 것 중 하나예요.": 1,
+          "그 경험으로부터 저는 '취약함을 인정하는 것이 약함이 아니다'라는 것을 배웠습니다. 이전에는 교사로서 항상 완전하고 안정된 모습을 보여야 한다고 생각했는데, 그 학생의 말 한마디가 그 생각을 뒤집었습니다. 이후 저는 수업 중에 모르는 것이 있으면 솔직하게 '나도 잘 모르겠다, 함께 찾아보자'고 말할 수 있게 되었습니다 😌 또한 학생의 감정 상태를 수업 내용보다 먼저 살피는 습관이 생겼고, 논리적 설명 이전에 먼저 연결되려는 태도를 갖게 되었습니다. 그것이 교사로서의 저를 훨씬 더 인간적으로 만들어 준 것 같습니다.": 1
+        },
+        "j2_q4_fit": {
+          "4": 2
+        },
+        "j2_q5": {
+          "저는 '기다리는 교사'가 되려는 마음가짐을 갖게 되었습니다. 빠른 답을 요구하기보다, 학생이 스스로 생각에 도달할 때까지 조용히 옆에 있어 주는 것이 교사의 역할이라는 것을 깨달았습니다. 물론 저 자신은 인내심이 그리 강한 편이 아니라서 😅 이것이 쉬운 일은 아닙니다. 그러나 적어도 그것이 옳은 방향이라는 것을 알고 있기에, 스스로를 계속 돌아보게 됩니다. 또한 어떤 상황에서도 학생의 인격을 먼저 존중하겠다는 태도가 생겼습니다. 성적이나 결과보다 그 사람 자체를 보려는 마음이라고 할 수 있겠습니다.": 1,
+          "지금 제가 가진 태도는 완벽하지 않아도 정직하게 있자는 거예요. 모르면 모른다고 하고, 틀리면 틀렸다고 하고, 힘들면 힘들다고 할 수 있는 교사요. 그게 아이들한테 더 진짜로 보인다고 믿어요. 그리고 한 아이도 그냥 지나치지 않겠다는 마음가짐도 생겼어요. 제가 지나쳤다면 어땠을까 하는 생각이 아직도 가끔 드니까요.": 1
+        },
+        "j2_q5_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q6": {
+          "제목은 「무너지면서 서 있었다」로 하고 싶어요. 교사로서 제 이야기는 완성된 사람이 아이들을 이끄는 이야기가 아니에요. 계속 흔들리면서도 매일 교실 문을 열었던 이야기예요. 그 역설이 제 교직의 핵심이라고 생각해요. 강해서가 아니라 그냥 거기 있었기 때문에 뭔가를 전달할 수 있었던 사람의 이야기요.": 1,
+          "제목은 「아직 다 읽지 못한 책」으로 하겠습니다 📖 저는 교사로서의 여정이 아직 한참 진행 중이라는 느낌을 항상 갖고 있습니다. 어떤 챕터는 아직 쓰이지 않았고, 어떤 페이지는 이미 지나쳤지만 다시 돌아가 읽고 싶습니다. 그리고 무엇보다 이 책은 제가 혼자 쓴 것이 아니라, 함께한 학생들과 동료들이 각자의 방식으로 한 줄씩 써 넣은 공동 저작물이라고 생각합니다. 완성되지 않았다는 것이 부족함이 아니라, 여전히 살아있다는 증거라고 생각하고 싶습니다 😊": 1
+        },
+        "j2_q6_fit": {
+          "3": 2
+        },
+        "j2_revise": {
+          "j2_q1 질문을 바꾼다면, '내가 가르친 아이들은 시간이 지난 후 나의 특징 중 어떤 것을 기억하게 될까요?'보다는 '지금 내 학생들이 나를 어떤 교사로 느끼고 있을 것 같나요? 나는 그들에게 어떻게 기억되고 싶나요?'로 바꾸면 좋겠습니다. 5년 차 이하 교사에게는 '이미 지나간 시간'이 아닌 '지금 이 순간'을 기준으로 성찰할 수 있는 질문이 더 접근하기 쉽고 현실적으로 느껴질 것 같습니다 😊 j2_q6도 마찬가지로, '지금까지의 경험을 제목으로 붙인다면'보다 '지금 이 시기의 나를 한 문장으로 표현한다면'처럼 현재 시제로 바꾸면 더 자연스러울 것 같습니다.": 1,
+          "j2_q1을 바꾸고 싶어요. '시간이 지난 후에 기억하게 될'이라는 표현은 경력이 짧은 교사에게 너무 먼 미래를 상상하게 해요. 대신 이렇게 바꾸면 어떨까요. '지금 내가 가르치는 아이들이 오늘 수업에서 나를 어떤 사람으로 느끼고 있을까요?' 그게 훨씬 지금 연차에서 실감 나는 질문이에요.": 1
+        },
+        "j2_timing": {
+          "3": 2
+        }
+      },
+      "6-10": {
+        "j2_add": {
+          "I would want to discuss what it means to transition out of active coaching while still feeling a strong sense of responsibility toward the sport and toward former students. The question of how a retired coach maintains relevance and continues to contribute to a community is something this journey did not address.": 1,
+          "교사로서 번아웃을 경험한 이후 어떻게 다시 의미를 찾았는지, 그 회복의 과정에 대해 이야기 나누고 싶습니다. 또한 가르치는 일과 개인 삶의 균형을 어떻게 유지하는지도 함께 탐색하고 싶은 주제입니다.": 1
+        },
+        "j2_burden": {
+          "2": 2
+        },
+        "j2_hard": {
+          "['j2_q5', 'j2_q6']": 2
+        },
+        "j2_hard_reason": {
+          "too_abstract": 2
+        },
+        "j2_meaning": {
+          "4": 2
+        },
+        "j2_q1": {
+          "My students will likely remember my insistence on discipline and precision. In cricket coaching, I never allowed shortcuts. They will remember that I held them to high standards consistently, and that I expected them to hold themselves accountable. I believe they will also remember that I valued team performance over individual glory.": 1,
+          "아이들은 아마도 내가 늘 솔직했다는 점을 기억할 것입니다. 모르는 것은 모른다고 말했고, 틀렸을 때는 인정했습니다. 또한 수업 중에도 웃음을 잃지 않으려 했던 태도, 그리고 학생 한 명 한 명의 이름을 끝까지 기억하려 했던 노력도 기억해 주기를 바랍니다.": 1
+        },
+        "j2_q1_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q2": {
+          "The national-level coaching community I joined mid-career had the greatest influence on me. Exposure to coaches from South Africa and Bangladesh broadened my understanding of how different cultures approach athletic discipline and team cohesion. One senior coach in particular challenged me to think beyond technique and consider the mental conditioning of young athletes.": 1,
+          "교사 초기에 함께 일했던 선배 교사 한 분이 가장 큰 영향을 주었습니다. 그분은 교과 지식보다 학생과의 관계를 먼저 생각하는 분이었습니다. 또한 NGO 활동을 통해 만난 농촌 지역 학부모 공동체도 제가 교육의 사회적 맥락을 이해하는 데 큰 역할을 했습니다.": 1
+        },
+        "j2_q2_fit": {
+          "4": 2
+        },
+        "j2_q3": {
+          "The most significant turning point was when a student I had trained for two years suffered a serious injury just before a national selection trial. Managing that situation — supporting the student, reassessing training methods, and communicating with the team — forced me to rethink what responsible coaching means. It shifted my focus from performance outcomes to athlete welfare as a foundation for sustainable performance.": 1,
+          "가장 큰 전환점은 제가 운영하던 소규모 교육 사업이 실패했던 경험입니다. 그 과정에서 학생들에게 '결과보다 과정'을 강조하면서 정작 저 자신은 결과에만 집착했다는 사실을 깨달았습니다. 그 실패 이후 교사로서의 태도가 근본적으로 바뀌었습니다.": 1
+        },
+        "j2_q3_fit": {
+          "4": 2
+        },
+        "j2_q4": {
+          "I learned that discipline without care is insufficient. I became more attentive to individual physical and psychological readiness. As a coach, this showed in how I structured training loads and in how I communicated with students individually rather than only addressing the team collectively. I also became more systematic about injury prevention protocols.": 1,
+          "실패를 통해 겸손함을 배웠습니다. 이후 수업에서 정답을 강요하기보다 학생이 스스로 생각하는 시간을 더 많이 허용하게 되었습니다. 또한 학생의 실수를 질책하지 않고, 그 실수 안에서 배움의 실마리를 함께 찾는 방식으로 수업 방식이 변화했습니다.": 1
+        },
+        "j2_q4_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q5": {
+          "I developed a mindset that preparation and process matter more than results alone. I became more patient in allowing athletes to develop at their own pace within a structured framework. At the same time, I maintained high expectations. The balance between firmness and attentiveness became central to how I approached every session.": 1,
+          "교사는 완성된 존재가 아니라 학생과 함께 계속 배워가는 존재라는 마음가짐을 갖게 되었습니다. 권위보다 신뢰를, 지식 전달보다 질문을 소중히 여기게 되었습니다. 무엇보다 인내심을 가지고 기다리는 태도가 중요하다는 것을 몸으로 익혔습니다.": 1
+        },
+        "j2_q5_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j2_q6": {
+          "Title: 'The Field Does Not Lie.' In cricket, the field reveals everything — preparation, character, teamwork, and honesty. This title reflects my belief that coaching is ultimately about creating conditions where truth is visible: the truth of effort, of readiness, and of collective commitment. My career as a coach has been an attempt to build that kind of honest, accountable environment for every student I worked with.": 1,
+          "제목: 「아직 끝나지 않은 수업」. 교사로서의 삶은 매 학기 끝나도 완결되지 않습니다. 학생도, 저 자신도 여전히 배우는 중이며, 교실 밖에서도 수업은 계속됩니다. 이 제목에는 완성을 향해 달려가기보다 과정 자체를 살아가는 교사의 자세를 담았습니다.": 1
+        },
+        "j2_q6_fit": {
+          "3": 2
+        },
+        "j2_revise": {
+          "For teachers with five or fewer years of experience, j2_q6 (the book title question) may be premature. I would revise it to: 'If you were to write one chapter about your teaching so far, what would that chapter be about and why?' This grounds the reflection in a specific, manageable period rather than implying a complete career narrative.": 1,
+          "j2_q3(전환점이 된 경험)의 경우, 5년 차 이하 교사에게는 '전환점'이라는 표현이 부담스러울 수 있습니다. '지금까지 교직 생활에서 가장 오래 기억에 남는 하루나 순간은 무엇인가요?'처럼 구체적이고 작은 단위의 경험을 묻는 방식으로 바꾸면 답하기 훨씬 수월할 것입니다.": 1
+        },
+        "j2_timing": {
+          "3": 1,
+          "4": 1
+        }
+      }
+    }
+  },
+  "notes": [
+    "Built from jobs/<job>/ on disk — no additional model calls.",
+    "Ledger uses result.json; lens prefers verifier/structured_output.json."
+  ]
+}

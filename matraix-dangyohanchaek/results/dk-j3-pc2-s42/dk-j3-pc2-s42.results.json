@@ -1,0 +1,1413 @@
+{
+  "schemaVersion": "MatraixJobResults.v1",
+  "jobName": "dk-j3-pc2-s42",
+  "jobDir": "/home/user/claude1/matraix-dangyohanchaek/.matraix/jobs/dk-j3-pc2-s42",
+  "generatedAt": "2026-10-12T12:46:04Z",
+  "deterministic": true,
+  "appType": "survey",
+  "ledger": {
+    "coverage": {
+      "trials": 10,
+      "completed": 10,
+      "errored": 0,
+      "running": 0,
+      "pending": 0
+    },
+    "usage": {
+      "n_input_tokens": 80759,
+      "n_output_tokens": 21479,
+      "n_cache_tokens": null,
+      "cost_usd": 0.5644619999999999
+    },
+    "rewards": {
+      "count": 10,
+      "mean": 1.0,
+      "histogram": {
+        "pass": 10
+      }
+    },
+    "trials": [
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__LRyWRgj",
+        "persona_id": "synthetic-8cb3d8df7f7a",
+        "persona_name": "Anika Das",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10316,
+          "n_output_tokens": 2247,
+          "n_cache_tokens": null,
+          "cost_usd": 0.064653
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__LRyWRgj/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "몇 해 전, 농촌 지역 소규모 학교에서 가르쳤던 한 학생이 기억납니다. 말수가 적고 조용했지만, 생물 시간마다 눈이 빛났습니다. 졸업 후 소식을 들으니, 지역 농업협동조합에서 일하며 지속 가능한 농법을 연구하고 있다고 합니다. 그 아이가 자신의 뿌리를 지키면서도 새로운 길을 걷고 있다는 것이 참으로 대견합니다.",
+          "answer_j3_q1_fit": 4,
+          "answer_j3_q2": "기후 변화와 식량 안보 문제가 가장 눈에 띕니다. 농촌에 살다 보니 기상 이변이 농업에 미치는 영향을 직접 목격합니다. 또한 디지털 전환이 농촌 공동체를 해체하는 방식도 우려됩니다. 젊은이들이 도시로 떠나고 마을이 고령화되는 현상은 단순한 경제 문제가 아니라 문화와 정체성의 소멸로 이어진다고 생각합니다.",
+          "answer_j3_q2_fit": 4,
+          "answer_j3_q3": "기후 변화와 자동화 기술의 결합이 가장 우려됩니다. 저숙련 노동자, 농촌 주민, 그리고 교육 기회가 제한된 아이들이 가장 큰 어려움에 처할 것입니다. 저는 이 현상을 외면하지 않으려 합니다. 자원봉사와 교육 활동을 통해 지역 청소년들이 변화에 적응할 수 있도록 돕고 있습니다. 다만 개인의 노력만으로는 한계가 있다는 것도 압니다.",
+          "answer_j3_q3_fit": 4,
+          "answer_j3_q4": "달라질 것은 일의 형태, 이동 방식, 인간관계의 매개 방식입니다. AI와 자동화가 많은 직업을 대체하고, 국경의 의미도 변할 것입니다. 변하지 않을 것은 인간의 연결에 대한 갈망, 의미를 찾으려는 본성, 그리고 세대 간 지식 전수의 필요성입니다. 기술이 아무리 발전해도 누군가는 가르치고 누군가는 배우는 관계는 지속될 것입니다.",
+          "answer_j3_q4_fit": 3,
+          "answer_j3_q5": "각자가 자신의 자리에서 존엄하게 살아갈 수 있는 사회를 바랍니다. 도시와 농촌, 부유층과 빈곤층 사이의 격차가 줄어들고, 개인의 자유가 공동체의 책임과 균형을 이루는 사회입니다. 또한 전통과 혁신이 충돌하지 않고 서로를 보완하는 사회이기를 소망합니다.",
+          "answer_j3_q5_fit": 4,
+          "answer_j3_q6": "존엄, 자유, 그리고 연대입니다. 개인의 자유는 타인의 존엄을 침해하지 않는 범위에서 최대한 보장되어야 합니다. 그리고 그 자유가 고립으로 이어지지 않으려면 공동체적 연대가 반드시 필요합니다. 제 신앙적 배경에서도 이 세 가지는 핵심입니다.",
+          "answer_j3_q6_fit": 4,
+          "answer_j3_q7": "아이들이 변화에 휩쓸리지 않고 자신이 누구인지 알면서 살아가기를 바랍니다. 기술을 도구로 쓰되 기술에 종속되지 않고, 자신의 공동체에 뿌리를 두면서도 세계와 대화할 수 있는 사람이 되기를 바랍니다. 무엇보다 타인의 어려움 앞에서 외면하지 않는 용기를 가졌으면 합니다.",
+          "answer_j3_q7_fit": 4,
+          "answer_j3_meaning": 4,
+          "answer_j3_burden": 2,
+          "answer_j3_timing": 4,
+          "answer_j3_hard": [
+            "j3_q4"
+          ],
+          "answer_j3_hard_reason": "too_abstract",
+          "answer_j3_revise": "j3_q1의 경우, 졸업생 소식을 묻는 부분은 5년 차 이하 교사에게 부담이 될 수 있습니다. '지금 가르치는 학생 중 가장 기억에 남는 순간은 언제인가요?'로 바꾸면 더 접근하기 쉬울 것입니다. j3_q4도 '미래 사회를 예측해 봅시다' 대신 '10년 후 내 학생들이 마주할 가장 큰 변화는 무엇이라고 생각하나요?'처럼 구체화하면 좋겠습니다.",
+          "answer_j3_add": "교사로서 가르치는 내용과 사회 현실 사이의 간극을 어떻게 좁힐 수 있는지에 대해 더 이야기하고 싶습니다. 교과서가 담지 못하는 현실을 아이들에게 어떻게 전달해야 할지, 그 방법론에 대한 고민이 늘 있습니다."
+        },
+        "group_values": {
+          "years_experience": "6-10"
+        },
+        "survey_answers": {
+          "j3_q1": "몇 해 전, 농촌 지역 소규모 학교에서 가르쳤던 한 학생이 기억납니다. 말수가 적고 조용했지만, 생물 시간마다 눈이 빛났습니다. 졸업 후 소식을 들으니, 지역 농업협동조합에서 일하며 지속 가능한 농법을 연구하고 있다고 합니다. 그 아이가 자신의 뿌리를 지키면서도 새로운 길을 걷고 있다는 것이 참으로 대견합니다.",
+          "j3_q1_fit": 4,
+          "j3_q2": "기후 변화와 식량 안보 문제가 가장 눈에 띕니다. 농촌에 살다 보니 기상 이변이 농업에 미치는 영향을 직접 목격합니다. 또한 디지털 전환이 농촌 공동체를 해체하는 방식도 우려됩니다. 젊은이들이 도시로 떠나고 마을이 고령화되는 현상은 단순한 경제 문제가 아니라 문화와 정체성의 소멸로 이어진다고 생각합니다.",
+          "j3_q2_fit": 4,
+          "j3_q3": "기후 변화와 자동화 기술의 결합이 가장 우려됩니다. 저숙련 노동자, 농촌 주민, 그리고 교육 기회가 제한된 아이들이 가장 큰 어려움에 처할 것입니다. 저는 이 현상을 외면하지 않으려 합니다. 자원봉사와 교육 활동을 통해 지역 청소년들이 변화에 적응할 수 있도록 돕고 있습니다. 다만 개인의 노력만으로는 한계가 있다는 것도 압니다.",
+          "j3_q3_fit": 4,
+          "j3_q4": "달라질 것은 일의 형태, 이동 방식, 인간관계의 매개 방식입니다. AI와 자동화가 많은 직업을 대체하고, 국경의 의미도 변할 것입니다. 변하지 않을 것은 인간의 연결에 대한 갈망, 의미를 찾으려는 본성, 그리고 세대 간 지식 전수의 필요성입니다. 기술이 아무리 발전해도 누군가는 가르치고 누군가는 배우는 관계는 지속될 것입니다.",
+          "j3_q4_fit": 3,
+          "j3_q5": "각자가 자신의 자리에서 존엄하게 살아갈 수 있는 사회를 바랍니다. 도시와 농촌, 부유층과 빈곤층 사이의 격차가 줄어들고, 개인의 자유가 공동체의 책임과 균형을 이루는 사회입니다. 또한 전통과 혁신이 충돌하지 않고 서로를 보완하는 사회이기를 소망합니다.",
+          "j3_q5_fit": 4,
+          "j3_q6": "존엄, 자유, 그리고 연대입니다. 개인의 자유는 타인의 존엄을 침해하지 않는 범위에서 최대한 보장되어야 합니다. 그리고 그 자유가 고립으로 이어지지 않으려면 공동체적 연대가 반드시 필요합니다. 제 신앙적 배경에서도 이 세 가지는 핵심입니다.",
+          "j3_q6_fit": 4,
+          "j3_q7": "아이들이 변화에 휩쓸리지 않고 자신이 누구인지 알면서 살아가기를 바랍니다. 기술을 도구로 쓰되 기술에 종속되지 않고, 자신의 공동체에 뿌리를 두면서도 세계와 대화할 수 있는 사람이 되기를 바랍니다. 무엇보다 타인의 어려움 앞에서 외면하지 않는 용기를 가졌으면 합니다.",
+          "j3_q7_fit": 4,
+          "j3_meaning": 4,
+          "j3_burden": 2,
+          "j3_timing": 4,
+          "j3_hard": [
+            "j3_q4"
+          ],
+          "j3_hard_reason": "too_abstract",
+          "j3_revise": "j3_q1의 경우, 졸업생 소식을 묻는 부분은 5년 차 이하 교사에게 부담이 될 수 있습니다. '지금 가르치는 학생 중 가장 기억에 남는 순간은 언제인가요?'로 바꾸면 더 접근하기 쉬울 것입니다. j3_q4도 '미래 사회를 예측해 봅시다' 대신 '10년 후 내 학생들이 마주할 가장 큰 변화는 무엇이라고 생각하나요?'처럼 구체화하면 좋겠습니다.",
+          "j3_add": "교사로서 가르치는 내용과 사회 현실 사이의 간극을 어떻게 좁힐 수 있는지에 대해 더 이야기하고 싶습니다. 교과서가 담지 못하는 현실을 아이들에게 어떻게 전달해야 할지, 그 방법론에 대한 고민이 늘 있습니다."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__LhRV9dp",
+        "persona_id": "wiki-51ae8aa5af85",
+        "persona_name": "Valentina Santos",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 4799,
+          "n_output_tokens": 2217,
+          "n_cache_tokens": null,
+          "cost_usd": 0.047652
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__LhRV9dp/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "교사로 일한 지 얼마 되지 않아 아직 졸업생 소식을 접할 기회는 많지 않습니다. 그럼에도 기억에 남는 학생이 있습니다. 스포츠 훈련 중 부상으로 한동안 훈련에 참여하지 못했던 아이인데, 좌절하지 않고 재활에 성실히 임하며 팀 동료들을 응원하는 모습이 인상 깊었습니다. 그 아이를 보며 경기장 밖에서도 단단하게 살아갈 사람이라는 확신이 들었습니다.",
+          "answer_j3_q1_fit": 3,
+          "answer_j3_q2": "제가 주목하는 사회 현상은 인공지능과 자동화 기술의 급격한 확산입니다. 스포츠 분야에서도 데이터 분석과 AI 코칭 보조 도구가 빠르게 도입되고 있으며, 이는 직업 구조와 인간 관계 방식 전반을 바꾸고 있습니다. 또한 기후 변화로 인한 환경 문제도 경기 환경과 선수 건강에 직접적인 영향을 미치고 있어 관심을 갖게 되었습니다.",
+          "answer_j3_q2_fit": 4,
+          "answer_j3_q3": "가장 우려되는 현상은 AI와 자동화로 인한 직업 불안정입니다. 특히 반복적인 업무나 특정 기술에만 의존하는 사람들이 어려움에 처할 가능성이 높다고 생각합니다. 저는 이 현상에 대해 불안해하기보다는, 학생들이 변화에 적응할 수 있는 유연성과 비판적 사고를 기를 수 있도록 도와야 한다는 책임감을 느끼며 반응하고 있습니다.",
+          "answer_j3_q3_fit": 4,
+          "answer_j3_q4": "달라지는 것은 기술의 역할과 일하는 방식, 그리고 정보를 습득하는 속도와 방법일 것입니다. 국경을 초월한 협업이 더욱 일상화되고, 평생학습이 선택이 아닌 필수가 될 것입니다. 반면 변하지 않을 것은 인간 사이의 신뢰와 유대, 그리고 배움과 성장에 대한 근본적인 욕구라고 생각합니다. 스포츠에서도 결국 팀워크와 인간적인 연결이 핵심으로 남을 것입니다.",
+          "answer_j3_q4_fit": 3,
+          "answer_j3_q5": "모든 사람이 자신의 가능성을 최대한 발휘할 수 있는 기회를 공평하게 얻는 사회를 바랍니다. 출신 배경이나 경제적 조건에 관계없이 노력과 역량으로 성장할 수 있고, 서로의 다양성을 존중하며 협력하는 사회가 제가 소망하는 모습입니다.",
+          "answer_j3_q5_fit": 4,
+          "answer_j3_q6": "제가 중요하다고 여기는 가치는 공정성, 연대, 그리고 지속적인 성장입니다. 공정한 기회가 보장되어야 하고, 개인의 성취가 공동체의 발전과 연결될 수 있어야 한다고 생각합니다. 또한 실패를 두려워하지 않고 배우고 다시 일어서는 회복력도 매우 중요한 가치라고 믿습니다.",
+          "answer_j3_q6_fit": 4,
+          "answer_j3_q7": "지금 가르치는 아이들이 변화하는 세상에서 자신만의 방향을 잃지 않고, 어려움 앞에서도 포기하지 않는 사람으로 살아가기를 바랍니다. 경쟁에서 이기는 것보다 자신과 타인을 존중하며 함께 성장하는 삶을 선택할 수 있는 사람이 되길 소망합니다.",
+          "answer_j3_q7_fit": 3,
+          "answer_j3_meaning": 4,
+          "answer_j3_burden": 2,
+          "answer_j3_timing": 3,
+          "answer_j3_hard": [
+            "j3_q1",
+            "j3_q4",
+            "j3_q7"
+          ],
+          "answer_j3_hard_reason": "premise_mismatch",
+          "answer_j3_revise": "j3_q1의 경우 '졸업한 아이의 소식'을 묻는 부분을 '현재 가르치고 있는 아이 중 기억에 남는 순간'으로 바꾸면 초임 교사도 부담 없이 답할 수 있을 것 같습니다. 예: '지금 가르치는 아이들 중 가장 기억에 남는 순간이나 장면을 이야기해 주세요.'",
+          "answer_j3_add": "초임 교사로서 교육 철학을 형성해 가는 과정에서 느끼는 혼란과 불확실함, 그리고 '내가 과연 이 아이들에게 충분한가'라는 질문을 함께 다루고 싶습니다. 거창한 비전보다 지금 당장 교실에서 실천할 수 있는 작은 철학적 기준을 찾는 이야기가 필요합니다."
+        },
+        "group_values": {
+          "years_experience": "0-2"
+        },
+        "survey_answers": {
+          "j3_q1": "교사로 일한 지 얼마 되지 않아 아직 졸업생 소식을 접할 기회는 많지 않습니다. 그럼에도 기억에 남는 학생이 있습니다. 스포츠 훈련 중 부상으로 한동안 훈련에 참여하지 못했던 아이인데, 좌절하지 않고 재활에 성실히 임하며 팀 동료들을 응원하는 모습이 인상 깊었습니다. 그 아이를 보며 경기장 밖에서도 단단하게 살아갈 사람이라는 확신이 들었습니다.",
+          "j3_q1_fit": 3,
+          "j3_q2": "제가 주목하는 사회 현상은 인공지능과 자동화 기술의 급격한 확산입니다. 스포츠 분야에서도 데이터 분석과 AI 코칭 보조 도구가 빠르게 도입되고 있으며, 이는 직업 구조와 인간 관계 방식 전반을 바꾸고 있습니다. 또한 기후 변화로 인한 환경 문제도 경기 환경과 선수 건강에 직접적인 영향을 미치고 있어 관심을 갖게 되었습니다.",
+          "j3_q2_fit": 4,
+          "j3_q3": "가장 우려되는 현상은 AI와 자동화로 인한 직업 불안정입니다. 특히 반복적인 업무나 특정 기술에만 의존하는 사람들이 어려움에 처할 가능성이 높다고 생각합니다. 저는 이 현상에 대해 불안해하기보다는, 학생들이 변화에 적응할 수 있는 유연성과 비판적 사고를 기를 수 있도록 도와야 한다는 책임감을 느끼며 반응하고 있습니다.",
+          "j3_q3_fit": 4,
+          "j3_q4": "달라지는 것은 기술의 역할과 일하는 방식, 그리고 정보를 습득하는 속도와 방법일 것입니다. 국경을 초월한 협업이 더욱 일상화되고, 평생학습이 선택이 아닌 필수가 될 것입니다. 반면 변하지 않을 것은 인간 사이의 신뢰와 유대, 그리고 배움과 성장에 대한 근본적인 욕구라고 생각합니다. 스포츠에서도 결국 팀워크와 인간적인 연결이 핵심으로 남을 것입니다.",
+          "j3_q4_fit": 3,
+          "j3_q5": "모든 사람이 자신의 가능성을 최대한 발휘할 수 있는 기회를 공평하게 얻는 사회를 바랍니다. 출신 배경이나 경제적 조건에 관계없이 노력과 역량으로 성장할 수 있고, 서로의 다양성을 존중하며 협력하는 사회가 제가 소망하는 모습입니다.",
+          "j3_q5_fit": 4,
+          "j3_q6": "제가 중요하다고 여기는 가치는 공정성, 연대, 그리고 지속적인 성장입니다. 공정한 기회가 보장되어야 하고, 개인의 성취가 공동체의 발전과 연결될 수 있어야 한다고 생각합니다. 또한 실패를 두려워하지 않고 배우고 다시 일어서는 회복력도 매우 중요한 가치라고 믿습니다.",
+          "j3_q6_fit": 4,
+          "j3_q7": "지금 가르치는 아이들이 변화하는 세상에서 자신만의 방향을 잃지 않고, 어려움 앞에서도 포기하지 않는 사람으로 살아가기를 바랍니다. 경쟁에서 이기는 것보다 자신과 타인을 존중하며 함께 성장하는 삶을 선택할 수 있는 사람이 되길 소망합니다.",
+          "j3_q7_fit": 3,
+          "j3_meaning": 4,
+          "j3_burden": 2,
+          "j3_timing": 3,
+          "j3_hard": [
+            "j3_q1",
+            "j3_q4",
+            "j3_q7"
+          ],
+          "j3_hard_reason": "premise_mismatch",
+          "j3_revise": "j3_q1의 경우 '졸업한 아이의 소식'을 묻는 부분을 '현재 가르치고 있는 아이 중 기억에 남는 순간'으로 바꾸면 초임 교사도 부담 없이 답할 수 있을 것 같습니다. 예: '지금 가르치는 아이들 중 가장 기억에 남는 순간이나 장면을 이야기해 주세요.'",
+          "j3_add": "초임 교사로서 교육 철학을 형성해 가는 과정에서 느끼는 혼란과 불확실함, 그리고 '내가 과연 이 아이들에게 충분한가'라는 질문을 함께 다루고 싶습니다. 거창한 비전보다 지금 당장 교실에서 실천할 수 있는 작은 철학적 기준을 찾는 이야기가 필요합니다."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__MaoBLaK",
+        "persona_id": "synthetic-4ff4e002cf70",
+        "persona_name": "Rohan Iyer",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10389,
+          "n_output_tokens": 1450,
+          "n_cache_tokens": null,
+          "cost_usd": 0.052917000000000006
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__MaoBLaK/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "아직 교사로 시작한 지 얼마 안 됐지만, 한 아이가 기억에 남아요. 수업 시간에 말은 없었는데 그림을 정말 잘 그렸어요. 졸업 후 소식은 모르지만 잘 지내길 바라요.",
+          "answer_j3_q1_fit": 2,
+          "answer_j3_q2": "AI 기술이 빠르게 퍼지는 것이 눈에 띄어요. 일자리가 줄고 아이들이 무엇을 배워야 할지 모르겠다는 불안감이 주변에 많아요.",
+          "answer_j3_q2_fit": 4,
+          "answer_j3_q3": "AI 자동화가 가장 걱정돼요. 단순 반복 일을 하는 사람들, 특히 교육 기회가 적은 계층이 가장 어려워질 것 같아요. 저는 이 변화를 받아들이되 비판적으로 보려고 해요.",
+          "answer_j3_q3_fit": 3,
+          "answer_j3_q4": "달라지는 것: 일하는 방식, 소통 방법, 정보 접근. 변하지 않을 것: 사람 사이의 신뢰, 공동체 필요성, 배움에 대한 기본 욕구.",
+          "answer_j3_q4_fit": 3,
+          "answer_j3_q5": "모든 사람이 기본적인 안전과 존엄을 누리는 사회요. 출신이나 배경에 상관없이 기회가 있는 곳이면 좋겠어요.",
+          "answer_j3_q5_fit": 4,
+          "answer_j3_q6": "안전, 공정함, 그리고 서로에 대한 책임감이요. 경쟁보다 함께 살아가는 힘이 중요하다고 생각해요.",
+          "answer_j3_q6_fit": 4,
+          "answer_j3_q7": "스스로 생각하고, 흔들려도 다시 일어날 수 있는 아이로 자랐으면 해요. 세상이 어떻게 바뀌어도 자기 자리를 찾을 수 있는 힘을 가졌으면 좋겠어요.",
+          "answer_j3_q7_fit": 3,
+          "answer_j3_meaning": 3,
+          "answer_j3_burden": 3,
+          "answer_j3_timing": 2,
+          "answer_j3_hard": [
+            "j3_q1",
+            "j3_q7"
+          ],
+          "answer_j3_hard_reason": "lack_experience",
+          "answer_j3_revise": "j3_q1을 바꾸면 좋겠어요. '졸업한 아이' 대신 '지금 가르치는 아이 중 기억에 남는 아이는 누구인가요?'로 바꾸면 초임 교사도 답하기 쉬울 것 같아요.",
+          "answer_j3_add": "초임 교사로서 당장 수업을 어떻게 꾸려야 할지, 아이들과 어떻게 신뢰를 쌓아야 할지가 더 급한 고민이에요. 이런 현실적인 이야기도 나눌 수 있으면 좋겠어요."
+        },
+        "group_values": {
+          "years_experience": "0-2"
+        },
+        "survey_answers": {
+          "j3_q1": "아직 교사로 시작한 지 얼마 안 됐지만, 한 아이가 기억에 남아요. 수업 시간에 말은 없었는데 그림을 정말 잘 그렸어요. 졸업 후 소식은 모르지만 잘 지내길 바라요.",
+          "j3_q1_fit": 2,
+          "j3_q2": "AI 기술이 빠르게 퍼지는 것이 눈에 띄어요. 일자리가 줄고 아이들이 무엇을 배워야 할지 모르겠다는 불안감이 주변에 많아요.",
+          "j3_q2_fit": 4,
+          "j3_q3": "AI 자동화가 가장 걱정돼요. 단순 반복 일을 하는 사람들, 특히 교육 기회가 적은 계층이 가장 어려워질 것 같아요. 저는 이 변화를 받아들이되 비판적으로 보려고 해요.",
+          "j3_q3_fit": 3,
+          "j3_q4": "달라지는 것: 일하는 방식, 소통 방법, 정보 접근. 변하지 않을 것: 사람 사이의 신뢰, 공동체 필요성, 배움에 대한 기본 욕구.",
+          "j3_q4_fit": 3,
+          "j3_q5": "모든 사람이 기본적인 안전과 존엄을 누리는 사회요. 출신이나 배경에 상관없이 기회가 있는 곳이면 좋겠어요.",
+          "j3_q5_fit": 4,
+          "j3_q6": "안전, 공정함, 그리고 서로에 대한 책임감이요. 경쟁보다 함께 살아가는 힘이 중요하다고 생각해요.",
+          "j3_q6_fit": 4,
+          "j3_q7": "스스로 생각하고, 흔들려도 다시 일어날 수 있는 아이로 자랐으면 해요. 세상이 어떻게 바뀌어도 자기 자리를 찾을 수 있는 힘을 가졌으면 좋겠어요.",
+          "j3_q7_fit": 3,
+          "j3_meaning": 3,
+          "j3_burden": 3,
+          "j3_timing": 2,
+          "j3_hard": [
+            "j3_q1",
+            "j3_q7"
+          ],
+          "j3_hard_reason": "lack_experience",
+          "j3_revise": "j3_q1을 바꾸면 좋겠어요. '졸업한 아이' 대신 '지금 가르치는 아이 중 기억에 남는 아이는 누구인가요?'로 바꾸면 초임 교사도 답하기 쉬울 것 같아요.",
+          "j3_add": "초임 교사로서 당장 수업을 어떻게 꾸려야 할지, 아이들과 어떻게 신뢰를 쌓아야 할지가 더 급한 고민이에요. 이런 현실적인 이야기도 나눌 수 있으면 좋겠어요."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__XN4xsot",
+        "persona_id": "synthetic-7313d4d701f5",
+        "persona_name": "Min Nakamura",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10621,
+          "n_output_tokens": 2801,
+          "n_cache_tokens": null,
+          "cost_usd": 0.073878
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__XN4xsot/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "교사로서 짧은 경험 속에서도 유독 기억에 남는 학생이 있습니다 😊 조용하지만 논리적 사고가 뛰어났던 학생인데, 수업 중 제가 설명을 마치기도 전에 반례를 찾아내곤 했습니다. 그 학생이 지금 어떤 세상을 살아가고 있는지 궁금하면서도, 한편으로는 그 예리함이 오히려 세상과 마찰을 빚지는 않을까 하는 걱정도 듭니다. 아직 졸업 후 소식을 듣지 못했지만, 부디 자신의 방식대로 잘 살아가고 있기를 바랍니다.",
+          "answer_j3_q1_fit": 2,
+          "answer_j3_q2": "제가 주목하는 사회 현상은 인공지능 기술의 급속한 확산과 그로 인한 노동 구조의 변화입니다 🤔 특히 젊은 세대가 진입하려는 직업군 자체가 빠르게 소멸하거나 재편되는 현상이 눈에 띕니다. 또한 디지털 감시 기술의 확산과 개인 정보 침해 문제도 상당히 우려스럽게 바라보고 있습니다. 이러한 변화들이 교육 현장과 어떻게 연결되는지 아직 명확히 파악하지 못한 상태입니다.",
+          "answer_j3_q2_fit": 3,
+          "answer_j3_q3": "가장 우려되는 현상은 AI 자동화로 인한 청년 고용 불안입니다 😟 특히 중산층 가정 출신으로 대학에 진학했지만 뚜렷한 기술적 전문성을 갖추지 못한 청년들이 가장 큰 어려움에 처할 것으로 예상됩니다. 저 자신도 학생들에게 무엇을 가르쳐야 하는지 확신이 없는 상태에서, 이 현상에 대해 솔직히 말하면 불안과 무력감을 동시에 느끼고 있습니다. 뚜렷한 대응 방식을 찾지 못한 채 하루하루를 보내고 있는 것이 현실입니다.",
+          "answer_j3_q3_fit": 3,
+          "answer_j3_q4": "달라질 것은 직업의 형태, 인간관계의 방식, 그리고 지식 습득의 경로라고 생각합니다 🌐 반면 변하지 않을 것은 인간이 타인으로부터 인정받고 싶어 하는 욕구, 그리고 불공정함에 분노하는 감각이라고 봅니다. 기술이 아무리 발전해도 사람과 사람 사이의 신뢰와 충성심, 그리고 소속감에 대한 갈망은 사라지지 않을 것입니다. 다만 그것이 어떤 형태로 표현될지는 예측하기 어렵습니다.",
+          "answer_j3_q4_fit": 3,
+          "answer_j3_q5": "제가 바라는 사회는 개인의 독립성이 존중받으면서도 공동체적 연대가 살아 있는 사회입니다 🌱 누군가의 취약함이 착취의 대상이 되지 않고, 다양한 방식으로 살아가는 사람들이 서로를 인정할 수 있는 사회를 소망합니다. 동시에 권위가 존중받되 그 권위가 투명하고 책임감 있게 행사되는 구조이길 바랍니다. 지금보다 훨씬 더 공정하고 안전한 세상이었으면 합니다.",
+          "answer_j3_q5_fit": 4,
+          "answer_j3_q6": "충성심, 독립성, 그리고 공정함이 제가 가장 중요하게 여기는 가치입니다 💡 충성심은 공동체를 유지하는 기반이고, 독립성은 개인이 외부 압력에 굴복하지 않을 수 있는 힘입니다. 공정함은 이 두 가지가 충돌할 때 균형을 잡아주는 원칙이라고 생각합니다. 또한 안전과 안정 역시 빼놓을 수 없는 가치로, 이것이 보장되어야 비로소 다른 가치들을 추구할 여유가 생긴다고 봅니다.",
+          "answer_j3_q6_fit": 4,
+          "answer_j3_q7": "제가 가르치는 학생들이 변화하는 세상 속에서도 자신의 중심을 잃지 않고 살아가기를 바랍니다 🙏 특정 직업이나 지위를 얻는 것보다, 어떤 상황에서도 스스로 판단하고 선택할 수 있는 사람으로 자라나기를 원합니다. 또한 타인의 고통에 공감하면서도 자신의 삶을 주체적으로 꾸려나갈 수 있는 균형감각을 갖추기를 바랍니다. 솔직히 말하면, 그런 사람으로 키울 수 있는 교사가 되고 싶다는 바람이 아직은 막연하게만 느껴집니다.",
+          "answer_j3_q7_fit": 3,
+          "answer_j3_meaning": 3,
+          "answer_j3_burden": 3,
+          "answer_j3_timing": 2,
+          "answer_j3_hard": [
+            "j3_q1",
+            "j3_q7"
+          ],
+          "answer_j3_hard_reason": "premise_mismatch",
+          "answer_j3_revise": "j3_q1의 경우, 졸업생 소식을 묻는 부분을 삭제하고 「현재 수업 중 가장 인상 깊었던 순간이나 학생의 반응은 무엇이었나요?」로 바꾸는 것이 좋을 것 같습니다. j3_q7도 「지금 내가 가르치는 아이들이 어떤 모습으로 살아가기 바라나요?」라는 질문 앞에 「교사로서 아직 확신이 없더라도 괜찮습니다」라는 안내 문구를 추가하면 심리적 부담이 줄어들 것 같습니다.",
+          "answer_j3_add": "교사로서 학생들에게 무언가를 가르친다는 것이 과연 의미가 있는 일인지에 대한 근본적인 의문이 가끔 듭니다 😶 특히 세상이 너무 빠르게 변하고 있어서, 지금 가르치는 내용이 학생들의 미래에 실제로 도움이 될지 확신하기 어렵습니다. 이 여정에서 그 불확실함 속에서도 교사로서 방향을 잡는 방법에 대한 이야기를 나눌 수 있었으면 좋겠습니다."
+        },
+        "group_values": {
+          "years_experience": "3-5"
+        },
+        "survey_answers": {
+          "j3_q1": "교사로서 짧은 경험 속에서도 유독 기억에 남는 학생이 있습니다 😊 조용하지만 논리적 사고가 뛰어났던 학생인데, 수업 중 제가 설명을 마치기도 전에 반례를 찾아내곤 했습니다. 그 학생이 지금 어떤 세상을 살아가고 있는지 궁금하면서도, 한편으로는 그 예리함이 오히려 세상과 마찰을 빚지는 않을까 하는 걱정도 듭니다. 아직 졸업 후 소식을 듣지 못했지만, 부디 자신의 방식대로 잘 살아가고 있기를 바랍니다.",
+          "j3_q1_fit": 2,
+          "j3_q2": "제가 주목하는 사회 현상은 인공지능 기술의 급속한 확산과 그로 인한 노동 구조의 변화입니다 🤔 특히 젊은 세대가 진입하려는 직업군 자체가 빠르게 소멸하거나 재편되는 현상이 눈에 띕니다. 또한 디지털 감시 기술의 확산과 개인 정보 침해 문제도 상당히 우려스럽게 바라보고 있습니다. 이러한 변화들이 교육 현장과 어떻게 연결되는지 아직 명확히 파악하지 못한 상태입니다.",
+          "j3_q2_fit": 3,
+          "j3_q3": "가장 우려되는 현상은 AI 자동화로 인한 청년 고용 불안입니다 😟 특히 중산층 가정 출신으로 대학에 진학했지만 뚜렷한 기술적 전문성을 갖추지 못한 청년들이 가장 큰 어려움에 처할 것으로 예상됩니다. 저 자신도 학생들에게 무엇을 가르쳐야 하는지 확신이 없는 상태에서, 이 현상에 대해 솔직히 말하면 불안과 무력감을 동시에 느끼고 있습니다. 뚜렷한 대응 방식을 찾지 못한 채 하루하루를 보내고 있는 것이 현실입니다.",
+          "j3_q3_fit": 3,
+          "j3_q4": "달라질 것은 직업의 형태, 인간관계의 방식, 그리고 지식 습득의 경로라고 생각합니다 🌐 반면 변하지 않을 것은 인간이 타인으로부터 인정받고 싶어 하는 욕구, 그리고 불공정함에 분노하는 감각이라고 봅니다. 기술이 아무리 발전해도 사람과 사람 사이의 신뢰와 충성심, 그리고 소속감에 대한 갈망은 사라지지 않을 것입니다. 다만 그것이 어떤 형태로 표현될지는 예측하기 어렵습니다.",
+          "j3_q4_fit": 3,
+          "j3_q5": "제가 바라는 사회는 개인의 독립성이 존중받으면서도 공동체적 연대가 살아 있는 사회입니다 🌱 누군가의 취약함이 착취의 대상이 되지 않고, 다양한 방식으로 살아가는 사람들이 서로를 인정할 수 있는 사회를 소망합니다. 동시에 권위가 존중받되 그 권위가 투명하고 책임감 있게 행사되는 구조이길 바랍니다. 지금보다 훨씬 더 공정하고 안전한 세상이었으면 합니다.",
+          "j3_q5_fit": 4,
+          "j3_q6": "충성심, 독립성, 그리고 공정함이 제가 가장 중요하게 여기는 가치입니다 💡 충성심은 공동체를 유지하는 기반이고, 독립성은 개인이 외부 압력에 굴복하지 않을 수 있는 힘입니다. 공정함은 이 두 가지가 충돌할 때 균형을 잡아주는 원칙이라고 생각합니다. 또한 안전과 안정 역시 빼놓을 수 없는 가치로, 이것이 보장되어야 비로소 다른 가치들을 추구할 여유가 생긴다고 봅니다.",
+          "j3_q6_fit": 4,
+          "j3_q7": "제가 가르치는 학생들이 변화하는 세상 속에서도 자신의 중심을 잃지 않고 살아가기를 바랍니다 🙏 특정 직업이나 지위를 얻는 것보다, 어떤 상황에서도 스스로 판단하고 선택할 수 있는 사람으로 자라나기를 원합니다. 또한 타인의 고통에 공감하면서도 자신의 삶을 주체적으로 꾸려나갈 수 있는 균형감각을 갖추기를 바랍니다. 솔직히 말하면, 그런 사람으로 키울 수 있는 교사가 되고 싶다는 바람이 아직은 막연하게만 느껴집니다.",
+          "j3_q7_fit": 3,
+          "j3_meaning": 3,
+          "j3_burden": 3,
+          "j3_timing": 2,
+          "j3_hard": [
+            "j3_q1",
+            "j3_q7"
+          ],
+          "j3_hard_reason": "premise_mismatch",
+          "j3_revise": "j3_q1의 경우, 졸업생 소식을 묻는 부분을 삭제하고 「현재 수업 중 가장 인상 깊었던 순간이나 학생의 반응은 무엇이었나요?」로 바꾸는 것이 좋을 것 같습니다. j3_q7도 「지금 내가 가르치는 아이들이 어떤 모습으로 살아가기 바라나요?」라는 질문 앞에 「교사로서 아직 확신이 없더라도 괜찮습니다」라는 안내 문구를 추가하면 심리적 부담이 줄어들 것 같습니다.",
+          "j3_add": "교사로서 학생들에게 무언가를 가르친다는 것이 과연 의미가 있는 일인지에 대한 근본적인 의문이 가끔 듭니다 😶 특히 세상이 너무 빠르게 변하고 있어서, 지금 가르치는 내용이 학생들의 미래에 실제로 도움이 될지 확신하기 어렵습니다. 이 여정에서 그 불확실함 속에서도 교사로서 방향을 잡는 방법에 대한 이야기를 나눌 수 있었으면 좋겠습니다."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__aQVMvSX",
+        "persona_id": "wiki-7dc0b3aa9839",
+        "persona_name": "Clara Rossi",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 6706,
+          "n_output_tokens": 1830,
+          "n_cache_tokens": null,
+          "cost_usd": 0.047568
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__aQVMvSX/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "Many years ago, I taught a young man — I shall call him Thomas — who was extraordinarily quiet, almost invisible in a classroom. He struggled to articulate his thoughts aloud, yet his written work was luminous, filled with a moral seriousness far beyond his years. I learned recently, through a mutual acquaintance, that he now works as a translator for a small humanitarian organisation, bridging languages and cultures in conflict zones. I confess that news moved me deeply. He found his voice not by speaking loudly, but by rendering the voices of others faithfully. It confirmed something I have long believed: that education's finest work is often invisible at the time it occurs.",
+          "answer_j3_q1_fit": 4,
+          "answer_j3_q2": "The phenomenon that occupies my attention most persistently is the accelerating erosion of shared epistemic ground — that is, the collapse of any common agreement about what constitutes reliable knowledge or trustworthy information. This is not merely a political problem; it is a civilisational one. I observe it in the way public discourse has fragmented into mutually incomprehensible tribes, each with its own curated reality. The environmental crisis compounds this, because it demands collective reasoning and long-horizon thinking precisely when our capacity for both appears most diminished.",
+          "answer_j3_q2_fit": 5,
+          "answer_j3_q3": "The phenomenon that concerns me most profoundly is the convergence of algorithmic information environments with rising authoritarianism. Those most likely to suffer are the young, who are forming their identities and moral imaginations within ecosystems designed to exploit attention rather than cultivate it. I also fear for the elderly, the economically marginalised, and those in societies where civil institutions are already fragile. As for my own response: I find myself oscillating between a disciplined effort to teach critical reading and a quieter, more private anxiety that such efforts are insufficient against structural forces of extraordinary scale. I do not permit that anxiety to silence me, but I will not pretend it is absent.",
+          "answer_j3_q3_fit": 5,
+          "answer_j3_q4": "What will change: the nature of labour, the texture of social interaction, the speed at which knowledge becomes obsolete, the geopolitical order, and the physical landscape of the planet. What will not change: the human need for meaning, for belonging, for narrative, for love, for transcendence. The ancient questions — who am I, what do I owe others, how shall I face suffering and death — will remain as urgent as they have always been. If anything, rapid technological change will make the humanities more necessary, not less, because it is within literature, philosophy, and theology that those questions have been most honestly examined.",
+          "answer_j3_q4_fit": 4,
+          "answer_j3_q5": "I hope for a society in which slowness is not a failure. One in which a person may read, reflect, and change their mind without being penalised for it. A society that honours care — for the ill, the old, the young, the stranger — as a form of genuine achievement. I long for communities in which disagreement is conducted with rigour and respect, and in which the natural world is treated not as a resource to be consumed but as a reality to be inhabited with gratitude and restraint.",
+          "answer_j3_q5_fit": 5,
+          "answer_j3_q6": "I would name three values above all: truthfulness, which requires the courage to revise one's own convictions; solidarity, which demands that we remain genuinely accountable to those who are unlike us; and what I can only call attentiveness — a quality of presence and care toward the particular, the local, the irreplaceable. These are not fashionable values. They resist quantification and resist the logic of efficiency. That is precisely why I believe they are indispensable.",
+          "answer_j3_q6_fit": 5,
+          "answer_j3_q7": "I want them to live with what I would call a rooted freedom — grounded enough in their own values and traditions that they are not simply swept along by whatever current is strongest at the moment, yet open enough to genuine encounter with the other that they are not merely self-enclosed. I want them to be capable of grief, because grief is the mark of having loved something real. I want them to be capable of wonder, because wonder is the beginning of inquiry. And I want them to know that a life of meaning is not the same as a life of comfort, and to be at peace with that distinction.",
+          "answer_j3_q7_fit": 5,
+          "answer_j3_meaning": 5,
+          "answer_j3_burden": 2,
+          "answer_j3_timing": 5,
+          "answer_j3_hard": [
+            "none"
+          ],
+          "answer_j3_hard_reason": "no_difficulty",
+          "answer_j3_revise": "The opening question presupposes that a teacher has witnessed a student's life beyond the classroom — through graduation, career, or ongoing contact. For teachers in their first five years, this premise often does not hold. I would revise it as follows: 'Among the students you have met so far, is there one whose presence in your classroom changed something in you as a teacher? What was it about that student that stayed with you?' This preserves the reflective intent without requiring biographical knowledge the early-career teacher cannot yet possess. Similarly, the question about predicting future society might be reframed around a more immediate horizon: 'What kind of world do you sense your students are already living in, outside your classroom?'",
+          "answer_j3_add": "The question I find myself carrying, and which this journey did not quite reach, is this: how does one teach with genuine hope when one is not, privately, very hopeful? I do not mean despair — I mean the honest condition of someone who has read enough history to know how badly things can go, and who nonetheless stands before young people each day with the responsibility to enlarge rather than diminish their sense of possibility. That tension between private sobriety and public vocation is, I think, one of the most demanding aspects of teaching at this stage of life, and I would welcome a space to examine it more directly."
+        },
+        "group_values": {
+          "years_experience": "20+"
+        },
+        "survey_answers": {
+          "j3_q1": "Many years ago, I taught a young man — I shall call him Thomas — who was extraordinarily quiet, almost invisible in a classroom. He struggled to articulate his thoughts aloud, yet his written work was luminous, filled with a moral seriousness far beyond his years. I learned recently, through a mutual acquaintance, that he now works as a translator for a small humanitarian organisation, bridging languages and cultures in conflict zones. I confess that news moved me deeply. He found his voice not by speaking loudly, but by rendering the voices of others faithfully. It confirmed something I have long believed: that education's finest work is often invisible at the time it occurs.",
+          "j3_q1_fit": 4,
+          "j3_q2": "The phenomenon that occupies my attention most persistently is the accelerating erosion of shared epistemic ground — that is, the collapse of any common agreement about what constitutes reliable knowledge or trustworthy information. This is not merely a political problem; it is a civilisational one. I observe it in the way public discourse has fragmented into mutually incomprehensible tribes, each with its own curated reality. The environmental crisis compounds this, because it demands collective reasoning and long-horizon thinking precisely when our capacity for both appears most diminished.",
+          "j3_q2_fit": 5,
+          "j3_q3": "The phenomenon that concerns me most profoundly is the convergence of algorithmic information environments with rising authoritarianism. Those most likely to suffer are the young, who are forming their identities and moral imaginations within ecosystems designed to exploit attention rather than cultivate it. I also fear for the elderly, the economically marginalised, and those in societies where civil institutions are already fragile. As for my own response: I find myself oscillating between a disciplined effort to teach critical reading and a quieter, more private anxiety that such efforts are insufficient against structural forces of extraordinary scale. I do not permit that anxiety to silence me, but I will not pretend it is absent.",
+          "j3_q3_fit": 5,
+          "j3_q4": "What will change: the nature of labour, the texture of social interaction, the speed at which knowledge becomes obsolete, the geopolitical order, and the physical landscape of the planet. What will not change: the human need for meaning, for belonging, for narrative, for love, for transcendence. The ancient questions — who am I, what do I owe others, how shall I face suffering and death — will remain as urgent as they have always been. If anything, rapid technological change will make the humanities more necessary, not less, because it is within literature, philosophy, and theology that those questions have been most honestly examined.",
+          "j3_q4_fit": 4,
+          "j3_q5": "I hope for a society in which slowness is not a failure. One in which a person may read, reflect, and change their mind without being penalised for it. A society that honours care — for the ill, the old, the young, the stranger — as a form of genuine achievement. I long for communities in which disagreement is conducted with rigour and respect, and in which the natural world is treated not as a resource to be consumed but as a reality to be inhabited with gratitude and restraint.",
+          "j3_q5_fit": 5,
+          "j3_q6": "I would name three values above all: truthfulness, which requires the courage to revise one's own convictions; solidarity, which demands that we remain genuinely accountable to those who are unlike us; and what I can only call attentiveness — a quality of presence and care toward the particular, the local, the irreplaceable. These are not fashionable values. They resist quantification and resist the logic of efficiency. That is precisely why I believe they are indispensable.",
+          "j3_q6_fit": 5,
+          "j3_q7": "I want them to live with what I would call a rooted freedom — grounded enough in their own values and traditions that they are not simply swept along by whatever current is strongest at the moment, yet open enough to genuine encounter with the other that they are not merely self-enclosed. I want them to be capable of grief, because grief is the mark of having loved something real. I want them to be capable of wonder, because wonder is the beginning of inquiry. And I want them to know that a life of meaning is not the same as a life of comfort, and to be at peace with that distinction.",
+          "j3_q7_fit": 5,
+          "j3_meaning": 5,
+          "j3_burden": 2,
+          "j3_timing": 5,
+          "j3_hard": [
+            "none"
+          ],
+          "j3_hard_reason": "no_difficulty",
+          "j3_revise": "The opening question presupposes that a teacher has witnessed a student's life beyond the classroom — through graduation, career, or ongoing contact. For teachers in their first five years, this premise often does not hold. I would revise it as follows: 'Among the students you have met so far, is there one whose presence in your classroom changed something in you as a teacher? What was it about that student that stayed with you?' This preserves the reflective intent without requiring biographical knowledge the early-career teacher cannot yet possess. Similarly, the question about predicting future society might be reframed around a more immediate horizon: 'What kind of world do you sense your students are already living in, outside your classroom?'",
+          "j3_add": "The question I find myself carrying, and which this journey did not quite reach, is this: how does one teach with genuine hope when one is not, privately, very hopeful? I do not mean despair — I mean the honest condition of someone who has read enough history to know how badly things can go, and who nonetheless stands before young people each day with the responsibility to enlarge rather than diminish their sense of possibility. That tension between private sobriety and public vocation is, I think, one of the most demanding aspects of teaching at this stage of life, and I would welcome a space to examine it more directly."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__j8vy6rD",
+        "persona_id": "synthetic-b964a05fbd6b",
+        "persona_name": "Camila Lopez",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10794,
+          "n_output_tokens": 2456,
+          "n_cache_tokens": null,
+          "cost_usd": 0.069222
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__j8vy6rD/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "제가 가르쳤던 학생 중에 마르코스라는 아이가 기억에 남아요. 수업 중에 항상 딴짓을 하면서도 질문은 날카로웠던 아이였는데, 졸업 후 소식을 들으니 지역 커뮤니티 라디오에서 프로그램을 진행하고 있다고 하더라고요. 그 아이가 교실에서 보여줬던 에너지가 결국 자기 자리를 찾은 것 같아서 뭔가 뭉클했어요.",
+          "answer_j3_q1_fit": 3,
+          "answer_j3_q2": "제가 가장 주목하는 건 경제적 불평등의 심화예요. 뉴스에서도 계속 나오고, 실제로 학교 현장에서도 학생들 간의 격차가 눈에 보이거든요. 어떤 아이는 방과 후 학원을 여러 개 다니고, 어떤 아이는 집에 가면 바로 아르바이트를 해야 하는 상황이에요. 그 차이가 교실 안에서 이미 시작된다는 게 저는 계속 마음에 걸려요.",
+          "answer_j3_q2_fit": 4,
+          "answer_j3_q3": "자동화와 AI로 인한 노동 시장의 변화가 가장 우려됩니다. 특히 중산층 이하 가정 출신의 청년들이 가장 큰 타격을 받을 것 같아요. 반복적인 업무가 자동화되면 그 일자리를 주로 차지했던 사람들이 대안을 찾기 어려워지거든요. 저 자신은 이 현상에 대해 솔직히 좀 무력감을 느끼고 있어요. 교실에서 뭔가를 가르치면서도 '이게 저 아이들의 미래에 실제로 도움이 될까'라는 의문이 자꾸 생기거든요.",
+          "answer_j3_q3_fit": 4,
+          "answer_j3_q4": "달라지는 것은 일하는 방식, 커뮤니케이션 방식, 그리고 사람들이 공동체를 구성하는 방식이라고 봐요. AI와 디지털 기술이 더 깊숙이 들어올 거고, 국경의 의미도 지금과는 달라질 것 같아요. 반면 변하지 않을 것은 인간의 관계에 대한 갈망, 공정함에 대한 요구, 그리고 의미 있는 삶을 살고 싶다는 욕구예요. 기술이 아무리 발전해도 사람은 결국 연결되고 싶어하고 인정받고 싶어한다고 생각해요.",
+          "answer_j3_q4_fit": 3,
+          "answer_j3_q5": "모든 사람이 태어난 배경에 상관없이 자신의 잠재력을 펼칠 수 있는 사회요. 기회가 공정하게 분배되고, 실패해도 다시 일어설 수 있는 안전망이 있는 사회요. 또 다양한 방식으로 기여하는 사람들이 각자의 방식으로 존중받는 사회이기도 하고요. 경쟁보다 협력이 더 가치 있게 여겨지는 문화가 자리 잡혔으면 좋겠어요.",
+          "answer_j3_q5_fit": 4,
+          "answer_j3_q6": "공정함, 연대, 그리고 인간의 존엄성이요. 이 세 가지가 없으면 아무리 기술이 발전하고 경제가 성장해도 사람들은 행복하지 않다고 생각해요. 특히 연대는 지금 시대에 점점 약해지고 있는 것 같아서 더 중요하게 여기게 됐어요.",
+          "answer_j3_q6_fit": 4,
+          "answer_j3_q7": "스스로 생각하고 판단할 수 있는 사람으로 살아가기를 바라요. 누군가 정해준 길을 그냥 따라가는 게 아니라, 자기가 무엇을 원하는지 알고 그것을 위해 주변과 협력할 수 있는 사람이요. 실패를 두려워하지 않고, 다른 사람의 어려움에 무감각해지지 않는 사람이면 좋겠어요. 제가 가르치는 내용보다 그런 태도를 남겨줄 수 있으면 더 좋겠다고 생각해요.",
+          "answer_j3_q7_fit": 3,
+          "answer_j3_meaning": 4,
+          "answer_j3_burden": 3,
+          "answer_j3_timing": 3,
+          "answer_j3_hard": [
+            "j3_q4",
+            "j3_q7"
+          ],
+          "answer_j3_hard_reason": "too_abstract",
+          "answer_j3_revise": "j3_q7 질문을 바꾸면 좋겠어요. '지금 내가 가르치는 아이들이 어떤 모습으로 자기 세대의 세상을 살아가기 바라나요?'는 경력이 짧은 교사에게는 너무 거시적으로 느껴질 수 있어요. 대신 '지금 내 학생 중 한 명이 10년 후 어떤 사람이 되어 있으면 좋겠나요? 그 모습을 위해 내가 지금 할 수 있는 것은 무엇인가요?'처럼 구체적인 한 명의 학생을 기준으로 생각하게 하면 더 답하기 쉬울 것 같아요.",
+          "answer_j3_add": "교사로서 사회 변화에 어떻게 반응해야 하는지에 대한 이야기를 더 나누고 싶어요. 뭔가 문제를 인식하는 건 되는데, 교실 안에서 실제로 무엇을 다르게 할 수 있는지에 대한 고민이 아직 정리가 안 돼 있거든요. 그 간극이 저한테는 지금 가장 큰 숙제예요."
+        },
+        "group_values": {
+          "years_experience": "3-5"
+        },
+        "survey_answers": {
+          "j3_q1": "제가 가르쳤던 학생 중에 마르코스라는 아이가 기억에 남아요. 수업 중에 항상 딴짓을 하면서도 질문은 날카로웠던 아이였는데, 졸업 후 소식을 들으니 지역 커뮤니티 라디오에서 프로그램을 진행하고 있다고 하더라고요. 그 아이가 교실에서 보여줬던 에너지가 결국 자기 자리를 찾은 것 같아서 뭔가 뭉클했어요.",
+          "j3_q1_fit": 3,
+          "j3_q2": "제가 가장 주목하는 건 경제적 불평등의 심화예요. 뉴스에서도 계속 나오고, 실제로 학교 현장에서도 학생들 간의 격차가 눈에 보이거든요. 어떤 아이는 방과 후 학원을 여러 개 다니고, 어떤 아이는 집에 가면 바로 아르바이트를 해야 하는 상황이에요. 그 차이가 교실 안에서 이미 시작된다는 게 저는 계속 마음에 걸려요.",
+          "j3_q2_fit": 4,
+          "j3_q3": "자동화와 AI로 인한 노동 시장의 변화가 가장 우려됩니다. 특히 중산층 이하 가정 출신의 청년들이 가장 큰 타격을 받을 것 같아요. 반복적인 업무가 자동화되면 그 일자리를 주로 차지했던 사람들이 대안을 찾기 어려워지거든요. 저 자신은 이 현상에 대해 솔직히 좀 무력감을 느끼고 있어요. 교실에서 뭔가를 가르치면서도 '이게 저 아이들의 미래에 실제로 도움이 될까'라는 의문이 자꾸 생기거든요.",
+          "j3_q3_fit": 4,
+          "j3_q4": "달라지는 것은 일하는 방식, 커뮤니케이션 방식, 그리고 사람들이 공동체를 구성하는 방식이라고 봐요. AI와 디지털 기술이 더 깊숙이 들어올 거고, 국경의 의미도 지금과는 달라질 것 같아요. 반면 변하지 않을 것은 인간의 관계에 대한 갈망, 공정함에 대한 요구, 그리고 의미 있는 삶을 살고 싶다는 욕구예요. 기술이 아무리 발전해도 사람은 결국 연결되고 싶어하고 인정받고 싶어한다고 생각해요.",
+          "j3_q4_fit": 3,
+          "j3_q5": "모든 사람이 태어난 배경에 상관없이 자신의 잠재력을 펼칠 수 있는 사회요. 기회가 공정하게 분배되고, 실패해도 다시 일어설 수 있는 안전망이 있는 사회요. 또 다양한 방식으로 기여하는 사람들이 각자의 방식으로 존중받는 사회이기도 하고요. 경쟁보다 협력이 더 가치 있게 여겨지는 문화가 자리 잡혔으면 좋겠어요.",
+          "j3_q5_fit": 4,
+          "j3_q6": "공정함, 연대, 그리고 인간의 존엄성이요. 이 세 가지가 없으면 아무리 기술이 발전하고 경제가 성장해도 사람들은 행복하지 않다고 생각해요. 특히 연대는 지금 시대에 점점 약해지고 있는 것 같아서 더 중요하게 여기게 됐어요.",
+          "j3_q6_fit": 4,
+          "j3_q7": "스스로 생각하고 판단할 수 있는 사람으로 살아가기를 바라요. 누군가 정해준 길을 그냥 따라가는 게 아니라, 자기가 무엇을 원하는지 알고 그것을 위해 주변과 협력할 수 있는 사람이요. 실패를 두려워하지 않고, 다른 사람의 어려움에 무감각해지지 않는 사람이면 좋겠어요. 제가 가르치는 내용보다 그런 태도를 남겨줄 수 있으면 더 좋겠다고 생각해요.",
+          "j3_q7_fit": 3,
+          "j3_meaning": 4,
+          "j3_burden": 3,
+          "j3_timing": 3,
+          "j3_hard": [
+            "j3_q4",
+            "j3_q7"
+          ],
+          "j3_hard_reason": "too_abstract",
+          "j3_revise": "j3_q7 질문을 바꾸면 좋겠어요. '지금 내가 가르치는 아이들이 어떤 모습으로 자기 세대의 세상을 살아가기 바라나요?'는 경력이 짧은 교사에게는 너무 거시적으로 느껴질 수 있어요. 대신 '지금 내 학생 중 한 명이 10년 후 어떤 사람이 되어 있으면 좋겠나요? 그 모습을 위해 내가 지금 할 수 있는 것은 무엇인가요?'처럼 구체적인 한 명의 학생을 기준으로 생각하게 하면 더 답하기 쉬울 것 같아요.",
+          "j3_add": "교사로서 사회 변화에 어떻게 반응해야 하는지에 대한 이야기를 더 나누고 싶어요. 뭔가 문제를 인식하는 건 되는데, 교실 안에서 실제로 무엇을 다르게 할 수 있는지에 대한 고민이 아직 정리가 안 돼 있거든요. 그 간극이 저한테는 지금 가장 큰 숙제예요."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__qfERqrv",
+        "persona_id": "wiki-f238fa8b1fd1",
+        "persona_name": "Noah Martinez",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 4667,
+          "n_output_tokens": 1495,
+          "n_cache_tokens": null,
+          "cost_usd": 0.036426
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__qfERqrv/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "One student who stands out is a young man named Danny, who struggled early on in my physical education classes because he lacked confidence in his athletic ability. He was always the last picked, always apologizing for himself. I made a point of putting him in leadership roles during team drills — not because he was the best, but because I saw something in him. Years later he reached out to let me know he had become a high school football coach himself. That meant more to me than any award I received in my career.",
+          "answer_j3_q1_fit": 5,
+          "answer_j3_q2": "The phenomenon I pay closest attention to is the accelerating erosion of shared civic identity and the fragmentation of communities — both physical and digital. People increasingly live in information bubbles, and I see this pulling apart the kind of common ground that a functioning society depends on. I also watch the growing gap between those with access to quality education and those without, which compounds nearly every other inequality.",
+          "answer_j3_q2_fit": 4,
+          "answer_j3_q3": "The phenomenon I find most alarming is the combination of automation displacing workers and the education system failing to adapt quickly enough to prepare young people for that reality. Those who will suffer most are young people from lower-income backgrounds who don't have family networks or resources to absorb that disruption. Personally, I respond by staying informed and by advocating — even in retirement — for physical education and team-based learning as tools that build adaptability and resilience, skills no algorithm can easily replace.",
+          "answer_j3_q3_fit": 4,
+          "answer_j3_q4": "What will change: the nature of work, the pace of technological change, the demographics of communities, and the ways people communicate and form relationships. What will not change: the human need for belonging, the importance of trust, the value of physical health and embodied experience, and the fundamental desire to feel competent and recognized. Competition and cooperation will remain the twin engines of human progress — the forms will shift, but not the underlying drives.",
+          "answer_j3_q4_fit": 4,
+          "answer_j3_q5": "I hope for a society where hard work and genuine achievement are still recognized and rewarded, but where the floor is high enough that no one is left behind simply due to circumstance of birth. I want a society where people still gather in person — on fields, in gymnasiums, in town halls — and learn to compete and cooperate face to face. A society that values both individual excellence and collective responsibility.",
+          "answer_j3_q5_fit": 5,
+          "answer_j3_q6": "Discipline, integrity, and genuine teamwork. Not teamwork as a buzzword, but the real kind — where you subordinate your ego for a shared goal and trust that others will do the same. Also perseverance: the willingness to keep working when results don't come immediately. And honest knowledge — the commitment to truth even when it is inconvenient.",
+          "answer_j3_q6_fit": 5,
+          "answer_j3_q7": "I want them to be people who can take a hit and get back up — not just physically, but emotionally and professionally. I want them to be curious enough to keep learning long after they leave any classroom. Most of all, I want them to be the kind of teammates and citizens who make the people around them better. The world will be complicated in ways we cannot fully predict; what they need is character, competence, and the confidence to keep going.",
+          "answer_j3_q7_fit": 5,
+          "answer_j3_meaning": 4,
+          "answer_j3_burden": 2,
+          "answer_j3_timing": 5,
+          "answer_j3_hard": [
+            "j3_q4"
+          ],
+          "answer_j3_hard_reason": "too_abstract",
+          "answer_j3_revise": "For teachers with five or fewer years of experience, I would revise j3_q1 from asking about a memorable student's life after graduation — which early-career teachers may not yet know — to something like: 'Think of a student who surprised you or changed how you think about teaching. What was it about that student that stayed with you?' This keeps the reflective spirit without requiring long-term follow-up knowledge the teacher may not have.",
+          "answer_j3_add": "I would have liked a question about the role of physical education and sport in forming character — it is too often treated as peripheral when in my experience it is one of the most direct laboratories for teaching everything this journey is asking about: resilience, teamwork, discipline, and how to lose and try again. That story deserves more space in a conversation about what education is for."
+        },
+        "group_values": {
+          "years_experience": "11-20"
+        },
+        "survey_answers": {
+          "j3_q1": "One student who stands out is a young man named Danny, who struggled early on in my physical education classes because he lacked confidence in his athletic ability. He was always the last picked, always apologizing for himself. I made a point of putting him in leadership roles during team drills — not because he was the best, but because I saw something in him. Years later he reached out to let me know he had become a high school football coach himself. That meant more to me than any award I received in my career.",
+          "j3_q1_fit": 5,
+          "j3_q2": "The phenomenon I pay closest attention to is the accelerating erosion of shared civic identity and the fragmentation of communities — both physical and digital. People increasingly live in information bubbles, and I see this pulling apart the kind of common ground that a functioning society depends on. I also watch the growing gap between those with access to quality education and those without, which compounds nearly every other inequality.",
+          "j3_q2_fit": 4,
+          "j3_q3": "The phenomenon I find most alarming is the combination of automation displacing workers and the education system failing to adapt quickly enough to prepare young people for that reality. Those who will suffer most are young people from lower-income backgrounds who don't have family networks or resources to absorb that disruption. Personally, I respond by staying informed and by advocating — even in retirement — for physical education and team-based learning as tools that build adaptability and resilience, skills no algorithm can easily replace.",
+          "j3_q3_fit": 4,
+          "j3_q4": "What will change: the nature of work, the pace of technological change, the demographics of communities, and the ways people communicate and form relationships. What will not change: the human need for belonging, the importance of trust, the value of physical health and embodied experience, and the fundamental desire to feel competent and recognized. Competition and cooperation will remain the twin engines of human progress — the forms will shift, but not the underlying drives.",
+          "j3_q4_fit": 4,
+          "j3_q5": "I hope for a society where hard work and genuine achievement are still recognized and rewarded, but where the floor is high enough that no one is left behind simply due to circumstance of birth. I want a society where people still gather in person — on fields, in gymnasiums, in town halls — and learn to compete and cooperate face to face. A society that values both individual excellence and collective responsibility.",
+          "j3_q5_fit": 5,
+          "j3_q6": "Discipline, integrity, and genuine teamwork. Not teamwork as a buzzword, but the real kind — where you subordinate your ego for a shared goal and trust that others will do the same. Also perseverance: the willingness to keep working when results don't come immediately. And honest knowledge — the commitment to truth even when it is inconvenient.",
+          "j3_q6_fit": 5,
+          "j3_q7": "I want them to be people who can take a hit and get back up — not just physically, but emotionally and professionally. I want them to be curious enough to keep learning long after they leave any classroom. Most of all, I want them to be the kind of teammates and citizens who make the people around them better. The world will be complicated in ways we cannot fully predict; what they need is character, competence, and the confidence to keep going.",
+          "j3_q7_fit": 5,
+          "j3_meaning": 4,
+          "j3_burden": 2,
+          "j3_timing": 5,
+          "j3_hard": [
+            "j3_q4"
+          ],
+          "j3_hard_reason": "too_abstract",
+          "j3_revise": "For teachers with five or fewer years of experience, I would revise j3_q1 from asking about a memorable student's life after graduation — which early-career teachers may not yet know — to something like: 'Think of a student who surprised you or changed how you think about teaching. What was it about that student that stayed with you?' This keeps the reflective spirit without requiring long-term follow-up knowledge the teacher may not have.",
+          "j3_add": "I would have liked a question about the role of physical education and sport in forming character — it is too often treated as peripheral when in my experience it is one of the most direct laboratories for teaching everything this journey is asking about: resilience, teamwork, discipline, and how to lose and try again. That story deserves more space in a conversation about what education is for."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__qpBsmWY",
+        "persona_id": "wiki-69c7a3a38dce",
+        "persona_name": "Priya Iyer",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 4607,
+          "n_output_tokens": 1467,
+          "n_cache_tokens": null,
+          "cost_usd": 0.035826
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__qpBsmWY/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "One student stands out clearly. She was a young girl with exceptional discipline and raw athletic talent, but lacked confidence in high-pressure situations. I worked with her closely over two seasons. Years later, I learned she became a regional-level coach herself. That outcome felt more meaningful to me than any medal. She understood what it means to build others up, which is precisely what I had hoped to instill.",
+          "answer_j3_q1_fit": 5,
+          "answer_j3_q2": "The most significant phenomenon I observe is the accelerating fragmentation of community ties alongside the rise of digital connectivity. People are more connected through screens yet more isolated in practice. In sports and fitness contexts, I see this acutely: young people have access to vast information but lack the sustained commitment and team orientation that physical training demands. The erosion of disciplined community structures concerns me greatly.",
+          "answer_j3_q2_fit": 4,
+          "answer_j3_q3": "The phenomenon I find most alarming is the displacement of human labor and purpose through automation, combined with deepening economic inequality. Those most at risk are young people from lower-income backgrounds who lack access to quality education and mentorship. They will face a labor market that rewards narrow technical skills while the broader human capacities — teamwork, resilience, adaptability — remain undervalued. My own response has been to stay engaged with community sports programs as a volunteer, believing that physical discipline and team experience build precisely those capacities that technology cannot replicate.",
+          "answer_j3_q3_fit": 4,
+          "answer_j3_q4": "What will change: the nature of work, the speed of information, the structure of institutions, and the boundaries of competition — both economic and geopolitical. What will not change: the human need for belonging, the value of earned achievement, the importance of physical health, and the fundamental dynamics of trust within teams. People will still need to learn how to lose well and how to support one another under pressure. Those constants are what education must protect.",
+          "answer_j3_q4_fit": 4,
+          "answer_j3_q5": "A society where achievement is accessible regardless of background, where community structures are strong enough to hold individuals accountable and supported, and where health — physical and mental — is treated as a collective responsibility. I want a society that rewards sustained effort and genuine competence, not merely visibility or short-term performance. Loyalty to one's community should be recognized as a serious value, not dismissed as outdated.",
+          "answer_j3_q5_fit": 4,
+          "answer_j3_q6": "Discipline, collective responsibility, and merit-based achievement. These three are foundational. Without discipline, potential is wasted. Without collective responsibility, individual achievement becomes hollow. Without genuine merit as the basis for recognition, trust in institutions collapses. I would add loyalty — loyalty to one's team, one's community, and one's nation — as an underrated but essential value.",
+          "answer_j3_q6_fit": 5,
+          "answer_j3_q7": "I want them to live with clarity of purpose and the capacity to work within a team while maintaining personal integrity. I want them to be competitive without being destructive, and resilient without being indifferent to others. They should understand that the world will be demanding and that their preparation — physical, mental, and moral — is what will determine their contribution. I do not want them to merely survive their generation. I want them to improve it.",
+          "answer_j3_q7_fit": 5,
+          "answer_j3_meaning": 4,
+          "answer_j3_burden": 2,
+          "answer_j3_timing": 4,
+          "answer_j3_hard": [
+            "j3_q4"
+          ],
+          "answer_j3_hard_reason": "too_abstract",
+          "answer_j3_revise": "For teachers with five or fewer years of experience, the opening question about memorable students and their post-graduation lives may be premature. I would revise it to: 'Among the students you have taught so far, who challenged your expectations most — and what did that experience teach you about your role as an educator?' This grounds the reflection in actual classroom experience rather than longitudinal outcomes the teacher may not yet have.",
+          "answer_j3_add": "I would welcome a question about the relationship between physical education and character formation — specifically, whether the structures of competitive sport can serve as a model for broader educational practice. In my experience, the discipline and team dynamics of athletic training produce outcomes that classroom instruction alone rarely achieves. That connection deserves more deliberate attention in educational philosophy discussions."
+        },
+        "group_values": {
+          "years_experience": "6-10"
+        },
+        "survey_answers": {
+          "j3_q1": "One student stands out clearly. She was a young girl with exceptional discipline and raw athletic talent, but lacked confidence in high-pressure situations. I worked with her closely over two seasons. Years later, I learned she became a regional-level coach herself. That outcome felt more meaningful to me than any medal. She understood what it means to build others up, which is precisely what I had hoped to instill.",
+          "j3_q1_fit": 5,
+          "j3_q2": "The most significant phenomenon I observe is the accelerating fragmentation of community ties alongside the rise of digital connectivity. People are more connected through screens yet more isolated in practice. In sports and fitness contexts, I see this acutely: young people have access to vast information but lack the sustained commitment and team orientation that physical training demands. The erosion of disciplined community structures concerns me greatly.",
+          "j3_q2_fit": 4,
+          "j3_q3": "The phenomenon I find most alarming is the displacement of human labor and purpose through automation, combined with deepening economic inequality. Those most at risk are young people from lower-income backgrounds who lack access to quality education and mentorship. They will face a labor market that rewards narrow technical skills while the broader human capacities — teamwork, resilience, adaptability — remain undervalued. My own response has been to stay engaged with community sports programs as a volunteer, believing that physical discipline and team experience build precisely those capacities that technology cannot replicate.",
+          "j3_q3_fit": 4,
+          "j3_q4": "What will change: the nature of work, the speed of information, the structure of institutions, and the boundaries of competition — both economic and geopolitical. What will not change: the human need for belonging, the value of earned achievement, the importance of physical health, and the fundamental dynamics of trust within teams. People will still need to learn how to lose well and how to support one another under pressure. Those constants are what education must protect.",
+          "j3_q4_fit": 4,
+          "j3_q5": "A society where achievement is accessible regardless of background, where community structures are strong enough to hold individuals accountable and supported, and where health — physical and mental — is treated as a collective responsibility. I want a society that rewards sustained effort and genuine competence, not merely visibility or short-term performance. Loyalty to one's community should be recognized as a serious value, not dismissed as outdated.",
+          "j3_q5_fit": 4,
+          "j3_q6": "Discipline, collective responsibility, and merit-based achievement. These three are foundational. Without discipline, potential is wasted. Without collective responsibility, individual achievement becomes hollow. Without genuine merit as the basis for recognition, trust in institutions collapses. I would add loyalty — loyalty to one's team, one's community, and one's nation — as an underrated but essential value.",
+          "j3_q6_fit": 5,
+          "j3_q7": "I want them to live with clarity of purpose and the capacity to work within a team while maintaining personal integrity. I want them to be competitive without being destructive, and resilient without being indifferent to others. They should understand that the world will be demanding and that their preparation — physical, mental, and moral — is what will determine their contribution. I do not want them to merely survive their generation. I want them to improve it.",
+          "j3_q7_fit": 5,
+          "j3_meaning": 4,
+          "j3_burden": 2,
+          "j3_timing": 4,
+          "j3_hard": [
+            "j3_q4"
+          ],
+          "j3_hard_reason": "too_abstract",
+          "j3_revise": "For teachers with five or fewer years of experience, the opening question about memorable students and their post-graduation lives may be premature. I would revise it to: 'Among the students you have taught so far, who challenged your expectations most — and what did that experience teach you about your role as an educator?' This grounds the reflection in actual classroom experience rather than longitudinal outcomes the teacher may not yet have.",
+          "j3_add": "I would welcome a question about the relationship between physical education and character formation — specifically, whether the structures of competitive sport can serve as a model for broader educational practice. In my experience, the discipline and team dynamics of athletic training produce outcomes that classroom instruction alone rarely achieves. That connection deserves more deliberate attention in educational philosophy discussions."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__vbrwPWm",
+        "persona_id": "wiki-6c7d3cb2ca47",
+        "persona_name": "Jun Sato",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 7123,
+          "n_output_tokens": 3461,
+          "n_cache_tokens": null,
+          "cost_usd": 0.073284
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__vbrwPWm/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "20여 년 전 제 수업을 들었던 한 학생이 기억에 남습니다. 컴퓨터 과학과 음악 두 가지 모두에 깊은 관심을 가졌지만, 주변으로부터 '하나만 선택하라'는 압박을 받던 학생이었습니다. 저는 그 학생에게 두 분야의 교차점에서 자신만의 길을 개척할 수 있다고 격려했습니다. 최근 소식을 들으니, 그는 현재 음악 기술 스타트업을 공동 창업하여 AI를 활용한 음악 창작 도구를 개발하고 있다고 합니다. 그 학생의 여정을 보며, 경계를 넘나드는 사고가 얼마나 중요한지를 다시 한번 확인하게 됩니다.",
+          "answer_j3_q1_fit": 5,
+          "answer_j3_q2": "제가 가장 주목하는 사회 현상은 인공지능 기술의 급속한 확산과 그로 인한 노동 시장 및 지식 생산 방식의 근본적 변화입니다. 특히 생성형 AI가 교육, 창작, 연구 등 지적 노동의 핵심 영역까지 빠르게 침투하고 있는 현상을 주의 깊게 관찰하고 있습니다. 아울러 디지털 격차가 경제적 불평등과 결합하여 새로운 형태의 사회적 배제를 만들어내고 있다는 점도 우려스럽습니다. 동아시아 사회에서 관찰되는 초저출산과 고령화의 가속화, 그리고 이에 따른 세대 간 갈등 심화도 중요한 현상으로 인식하고 있습니다.",
+          "answer_j3_q2_fit": 5,
+          "answer_j3_q3": "가장 우려되는 현상은 AI 기술 가속화로 인한 교육과 노동의 의미 재편입니다. 이로 인해 어려움에 처할 대상은 크게 두 집단입니다. 첫째, 디지털 리터러시와 비판적 사고 역량이 부족한 채 노동 시장에 진입하는 청년층입니다. 둘째, 급격한 기술 변화에 적응할 재교육 기회를 갖지 못하는 중장년 노동자들입니다. 저는 이 현상에 대해 단순히 우려하는 데 그치지 않고, 교육과정 설계 차원에서 능동적으로 대응하고 있습니다. 구체적으로는 비판적 사고, 창의적 문제 해결, 윤리적 판단력을 중심에 두는 교육 프로그램 개발에 집중하고 있으며, AI 도구를 교육 현장에 통합하는 실험적 커리큘럼을 운영하고 있습니다.",
+          "answer_j3_q3_fit": 5,
+          "answer_j3_q4": "달라질 것들: 특정 직종과 직무는 자동화로 대체되거나 근본적으로 변형될 것입니다. 지식의 생산, 유통, 소비 방식이 AI 매개 환경 속에서 재구성될 것입니다. 국가와 기업의 경계를 넘나드는 협업이 일상화되고, 물리적 공간의 의미가 약화될 것입니다. 변하지 않을 것들: 인간의 의미 추구 욕구와 타인과의 진정한 연결에 대한 갈망은 사라지지 않을 것입니다. 공정성과 존엄성에 대한 도덕적 감각, 아름다움을 인식하고 창조하려는 예술적 충동, 그리고 배움 자체에서 오는 기쁨도 본질적으로 변하지 않을 것입니다. 기술이 아무리 발전해도 인간 사회는 신뢰와 관계를 기반으로 작동할 것이라 믿습니다.",
+          "answer_j3_q4_fit": 4,
+          "answer_j3_q5": "저는 다양성이 실질적으로 존중받고, 개인이 자신의 고유한 잠재력을 발휘할 수 있는 사회를 바랍니다. 기술의 혜택이 특정 계층에 집중되지 않고 광범위하게 공유되며, 경제적 배경이나 출신에 관계없이 누구나 양질의 교육과 기회에 접근할 수 있는 사회이기를 원합니다. 또한 세대 간, 문화 간 대화가 활발하게 이루어지고, 이견과 갈등이 폭력이 아닌 이성적 토론과 민주적 절차를 통해 해소되는 사회를 소망합니다. 개인의 성취와 공동체의 번영이 상충하지 않고 서로를 강화하는 사회적 구조가 형성되기를 기대합니다.",
+          "answer_j3_q5_fit": 5,
+          "answer_j3_q6": "제가 가장 중요하게 여기는 가치는 다음과 같습니다. 첫째, 비판적 자율성: 외부의 권위나 알고리즘에 맹목적으로 따르지 않고 스스로 판단하고 선택할 수 있는 능력입니다. 둘째, 공감과 연대: 자신과 다른 배경을 가진 타인의 경험을 이해하고 함께 문제를 해결하려는 의지입니다. 셋째, 지적 겸손: 자신의 지식과 관점이 불완전할 수 있음을 인정하고 지속적으로 배우려는 태도입니다. 넷째, 미적 감수성: 기능성을 넘어 아름다움과 의미를 추구하는 인간적 능력입니다. 이 가치들은 기술이 아무리 발전해도 인간을 인간답게 만드는 핵심이라고 생각합니다.",
+          "answer_j3_q6_fit": 5,
+          "answer_j3_q7": "저는 제 학생들이 불확실성을 두려워하지 않고 그 속에서 의미를 발견하는 사람으로 자라기를 바랍니다. 기술을 도구로 능숙하게 활용하되, 기술에 종속되지 않는 주체적 인간으로 살아가기를 원합니다. 자신의 분야에서 깊이를 추구하면서도 다른 영역과 적극적으로 대화할 수 있는 경계를 넘나드는 사고를 갖추기를 바랍니다. 무엇보다, 성공의 기준을 외부에서 찾지 않고, 자신이 진정으로 가치 있다고 믿는 것을 위해 헌신하는 삶을 살아가기를 소망합니다. 그것이 제가 교육자로서 20년 넘게 교단에 선 가장 근본적인 이유입니다.",
+          "answer_j3_q7_fit": 5,
+          "answer_j3_meaning": 5,
+          "answer_j3_burden": 1,
+          "answer_j3_timing": 5,
+          "answer_j3_hard": [
+            "none"
+          ],
+          "answer_j3_hard_reason": "no_difficulty",
+          "answer_j3_revise": "교직 5년 차 이하 교사에게는 졸업생의 현재 모습을 묻는 j3_q1이 경험 부족으로 답하기 어려울 수 있습니다. 이를 다음과 같이 수정하면 좋겠습니다. 현행: '교사가 된 이후 만난 아이들 중 기억에 남는 아이를 떠올리고, 졸업 후 어떤 모습으로 살고 있는지 나누어 보세요.' 수정안: '교사가 된 이후 만난 아이들 중 가장 기억에 남는 순간이나 학생을 떠올려 보세요. 그 학생이 10년 후 어떤 모습으로 살아가기를 바라는지 이야기해 보세요.' 이렇게 하면 실제 졸업생 소식 없이도 교사로서의 희망과 기대를 통해 자신의 교육 가치관을 성찰할 수 있습니다.",
+          "answer_j3_add": "이 여정에서 더 깊이 다루고 싶은 주제는, 교육자 자신의 지속적 성장과 소진(burnout) 사이의 긴장입니다. 저는 학생들에게 평생 학습과 자기 쇄신을 강조하지만, 정작 교육자 자신이 제도적 압박과 변화의 속도 속에서 어떻게 자신의 열정과 철학을 유지할 수 있는지에 대한 성찰의 공간은 부족하다고 느낍니다. 또한 이중 문화적 배경을 가진 교육자로서, 서로 다른 교육 전통과 가치관 사이에서 어떻게 자신만의 통합적 교육철학을 구성해 왔는지에 대한 이야기도 나누고 싶습니다."
+        },
+        "group_values": {
+          "years_experience": "20+"
+        },
+        "survey_answers": {
+          "j3_q1": "20여 년 전 제 수업을 들었던 한 학생이 기억에 남습니다. 컴퓨터 과학과 음악 두 가지 모두에 깊은 관심을 가졌지만, 주변으로부터 '하나만 선택하라'는 압박을 받던 학생이었습니다. 저는 그 학생에게 두 분야의 교차점에서 자신만의 길을 개척할 수 있다고 격려했습니다. 최근 소식을 들으니, 그는 현재 음악 기술 스타트업을 공동 창업하여 AI를 활용한 음악 창작 도구를 개발하고 있다고 합니다. 그 학생의 여정을 보며, 경계를 넘나드는 사고가 얼마나 중요한지를 다시 한번 확인하게 됩니다.",
+          "j3_q1_fit": 5,
+          "j3_q2": "제가 가장 주목하는 사회 현상은 인공지능 기술의 급속한 확산과 그로 인한 노동 시장 및 지식 생산 방식의 근본적 변화입니다. 특히 생성형 AI가 교육, 창작, 연구 등 지적 노동의 핵심 영역까지 빠르게 침투하고 있는 현상을 주의 깊게 관찰하고 있습니다. 아울러 디지털 격차가 경제적 불평등과 결합하여 새로운 형태의 사회적 배제를 만들어내고 있다는 점도 우려스럽습니다. 동아시아 사회에서 관찰되는 초저출산과 고령화의 가속화, 그리고 이에 따른 세대 간 갈등 심화도 중요한 현상으로 인식하고 있습니다.",
+          "j3_q2_fit": 5,
+          "j3_q3": "가장 우려되는 현상은 AI 기술 가속화로 인한 교육과 노동의 의미 재편입니다. 이로 인해 어려움에 처할 대상은 크게 두 집단입니다. 첫째, 디지털 리터러시와 비판적 사고 역량이 부족한 채 노동 시장에 진입하는 청년층입니다. 둘째, 급격한 기술 변화에 적응할 재교육 기회를 갖지 못하는 중장년 노동자들입니다. 저는 이 현상에 대해 단순히 우려하는 데 그치지 않고, 교육과정 설계 차원에서 능동적으로 대응하고 있습니다. 구체적으로는 비판적 사고, 창의적 문제 해결, 윤리적 판단력을 중심에 두는 교육 프로그램 개발에 집중하고 있으며, AI 도구를 교육 현장에 통합하는 실험적 커리큘럼을 운영하고 있습니다.",
+          "j3_q3_fit": 5,
+          "j3_q4": "달라질 것들: 특정 직종과 직무는 자동화로 대체되거나 근본적으로 변형될 것입니다. 지식의 생산, 유통, 소비 방식이 AI 매개 환경 속에서 재구성될 것입니다. 국가와 기업의 경계를 넘나드는 협업이 일상화되고, 물리적 공간의 의미가 약화될 것입니다. 변하지 않을 것들: 인간의 의미 추구 욕구와 타인과의 진정한 연결에 대한 갈망은 사라지지 않을 것입니다. 공정성과 존엄성에 대한 도덕적 감각, 아름다움을 인식하고 창조하려는 예술적 충동, 그리고 배움 자체에서 오는 기쁨도 본질적으로 변하지 않을 것입니다. 기술이 아무리 발전해도 인간 사회는 신뢰와 관계를 기반으로 작동할 것이라 믿습니다.",
+          "j3_q4_fit": 4,
+          "j3_q5": "저는 다양성이 실질적으로 존중받고, 개인이 자신의 고유한 잠재력을 발휘할 수 있는 사회를 바랍니다. 기술의 혜택이 특정 계층에 집중되지 않고 광범위하게 공유되며, 경제적 배경이나 출신에 관계없이 누구나 양질의 교육과 기회에 접근할 수 있는 사회이기를 원합니다. 또한 세대 간, 문화 간 대화가 활발하게 이루어지고, 이견과 갈등이 폭력이 아닌 이성적 토론과 민주적 절차를 통해 해소되는 사회를 소망합니다. 개인의 성취와 공동체의 번영이 상충하지 않고 서로를 강화하는 사회적 구조가 형성되기를 기대합니다.",
+          "j3_q5_fit": 5,
+          "j3_q6": "제가 가장 중요하게 여기는 가치는 다음과 같습니다. 첫째, 비판적 자율성: 외부의 권위나 알고리즘에 맹목적으로 따르지 않고 스스로 판단하고 선택할 수 있는 능력입니다. 둘째, 공감과 연대: 자신과 다른 배경을 가진 타인의 경험을 이해하고 함께 문제를 해결하려는 의지입니다. 셋째, 지적 겸손: 자신의 지식과 관점이 불완전할 수 있음을 인정하고 지속적으로 배우려는 태도입니다. 넷째, 미적 감수성: 기능성을 넘어 아름다움과 의미를 추구하는 인간적 능력입니다. 이 가치들은 기술이 아무리 발전해도 인간을 인간답게 만드는 핵심이라고 생각합니다.",
+          "j3_q6_fit": 5,
+          "j3_q7": "저는 제 학생들이 불확실성을 두려워하지 않고 그 속에서 의미를 발견하는 사람으로 자라기를 바랍니다. 기술을 도구로 능숙하게 활용하되, 기술에 종속되지 않는 주체적 인간으로 살아가기를 원합니다. 자신의 분야에서 깊이를 추구하면서도 다른 영역과 적극적으로 대화할 수 있는 경계를 넘나드는 사고를 갖추기를 바랍니다. 무엇보다, 성공의 기준을 외부에서 찾지 않고, 자신이 진정으로 가치 있다고 믿는 것을 위해 헌신하는 삶을 살아가기를 소망합니다. 그것이 제가 교육자로서 20년 넘게 교단에 선 가장 근본적인 이유입니다.",
+          "j3_q7_fit": 5,
+          "j3_meaning": 5,
+          "j3_burden": 1,
+          "j3_timing": 5,
+          "j3_hard": [
+            "none"
+          ],
+          "j3_hard_reason": "no_difficulty",
+          "j3_revise": "교직 5년 차 이하 교사에게는 졸업생의 현재 모습을 묻는 j3_q1이 경험 부족으로 답하기 어려울 수 있습니다. 이를 다음과 같이 수정하면 좋겠습니다. 현행: '교사가 된 이후 만난 아이들 중 기억에 남는 아이를 떠올리고, 졸업 후 어떤 모습으로 살고 있는지 나누어 보세요.' 수정안: '교사가 된 이후 만난 아이들 중 가장 기억에 남는 순간이나 학생을 떠올려 보세요. 그 학생이 10년 후 어떤 모습으로 살아가기를 바라는지 이야기해 보세요.' 이렇게 하면 실제 졸업생 소식 없이도 교사로서의 희망과 기대를 통해 자신의 교육 가치관을 성찰할 수 있습니다.",
+          "j3_add": "이 여정에서 더 깊이 다루고 싶은 주제는, 교육자 자신의 지속적 성장과 소진(burnout) 사이의 긴장입니다. 저는 학생들에게 평생 학습과 자기 쇄신을 강조하지만, 정작 교육자 자신이 제도적 압박과 변화의 속도 속에서 어떻게 자신의 열정과 철학을 유지할 수 있는지에 대한 성찰의 공간은 부족하다고 느낍니다. 또한 이중 문화적 배경을 가진 교육자로서, 서로 다른 교육 전통과 가치관 사이에서 어떻게 자신만의 통합적 교육철학을 구성해 왔는지에 대한 이야기도 나누고 싶습니다."
+        }
+      },
+      {
+        "trial_name": "dangyohanchaek-j3-world-my-stude__wmUYfgo",
+        "persona_id": "synthetic-51b456aa9e9e",
+        "persona_name": "Diego Santos",
+        "reward": 1.0,
+        "error": null,
+        "usage": {
+          "n_input_tokens": 10737,
+          "n_output_tokens": 2055,
+          "n_cache_tokens": null,
+          "cost_usd": 0.06303600000000001
+        },
+        "artifact_paths": [
+          "dangyohanchaek-j3-world-my-stude__wmUYfgo/artifacts/app/output/survey_result.json"
+        ],
+        "signals": {
+          "answer_j3_q1": "한 학생이 기억에 남습니다. 전자 회로 수업에서 처음에는 아무것도 모르던 아이였는데, 끈질기게 질문을 반복하며 스스로 회로를 완성했습니다. 졸업 후 소식을 들으니 지역 전기 설비 회사에서 기술자로 일하고 있다고 합니다. 그 소식이 제게는 작은 보람이었습니다.",
+          "answer_j3_q1_fit": 4,
+          "answer_j3_q2": "경제 불평등의 심화가 가장 눈에 띕니다. 물가 상승과 고용 불안정이 동시에 진행되면서 저소득층 가정의 아이들이 교육 기회에서 더 멀어지는 현상을 직접 목격했습니다. 또한 디지털 기술의 급속한 확산이 전통적인 직업 구조를 빠르게 바꾸고 있다는 점도 주목하고 있습니다.",
+          "answer_j3_q2_fit": 4,
+          "answer_j3_q3": "경제적 불평등과 자동화로 인한 일자리 감소가 가장 우려됩니다. 특히 기술 교육을 받지 못한 저소득층 청년들이 가장 큰 어려움에 처할 것으로 예상됩니다. 저는 이 문제에 대해 불안감을 느끼면서도, 내가 가르쳤던 기술 교육이 그나마 일부 아이들에게 방패가 될 수 있다고 스스로를 다독이고 있습니다.",
+          "answer_j3_q3_fit": 3,
+          "answer_j3_q4": "달라질 것은 직업의 형태와 소통 방식, 그리고 기술이 일상에 통합되는 깊이입니다. 변하지 않을 것은 사람 사이의 신뢰와 공동체적 유대, 그리고 공정함에 대한 기본적인 욕구라고 생각합니다. 기술이 아무리 발전해도 인간 관계의 본질은 쉽게 바뀌지 않을 것입니다.",
+          "answer_j3_q4_fit": 3,
+          "answer_j3_q5": "각자의 출발점이 달라도 노력한 만큼 기회가 주어지는 사회를 바랍니다. 경쟁보다 협력이 더 가치 있게 여겨지고, 소수의 목소리도 무시되지 않는 사회입니다. 또한 자연환경이 지속 가능하게 유지되어 다음 세대가 건강한 터전에서 살 수 있기를 바랍니다.",
+          "answer_j3_q5_fit": 4,
+          "answer_j3_q6": "공정함과 연대입니다. 규칙이 모두에게 동등하게 적용되고, 어려운 이웃을 외면하지 않는 공동체 정신이 핵심 가치라고 생각합니다. 지식과 진실에 대한 존중도 빠질 수 없습니다.",
+          "answer_j3_q6_fit": 4,
+          "answer_j3_q7": "스스로 생각하고 판단할 수 있는 사람으로 자라기를 바랍니다. 남이 정해준 답을 따르는 것이 아니라, 문제를 직접 파악하고 해결책을 찾아가는 능력을 갖추기를 원합니다. 그리고 어떤 상황에서도 타인을 존중하는 태도를 잃지 않았으면 합니다.",
+          "answer_j3_q7_fit": 3,
+          "answer_j3_meaning": 3,
+          "answer_j3_burden": 2,
+          "answer_j3_timing": 3,
+          "answer_j3_hard": [
+            "j3_q4",
+            "j3_q7"
+          ],
+          "answer_j3_hard_reason": "too_abstract",
+          "answer_j3_revise": "j3_q7 질문을 바꾸면 좋겠습니다. '지금 내가 가르치는 아이들이 어떤 모습으로 살아가기 바라나요?'보다는 '내가 수업에서 학생들에게 가장 전달하고 싶은 한 가지 능력이나 태도는 무엇인가요?'로 바꾸면, 경력이 짧은 교사도 자신의 수업 경험을 바탕으로 구체적으로 답할 수 있을 것 같습니다.",
+          "answer_j3_add": "은퇴 후에도 내가 가르쳤던 방식이 실제로 학생들에게 도움이 되었는지 확인할 방법이 없다는 점이 늘 마음에 걸립니다. 교육의 효과를 어떻게 측정하고, 교사 스스로 자신의 영향력을 어떻게 평가할 수 있는지에 대한 이야기를 나누고 싶습니다."
+        },
+        "group_values": {
+          "years_experience": "11-20"
+        },
+        "survey_answers": {
+          "j3_q1": "한 학생이 기억에 남습니다. 전자 회로 수업에서 처음에는 아무것도 모르던 아이였는데, 끈질기게 질문을 반복하며 스스로 회로를 완성했습니다. 졸업 후 소식을 들으니 지역 전기 설비 회사에서 기술자로 일하고 있다고 합니다. 그 소식이 제게는 작은 보람이었습니다.",
+          "j3_q1_fit": 4,
+          "j3_q2": "경제 불평등의 심화가 가장 눈에 띕니다. 물가 상승과 고용 불안정이 동시에 진행되면서 저소득층 가정의 아이들이 교육 기회에서 더 멀어지는 현상을 직접 목격했습니다. 또한 디지털 기술의 급속한 확산이 전통적인 직업 구조를 빠르게 바꾸고 있다는 점도 주목하고 있습니다.",
+          "j3_q2_fit": 4,
+          "j3_q3": "경제적 불평등과 자동화로 인한 일자리 감소가 가장 우려됩니다. 특히 기술 교육을 받지 못한 저소득층 청년들이 가장 큰 어려움에 처할 것으로 예상됩니다. 저는 이 문제에 대해 불안감을 느끼면서도, 내가 가르쳤던 기술 교육이 그나마 일부 아이들에게 방패가 될 수 있다고 스스로를 다독이고 있습니다.",
+          "j3_q3_fit": 3,
+          "j3_q4": "달라질 것은 직업의 형태와 소통 방식, 그리고 기술이 일상에 통합되는 깊이입니다. 변하지 않을 것은 사람 사이의 신뢰와 공동체적 유대, 그리고 공정함에 대한 기본적인 욕구라고 생각합니다. 기술이 아무리 발전해도 인간 관계의 본질은 쉽게 바뀌지 않을 것입니다.",
+          "j3_q4_fit": 3,
+          "j3_q5": "각자의 출발점이 달라도 노력한 만큼 기회가 주어지는 사회를 바랍니다. 경쟁보다 협력이 더 가치 있게 여겨지고, 소수의 목소리도 무시되지 않는 사회입니다. 또한 자연환경이 지속 가능하게 유지되어 다음 세대가 건강한 터전에서 살 수 있기를 바랍니다.",
+          "j3_q5_fit": 4,
+          "j3_q6": "공정함과 연대입니다. 규칙이 모두에게 동등하게 적용되고, 어려운 이웃을 외면하지 않는 공동체 정신이 핵심 가치라고 생각합니다. 지식과 진실에 대한 존중도 빠질 수 없습니다.",
+          "j3_q6_fit": 4,
+          "j3_q7": "스스로 생각하고 판단할 수 있는 사람으로 자라기를 바랍니다. 남이 정해준 답을 따르는 것이 아니라, 문제를 직접 파악하고 해결책을 찾아가는 능력을 갖추기를 원합니다. 그리고 어떤 상황에서도 타인을 존중하는 태도를 잃지 않았으면 합니다.",
+          "j3_q7_fit": 3,
+          "j3_meaning": 3,
+          "j3_burden": 2,
+          "j3_timing": 3,
+          "j3_hard": [
+            "j3_q4",
+            "j3_q7"
+          ],
+          "j3_hard_reason": "too_abstract",
+          "j3_revise": "j3_q7 질문을 바꾸면 좋겠습니다. '지금 내가 가르치는 아이들이 어떤 모습으로 살아가기 바라나요?'보다는 '내가 수업에서 학생들에게 가장 전달하고 싶은 한 가지 능력이나 태도는 무엇인가요?'로 바꾸면, 경력이 짧은 교사도 자신의 수업 경험을 바탕으로 구체적으로 답할 수 있을 것 같습니다.",
+          "j3_add": "은퇴 후에도 내가 가르쳤던 방식이 실제로 학생들에게 도움이 되었는지 확인할 방법이 없다는 점이 늘 마음에 걸립니다. 교육의 효과를 어떻게 측정하고, 교사 스스로 자신의 영향력을 어떻게 평가할 수 있는지에 대한 이야기를 나누고 싶습니다."
+        }
+      }
+    ]
+  },
+  "lens": {
+    "kind": "survey",
+    "primarySummary": "Question j3_add: I would have liked a question about the role of physical education and sport in forming character — it is too often treated as peripheral when in my experience it is one of the most direct laboratories for teaching everything this journey is asking about: resilience, teamwork, discipline, and how to lose and try again. That story deserves more space in a conversation about what education is for. 10% · I would welcome a question about the relationship between physical education and character formation — specifically, whether the structures of competitive sport can serve as a model for broader educational practice. In my experience, the discipline and team dynamics of athletic training produce outcomes that classroom instruction alone rarely achieves. That connection deserves more deliberate attention in educational philosophy discussions. 10% · The question I find myself carrying, and which this journey did not quite reach, is this: how does one teach with genuine hope when one is not, privately, very hopeful? I do not mean despair — I mean the honest condition of someone who has read enough history to know how badly things can go, and who nonetheless stands before young people each day with the responsibility to enlarge rather than diminish their sense of possibility. That tension between private sobriety and public vocation is, I think, one of the most demanding aspects of teaching at this stage of life, and I would welcome a space to examine it more directly. 10% · 교사로서 가르치는 내용과 사회 현실 사이의 간극을 어떻게 좁힐 수 있는지에 대해 더 이야기하고 싶습니다. 교과서가 담지 못하는 현실을 아이들에게 어떻게 전달해야 할지, 그 방법론에 대한 고민이 늘 있습니다. 10%",
+    "distributions": [
+      {
+        "key": "j3_add",
+        "label": "Question j3_add",
+        "counts": {
+          "I would have liked a question about the role of physical education and sport in forming character — it is too often treated as peripheral when in my experience it is one of the most direct laboratories for teaching everything this journey is asking about: resilience, teamwork, discipline, and how to lose and try again. That story deserves more space in a conversation about what education is for.": 1,
+          "I would welcome a question about the relationship between physical education and character formation — specifically, whether the structures of competitive sport can serve as a model for broader educational practice. In my experience, the discipline and team dynamics of athletic training produce outcomes that classroom instruction alone rarely achieves. That connection deserves more deliberate attention in educational philosophy discussions.": 1,
+          "The question I find myself carrying, and which this journey did not quite reach, is this: how does one teach with genuine hope when one is not, privately, very hopeful? I do not mean despair — I mean the honest condition of someone who has read enough history to know how badly things can go, and who nonetheless stands before young people each day with the responsibility to enlarge rather than diminish their sense of possibility. That tension between private sobriety and public vocation is, I think, one of the most demanding aspects of teaching at this stage of life, and I would welcome a space to examine it more directly.": 1,
+          "교사로서 가르치는 내용과 사회 현실 사이의 간극을 어떻게 좁힐 수 있는지에 대해 더 이야기하고 싶습니다. 교과서가 담지 못하는 현실을 아이들에게 어떻게 전달해야 할지, 그 방법론에 대한 고민이 늘 있습니다.": 1,
+          "교사로서 사회 변화에 어떻게 반응해야 하는지에 대한 이야기를 더 나누고 싶어요. 뭔가 문제를 인식하는 건 되는데, 교실 안에서 실제로 무엇을 다르게 할 수 있는지에 대한 고민이 아직 정리가 안 돼 있거든요. 그 간극이 저한테는 지금 가장 큰 숙제예요.": 1,
+          "교사로서 학생들에게 무언가를 가르친다는 것이 과연 의미가 있는 일인지에 대한 근본적인 의문이 가끔 듭니다 😶 특히 세상이 너무 빠르게 변하고 있어서, 지금 가르치는 내용이 학생들의 미래에 실제로 도움이 될지 확신하기 어렵습니다. 이 여정에서 그 불확실함 속에서도 교사로서 방향을 잡는 방법에 대한 이야기를 나눌 수 있었으면 좋겠습니다.": 1,
+          "은퇴 후에도 내가 가르쳤던 방식이 실제로 학생들에게 도움이 되었는지 확인할 방법이 없다는 점이 늘 마음에 걸립니다. 교육의 효과를 어떻게 측정하고, 교사 스스로 자신의 영향력을 어떻게 평가할 수 있는지에 대한 이야기를 나누고 싶습니다.": 1,
+          "이 여정에서 더 깊이 다루고 싶은 주제는, 교육자 자신의 지속적 성장과 소진(burnout) 사이의 긴장입니다. 저는 학생들에게 평생 학습과 자기 쇄신을 강조하지만, 정작 교육자 자신이 제도적 압박과 변화의 속도 속에서 어떻게 자신의 열정과 철학을 유지할 수 있는지에 대한 성찰의 공간은 부족하다고 느낍니다. 또한 이중 문화적 배경을 가진 교육자로서, 서로 다른 교육 전통과 가치관 사이에서 어떻게 자신만의 통합적 교육철학을 구성해 왔는지에 대한 이야기도 나누고 싶습니다.": 1,
+          "초임 교사로서 교육 철학을 형성해 가는 과정에서 느끼는 혼란과 불확실함, 그리고 '내가 과연 이 아이들에게 충분한가'라는 질문을 함께 다루고 싶습니다. 거창한 비전보다 지금 당장 교실에서 실천할 수 있는 작은 철학적 기준을 찾는 이야기가 필요합니다.": 1,
+          "초임 교사로서 당장 수업을 어떻게 꾸려야 할지, 아이들과 어떻게 신뢰를 쌓아야 할지가 더 급한 고민이에요. 이런 현실적인 이야기도 나눌 수 있으면 좋겠어요.": 1
+        }
+      },
+      {
+        "key": "j3_burden",
+        "label": "Question j3_burden",
+        "counts": {
+          "2": 6,
+          "3": 3,
+          "1": 1
+        }
+      },
+      {
+        "key": "j3_hard",
+        "label": "Question j3_hard",
+        "counts": {
+          "['j3_q4']": 3,
+          "['j3_q1', 'j3_q7']": 2,
+          "['j3_q4', 'j3_q7']": 2,
+          "['none']": 2,
+          "['j3_q1', 'j3_q4', 'j3_q7']": 1
+        }
+      },
+      {
+        "key": "j3_hard_reason",
+        "label": "Question j3_hard_reason",
+        "counts": {
+          "too_abstract": 5,
+          "no_difficulty": 2,
+          "premise_mismatch": 2,
+          "lack_experience": 1
+        }
+      },
+      {
+        "key": "j3_meaning",
+        "label": "Question j3_meaning",
+        "counts": {
+          "4": 5,
+          "3": 3,
+          "5": 2
+        }
+      },
+      {
+        "key": "j3_q1",
+        "label": "Question j3_q1",
+        "counts": {
+          "20여 년 전 제 수업을 들었던 한 학생이 기억에 남습니다. 컴퓨터 과학과 음악 두 가지 모두에 깊은 관심을 가졌지만, 주변으로부터 '하나만 선택하라'는 압박을 받던 학생이었습니다. 저는 그 학생에게 두 분야의 교차점에서 자신만의 길을 개척할 수 있다고 격려했습니다. 최근 소식을 들으니, 그는 현재 음악 기술 스타트업을 공동 창업하여 AI를 활용한 음악 창작 도구를 개발하고 있다고 합니다. 그 학생의 여정을 보며, 경계를 넘나드는 사고가 얼마나 중요한지를 다시 한번 확인하게 됩니다.": 1,
+          "Many years ago, I taught a young man — I shall call him Thomas — who was extraordinarily quiet, almost invisible in a classroom. He struggled to articulate his thoughts aloud, yet his written work was luminous, filled with a moral seriousness far beyond his years. I learned recently, through a mutual acquaintance, that he now works as a translator for a small humanitarian organisation, bridging languages and cultures in conflict zones. I confess that news moved me deeply. He found his voice not by speaking loudly, but by rendering the voices of others faithfully. It confirmed something I have long believed: that education's finest work is often invisible at the time it occurs.": 1,
+          "One student stands out clearly. She was a young girl with exceptional discipline and raw athletic talent, but lacked confidence in high-pressure situations. I worked with her closely over two seasons. Years later, I learned she became a regional-level coach herself. That outcome felt more meaningful to me than any medal. She understood what it means to build others up, which is precisely what I had hoped to instill.": 1,
+          "One student who stands out is a young man named Danny, who struggled early on in my physical education classes because he lacked confidence in his athletic ability. He was always the last picked, always apologizing for himself. I made a point of putting him in leadership roles during team drills — not because he was the best, but because I saw something in him. Years later he reached out to let me know he had become a high school football coach himself. That meant more to me than any award I received in my career.": 1,
+          "교사로 일한 지 얼마 되지 않아 아직 졸업생 소식을 접할 기회는 많지 않습니다. 그럼에도 기억에 남는 학생이 있습니다. 스포츠 훈련 중 부상으로 한동안 훈련에 참여하지 못했던 아이인데, 좌절하지 않고 재활에 성실히 임하며 팀 동료들을 응원하는 모습이 인상 깊었습니다. 그 아이를 보며 경기장 밖에서도 단단하게 살아갈 사람이라는 확신이 들었습니다.": 1,
+          "교사로서 짧은 경험 속에서도 유독 기억에 남는 학생이 있습니다 😊 조용하지만 논리적 사고가 뛰어났던 학생인데, 수업 중 제가 설명을 마치기도 전에 반례를 찾아내곤 했습니다. 그 학생이 지금 어떤 세상을 살아가고 있는지 궁금하면서도, 한편으로는 그 예리함이 오히려 세상과 마찰을 빚지는 않을까 하는 걱정도 듭니다. 아직 졸업 후 소식을 듣지 못했지만, 부디 자신의 방식대로 잘 살아가고 있기를 바랍니다.": 1,
+          "몇 해 전, 농촌 지역 소규모 학교에서 가르쳤던 한 학생이 기억납니다. 말수가 적고 조용했지만, 생물 시간마다 눈이 빛났습니다. 졸업 후 소식을 들으니, 지역 농업협동조합에서 일하며 지속 가능한 농법을 연구하고 있다고 합니다. 그 아이가 자신의 뿌리를 지키면서도 새로운 길을 걷고 있다는 것이 참으로 대견합니다.": 1,
+          "아직 교사로 시작한 지 얼마 안 됐지만, 한 아이가 기억에 남아요. 수업 시간에 말은 없었는데 그림을 정말 잘 그렸어요. 졸업 후 소식은 모르지만 잘 지내길 바라요.": 1,
+          "제가 가르쳤던 학생 중에 마르코스라는 아이가 기억에 남아요. 수업 중에 항상 딴짓을 하면서도 질문은 날카로웠던 아이였는데, 졸업 후 소식을 들으니 지역 커뮤니티 라디오에서 프로그램을 진행하고 있다고 하더라고요. 그 아이가 교실에서 보여줬던 에너지가 결국 자기 자리를 찾은 것 같아서 뭔가 뭉클했어요.": 1,
+          "한 학생이 기억에 남습니다. 전자 회로 수업에서 처음에는 아무것도 모르던 아이였는데, 끈질기게 질문을 반복하며 스스로 회로를 완성했습니다. 졸업 후 소식을 들으니 지역 전기 설비 회사에서 기술자로 일하고 있다고 합니다. 그 소식이 제게는 작은 보람이었습니다.": 1
+        }
+      },
+      {
+        "key": "j3_q1_fit",
+        "label": "Question j3_q1_fit",
+        "counts": {
+          "4": 3,
+          "5": 3,
+          "2": 2,
+          "3": 2
+        }
+      },
+      {
+        "key": "j3_q2",
+        "label": "Question j3_q2",
+        "counts": {
+          "AI 기술이 빠르게 퍼지는 것이 눈에 띄어요. 일자리가 줄고 아이들이 무엇을 배워야 할지 모르겠다는 불안감이 주변에 많아요.": 1,
+          "The most significant phenomenon I observe is the accelerating fragmentation of community ties alongside the rise of digital connectivity. People are more connected through screens yet more isolated in practice. In sports and fitness contexts, I see this acutely: young people have access to vast information but lack the sustained commitment and team orientation that physical training demands. The erosion of disciplined community structures concerns me greatly.": 1,
+          "The phenomenon I pay closest attention to is the accelerating erosion of shared civic identity and the fragmentation of communities — both physical and digital. People increasingly live in information bubbles, and I see this pulling apart the kind of common ground that a functioning society depends on. I also watch the growing gap between those with access to quality education and those without, which compounds nearly every other inequality.": 1,
+          "The phenomenon that occupies my attention most persistently is the accelerating erosion of shared epistemic ground — that is, the collapse of any common agreement about what constitutes reliable knowledge or trustworthy information. This is not merely a political problem; it is a civilisational one. I observe it in the way public discourse has fragmented into mutually incomprehensible tribes, each with its own curated reality. The environmental crisis compounds this, because it demands collective reasoning and long-horizon thinking precisely when our capacity for both appears most diminished.": 1,
+          "경제 불평등의 심화가 가장 눈에 띕니다. 물가 상승과 고용 불안정이 동시에 진행되면서 저소득층 가정의 아이들이 교육 기회에서 더 멀어지는 현상을 직접 목격했습니다. 또한 디지털 기술의 급속한 확산이 전통적인 직업 구조를 빠르게 바꾸고 있다는 점도 주목하고 있습니다.": 1,
+          "기후 변화와 식량 안보 문제가 가장 눈에 띕니다. 농촌에 살다 보니 기상 이변이 농업에 미치는 영향을 직접 목격합니다. 또한 디지털 전환이 농촌 공동체를 해체하는 방식도 우려됩니다. 젊은이들이 도시로 떠나고 마을이 고령화되는 현상은 단순한 경제 문제가 아니라 문화와 정체성의 소멸로 이어진다고 생각합니다.": 1,
+          "제가 가장 주목하는 건 경제적 불평등의 심화예요. 뉴스에서도 계속 나오고, 실제로 학교 현장에서도 학생들 간의 격차가 눈에 보이거든요. 어떤 아이는 방과 후 학원을 여러 개 다니고, 어떤 아이는 집에 가면 바로 아르바이트를 해야 하는 상황이에요. 그 차이가 교실 안에서 이미 시작된다는 게 저는 계속 마음에 걸려요.": 1,
+          "제가 가장 주목하는 사회 현상은 인공지능 기술의 급속한 확산과 그로 인한 노동 시장 및 지식 생산 방식의 근본적 변화입니다. 특히 생성형 AI가 교육, 창작, 연구 등 지적 노동의 핵심 영역까지 빠르게 침투하고 있는 현상을 주의 깊게 관찰하고 있습니다. 아울러 디지털 격차가 경제적 불평등과 결합하여 새로운 형태의 사회적 배제를 만들어내고 있다는 점도 우려스럽습니다. 동아시아 사회에서 관찰되는 초저출산과 고령화의 가속화, 그리고 이에 따른 세대 간 갈등 심화도 중요한 현상으로 인식하고 있습니다.": 1,
+          "제가 주목하는 사회 현상은 인공지능 기술의 급속한 확산과 그로 인한 노동 구조의 변화입니다 🤔 특히 젊은 세대가 진입하려는 직업군 자체가 빠르게 소멸하거나 재편되는 현상이 눈에 띕니다. 또한 디지털 감시 기술의 확산과 개인 정보 침해 문제도 상당히 우려스럽게 바라보고 있습니다. 이러한 변화들이 교육 현장과 어떻게 연결되는지 아직 명확히 파악하지 못한 상태입니다.": 1,
+          "제가 주목하는 사회 현상은 인공지능과 자동화 기술의 급격한 확산입니다. 스포츠 분야에서도 데이터 분석과 AI 코칭 보조 도구가 빠르게 도입되고 있으며, 이는 직업 구조와 인간 관계 방식 전반을 바꾸고 있습니다. 또한 기후 변화로 인한 환경 문제도 경기 환경과 선수 건강에 직접적인 영향을 미치고 있어 관심을 갖게 되었습니다.": 1
+        }
+      },
+      {
+        "key": "j3_q2_fit",
+        "label": "Question j3_q2_fit",
+        "counts": {
+          "4": 7,
+          "5": 2,
+          "3": 1
+        }
+      },
+      {
+        "key": "j3_q3",
+        "label": "Question j3_q3",
+        "counts": {
+          "AI 자동화가 가장 걱정돼요. 단순 반복 일을 하는 사람들, 특히 교육 기회가 적은 계층이 가장 어려워질 것 같아요. 저는 이 변화를 받아들이되 비판적으로 보려고 해요.": 1,
+          "The phenomenon I find most alarming is the combination of automation displacing workers and the education system failing to adapt quickly enough to prepare young people for that reality. Those who will suffer most are young people from lower-income backgrounds who don't have family networks or resources to absorb that disruption. Personally, I respond by staying informed and by advocating — even in retirement — for physical education and team-based learning as tools that build adaptability and resilience, skills no algorithm can easily replace.": 1,
+          "The phenomenon I find most alarming is the displacement of human labor and purpose through automation, combined with deepening economic inequality. Those most at risk are young people from lower-income backgrounds who lack access to quality education and mentorship. They will face a labor market that rewards narrow technical skills while the broader human capacities — teamwork, resilience, adaptability — remain undervalued. My own response has been to stay engaged with community sports programs as a volunteer, believing that physical discipline and team experience build precisely those capacities that technology cannot replicate.": 1,
+          "The phenomenon that concerns me most profoundly is the convergence of algorithmic information environments with rising authoritarianism. Those most likely to suffer are the young, who are forming their identities and moral imaginations within ecosystems designed to exploit attention rather than cultivate it. I also fear for the elderly, the economically marginalised, and those in societies where civil institutions are already fragile. As for my own response: I find myself oscillating between a disciplined effort to teach critical reading and a quieter, more private anxiety that such efforts are insufficient against structural forces of extraordinary scale. I do not permit that anxiety to silence me, but I will not pretend it is absent.": 1,
+          "가장 우려되는 현상은 AI 기술 가속화로 인한 교육과 노동의 의미 재편입니다. 이로 인해 어려움에 처할 대상은 크게 두 집단입니다. 첫째, 디지털 리터러시와 비판적 사고 역량이 부족한 채 노동 시장에 진입하는 청년층입니다. 둘째, 급격한 기술 변화에 적응할 재교육 기회를 갖지 못하는 중장년 노동자들입니다. 저는 이 현상에 대해 단순히 우려하는 데 그치지 않고, 교육과정 설계 차원에서 능동적으로 대응하고 있습니다. 구체적으로는 비판적 사고, 창의적 문제 해결, 윤리적 판단력을 중심에 두는 교육 프로그램 개발에 집중하고 있으며, AI 도구를 교육 현장에 통합하는 실험적 커리큘럼을 운영하고 있습니다.": 1,
+          "가장 우려되는 현상은 AI 자동화로 인한 청년 고용 불안입니다 😟 특히 중산층 가정 출신으로 대학에 진학했지만 뚜렷한 기술적 전문성을 갖추지 못한 청년들이 가장 큰 어려움에 처할 것으로 예상됩니다. 저 자신도 학생들에게 무엇을 가르쳐야 하는지 확신이 없는 상태에서, 이 현상에 대해 솔직히 말하면 불안과 무력감을 동시에 느끼고 있습니다. 뚜렷한 대응 방식을 찾지 못한 채 하루하루를 보내고 있는 것이 현실입니다.": 1,
+          "가장 우려되는 현상은 AI와 자동화로 인한 직업 불안정입니다. 특히 반복적인 업무나 특정 기술에만 의존하는 사람들이 어려움에 처할 가능성이 높다고 생각합니다. 저는 이 현상에 대해 불안해하기보다는, 학생들이 변화에 적응할 수 있는 유연성과 비판적 사고를 기를 수 있도록 도와야 한다는 책임감을 느끼며 반응하고 있습니다.": 1,
+          "경제적 불평등과 자동화로 인한 일자리 감소가 가장 우려됩니다. 특히 기술 교육을 받지 못한 저소득층 청년들이 가장 큰 어려움에 처할 것으로 예상됩니다. 저는 이 문제에 대해 불안감을 느끼면서도, 내가 가르쳤던 기술 교육이 그나마 일부 아이들에게 방패가 될 수 있다고 스스로를 다독이고 있습니다.": 1,
+          "기후 변화와 자동화 기술의 결합이 가장 우려됩니다. 저숙련 노동자, 농촌 주민, 그리고 교육 기회가 제한된 아이들이 가장 큰 어려움에 처할 것입니다. 저는 이 현상을 외면하지 않으려 합니다. 자원봉사와 교육 활동을 통해 지역 청소년들이 변화에 적응할 수 있도록 돕고 있습니다. 다만 개인의 노력만으로는 한계가 있다는 것도 압니다.": 1,
+          "자동화와 AI로 인한 노동 시장의 변화가 가장 우려됩니다. 특히 중산층 이하 가정 출신의 청년들이 가장 큰 타격을 받을 것 같아요. 반복적인 업무가 자동화되면 그 일자리를 주로 차지했던 사람들이 대안을 찾기 어려워지거든요. 저 자신은 이 현상에 대해 솔직히 좀 무력감을 느끼고 있어요. 교실에서 뭔가를 가르치면서도 '이게 저 아이들의 미래에 실제로 도움이 될까'라는 의문이 자꾸 생기거든요.": 1
+        }
+      },
+      {
+        "key": "j3_q3_fit",
+        "label": "Question j3_q3_fit",
+        "counts": {
+          "4": 5,
+          "3": 3,
+          "5": 2
+        }
+      },
+      {
+        "key": "j3_q4",
+        "label": "Question j3_q4",
+        "counts": {
+          "What will change: the nature of labour, the texture of social interaction, the speed at which knowledge becomes obsolete, the geopolitical order, and the physical landscape of the planet. What will not change: the human need for meaning, for belonging, for narrative, for love, for transcendence. The ancient questions — who am I, what do I owe others, how shall I face suffering and death — will remain as urgent as they have always been. If anything, rapid technological change will make the humanities more necessary, not less, because it is within literature, philosophy, and theology that those questions have been most honestly examined.": 1,
+          "What will change: the nature of work, the pace of technological change, the demographics of communities, and the ways people communicate and form relationships. What will not change: the human need for belonging, the importance of trust, the value of physical health and embodied experience, and the fundamental desire to feel competent and recognized. Competition and cooperation will remain the twin engines of human progress — the forms will shift, but not the underlying drives.": 1,
+          "What will change: the nature of work, the speed of information, the structure of institutions, and the boundaries of competition — both economic and geopolitical. What will not change: the human need for belonging, the value of earned achievement, the importance of physical health, and the fundamental dynamics of trust within teams. People will still need to learn how to lose well and how to support one another under pressure. Those constants are what education must protect.": 1,
+          "달라지는 것: 일하는 방식, 소통 방법, 정보 접근. 변하지 않을 것: 사람 사이의 신뢰, 공동체 필요성, 배움에 대한 기본 욕구.": 1,
+          "달라지는 것은 기술의 역할과 일하는 방식, 그리고 정보를 습득하는 속도와 방법일 것입니다. 국경을 초월한 협업이 더욱 일상화되고, 평생학습이 선택이 아닌 필수가 될 것입니다. 반면 변하지 않을 것은 인간 사이의 신뢰와 유대, 그리고 배움과 성장에 대한 근본적인 욕구라고 생각합니다. 스포츠에서도 결국 팀워크와 인간적인 연결이 핵심으로 남을 것입니다.": 1,
+          "달라지는 것은 일하는 방식, 커뮤니케이션 방식, 그리고 사람들이 공동체를 구성하는 방식이라고 봐요. AI와 디지털 기술이 더 깊숙이 들어올 거고, 국경의 의미도 지금과는 달라질 것 같아요. 반면 변하지 않을 것은 인간의 관계에 대한 갈망, 공정함에 대한 요구, 그리고 의미 있는 삶을 살고 싶다는 욕구예요. 기술이 아무리 발전해도 사람은 결국 연결되고 싶어하고 인정받고 싶어한다고 생각해요.": 1,
+          "달라질 것들: 특정 직종과 직무는 자동화로 대체되거나 근본적으로 변형될 것입니다. 지식의 생산, 유통, 소비 방식이 AI 매개 환경 속에서 재구성될 것입니다. 국가와 기업의 경계를 넘나드는 협업이 일상화되고, 물리적 공간의 의미가 약화될 것입니다. 변하지 않을 것들: 인간의 의미 추구 욕구와 타인과의 진정한 연결에 대한 갈망은 사라지지 않을 것입니다. 공정성과 존엄성에 대한 도덕적 감각, 아름다움을 인식하고 창조하려는 예술적 충동, 그리고 배움 자체에서 오는 기쁨도 본질적으로 변하지 않을 것입니다. 기술이 아무리 발전해도 인간 사회는 신뢰와 관계를 기반으로 작동할 것이라 믿습니다.": 1,
+          "달라질 것은 일의 형태, 이동 방식, 인간관계의 매개 방식입니다. AI와 자동화가 많은 직업을 대체하고, 국경의 의미도 변할 것입니다. 변하지 않을 것은 인간의 연결에 대한 갈망, 의미를 찾으려는 본성, 그리고 세대 간 지식 전수의 필요성입니다. 기술이 아무리 발전해도 누군가는 가르치고 누군가는 배우는 관계는 지속될 것입니다.": 1,
+          "달라질 것은 직업의 형태, 인간관계의 방식, 그리고 지식 습득의 경로라고 생각합니다 🌐 반면 변하지 않을 것은 인간이 타인으로부터 인정받고 싶어 하는 욕구, 그리고 불공정함에 분노하는 감각이라고 봅니다. 기술이 아무리 발전해도 사람과 사람 사이의 신뢰와 충성심, 그리고 소속감에 대한 갈망은 사라지지 않을 것입니다. 다만 그것이 어떤 형태로 표현될지는 예측하기 어렵습니다.": 1,
+          "달라질 것은 직업의 형태와 소통 방식, 그리고 기술이 일상에 통합되는 깊이입니다. 변하지 않을 것은 사람 사이의 신뢰와 공동체적 유대, 그리고 공정함에 대한 기본적인 욕구라고 생각합니다. 기술이 아무리 발전해도 인간 관계의 본질은 쉽게 바뀌지 않을 것입니다.": 1
+        }
+      },
+      {
+        "key": "j3_q4_fit",
+        "label": "Question j3_q4_fit",
+        "counts": {
+          "3": 6,
+          "4": 4
+        }
+      },
+      {
+        "key": "j3_q5",
+        "label": "Question j3_q5",
+        "counts": {
+          "A society where achievement is accessible regardless of background, where community structures are strong enough to hold individuals accountable and supported, and where health — physical and mental — is treated as a collective responsibility. I want a society that rewards sustained effort and genuine competence, not merely visibility or short-term performance. Loyalty to one's community should be recognized as a serious value, not dismissed as outdated.": 1,
+          "I hope for a society in which slowness is not a failure. One in which a person may read, reflect, and change their mind without being penalised for it. A society that honours care — for the ill, the old, the young, the stranger — as a form of genuine achievement. I long for communities in which disagreement is conducted with rigour and respect, and in which the natural world is treated not as a resource to be consumed but as a reality to be inhabited with gratitude and restraint.": 1,
+          "I hope for a society where hard work and genuine achievement are still recognized and rewarded, but where the floor is high enough that no one is left behind simply due to circumstance of birth. I want a society where people still gather in person — on fields, in gymnasiums, in town halls — and learn to compete and cooperate face to face. A society that values both individual excellence and collective responsibility.": 1,
+          "각자가 자신의 자리에서 존엄하게 살아갈 수 있는 사회를 바랍니다. 도시와 농촌, 부유층과 빈곤층 사이의 격차가 줄어들고, 개인의 자유가 공동체의 책임과 균형을 이루는 사회입니다. 또한 전통과 혁신이 충돌하지 않고 서로를 보완하는 사회이기를 소망합니다.": 1,
+          "각자의 출발점이 달라도 노력한 만큼 기회가 주어지는 사회를 바랍니다. 경쟁보다 협력이 더 가치 있게 여겨지고, 소수의 목소리도 무시되지 않는 사회입니다. 또한 자연환경이 지속 가능하게 유지되어 다음 세대가 건강한 터전에서 살 수 있기를 바랍니다.": 1,
+          "모든 사람이 기본적인 안전과 존엄을 누리는 사회요. 출신이나 배경에 상관없이 기회가 있는 곳이면 좋겠어요.": 1,
+          "모든 사람이 자신의 가능성을 최대한 발휘할 수 있는 기회를 공평하게 얻는 사회를 바랍니다. 출신 배경이나 경제적 조건에 관계없이 노력과 역량으로 성장할 수 있고, 서로의 다양성을 존중하며 협력하는 사회가 제가 소망하는 모습입니다.": 1,
+          "모든 사람이 태어난 배경에 상관없이 자신의 잠재력을 펼칠 수 있는 사회요. 기회가 공정하게 분배되고, 실패해도 다시 일어설 수 있는 안전망이 있는 사회요. 또 다양한 방식으로 기여하는 사람들이 각자의 방식으로 존중받는 사회이기도 하고요. 경쟁보다 협력이 더 가치 있게 여겨지는 문화가 자리 잡혔으면 좋겠어요.": 1,
+          "저는 다양성이 실질적으로 존중받고, 개인이 자신의 고유한 잠재력을 발휘할 수 있는 사회를 바랍니다. 기술의 혜택이 특정 계층에 집중되지 않고 광범위하게 공유되며, 경제적 배경이나 출신에 관계없이 누구나 양질의 교육과 기회에 접근할 수 있는 사회이기를 원합니다. 또한 세대 간, 문화 간 대화가 활발하게 이루어지고, 이견과 갈등이 폭력이 아닌 이성적 토론과 민주적 절차를 통해 해소되는 사회를 소망합니다. 개인의 성취와 공동체의 번영이 상충하지 않고 서로를 강화하는 사회적 구조가 형성되기를 기대합니다.": 1,
+          "제가 바라는 사회는 개인의 독립성이 존중받으면서도 공동체적 연대가 살아 있는 사회입니다 🌱 누군가의 취약함이 착취의 대상이 되지 않고, 다양한 방식으로 살아가는 사람들이 서로를 인정할 수 있는 사회를 소망합니다. 동시에 권위가 존중받되 그 권위가 투명하고 책임감 있게 행사되는 구조이길 바랍니다. 지금보다 훨씬 더 공정하고 안전한 세상이었으면 합니다.": 1
+        }
+      },
+      {
+        "key": "j3_q5_fit",
+        "label": "Question j3_q5_fit",
+        "counts": {
+          "4": 7,
+          "5": 3
+        }
+      },
+      {
+        "key": "j3_q6",
+        "label": "Question j3_q6",
+        "counts": {
+          "Discipline, collective responsibility, and merit-based achievement. These three are foundational. Without discipline, potential is wasted. Without collective responsibility, individual achievement becomes hollow. Without genuine merit as the basis for recognition, trust in institutions collapses. I would add loyalty — loyalty to one's team, one's community, and one's nation — as an underrated but essential value.": 1,
+          "Discipline, integrity, and genuine teamwork. Not teamwork as a buzzword, but the real kind — where you subordinate your ego for a shared goal and trust that others will do the same. Also perseverance: the willingness to keep working when results don't come immediately. And honest knowledge — the commitment to truth even when it is inconvenient.": 1,
+          "I would name three values above all: truthfulness, which requires the courage to revise one's own convictions; solidarity, which demands that we remain genuinely accountable to those who are unlike us; and what I can only call attentiveness — a quality of presence and care toward the particular, the local, the irreplaceable. These are not fashionable values. They resist quantification and resist the logic of efficiency. That is precisely why I believe they are indispensable.": 1,
+          "공정함, 연대, 그리고 인간의 존엄성이요. 이 세 가지가 없으면 아무리 기술이 발전하고 경제가 성장해도 사람들은 행복하지 않다고 생각해요. 특히 연대는 지금 시대에 점점 약해지고 있는 것 같아서 더 중요하게 여기게 됐어요.": 1,
+          "공정함과 연대입니다. 규칙이 모두에게 동등하게 적용되고, 어려운 이웃을 외면하지 않는 공동체 정신이 핵심 가치라고 생각합니다. 지식과 진실에 대한 존중도 빠질 수 없습니다.": 1,
+          "안전, 공정함, 그리고 서로에 대한 책임감이요. 경쟁보다 함께 살아가는 힘이 중요하다고 생각해요.": 1,
+          "제가 가장 중요하게 여기는 가치는 다음과 같습니다. 첫째, 비판적 자율성: 외부의 권위나 알고리즘에 맹목적으로 따르지 않고 스스로 판단하고 선택할 수 있는 능력입니다. 둘째, 공감과 연대: 자신과 다른 배경을 가진 타인의 경험을 이해하고 함께 문제를 해결하려는 의지입니다. 셋째, 지적 겸손: 자신의 지식과 관점이 불완전할 수 있음을 인정하고 지속적으로 배우려는 태도입니다. 넷째, 미적 감수성: 기능성을 넘어 아름다움과 의미를 추구하는 인간적 능력입니다. 이 가치들은 기술이 아무리 발전해도 인간을 인간답게 만드는 핵심이라고 생각합니다.": 1,
+          "제가 중요하다고 여기는 가치는 공정성, 연대, 그리고 지속적인 성장입니다. 공정한 기회가 보장되어야 하고, 개인의 성취가 공동체의 발전과 연결될 수 있어야 한다고 생각합니다. 또한 실패를 두려워하지 않고 배우고 다시 일어서는 회복력도 매우 중요한 가치라고 믿습니다.": 1,
+          "존엄, 자유, 그리고 연대입니다. 개인의 자유는 타인의 존엄을 침해하지 않는 범위에서 최대한 보장되어야 합니다. 그리고 그 자유가 고립으로 이어지지 않으려면 공동체적 연대가 반드시 필요합니다. 제 신앙적 배경에서도 이 세 가지는 핵심입니다.": 1,
+          "충성심, 독립성, 그리고 공정함이 제가 가장 중요하게 여기는 가치입니다 💡 충성심은 공동체를 유지하는 기반이고, 독립성은 개인이 외부 압력에 굴복하지 않을 수 있는 힘입니다. 공정함은 이 두 가지가 충돌할 때 균형을 잡아주는 원칙이라고 생각합니다. 또한 안전과 안정 역시 빼놓을 수 없는 가치로, 이것이 보장되어야 비로소 다른 가치들을 추구할 여유가 생긴다고 봅니다.": 1
+        }
+      },
+      {
+        "key": "j3_q6_fit",
+        "label": "Question j3_q6_fit",
+        "counts": {
+          "4": 6,
+          "5": 4
+        }
+      },
+      {
+        "key": "j3_q7",
+        "label": "Question j3_q7",
+        "counts": {
+          "I want them to be people who can take a hit and get back up — not just physically, but emotionally and professionally. I want them to be curious enough to keep learning long after they leave any classroom. Most of all, I want them to be the kind of teammates and citizens who make the people around them better. The world will be complicated in ways we cannot fully predict; what they need is character, competence, and the confidence to keep going.": 1,
+          "I want them to live with clarity of purpose and the capacity to work within a team while maintaining personal integrity. I want them to be competitive without being destructive, and resilient without being indifferent to others. They should understand that the world will be demanding and that their preparation — physical, mental, and moral — is what will determine their contribution. I do not want them to merely survive their generation. I want them to improve it.": 1,
+          "I want them to live with what I would call a rooted freedom — grounded enough in their own values and traditions that they are not simply swept along by whatever current is strongest at the moment, yet open enough to genuine encounter with the other that they are not merely self-enclosed. I want them to be capable of grief, because grief is the mark of having loved something real. I want them to be capable of wonder, because wonder is the beginning of inquiry. And I want them to know that a life of meaning is not the same as a life of comfort, and to be at peace with that distinction.": 1,
+          "스스로 생각하고 판단할 수 있는 사람으로 살아가기를 바라요. 누군가 정해준 길을 그냥 따라가는 게 아니라, 자기가 무엇을 원하는지 알고 그것을 위해 주변과 협력할 수 있는 사람이요. 실패를 두려워하지 않고, 다른 사람의 어려움에 무감각해지지 않는 사람이면 좋겠어요. 제가 가르치는 내용보다 그런 태도를 남겨줄 수 있으면 더 좋겠다고 생각해요.": 1,
+          "스스로 생각하고 판단할 수 있는 사람으로 자라기를 바랍니다. 남이 정해준 답을 따르는 것이 아니라, 문제를 직접 파악하고 해결책을 찾아가는 능력을 갖추기를 원합니다. 그리고 어떤 상황에서도 타인을 존중하는 태도를 잃지 않았으면 합니다.": 1,
+          "스스로 생각하고, 흔들려도 다시 일어날 수 있는 아이로 자랐으면 해요. 세상이 어떻게 바뀌어도 자기 자리를 찾을 수 있는 힘을 가졌으면 좋겠어요.": 1,
+          "아이들이 변화에 휩쓸리지 않고 자신이 누구인지 알면서 살아가기를 바랍니다. 기술을 도구로 쓰되 기술에 종속되지 않고, 자신의 공동체에 뿌리를 두면서도 세계와 대화할 수 있는 사람이 되기를 바랍니다. 무엇보다 타인의 어려움 앞에서 외면하지 않는 용기를 가졌으면 합니다.": 1,
+          "저는 제 학생들이 불확실성을 두려워하지 않고 그 속에서 의미를 발견하는 사람으로 자라기를 바랍니다. 기술을 도구로 능숙하게 활용하되, 기술에 종속되지 않는 주체적 인간으로 살아가기를 원합니다. 자신의 분야에서 깊이를 추구하면서도 다른 영역과 적극적으로 대화할 수 있는 경계를 넘나드는 사고를 갖추기를 바랍니다. 무엇보다, 성공의 기준을 외부에서 찾지 않고, 자신이 진정으로 가치 있다고 믿는 것을 위해 헌신하는 삶을 살아가기를 소망합니다. 그것이 제가 교육자로서 20년 넘게 교단에 선 가장 근본적인 이유입니다.": 1,
+          "제가 가르치는 학생들이 변화하는 세상 속에서도 자신의 중심을 잃지 않고 살아가기를 바랍니다 🙏 특정 직업이나 지위를 얻는 것보다, 어떤 상황에서도 스스로 판단하고 선택할 수 있는 사람으로 자라나기를 원합니다. 또한 타인의 고통에 공감하면서도 자신의 삶을 주체적으로 꾸려나갈 수 있는 균형감각을 갖추기를 바랍니다. 솔직히 말하면, 그런 사람으로 키울 수 있는 교사가 되고 싶다는 바람이 아직은 막연하게만 느껴집니다.": 1,
+          "지금 가르치는 아이들이 변화하는 세상에서 자신만의 방향을 잃지 않고, 어려움 앞에서도 포기하지 않는 사람으로 살아가기를 바랍니다. 경쟁에서 이기는 것보다 자신과 타인을 존중하며 함께 성장하는 삶을 선택할 수 있는 사람이 되길 소망합니다.": 1
+        }
+      },
+      {
+        "key": "j3_q7_fit",
+        "label": "Question j3_q7_fit",
+        "counts": {
+          "3": 5,
+          "5": 4,
+          "4": 1
+        }
+      },
+      {
+        "key": "j3_revise",
+        "label": "Question j3_revise",
+        "counts": {
+          "For teachers with five or fewer years of experience, I would revise j3_q1 from asking about a memorable student's life after graduation — which early-career teachers may not yet know — to something like: 'Think of a student who surprised you or changed how you think about teaching. What was it about that student that stayed with you?' This keeps the reflective spirit without requiring long-term follow-up knowledge the teacher may not have.": 1,
+          "For teachers with five or fewer years of experience, the opening question about memorable students and their post-graduation lives may be premature. I would revise it to: 'Among the students you have taught so far, who challenged your expectations most — and what did that experience teach you about your role as an educator?' This grounds the reflection in actual classroom experience rather than longitudinal outcomes the teacher may not yet have.": 1,
+          "The opening question presupposes that a teacher has witnessed a student's life beyond the classroom — through graduation, career, or ongoing contact. For teachers in their first five years, this premise often does not hold. I would revise it as follows: 'Among the students you have met so far, is there one whose presence in your classroom changed something in you as a teacher? What was it about that student that stayed with you?' This preserves the reflective intent without requiring biographical knowledge the early-career teacher cannot yet possess. Similarly, the question about predicting future society might be reframed around a more immediate horizon: 'What kind of world do you sense your students are already living in, outside your classroom?'": 1,
+          "j3_q1을 바꾸면 좋겠어요. '졸업한 아이' 대신 '지금 가르치는 아이 중 기억에 남는 아이는 누구인가요?'로 바꾸면 초임 교사도 답하기 쉬울 것 같아요.": 1,
+          "j3_q1의 경우 '졸업한 아이의 소식'을 묻는 부분을 '현재 가르치고 있는 아이 중 기억에 남는 순간'으로 바꾸면 초임 교사도 부담 없이 답할 수 있을 것 같습니다. 예: '지금 가르치는 아이들 중 가장 기억에 남는 순간이나 장면을 이야기해 주세요.'": 1,
+          "j3_q1의 경우, 졸업생 소식을 묻는 부분은 5년 차 이하 교사에게 부담이 될 수 있습니다. '지금 가르치는 학생 중 가장 기억에 남는 순간은 언제인가요?'로 바꾸면 더 접근하기 쉬울 것입니다. j3_q4도 '미래 사회를 예측해 봅시다' 대신 '10년 후 내 학생들이 마주할 가장 큰 변화는 무엇이라고 생각하나요?'처럼 구체화하면 좋겠습니다.": 1,
+          "j3_q1의 경우, 졸업생 소식을 묻는 부분을 삭제하고 「현재 수업 중 가장 인상 깊었던 순간이나 학생의 반응은 무엇이었나요?」로 바꾸는 것이 좋을 것 같습니다. j3_q7도 「지금 내가 가르치는 아이들이 어떤 모습으로 살아가기 바라나요?」라는 질문 앞에 「교사로서 아직 확신이 없더라도 괜찮습니다」라는 안내 문구를 추가하면 심리적 부담이 줄어들 것 같습니다.": 1,
+          "j3_q7 질문을 바꾸면 좋겠습니다. '지금 내가 가르치는 아이들이 어떤 모습으로 살아가기 바라나요?'보다는 '내가 수업에서 학생들에게 가장 전달하고 싶은 한 가지 능력이나 태도는 무엇인가요?'로 바꾸면, 경력이 짧은 교사도 자신의 수업 경험을 바탕으로 구체적으로 답할 수 있을 것 같습니다.": 1,
+          "j3_q7 질문을 바꾸면 좋겠어요. '지금 내가 가르치는 아이들이 어떤 모습으로 자기 세대의 세상을 살아가기 바라나요?'는 경력이 짧은 교사에게는 너무 거시적으로 느껴질 수 있어요. 대신 '지금 내 학생 중 한 명이 10년 후 어떤 사람이 되어 있으면 좋겠나요? 그 모습을 위해 내가 지금 할 수 있는 것은 무엇인가요?'처럼 구체적인 한 명의 학생을 기준으로 생각하게 하면 더 답하기 쉬울 것 같아요.": 1,
+          "교직 5년 차 이하 교사에게는 졸업생의 현재 모습을 묻는 j3_q1이 경험 부족으로 답하기 어려울 수 있습니다. 이를 다음과 같이 수정하면 좋겠습니다. 현행: '교사가 된 이후 만난 아이들 중 기억에 남는 아이를 떠올리고, 졸업 후 어떤 모습으로 살고 있는지 나누어 보세요.' 수정안: '교사가 된 이후 만난 아이들 중 가장 기억에 남는 순간이나 학생을 떠올려 보세요. 그 학생이 10년 후 어떤 모습으로 살아가기를 바라는지 이야기해 보세요.' 이렇게 하면 실제 졸업생 소식 없이도 교사로서의 희망과 기대를 통해 자신의 교육 가치관을 성찰할 수 있습니다.": 1
+        }
+      },
+      {
+        "key": "j3_timing",
+        "label": "Question j3_timing",
+        "counts": {
+          "3": 3,
+          "5": 3,
+          "2": 2,
+          "4": 2
+        }
+      }
+    ],
+    "metrics": [
+      {
+        "key": "answered_trials",
+        "label": "Trials with answers",
+        "value": 10,
+        "unit": null
+      }
+    ],
+    "source": "structured_output"
+  },
+  "groupBy": [
+    "years_experience"
+  ],
+  "groupedDistributions": {
+    "years_experience": {
+      "0-2": {
+        "j3_add": {
+          "초임 교사로서 교육 철학을 형성해 가는 과정에서 느끼는 혼란과 불확실함, 그리고 '내가 과연 이 아이들에게 충분한가'라는 질문을 함께 다루고 싶습니다. 거창한 비전보다 지금 당장 교실에서 실천할 수 있는 작은 철학적 기준을 찾는 이야기가 필요합니다.": 1,
+          "초임 교사로서 당장 수업을 어떻게 꾸려야 할지, 아이들과 어떻게 신뢰를 쌓아야 할지가 더 급한 고민이에요. 이런 현실적인 이야기도 나눌 수 있으면 좋겠어요.": 1
+        },
+        "j3_burden": {
+          "2": 1,
+          "3": 1
+        },
+        "j3_hard": {
+          "['j3_q1', 'j3_q4', 'j3_q7']": 1,
+          "['j3_q1', 'j3_q7']": 1
+        },
+        "j3_hard_reason": {
+          "lack_experience": 1,
+          "premise_mismatch": 1
+        },
+        "j3_meaning": {
+          "3": 1,
+          "4": 1
+        },
+        "j3_q1": {
+          "교사로 일한 지 얼마 되지 않아 아직 졸업생 소식을 접할 기회는 많지 않습니다. 그럼에도 기억에 남는 학생이 있습니다. 스포츠 훈련 중 부상으로 한동안 훈련에 참여하지 못했던 아이인데, 좌절하지 않고 재활에 성실히 임하며 팀 동료들을 응원하는 모습이 인상 깊었습니다. 그 아이를 보며 경기장 밖에서도 단단하게 살아갈 사람이라는 확신이 들었습니다.": 1,
+          "아직 교사로 시작한 지 얼마 안 됐지만, 한 아이가 기억에 남아요. 수업 시간에 말은 없었는데 그림을 정말 잘 그렸어요. 졸업 후 소식은 모르지만 잘 지내길 바라요.": 1
+        },
+        "j3_q1_fit": {
+          "2": 1,
+          "3": 1
+        },
+        "j3_q2": {
+          "AI 기술이 빠르게 퍼지는 것이 눈에 띄어요. 일자리가 줄고 아이들이 무엇을 배워야 할지 모르겠다는 불안감이 주변에 많아요.": 1,
+          "제가 주목하는 사회 현상은 인공지능과 자동화 기술의 급격한 확산입니다. 스포츠 분야에서도 데이터 분석과 AI 코칭 보조 도구가 빠르게 도입되고 있으며, 이는 직업 구조와 인간 관계 방식 전반을 바꾸고 있습니다. 또한 기후 변화로 인한 환경 문제도 경기 환경과 선수 건강에 직접적인 영향을 미치고 있어 관심을 갖게 되었습니다.": 1
+        },
+        "j3_q2_fit": {
+          "4": 2
+        },
+        "j3_q3": {
+          "AI 자동화가 가장 걱정돼요. 단순 반복 일을 하는 사람들, 특히 교육 기회가 적은 계층이 가장 어려워질 것 같아요. 저는 이 변화를 받아들이되 비판적으로 보려고 해요.": 1,
+          "가장 우려되는 현상은 AI와 자동화로 인한 직업 불안정입니다. 특히 반복적인 업무나 특정 기술에만 의존하는 사람들이 어려움에 처할 가능성이 높다고 생각합니다. 저는 이 현상에 대해 불안해하기보다는, 학생들이 변화에 적응할 수 있는 유연성과 비판적 사고를 기를 수 있도록 도와야 한다는 책임감을 느끼며 반응하고 있습니다.": 1
+        },
+        "j3_q3_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j3_q4": {
+          "달라지는 것: 일하는 방식, 소통 방법, 정보 접근. 변하지 않을 것: 사람 사이의 신뢰, 공동체 필요성, 배움에 대한 기본 욕구.": 1,
+          "달라지는 것은 기술의 역할과 일하는 방식, 그리고 정보를 습득하는 속도와 방법일 것입니다. 국경을 초월한 협업이 더욱 일상화되고, 평생학습이 선택이 아닌 필수가 될 것입니다. 반면 변하지 않을 것은 인간 사이의 신뢰와 유대, 그리고 배움과 성장에 대한 근본적인 욕구라고 생각합니다. 스포츠에서도 결국 팀워크와 인간적인 연결이 핵심으로 남을 것입니다.": 1
+        },
+        "j3_q4_fit": {
+          "3": 2
+        },
+        "j3_q5": {
+          "모든 사람이 기본적인 안전과 존엄을 누리는 사회요. 출신이나 배경에 상관없이 기회가 있는 곳이면 좋겠어요.": 1,
+          "모든 사람이 자신의 가능성을 최대한 발휘할 수 있는 기회를 공평하게 얻는 사회를 바랍니다. 출신 배경이나 경제적 조건에 관계없이 노력과 역량으로 성장할 수 있고, 서로의 다양성을 존중하며 협력하는 사회가 제가 소망하는 모습입니다.": 1
+        },
+        "j3_q5_fit": {
+          "4": 2
+        },
+        "j3_q6": {
+          "안전, 공정함, 그리고 서로에 대한 책임감이요. 경쟁보다 함께 살아가는 힘이 중요하다고 생각해요.": 1,
+          "제가 중요하다고 여기는 가치는 공정성, 연대, 그리고 지속적인 성장입니다. 공정한 기회가 보장되어야 하고, 개인의 성취가 공동체의 발전과 연결될 수 있어야 한다고 생각합니다. 또한 실패를 두려워하지 않고 배우고 다시 일어서는 회복력도 매우 중요한 가치라고 믿습니다.": 1
+        },
+        "j3_q6_fit": {
+          "4": 2
+        },
+        "j3_q7": {
+          "스스로 생각하고, 흔들려도 다시 일어날 수 있는 아이로 자랐으면 해요. 세상이 어떻게 바뀌어도 자기 자리를 찾을 수 있는 힘을 가졌으면 좋겠어요.": 1,
+          "지금 가르치는 아이들이 변화하는 세상에서 자신만의 방향을 잃지 않고, 어려움 앞에서도 포기하지 않는 사람으로 살아가기를 바랍니다. 경쟁에서 이기는 것보다 자신과 타인을 존중하며 함께 성장하는 삶을 선택할 수 있는 사람이 되길 소망합니다.": 1
+        },
+        "j3_q7_fit": {
+          "3": 2
+        },
+        "j3_revise": {
+          "j3_q1을 바꾸면 좋겠어요. '졸업한 아이' 대신 '지금 가르치는 아이 중 기억에 남는 아이는 누구인가요?'로 바꾸면 초임 교사도 답하기 쉬울 것 같아요.": 1,
+          "j3_q1의 경우 '졸업한 아이의 소식'을 묻는 부분을 '현재 가르치고 있는 아이 중 기억에 남는 순간'으로 바꾸면 초임 교사도 부담 없이 답할 수 있을 것 같습니다. 예: '지금 가르치는 아이들 중 가장 기억에 남는 순간이나 장면을 이야기해 주세요.'": 1
+        },
+        "j3_timing": {
+          "2": 1,
+          "3": 1
+        }
+      },
+      "11-20": {
+        "j3_add": {
+          "I would have liked a question about the role of physical education and sport in forming character — it is too often treated as peripheral when in my experience it is one of the most direct laboratories for teaching everything this journey is asking about: resilience, teamwork, discipline, and how to lose and try again. That story deserves more space in a conversation about what education is for.": 1,
+          "은퇴 후에도 내가 가르쳤던 방식이 실제로 학생들에게 도움이 되었는지 확인할 방법이 없다는 점이 늘 마음에 걸립니다. 교육의 효과를 어떻게 측정하고, 교사 스스로 자신의 영향력을 어떻게 평가할 수 있는지에 대한 이야기를 나누고 싶습니다.": 1
+        },
+        "j3_burden": {
+          "2": 2
+        },
+        "j3_hard": {
+          "['j3_q4', 'j3_q7']": 1,
+          "['j3_q4']": 1
+        },
+        "j3_hard_reason": {
+          "too_abstract": 2
+        },
+        "j3_meaning": {
+          "3": 1,
+          "4": 1
+        },
+        "j3_q1": {
+          "One student who stands out is a young man named Danny, who struggled early on in my physical education classes because he lacked confidence in his athletic ability. He was always the last picked, always apologizing for himself. I made a point of putting him in leadership roles during team drills — not because he was the best, but because I saw something in him. Years later he reached out to let me know he had become a high school football coach himself. That meant more to me than any award I received in my career.": 1,
+          "한 학생이 기억에 남습니다. 전자 회로 수업에서 처음에는 아무것도 모르던 아이였는데, 끈질기게 질문을 반복하며 스스로 회로를 완성했습니다. 졸업 후 소식을 들으니 지역 전기 설비 회사에서 기술자로 일하고 있다고 합니다. 그 소식이 제게는 작은 보람이었습니다.": 1
+        },
+        "j3_q1_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j3_q2": {
+          "The phenomenon I pay closest attention to is the accelerating erosion of shared civic identity and the fragmentation of communities — both physical and digital. People increasingly live in information bubbles, and I see this pulling apart the kind of common ground that a functioning society depends on. I also watch the growing gap between those with access to quality education and those without, which compounds nearly every other inequality.": 1,
+          "경제 불평등의 심화가 가장 눈에 띕니다. 물가 상승과 고용 불안정이 동시에 진행되면서 저소득층 가정의 아이들이 교육 기회에서 더 멀어지는 현상을 직접 목격했습니다. 또한 디지털 기술의 급속한 확산이 전통적인 직업 구조를 빠르게 바꾸고 있다는 점도 주목하고 있습니다.": 1
+        },
+        "j3_q2_fit": {
+          "4": 2
+        },
+        "j3_q3": {
+          "The phenomenon I find most alarming is the combination of automation displacing workers and the education system failing to adapt quickly enough to prepare young people for that reality. Those who will suffer most are young people from lower-income backgrounds who don't have family networks or resources to absorb that disruption. Personally, I respond by staying informed and by advocating — even in retirement — for physical education and team-based learning as tools that build adaptability and resilience, skills no algorithm can easily replace.": 1,
+          "경제적 불평등과 자동화로 인한 일자리 감소가 가장 우려됩니다. 특히 기술 교육을 받지 못한 저소득층 청년들이 가장 큰 어려움에 처할 것으로 예상됩니다. 저는 이 문제에 대해 불안감을 느끼면서도, 내가 가르쳤던 기술 교육이 그나마 일부 아이들에게 방패가 될 수 있다고 스스로를 다독이고 있습니다.": 1
+        },
+        "j3_q3_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j3_q4": {
+          "What will change: the nature of work, the pace of technological change, the demographics of communities, and the ways people communicate and form relationships. What will not change: the human need for belonging, the importance of trust, the value of physical health and embodied experience, and the fundamental desire to feel competent and recognized. Competition and cooperation will remain the twin engines of human progress — the forms will shift, but not the underlying drives.": 1,
+          "달라질 것은 직업의 형태와 소통 방식, 그리고 기술이 일상에 통합되는 깊이입니다. 변하지 않을 것은 사람 사이의 신뢰와 공동체적 유대, 그리고 공정함에 대한 기본적인 욕구라고 생각합니다. 기술이 아무리 발전해도 인간 관계의 본질은 쉽게 바뀌지 않을 것입니다.": 1
+        },
+        "j3_q4_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j3_q5": {
+          "I hope for a society where hard work and genuine achievement are still recognized and rewarded, but where the floor is high enough that no one is left behind simply due to circumstance of birth. I want a society where people still gather in person — on fields, in gymnasiums, in town halls — and learn to compete and cooperate face to face. A society that values both individual excellence and collective responsibility.": 1,
+          "각자의 출발점이 달라도 노력한 만큼 기회가 주어지는 사회를 바랍니다. 경쟁보다 협력이 더 가치 있게 여겨지고, 소수의 목소리도 무시되지 않는 사회입니다. 또한 자연환경이 지속 가능하게 유지되어 다음 세대가 건강한 터전에서 살 수 있기를 바랍니다.": 1
+        },
+        "j3_q5_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j3_q6": {
+          "Discipline, integrity, and genuine teamwork. Not teamwork as a buzzword, but the real kind — where you subordinate your ego for a shared goal and trust that others will do the same. Also perseverance: the willingness to keep working when results don't come immediately. And honest knowledge — the commitment to truth even when it is inconvenient.": 1,
+          "공정함과 연대입니다. 규칙이 모두에게 동등하게 적용되고, 어려운 이웃을 외면하지 않는 공동체 정신이 핵심 가치라고 생각합니다. 지식과 진실에 대한 존중도 빠질 수 없습니다.": 1
+        },
+        "j3_q6_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j3_q7": {
+          "I want them to be people who can take a hit and get back up — not just physically, but emotionally and professionally. I want them to be curious enough to keep learning long after they leave any classroom. Most of all, I want them to be the kind of teammates and citizens who make the people around them better. The world will be complicated in ways we cannot fully predict; what they need is character, competence, and the confidence to keep going.": 1,
+          "스스로 생각하고 판단할 수 있는 사람으로 자라기를 바랍니다. 남이 정해준 답을 따르는 것이 아니라, 문제를 직접 파악하고 해결책을 찾아가는 능력을 갖추기를 원합니다. 그리고 어떤 상황에서도 타인을 존중하는 태도를 잃지 않았으면 합니다.": 1
+        },
+        "j3_q7_fit": {
+          "3": 1,
+          "5": 1
+        },
+        "j3_revise": {
+          "For teachers with five or fewer years of experience, I would revise j3_q1 from asking about a memorable student's life after graduation — which early-career teachers may not yet know — to something like: 'Think of a student who surprised you or changed how you think about teaching. What was it about that student that stayed with you?' This keeps the reflective spirit without requiring long-term follow-up knowledge the teacher may not have.": 1,
+          "j3_q7 질문을 바꾸면 좋겠습니다. '지금 내가 가르치는 아이들이 어떤 모습으로 살아가기 바라나요?'보다는 '내가 수업에서 학생들에게 가장 전달하고 싶은 한 가지 능력이나 태도는 무엇인가요?'로 바꾸면, 경력이 짧은 교사도 자신의 수업 경험을 바탕으로 구체적으로 답할 수 있을 것 같습니다.": 1
+        },
+        "j3_timing": {
+          "3": 1,
+          "5": 1
+        }
+      },
+      "20+": {
+        "j3_add": {
+          "The question I find myself carrying, and which this journey did not quite reach, is this: how does one teach with genuine hope when one is not, privately, very hopeful? I do not mean despair — I mean the honest condition of someone who has read enough history to know how badly things can go, and who nonetheless stands before young people each day with the responsibility to enlarge rather than diminish their sense of possibility. That tension between private sobriety and public vocation is, I think, one of the most demanding aspects of teaching at this stage of life, and I would welcome a space to examine it more directly.": 1,
+          "이 여정에서 더 깊이 다루고 싶은 주제는, 교육자 자신의 지속적 성장과 소진(burnout) 사이의 긴장입니다. 저는 학생들에게 평생 학습과 자기 쇄신을 강조하지만, 정작 교육자 자신이 제도적 압박과 변화의 속도 속에서 어떻게 자신의 열정과 철학을 유지할 수 있는지에 대한 성찰의 공간은 부족하다고 느낍니다. 또한 이중 문화적 배경을 가진 교육자로서, 서로 다른 교육 전통과 가치관 사이에서 어떻게 자신만의 통합적 교육철학을 구성해 왔는지에 대한 이야기도 나누고 싶습니다.": 1
+        },
+        "j3_burden": {
+          "1": 1,
+          "2": 1
+        },
+        "j3_hard": {
+          "['none']": 2
+        },
+        "j3_hard_reason": {
+          "no_difficulty": 2
+        },
+        "j3_meaning": {
+          "5": 2
+        },
+        "j3_q1": {
+          "20여 년 전 제 수업을 들었던 한 학생이 기억에 남습니다. 컴퓨터 과학과 음악 두 가지 모두에 깊은 관심을 가졌지만, 주변으로부터 '하나만 선택하라'는 압박을 받던 학생이었습니다. 저는 그 학생에게 두 분야의 교차점에서 자신만의 길을 개척할 수 있다고 격려했습니다. 최근 소식을 들으니, 그는 현재 음악 기술 스타트업을 공동 창업하여 AI를 활용한 음악 창작 도구를 개발하고 있다고 합니다. 그 학생의 여정을 보며, 경계를 넘나드는 사고가 얼마나 중요한지를 다시 한번 확인하게 됩니다.": 1,
+          "Many years ago, I taught a young man — I shall call him Thomas — who was extraordinarily quiet, almost invisible in a classroom. He struggled to articulate his thoughts aloud, yet his written work was luminous, filled with a moral seriousness far beyond his years. I learned recently, through a mutual acquaintance, that he now works as a translator for a small humanitarian organisation, bridging languages and cultures in conflict zones. I confess that news moved me deeply. He found his voice not by speaking loudly, but by rendering the voices of others faithfully. It confirmed something I have long believed: that education's finest work is often invisible at the time it occurs.": 1
+        },
+        "j3_q1_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j3_q2": {
+          "The phenomenon that occupies my attention most persistently is the accelerating erosion of shared epistemic ground — that is, the collapse of any common agreement about what constitutes reliable knowledge or trustworthy information. This is not merely a political problem; it is a civilisational one. I observe it in the way public discourse has fragmented into mutually incomprehensible tribes, each with its own curated reality. The environmental crisis compounds this, because it demands collective reasoning and long-horizon thinking precisely when our capacity for both appears most diminished.": 1,
+          "제가 가장 주목하는 사회 현상은 인공지능 기술의 급속한 확산과 그로 인한 노동 시장 및 지식 생산 방식의 근본적 변화입니다. 특히 생성형 AI가 교육, 창작, 연구 등 지적 노동의 핵심 영역까지 빠르게 침투하고 있는 현상을 주의 깊게 관찰하고 있습니다. 아울러 디지털 격차가 경제적 불평등과 결합하여 새로운 형태의 사회적 배제를 만들어내고 있다는 점도 우려스럽습니다. 동아시아 사회에서 관찰되는 초저출산과 고령화의 가속화, 그리고 이에 따른 세대 간 갈등 심화도 중요한 현상으로 인식하고 있습니다.": 1
+        },
+        "j3_q2_fit": {
+          "5": 2
+        },
+        "j3_q3": {
+          "The phenomenon that concerns me most profoundly is the convergence of algorithmic information environments with rising authoritarianism. Those most likely to suffer are the young, who are forming their identities and moral imaginations within ecosystems designed to exploit attention rather than cultivate it. I also fear for the elderly, the economically marginalised, and those in societies where civil institutions are already fragile. As for my own response: I find myself oscillating between a disciplined effort to teach critical reading and a quieter, more private anxiety that such efforts are insufficient against structural forces of extraordinary scale. I do not permit that anxiety to silence me, but I will not pretend it is absent.": 1,
+          "가장 우려되는 현상은 AI 기술 가속화로 인한 교육과 노동의 의미 재편입니다. 이로 인해 어려움에 처할 대상은 크게 두 집단입니다. 첫째, 디지털 리터러시와 비판적 사고 역량이 부족한 채 노동 시장에 진입하는 청년층입니다. 둘째, 급격한 기술 변화에 적응할 재교육 기회를 갖지 못하는 중장년 노동자들입니다. 저는 이 현상에 대해 단순히 우려하는 데 그치지 않고, 교육과정 설계 차원에서 능동적으로 대응하고 있습니다. 구체적으로는 비판적 사고, 창의적 문제 해결, 윤리적 판단력을 중심에 두는 교육 프로그램 개발에 집중하고 있으며, AI 도구를 교육 현장에 통합하는 실험적 커리큘럼을 운영하고 있습니다.": 1
+        },
+        "j3_q3_fit": {
+          "5": 2
+        },
+        "j3_q4": {
+          "What will change: the nature of labour, the texture of social interaction, the speed at which knowledge becomes obsolete, the geopolitical order, and the physical landscape of the planet. What will not change: the human need for meaning, for belonging, for narrative, for love, for transcendence. The ancient questions — who am I, what do I owe others, how shall I face suffering and death — will remain as urgent as they have always been. If anything, rapid technological change will make the humanities more necessary, not less, because it is within literature, philosophy, and theology that those questions have been most honestly examined.": 1,
+          "달라질 것들: 특정 직종과 직무는 자동화로 대체되거나 근본적으로 변형될 것입니다. 지식의 생산, 유통, 소비 방식이 AI 매개 환경 속에서 재구성될 것입니다. 국가와 기업의 경계를 넘나드는 협업이 일상화되고, 물리적 공간의 의미가 약화될 것입니다. 변하지 않을 것들: 인간의 의미 추구 욕구와 타인과의 진정한 연결에 대한 갈망은 사라지지 않을 것입니다. 공정성과 존엄성에 대한 도덕적 감각, 아름다움을 인식하고 창조하려는 예술적 충동, 그리고 배움 자체에서 오는 기쁨도 본질적으로 변하지 않을 것입니다. 기술이 아무리 발전해도 인간 사회는 신뢰와 관계를 기반으로 작동할 것이라 믿습니다.": 1
+        },
+        "j3_q4_fit": {
+          "4": 2
+        },
+        "j3_q5": {
+          "I hope for a society in which slowness is not a failure. One in which a person may read, reflect, and change their mind without being penalised for it. A society that honours care — for the ill, the old, the young, the stranger — as a form of genuine achievement. I long for communities in which disagreement is conducted with rigour and respect, and in which the natural world is treated not as a resource to be consumed but as a reality to be inhabited with gratitude and restraint.": 1,
+          "저는 다양성이 실질적으로 존중받고, 개인이 자신의 고유한 잠재력을 발휘할 수 있는 사회를 바랍니다. 기술의 혜택이 특정 계층에 집중되지 않고 광범위하게 공유되며, 경제적 배경이나 출신에 관계없이 누구나 양질의 교육과 기회에 접근할 수 있는 사회이기를 원합니다. 또한 세대 간, 문화 간 대화가 활발하게 이루어지고, 이견과 갈등이 폭력이 아닌 이성적 토론과 민주적 절차를 통해 해소되는 사회를 소망합니다. 개인의 성취와 공동체의 번영이 상충하지 않고 서로를 강화하는 사회적 구조가 형성되기를 기대합니다.": 1
+        },
+        "j3_q5_fit": {
+          "5": 2
+        },
+        "j3_q6": {
+          "I would name three values above all: truthfulness, which requires the courage to revise one's own convictions; solidarity, which demands that we remain genuinely accountable to those who are unlike us; and what I can only call attentiveness — a quality of presence and care toward the particular, the local, the irreplaceable. These are not fashionable values. They resist quantification and resist the logic of efficiency. That is precisely why I believe they are indispensable.": 1,
+          "제가 가장 중요하게 여기는 가치는 다음과 같습니다. 첫째, 비판적 자율성: 외부의 권위나 알고리즘에 맹목적으로 따르지 않고 스스로 판단하고 선택할 수 있는 능력입니다. 둘째, 공감과 연대: 자신과 다른 배경을 가진 타인의 경험을 이해하고 함께 문제를 해결하려는 의지입니다. 셋째, 지적 겸손: 자신의 지식과 관점이 불완전할 수 있음을 인정하고 지속적으로 배우려는 태도입니다. 넷째, 미적 감수성: 기능성을 넘어 아름다움과 의미를 추구하는 인간적 능력입니다. 이 가치들은 기술이 아무리 발전해도 인간을 인간답게 만드는 핵심이라고 생각합니다.": 1
+        },
+        "j3_q6_fit": {
+          "5": 2
+        },
+        "j3_q7": {
+          "I want them to live with what I would call a rooted freedom — grounded enough in their own values and traditions that they are not simply swept along by whatever current is strongest at the moment, yet open enough to genuine encounter with the other that they are not merely self-enclosed. I want them to be capable of grief, because grief is the mark of having loved something real. I want them to be capable of wonder, because wonder is the beginning of inquiry. And I want them to know that a life of meaning is not the same as a life of comfort, and to be at peace with that distinction.": 1,
+          "저는 제 학생들이 불확실성을 두려워하지 않고 그 속에서 의미를 발견하는 사람으로 자라기를 바랍니다. 기술을 도구로 능숙하게 활용하되, 기술에 종속되지 않는 주체적 인간으로 살아가기를 원합니다. 자신의 분야에서 깊이를 추구하면서도 다른 영역과 적극적으로 대화할 수 있는 경계를 넘나드는 사고를 갖추기를 바랍니다. 무엇보다, 성공의 기준을 외부에서 찾지 않고, 자신이 진정으로 가치 있다고 믿는 것을 위해 헌신하는 삶을 살아가기를 소망합니다. 그것이 제가 교육자로서 20년 넘게 교단에 선 가장 근본적인 이유입니다.": 1
+        },
+        "j3_q7_fit": {
+          "5": 2
+        },
+        "j3_revise": {
+          "The opening question presupposes that a teacher has witnessed a student's life beyond the classroom — through graduation, career, or ongoing contact. For teachers in their first five years, this premise often does not hold. I would revise it as follows: 'Among the students you have met so far, is there one whose presence in your classroom changed something in you as a teacher? What was it about that student that stayed with you?' This preserves the reflective intent without requiring biographical knowledge the early-career teacher cannot yet possess. Similarly, the question about predicting future society might be reframed around a more immediate horizon: 'What kind of world do you sense your students are already living in, outside your classroom?'": 1,
+          "교직 5년 차 이하 교사에게는 졸업생의 현재 모습을 묻는 j3_q1이 경험 부족으로 답하기 어려울 수 있습니다. 이를 다음과 같이 수정하면 좋겠습니다. 현행: '교사가 된 이후 만난 아이들 중 기억에 남는 아이를 떠올리고, 졸업 후 어떤 모습으로 살고 있는지 나누어 보세요.' 수정안: '교사가 된 이후 만난 아이들 중 가장 기억에 남는 순간이나 학생을 떠올려 보세요. 그 학생이 10년 후 어떤 모습으로 살아가기를 바라는지 이야기해 보세요.' 이렇게 하면 실제 졸업생 소식 없이도 교사로서의 희망과 기대를 통해 자신의 교육 가치관을 성찰할 수 있습니다.": 1
+        },
+        "j3_timing": {
+          "5": 2
+        }
+      },
+      "3-5": {
+        "j3_add": {
+          "교사로서 사회 변화에 어떻게 반응해야 하는지에 대한 이야기를 더 나누고 싶어요. 뭔가 문제를 인식하는 건 되는데, 교실 안에서 실제로 무엇을 다르게 할 수 있는지에 대한 고민이 아직 정리가 안 돼 있거든요. 그 간극이 저한테는 지금 가장 큰 숙제예요.": 1,
+          "교사로서 학생들에게 무언가를 가르친다는 것이 과연 의미가 있는 일인지에 대한 근본적인 의문이 가끔 듭니다 😶 특히 세상이 너무 빠르게 변하고 있어서, 지금 가르치는 내용이 학생들의 미래에 실제로 도움이 될지 확신하기 어렵습니다. 이 여정에서 그 불확실함 속에서도 교사로서 방향을 잡는 방법에 대한 이야기를 나눌 수 있었으면 좋겠습니다.": 1
+        },
+        "j3_burden": {
+          "3": 2
+        },
+        "j3_hard": {
+          "['j3_q1', 'j3_q7']": 1,
+          "['j3_q4', 'j3_q7']": 1
+        },
+        "j3_hard_reason": {
+          "premise_mismatch": 1,
+          "too_abstract": 1
+        },
+        "j3_meaning": {
+          "3": 1,
+          "4": 1
+        },
+        "j3_q1": {
+          "교사로서 짧은 경험 속에서도 유독 기억에 남는 학생이 있습니다 😊 조용하지만 논리적 사고가 뛰어났던 학생인데, 수업 중 제가 설명을 마치기도 전에 반례를 찾아내곤 했습니다. 그 학생이 지금 어떤 세상을 살아가고 있는지 궁금하면서도, 한편으로는 그 예리함이 오히려 세상과 마찰을 빚지는 않을까 하는 걱정도 듭니다. 아직 졸업 후 소식을 듣지 못했지만, 부디 자신의 방식대로 잘 살아가고 있기를 바랍니다.": 1,
+          "제가 가르쳤던 학생 중에 마르코스라는 아이가 기억에 남아요. 수업 중에 항상 딴짓을 하면서도 질문은 날카로웠던 아이였는데, 졸업 후 소식을 들으니 지역 커뮤니티 라디오에서 프로그램을 진행하고 있다고 하더라고요. 그 아이가 교실에서 보여줬던 에너지가 결국 자기 자리를 찾은 것 같아서 뭔가 뭉클했어요.": 1
+        },
+        "j3_q1_fit": {
+          "2": 1,
+          "3": 1
+        },
+        "j3_q2": {
+          "제가 가장 주목하는 건 경제적 불평등의 심화예요. 뉴스에서도 계속 나오고, 실제로 학교 현장에서도 학생들 간의 격차가 눈에 보이거든요. 어떤 아이는 방과 후 학원을 여러 개 다니고, 어떤 아이는 집에 가면 바로 아르바이트를 해야 하는 상황이에요. 그 차이가 교실 안에서 이미 시작된다는 게 저는 계속 마음에 걸려요.": 1,
+          "제가 주목하는 사회 현상은 인공지능 기술의 급속한 확산과 그로 인한 노동 구조의 변화입니다 🤔 특히 젊은 세대가 진입하려는 직업군 자체가 빠르게 소멸하거나 재편되는 현상이 눈에 띕니다. 또한 디지털 감시 기술의 확산과 개인 정보 침해 문제도 상당히 우려스럽게 바라보고 있습니다. 이러한 변화들이 교육 현장과 어떻게 연결되는지 아직 명확히 파악하지 못한 상태입니다.": 1
+        },
+        "j3_q2_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j3_q3": {
+          "가장 우려되는 현상은 AI 자동화로 인한 청년 고용 불안입니다 😟 특히 중산층 가정 출신으로 대학에 진학했지만 뚜렷한 기술적 전문성을 갖추지 못한 청년들이 가장 큰 어려움에 처할 것으로 예상됩니다. 저 자신도 학생들에게 무엇을 가르쳐야 하는지 확신이 없는 상태에서, 이 현상에 대해 솔직히 말하면 불안과 무력감을 동시에 느끼고 있습니다. 뚜렷한 대응 방식을 찾지 못한 채 하루하루를 보내고 있는 것이 현실입니다.": 1,
+          "자동화와 AI로 인한 노동 시장의 변화가 가장 우려됩니다. 특히 중산층 이하 가정 출신의 청년들이 가장 큰 타격을 받을 것 같아요. 반복적인 업무가 자동화되면 그 일자리를 주로 차지했던 사람들이 대안을 찾기 어려워지거든요. 저 자신은 이 현상에 대해 솔직히 좀 무력감을 느끼고 있어요. 교실에서 뭔가를 가르치면서도 '이게 저 아이들의 미래에 실제로 도움이 될까'라는 의문이 자꾸 생기거든요.": 1
+        },
+        "j3_q3_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j3_q4": {
+          "달라지는 것은 일하는 방식, 커뮤니케이션 방식, 그리고 사람들이 공동체를 구성하는 방식이라고 봐요. AI와 디지털 기술이 더 깊숙이 들어올 거고, 국경의 의미도 지금과는 달라질 것 같아요. 반면 변하지 않을 것은 인간의 관계에 대한 갈망, 공정함에 대한 요구, 그리고 의미 있는 삶을 살고 싶다는 욕구예요. 기술이 아무리 발전해도 사람은 결국 연결되고 싶어하고 인정받고 싶어한다고 생각해요.": 1,
+          "달라질 것은 직업의 형태, 인간관계의 방식, 그리고 지식 습득의 경로라고 생각합니다 🌐 반면 변하지 않을 것은 인간이 타인으로부터 인정받고 싶어 하는 욕구, 그리고 불공정함에 분노하는 감각이라고 봅니다. 기술이 아무리 발전해도 사람과 사람 사이의 신뢰와 충성심, 그리고 소속감에 대한 갈망은 사라지지 않을 것입니다. 다만 그것이 어떤 형태로 표현될지는 예측하기 어렵습니다.": 1
+        },
+        "j3_q4_fit": {
+          "3": 2
+        },
+        "j3_q5": {
+          "모든 사람이 태어난 배경에 상관없이 자신의 잠재력을 펼칠 수 있는 사회요. 기회가 공정하게 분배되고, 실패해도 다시 일어설 수 있는 안전망이 있는 사회요. 또 다양한 방식으로 기여하는 사람들이 각자의 방식으로 존중받는 사회이기도 하고요. 경쟁보다 협력이 더 가치 있게 여겨지는 문화가 자리 잡혔으면 좋겠어요.": 1,
+          "제가 바라는 사회는 개인의 독립성이 존중받으면서도 공동체적 연대가 살아 있는 사회입니다 🌱 누군가의 취약함이 착취의 대상이 되지 않고, 다양한 방식으로 살아가는 사람들이 서로를 인정할 수 있는 사회를 소망합니다. 동시에 권위가 존중받되 그 권위가 투명하고 책임감 있게 행사되는 구조이길 바랍니다. 지금보다 훨씬 더 공정하고 안전한 세상이었으면 합니다.": 1
+        },
+        "j3_q5_fit": {
+          "4": 2
+        },
+        "j3_q6": {
+          "공정함, 연대, 그리고 인간의 존엄성이요. 이 세 가지가 없으면 아무리 기술이 발전하고 경제가 성장해도 사람들은 행복하지 않다고 생각해요. 특히 연대는 지금 시대에 점점 약해지고 있는 것 같아서 더 중요하게 여기게 됐어요.": 1,
+          "충성심, 독립성, 그리고 공정함이 제가 가장 중요하게 여기는 가치입니다 💡 충성심은 공동체를 유지하는 기반이고, 독립성은 개인이 외부 압력에 굴복하지 않을 수 있는 힘입니다. 공정함은 이 두 가지가 충돌할 때 균형을 잡아주는 원칙이라고 생각합니다. 또한 안전과 안정 역시 빼놓을 수 없는 가치로, 이것이 보장되어야 비로소 다른 가치들을 추구할 여유가 생긴다고 봅니다.": 1
+        },
+        "j3_q6_fit": {
+          "4": 2
+        },
+        "j3_q7": {
+          "스스로 생각하고 판단할 수 있는 사람으로 살아가기를 바라요. 누군가 정해준 길을 그냥 따라가는 게 아니라, 자기가 무엇을 원하는지 알고 그것을 위해 주변과 협력할 수 있는 사람이요. 실패를 두려워하지 않고, 다른 사람의 어려움에 무감각해지지 않는 사람이면 좋겠어요. 제가 가르치는 내용보다 그런 태도를 남겨줄 수 있으면 더 좋겠다고 생각해요.": 1,
+          "제가 가르치는 학생들이 변화하는 세상 속에서도 자신의 중심을 잃지 않고 살아가기를 바랍니다 🙏 특정 직업이나 지위를 얻는 것보다, 어떤 상황에서도 스스로 판단하고 선택할 수 있는 사람으로 자라나기를 원합니다. 또한 타인의 고통에 공감하면서도 자신의 삶을 주체적으로 꾸려나갈 수 있는 균형감각을 갖추기를 바랍니다. 솔직히 말하면, 그런 사람으로 키울 수 있는 교사가 되고 싶다는 바람이 아직은 막연하게만 느껴집니다.": 1
+        },
+        "j3_q7_fit": {
+          "3": 2
+        },
+        "j3_revise": {
+          "j3_q1의 경우, 졸업생 소식을 묻는 부분을 삭제하고 「현재 수업 중 가장 인상 깊었던 순간이나 학생의 반응은 무엇이었나요?」로 바꾸는 것이 좋을 것 같습니다. j3_q7도 「지금 내가 가르치는 아이들이 어떤 모습으로 살아가기 바라나요?」라는 질문 앞에 「교사로서 아직 확신이 없더라도 괜찮습니다」라는 안내 문구를 추가하면 심리적 부담이 줄어들 것 같습니다.": 1,
+          "j3_q7 질문을 바꾸면 좋겠어요. '지금 내가 가르치는 아이들이 어떤 모습으로 자기 세대의 세상을 살아가기 바라나요?'는 경력이 짧은 교사에게는 너무 거시적으로 느껴질 수 있어요. 대신 '지금 내 학생 중 한 명이 10년 후 어떤 사람이 되어 있으면 좋겠나요? 그 모습을 위해 내가 지금 할 수 있는 것은 무엇인가요?'처럼 구체적인 한 명의 학생을 기준으로 생각하게 하면 더 답하기 쉬울 것 같아요.": 1
+        },
+        "j3_timing": {
+          "2": 1,
+          "3": 1
+        }
+      },
+      "6-10": {
+        "j3_add": {
+          "I would welcome a question about the relationship between physical education and character formation — specifically, whether the structures of competitive sport can serve as a model for broader educational practice. In my experience, the discipline and team dynamics of athletic training produce outcomes that classroom instruction alone rarely achieves. That connection deserves more deliberate attention in educational philosophy discussions.": 1,
+          "교사로서 가르치는 내용과 사회 현실 사이의 간극을 어떻게 좁힐 수 있는지에 대해 더 이야기하고 싶습니다. 교과서가 담지 못하는 현실을 아이들에게 어떻게 전달해야 할지, 그 방법론에 대한 고민이 늘 있습니다.": 1
+        },
+        "j3_burden": {
+          "2": 2
+        },
+        "j3_hard": {
+          "['j3_q4']": 2
+        },
+        "j3_hard_reason": {
+          "too_abstract": 2
+        },
+        "j3_meaning": {
+          "4": 2
+        },
+        "j3_q1": {
+          "One student stands out clearly. She was a young girl with exceptional discipline and raw athletic talent, but lacked confidence in high-pressure situations. I worked with her closely over two seasons. Years later, I learned she became a regional-level coach herself. That outcome felt more meaningful to me than any medal. She understood what it means to build others up, which is precisely what I had hoped to instill.": 1,
+          "몇 해 전, 농촌 지역 소규모 학교에서 가르쳤던 한 학생이 기억납니다. 말수가 적고 조용했지만, 생물 시간마다 눈이 빛났습니다. 졸업 후 소식을 들으니, 지역 농업협동조합에서 일하며 지속 가능한 농법을 연구하고 있다고 합니다. 그 아이가 자신의 뿌리를 지키면서도 새로운 길을 걷고 있다는 것이 참으로 대견합니다.": 1
+        },
+        "j3_q1_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j3_q2": {
+          "The most significant phenomenon I observe is the accelerating fragmentation of community ties alongside the rise of digital connectivity. People are more connected through screens yet more isolated in practice. In sports and fitness contexts, I see this acutely: young people have access to vast information but lack the sustained commitment and team orientation that physical training demands. The erosion of disciplined community structures concerns me greatly.": 1,
+          "기후 변화와 식량 안보 문제가 가장 눈에 띕니다. 농촌에 살다 보니 기상 이변이 농업에 미치는 영향을 직접 목격합니다. 또한 디지털 전환이 농촌 공동체를 해체하는 방식도 우려됩니다. 젊은이들이 도시로 떠나고 마을이 고령화되는 현상은 단순한 경제 문제가 아니라 문화와 정체성의 소멸로 이어진다고 생각합니다.": 1
+        },
+        "j3_q2_fit": {
+          "4": 2
+        },
+        "j3_q3": {
+          "The phenomenon I find most alarming is the displacement of human labor and purpose through automation, combined with deepening economic inequality. Those most at risk are young people from lower-income backgrounds who lack access to quality education and mentorship. They will face a labor market that rewards narrow technical skills while the broader human capacities — teamwork, resilience, adaptability — remain undervalued. My own response has been to stay engaged with community sports programs as a volunteer, believing that physical discipline and team experience build precisely those capacities that technology cannot replicate.": 1,
+          "기후 변화와 자동화 기술의 결합이 가장 우려됩니다. 저숙련 노동자, 농촌 주민, 그리고 교육 기회가 제한된 아이들이 가장 큰 어려움에 처할 것입니다. 저는 이 현상을 외면하지 않으려 합니다. 자원봉사와 교육 활동을 통해 지역 청소년들이 변화에 적응할 수 있도록 돕고 있습니다. 다만 개인의 노력만으로는 한계가 있다는 것도 압니다.": 1
+        },
+        "j3_q3_fit": {
+          "4": 2
+        },
+        "j3_q4": {
+          "What will change: the nature of work, the speed of information, the structure of institutions, and the boundaries of competition — both economic and geopolitical. What will not change: the human need for belonging, the value of earned achievement, the importance of physical health, and the fundamental dynamics of trust within teams. People will still need to learn how to lose well and how to support one another under pressure. Those constants are what education must protect.": 1,
+          "달라질 것은 일의 형태, 이동 방식, 인간관계의 매개 방식입니다. AI와 자동화가 많은 직업을 대체하고, 국경의 의미도 변할 것입니다. 변하지 않을 것은 인간의 연결에 대한 갈망, 의미를 찾으려는 본성, 그리고 세대 간 지식 전수의 필요성입니다. 기술이 아무리 발전해도 누군가는 가르치고 누군가는 배우는 관계는 지속될 것입니다.": 1
+        },
+        "j3_q4_fit": {
+          "3": 1,
+          "4": 1
+        },
+        "j3_q5": {
+          "A society where achievement is accessible regardless of background, where community structures are strong enough to hold individuals accountable and supported, and where health — physical and mental — is treated as a collective responsibility. I want a society that rewards sustained effort and genuine competence, not merely visibility or short-term performance. Loyalty to one's community should be recognized as a serious value, not dismissed as outdated.": 1,
+          "각자가 자신의 자리에서 존엄하게 살아갈 수 있는 사회를 바랍니다. 도시와 농촌, 부유층과 빈곤층 사이의 격차가 줄어들고, 개인의 자유가 공동체의 책임과 균형을 이루는 사회입니다. 또한 전통과 혁신이 충돌하지 않고 서로를 보완하는 사회이기를 소망합니다.": 1
+        },
+        "j3_q5_fit": {
+          "4": 2
+        },
+        "j3_q6": {
+          "Discipline, collective responsibility, and merit-based achievement. These three are foundational. Without discipline, potential is wasted. Without collective responsibility, individual achievement becomes hollow. Without genuine merit as the basis for recognition, trust in institutions collapses. I would add loyalty — loyalty to one's team, one's community, and one's nation — as an underrated but essential value.": 1,
+          "존엄, 자유, 그리고 연대입니다. 개인의 자유는 타인의 존엄을 침해하지 않는 범위에서 최대한 보장되어야 합니다. 그리고 그 자유가 고립으로 이어지지 않으려면 공동체적 연대가 반드시 필요합니다. 제 신앙적 배경에서도 이 세 가지는 핵심입니다.": 1
+        },
+        "j3_q6_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j3_q7": {
+          "I want them to live with clarity of purpose and the capacity to work within a team while maintaining personal integrity. I want them to be competitive without being destructive, and resilient without being indifferent to others. They should understand that the world will be demanding and that their preparation — physical, mental, and moral — is what will determine their contribution. I do not want them to merely survive their generation. I want them to improve it.": 1,
+          "아이들이 변화에 휩쓸리지 않고 자신이 누구인지 알면서 살아가기를 바랍니다. 기술을 도구로 쓰되 기술에 종속되지 않고, 자신의 공동체에 뿌리를 두면서도 세계와 대화할 수 있는 사람이 되기를 바랍니다. 무엇보다 타인의 어려움 앞에서 외면하지 않는 용기를 가졌으면 합니다.": 1
+        },
+        "j3_q7_fit": {
+          "4": 1,
+          "5": 1
+        },
+        "j3_revise": {
+          "For teachers with five or fewer years of experience, the opening question about memorable students and their post-graduation lives may be premature. I would revise it to: 'Among the students you have taught so far, who challenged your expectations most — and what did that experience teach you about your role as an educator?' This grounds the reflection in actual classroom experience rather than longitudinal outcomes the teacher may not yet have.": 1,
+          "j3_q1의 경우, 졸업생 소식을 묻는 부분은 5년 차 이하 교사에게 부담이 될 수 있습니다. '지금 가르치는 학생 중 가장 기억에 남는 순간은 언제인가요?'로 바꾸면 더 접근하기 쉬울 것입니다. j3_q4도 '미래 사회를 예측해 봅시다' 대신 '10년 후 내 학생들이 마주할 가장 큰 변화는 무엇이라고 생각하나요?'처럼 구체화하면 좋겠습니다.": 1
+        },
+        "j3_timing": {
+          "4": 2
+        }
+      }
+    }
+  },
+  "notes": [
+    "Built from jobs/<job>/ on disk — no additional model calls.",
+    "Ledger uses result.json; lens prefers verifier/structured_output.json."
+  ]
+}
