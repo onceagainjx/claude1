@@ -2,8 +2,9 @@
 
     uv run python build_pool.py --matraix /path/to/MatrAIx-Persona-8B --per-bin 10 --seed 42
 
-1. 공식 1M 표집기(sample_production_1m)로 한국어가 모국어인 현직 교사 페르소나를 뽑는다.
-   경력 구간마다 남 30% : 여 70%가 되도록 성별을 나눠 두 번 뽑는다.
+1. 공식 1M 표집기(sample_production_1m)로 한국어가 모국어인 현직 교사 후보를 경력·성별 칸마다 모두
+   가져와, 프리랜서(학원·과외 강사로 보임)를 빼고 칸마다 무작위로 고른다. 경력 구간마다 남 30% : 여 70%를
+   목표로 하되, 한쪽 성별 후보가 모자란 칸은 다른 성별로 채워 구간 인원을 맞춘다.
 2. 스키마에 없는 속성(overlay)을 붙인다. 학교급은 모두 '초등학교', 근무 지역은 경력·성별 칸마다
    서울과 경기를 번갈아 나눈다. 한국식 이름(성별에 맞춤)으로 display_name도 바꾼다.
 3. <matraix>/persona/datasets/<이름>/ 에 페르소나 YAML, manifest.json(overlay_dimensions 포함),
@@ -27,14 +28,15 @@ import yaml
 from build_tasks import EXPERIENCE_BINS
 
 # 한국 교사에 가까운 페르소나만 남기는 스키마 속성 (국가 속성은 스키마에 없음).
-# 한국어 모국어 조건을 넣으면 3~5년 여교사가 7명뿐이라 도시·대학 제외 조건은 더 걸지 않는다.
 FILTERS = {
     "role_function": ["Teaching"],
     "region": ["East Asia"],
     "lang_korean": ["Native"],
-    "life_stage": ["Student", "Early career", "Parent of young kids", "Mid-life", "Career change",
-                   "Empty nester"],  # 은퇴(Retirement) 제외
+    "life_stage": ["Early career", "Parent of young kids", "Mid-life", "Career change",
+                   "Empty nester"],  # 학생(Student), 은퇴(Retirement) 제외
 }
+# 표집기 필터는 '포함' 목록만 받으므로, 빼야 할 값은 가져온 뒤 거른다 (값이 없는 페르소나는 남긴다).
+EXCLUDE = {"company_size": ["Solo / freelance"]}
 MALE_SHARE = 0.3
 
 OVERLAYS = [
@@ -56,6 +58,20 @@ def split_by_gender(per_bin: int) -> dict[str, int]:
     return {"Man": men, "Woman": per_bin - men}
 
 
+def allocate(per_bin: int, available: dict[str, int]) -> dict[str, int]:
+    """목표 성별 인원, 한쪽 후보가 모자라면 다른 쪽으로 채운다."""
+    want = split_by_gender(per_bin)
+    take = {g: min(n, available.get(g, 0)) for g, n in want.items()}
+    short = per_bin - sum(take.values())
+    for g in sorted(take, key=lambda g: -(available.get(g, 0) - take[g])):
+        extra = min(short, available.get(g, 0) - take[g])
+        take[g] += extra
+        short -= extra
+    if short:
+        raise SystemExit(f"후보가 {sum(available.values())}명뿐이라 구간당 {per_bin}명을 채울 수 없습니다.")
+    return take
+
+
 def korean_name(persona_id: str, gender: str, used: set[str]) -> str:
     h = int(hashlib.sha1(persona_id.encode()).hexdigest(), 16)
     for k in range(len(SURNAMES) * len(GIVEN[gender])):
@@ -66,26 +82,43 @@ def korean_name(persona_id: str, gender: str, used: set[str]) -> str:
     raise ValueError("이름 목록이 부족합니다")
 
 
-def sample(matraix: Path, per_bin: int, seed: int) -> list[dict]:
-    """공식 표집기로 성별마다 경력 구간당 정해진 수를 뽑아 YAML 내용을 돌려준다."""
-    sys.path[:0] = [str(matraix), str(matraix / "application" / "playground")]
-    from backend.service.persona_1m_pool import sample_production_1m
+def excluded(row: dict) -> bool:
+    return any(str(row["dimensions"].get(k)) in vals for k, vals in EXCLUDE.items())
 
-    rows = []
-    for gender, n in split_by_gender(per_bin).items():
-        if n == 0:
-            continue
+
+def sample(matraix: Path, per_bin: int, seed: int) -> list[dict]:
+    """공식 표집기로 칸(경력 × 성별)마다 후보를 모두 가져와 거른 뒤 칸마다 고른다."""
+    sys.path[:0] = [str(matraix), str(matraix / "application" / "playground")]
+    from backend.service.persona_1m_pool import MAX_SAMPLE_SIZE, sample_production_1m
+
+    cap = MAX_SAMPLE_SIZE // len(EXPERIENCE_BINS)  # 칸당 상한 = 사실상 전부
+    candidates: dict[tuple[str, str], list[dict]] = {}
+    for gender in ("Man", "Woman"):
         result = sample_production_1m(
             repo_root=matraix,
-            sample_size=n * len(EXPERIENCE_BINS),
+            sample_size=cap * len(EXPERIENCE_BINS),
             seed=seed,
             dimension_filters={**FILTERS, "gender_identity": [gender], "years_experience": EXPERIENCE_BINS},
             stratify_fields=["years_experience"],
-            sample_size_per_value_group=n,
+            sample_size_per_value_group=cap,
             allocation="perCell",
         )
         for p in result["personas"]:
-            rows.append(yaml.safe_load((matraix / p["path"]).read_text(encoding="utf-8")))
+            row = yaml.safe_load((matraix / p["path"]).read_text(encoding="utf-8"))
+            if not excluded(row):
+                candidates.setdefault((row["dimensions"]["years_experience"], gender), []).append(row)
+
+    rng = random.Random(seed)
+    rows = []
+    for years in EXPERIENCE_BINS:
+        available = {g: len(candidates.get((years, g), [])) for g in ("Man", "Woman")}
+        take = allocate(per_bin, available)
+        if take != split_by_gender(per_bin):
+            print(f"주의: {years}년 구간은 후보가 남 {available['Man']}명, 여 {available['Woman']}명이라 "
+                  f"남 {take['Man']}명, 여 {take['Woman']}명으로 뽑습니다.", file=sys.stderr)
+        for g, n in take.items():
+            pool = sorted(candidates.get((years, g), []), key=lambda r: r["persona_id"])
+            rows.extend(rng.sample(pool, n))
     return rows
 
 
@@ -110,19 +143,20 @@ def stamp(rows: list[dict], seed: int) -> None:
 
 
 def check(rows: list[dict], per_bin: int) -> None:
-    want = split_by_gender(per_bin)
     for years in EXPERIENCE_BINS:
-        for gender, n in want.items():
-            got = sum(1 for r in rows if r["dimensions"]["years_experience"] == years
-                      and r["dimensions"]["gender_identity"] == gender)
-            if got != n:
-                raise SystemExit(f"{years} / {gender}: {n}명이 필요한데 {got}명만 뽑혔습니다. 필터를 넓히세요.")
+        got = [r for r in rows if r["dimensions"]["years_experience"] == years]
+        if len(got) != per_bin or any(excluded(r) for r in got):
+            raise SystemExit(f"{years}년 구간: {per_bin}명이 필요한데 {len(got)}명이 뽑혔습니다.")
 
 
 def write_pool(matraix: Path, rows: list[dict], per_bin: int, seed: int) -> str:
     rel = f"persona/datasets/dangyohanchaek-seoul-gyeonggi-elem-pc{per_bin}-s{seed}"
     out = matraix / rel
     out.mkdir(parents=True, exist_ok=True)
+    keep = {f"persona_{r['persona_id']}.yaml" for r in rows}
+    for old in out.glob("persona_*.yaml"):  # 조건을 바꿔 다시 만들 때 남은 이전 페르소나
+        if old.name not in keep:
+            old.unlink()
     entries = []
     for row in rows:
         path = f"{rel}/persona_{row['persona_id']}.yaml"
@@ -142,6 +176,7 @@ def write_pool(matraix: Path, rows: list[dict], per_bin: int, seed: int) -> str:
         "seed": seed,
         "schema_version": "1.0",
         "dimension_filters": FILTERS,
+        "excluded": EXCLUDE,
         "male_share": MALE_SHARE,
         "overlay_dimensions": OVERLAYS,
         "created_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -163,7 +198,7 @@ def main() -> None:
     split = split_by_gender(args.per_bin)
     if split["Man"] / args.per_bin != MALE_SHARE:
         print(f"주의: 구간당 {args.per_bin}명으로는 남 {MALE_SHARE:.0%}를 정확히 맞출 수 없어 "
-              f"남 {split['Man']}명, 여 {split['Woman']}명으로 뽑습니다.", file=sys.stderr)
+              f"남 {split['Man']}명, 여 {split['Woman']}명을 목표로 뽑습니다.", file=sys.stderr)
     rows = sample(matraix, args.per_bin, args.seed)
     check(rows, args.per_bin)
     stamp(rows, args.seed)

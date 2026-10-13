@@ -66,6 +66,10 @@ def test_pool_split_and_stamp():
     import build_pool
 
     assert build_pool.split_by_gender(10) == {"Man": 3, "Woman": 7}
+    assert build_pool.allocate(10, {"Man": 9, "Woman": 4}) == {"Man": 6, "Woman": 4}
+    assert build_pool.allocate(10, {"Man": 50, "Woman": 50}) == {"Man": 3, "Woman": 7}
+    assert build_pool.excluded({"dimensions": {"company_size": "Solo / freelance"}})
+    assert not build_pool.excluded({"dimensions": {}})
     rows = [{"persona_id": f"p{i}", "dimensions": {"years_experience": y, "gender_identity": g}}
             for i, (y, g) in enumerate([(y, g) for y in ["0-2", "20+"] for g in ["Man"] * 3 + ["Woman"] * 7])]
     build_pool.stamp(rows, seed=1)
