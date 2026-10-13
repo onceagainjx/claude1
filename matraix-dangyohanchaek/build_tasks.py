@@ -37,7 +37,7 @@ INSTRUCTION = """\
 - 서술형 질문은 1인칭 시점에서 2~4문장으로 답하세요. 프로필의 주 사용 언어와 관계없이 모든 서술형 답과
   이유는 반드시 한국어로 쓰세요. 실제로 겪은 일처럼 구체적인 장면,
   사람, 감정을 담아 주세요. 경험이 없거나 떠오르지 않으면 지어내지 말고 그렇다고 솔직하게 쓰세요.
-- 척도 질문은 제시된 범위의 정수 하나로 답하세요.
+- 척도 질문은 제시된 범위(1~10)의 정수 하나로 답하세요.
 - 선택형 질문은 제시된 선택지 id를 사용하세요. "(해당하는 것 모두)" 질문은 해당하는 id를 모두 고르세요.
 """
 
@@ -59,89 +59,64 @@ CONTEXT = """\
 {opening}
 질문은 여는 질문 → 잇는 질문 → 깊은 질문 순서로 이어집니다. 실제 프로그램에서는 이 질문들로 소그룹
 대화를 나눈 뒤 글을 씁니다. 이 설문에서는 각 질문에 직접 답한 뒤, 그 질문이 지금의 나에게 얼마나
-답하기 쉬웠는지 평가하고, 마지막에 이 여정 전체에 대한 의견을 남깁니다.
+답하기 쉬웠는지 평가하고 어려웠다면 그 이유를 고른 다음, 마지막에 이 여정 전체에 대한 의견을 남깁니다.
 """
 
-FIT_PROMPT = "방금 질문(「{title}」)에 나의 실제 경험으로 답하기가 얼마나 쉬웠나요? (1 = 매우 어려웠다, 5 = 매우 쉬웠다)"
+SCALE_MAX = 10  # 모든 척도는 1~10점
+
+FIT_PROMPT = ("방금 질문(「{title}」)에 나의 실제 경험으로 답하기가 얼마나 쉬웠나요? "
+              f"(1 = 매우 어려웠다, {SCALE_MAX} = 매우 쉬웠다)")
+REASON_PROMPT = ("방금 질문(「{title}」)에 답하기 어려웠던 가장 큰 이유는 무엇인가요? 어렵지 않았다면 '특별히 어렵지 "
+                 "않았다'를 고르세요. 이유(rationale)에는 왜 그렇게 골랐는지 이 질문에 비추어 한국어 한두 문장으로 쓰세요.")
+
+# 질문별 '어려웠던 가장 큰 이유' 선택지 (report.py의 REASON_LABELS와 id가 같아야 한다)
+REASON_OPTIONS = [
+    {"id": "lack_experience", "label": "아직 그만큼의 교직 경험이 쌓이지 않았다"},
+    {"id": "premise_mismatch", "label": "질문이 전제하는 상황(오랜 경력, 졸업생, 전환점 등)이 나와 맞지 않는다"},
+    {"id": "too_personal", "label": "너무 사적이거나 감정적으로 무겁다"},
+    {"id": "too_abstract", "label": "질문이 추상적이라 무엇을 말해야 할지 모르겠다"},
+    {"id": "survival_first", "label": "당장 학교생활을 버티는 문제가 더 급해서 성찰할 여유가 없다"},
+    {"id": "no_difficulty", "label": "특별히 어렵지 않았다"},
+]
+
+
+def _likert(qid: str, prompt: str, construct: str) -> dict:
+    return {"id": qid, "prompt": prompt, "type": "likert", "construct": construct, "required": True,
+            "minValue": 1, "maxValue": SCALE_MAX}
 
 
 def build_questionnaire(j: dict) -> dict:
     n = j["n"]
+    agree = f"(1 = 전혀 그렇지 않다, {SCALE_MAX} = 매우 그렇다)"
     questions: list[dict] = []
-    hard_options: list[dict] = []
     for k, (kind, title, prompt) in enumerate(j["questions"], start=1):
         qid = f"j{n}_q{k}"
-        questions.append({
-            "id": qid,
-            "prompt": f"[{kind} 질문 · {title}] {prompt}",
-            "type": "free_text",
-            "construct": f"reflection_{KIND_IDS[kind]}",
-            "required": True,
-        })
-        questions.append({
-            "id": f"{qid}_fit",
-            "prompt": FIT_PROMPT.format(title=title),
-            "type": "likert",
-            "construct": "answerability",
-            "required": True,
-            "minValue": 1,
-            "maxValue": 5,
-        })
-        hard_options.append({"id": qid, "label": f"{title}: {prompt[:40]}…"})
-    hard_options.append({"id": "none", "label": "어려운 질문이 없었다"})
+        questions += [
+            {
+                "id": qid,
+                "prompt": f"[{kind} 질문 · {title}] {prompt}",
+                "type": "free_text",
+                "construct": f"reflection_{KIND_IDS[kind]}",
+                "required": True,
+            },
+            _likert(f"{qid}_fit", FIT_PROMPT.format(title=title), "answerability"),
+            {
+                "id": f"{qid}_reason",
+                "prompt": REASON_PROMPT.format(title=title),
+                "type": "single_choice",
+                "construct": "difficulty_reason",
+                "required": True,
+                "askRationale": True,
+                "options": REASON_OPTIONS,
+            },
+        ]
 
     questions += [
-        {
-            "id": f"j{n}_meaning",
-            "prompt": "이 여정의 질문들은 나만의 교육철학을 찾는 데 의미가 있었다. (1 = 전혀 그렇지 않다, 5 = 매우 그렇다)",
-            "type": "likert",
-            "construct": "meaningfulness",
-            "required": True,
-            "minValue": 1,
-            "maxValue": 5,
-        },
-        {
-            "id": f"j{n}_burden",
-            "prompt": "이 여정의 질문들에 답하는 것이 심리적으로 부담스러웠다. (1 = 전혀 그렇지 않다, 5 = 매우 그렇다)",
-            "type": "likert",
-            "construct": "burden",
-            "required": True,
-            "minValue": 1,
-            "maxValue": 5,
-        },
-        {
-            "id": f"j{n}_timing",
-            "prompt": "지금 나의 교직 연차는 이 여정의 질문을 다루기에 적절한 시기다. (1 = 전혀 그렇지 않다, 5 = 매우 그렇다)",
-            "type": "likert",
-            "construct": "career_stage_fit",
-            "required": True,
-            "minValue": 1,
-            "maxValue": 5,
-        },
-        {
-            "id": f"j{n}_hard",
-            "prompt": "지금 나의 교직 연차에서 답하기 어려웠던 질문을 모두 고르세요. (해당하는 것 모두)",
-            "type": "multi_choice",
-            "construct": "hard_questions",
-            "required": True,
-            "options": hard_options,
-        },
-        {
-            "id": f"j{n}_hard_reason",
-            "prompt": "답하기 어려웠던 가장 큰 이유는 무엇인가요?",
-            "type": "single_choice",
-            "construct": "difficulty_reason",
-            "required": True,
-            "askRationale": True,
-            "options": [
-                {"id": "lack_experience", "label": "아직 그만큼의 교직 경험이 쌓이지 않았다"},
-                {"id": "premise_mismatch", "label": "질문이 전제하는 상황(오랜 경력, 졸업생, 전환점 등)이 나와 맞지 않는다"},
-                {"id": "too_personal", "label": "너무 사적이거나 감정적으로 무겁다"},
-                {"id": "too_abstract", "label": "질문이 추상적이라 무엇을 말해야 할지 모르겠다"},
-                {"id": "survival_first", "label": "당장 학교생활을 버티는 문제가 더 급해서 성찰할 여유가 없다"},
-                {"id": "no_difficulty", "label": "특별히 어렵지 않았다"},
-            ],
-        },
+        _likert(f"j{n}_meaning", f"이 여정의 질문들은 나만의 교육철학을 찾는 데 의미가 있었다. {agree}",
+                "meaningfulness"),
+        _likert(f"j{n}_burden", f"이 여정의 질문들에 답하는 것이 심리적으로 부담스러웠다. {agree}", "burden"),
+        _likert(f"j{n}_timing", f"지금 나의 교직 연차는 이 여정의 질문을 다루기에 적절한 시기다. {agree}",
+                "career_stage_fit"),
         {
             "id": f"j{n}_revise",
             "prompt": "교직 5년 차 이하 교사에게 이 여정을 진행한다면, 어떤 질문을 어떻게 바꾸면 좋을까요? 바꿀 질문과 새 질문 문구를 써 주세요.",
@@ -159,9 +134,9 @@ def build_questionnaire(j: dict) -> dict:
     ]
     return {
         "schemaVersion": "1.0",
-        "id": f"dangyohanchaek_journey{n}_v1",
+        "id": f"dangyohanchaek_journey{n}_v2",
         "title": f"「당교한책」 {n}번째 여정: {j['theme']}",
-        "description": f"{j['time_area']} · 원 질문 응답 + 질문별 답하기 쉬움 평가 + 여정 전체 평가",
+        "description": f"{j['time_area']} · 원 질문 응답 + 질문별 답하기 쉬움(1~{SCALE_MAX})과 어려움의 이유 + 여정 전체 평가",
         "questions": questions,
     }
 

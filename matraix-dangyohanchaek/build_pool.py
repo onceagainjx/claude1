@@ -3,8 +3,9 @@
     uv run python build_pool.py --matraix /path/to/MatrAIx-Persona-8B --per-bin 10 --seed 42
 
 1. 공식 1M 표집기(sample_production_1m)로 한국어가 모국어인 현직 교사 후보를 경력·성별 칸마다 모두
-   가져와, 프리랜서(학원·과외 강사로 보임)를 빼고 칸마다 무작위로 고른다. 경력 구간마다 남 30% : 여 70%를
-   목표로 하되, 한쪽 성별 후보가 모자란 칸은 다른 성별로 채워 구간 인원을 맞춘다.
+   가져와, 프리랜서·대학(학원·과외·대학 강사로 보임)과 주 언어가 한국어가 아닌 페르소나를 빼고 칸마다
+   무작위로 고른다. 경력 구간마다 남 30% : 여 70%를 목표로 하되, 한쪽 성별 후보가 모자란 칸은 다른
+   성별로 채워 구간 인원을 맞춘다.
 2. 스키마에 없는 속성(overlay)을 붙인다. 학교급은 모두 '초등학교', 근무 지역은 경력·성별 칸마다
    서울과 경기를 번갈아 나눈다. 한국식 이름(성별에 맞춤)으로 display_name도 바꾼다.
 3. <matraix>/persona/datasets/<이름>/ 에 페르소나 YAML, manifest.json(overlay_dimensions 포함),
@@ -35,8 +36,9 @@ FILTERS = {
     "life_stage": ["Early career", "Parent of young kids", "Mid-life", "Career change",
                    "Empty nester"],  # 학생(Student), 은퇴(Retirement) 제외
 }
-# 표집기 필터는 '포함' 목록만 받으므로, 빼야 할 값은 가져온 뒤 거른다 (값이 없는 페르소나는 남긴다).
-EXCLUDE = {"company_size": ["Solo / freelance"]}
+# 표집기 필터는 '포함' 목록만 받으므로, 나머지는 가져온 뒤 거른다 (값이 없는 페르소나는 남긴다).
+EXCLUDE = {"company_size": ["Solo / freelance", "Academia"]}  # 학원·과외 강사, 대학 강사로 보임
+KEEP_ONLY = {"primary_language": ["Korean"]}  # 답을 한국어로 받기 위해
 MALE_SHARE = 0.3
 
 OVERLAYS = [
@@ -83,7 +85,9 @@ def korean_name(persona_id: str, gender: str, used: set[str]) -> str:
 
 
 def excluded(row: dict) -> bool:
-    return any(str(row["dimensions"].get(k)) in vals for k, vals in EXCLUDE.items())
+    dims = row["dimensions"]
+    return (any(str(dims.get(k)) in vals for k, vals in EXCLUDE.items())
+            or any(k in dims and str(dims[k]) not in vals for k, vals in KEEP_ONLY.items()))
 
 
 def sample(matraix: Path, per_bin: int, seed: int) -> list[dict]:
@@ -177,6 +181,7 @@ def write_pool(matraix: Path, rows: list[dict], per_bin: int, seed: int) -> str:
         "schema_version": "1.0",
         "dimension_filters": FILTERS,
         "excluded": EXCLUDE,
+        "keep_only": KEEP_ONLY,
         "male_share": MALE_SHARE,
         "overlay_dimensions": OVERLAYS,
         "created_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
