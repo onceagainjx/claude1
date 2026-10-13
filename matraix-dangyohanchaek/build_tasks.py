@@ -166,7 +166,8 @@ domain = "education"
 tags = [ "teacher", "educational philosophy", "narrative inquiry", "career stage", "dangyohanchaek",]
 
 [verifier]
-timeout_sec = 120.0
+# 검증 스크립트는 가볍지만 host 환경에서 동시 실행 시 40~120초 넘게 걸린 적이 있어 넉넉히 둔다
+timeout_sec = 600.0
 
 [agent]
 timeout_sec = 900.0

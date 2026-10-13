@@ -18,6 +18,7 @@ import argparse
 import csv
 import html
 import json
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from statistics import mean
@@ -181,6 +182,11 @@ def _analysis(fit: dict, hard: dict, top: list[tuple[str, int, dict]]) -> str:
     return text + "."
 
 
+def _readable(text: str) -> str:
+    """페르소나가 쓴 문항 id(j1_q4, j1_q4_fit 등)를 보고서의 질문 번호(1-4)로 바꾼다."""
+    return re.sub(r"(?<![A-Za-z0-9])j(\d+)_q(\d+)(?:_[a-z]+)?(?![A-Za-z0-9])", r"\1-\2", text)
+
+
 def _is_korean(text: str) -> bool:
     letters = [c for c in text if c.isalpha()]
     return not letters or sum("가" <= c <= "힣" for c in letters) / len(letters) >= 0.5
@@ -268,12 +274,15 @@ details {{ margin:.4rem 0; }} summary {{ cursor:pointer; }} blockquote {{ margin
 
     def quote(t: dict, text: str) -> str:
         flag = "" if _is_korean(text) else " <span class='neg'>[한국어 아님]</span>"
-        return (f"<blockquote>{e(text)}{flag} <span class='muted'>({e(t['years'])}년"
+        return (f"<blockquote>{e(_readable(text))}{flag} <span class='muted'>({e(t['years'])}년"
                 f"{' · ' + e(t['gender']) if t['gender'] else ''}"
                 f"{' · ' + e(t['work_region']) if t['work_region'] else ''})</span></blockquote>")
 
+    answered = {qid for t in trials for qid in t["answers"]}
+    journeys = [j for j in JOURNEYS if any(q.startswith(f"j{j['n']}_") for q in answered)]
+
     rows = []
-    for j in JOURNEYS:
+    for j in journeys:
         n = j["n"]
         for k, (kind, title, prompt) in enumerate(j["questions"], start=1):
             qid = f"j{n}_q{k}"
@@ -290,7 +299,7 @@ details {{ margin:.4rem 0; }} summary {{ cursor:pointer; }} blockquote {{ margin
     parts.append(f"<h2>1. 여정별 요약</h2><p class='muted'>척도 1~{SCALE_MAX}점 평균. 차이 = 저경력 − 고경력. "
                  "'시기 적절성'은 '지금 나의 연차는 이 여정을 다루기에 적절한 시기다'에 대한 동의 정도. "
                  "'어려웠다'는 질문마다 '특별히 어렵지 않았다' 외의 이유를 고른 비율.</p>")
-    for j in JOURNEYS:
+    for j in journeys:
         n = j["n"]
         m, b, s_ = (_mean_by_group(trials, f"j{n}_{k}") for k in ("meaning", "burden", "timing"))
         gap = _gap(s_)
@@ -362,7 +371,7 @@ details {{ margin:.4rem 0; }} summary {{ cursor:pointer; }} blockquote {{ margin
     low = [t for t in trials if t["group"] == LOW]
     parts.append("<h2>4. 저경력 페르소나의 목소리</h2><p class='muted'>여정별로 저경력(0~5년) 페르소나가 "
                  "제안한 질문 수정안과, 질문마다 답하기 어려웠던 이유.</p>")
-    for j in JOURNEYS:
+    for j in journeys:
         n = j["n"]
         parts.append(f"<details><summary><b>{n}번째 여정</b> · {e(j['theme'])}</summary>")
         texts = [quote(t, str(t["answers"][f"j{n}_revise"].get("value"))) for t in low
@@ -387,7 +396,7 @@ details {{ margin:.4rem 0; }} summary {{ cursor:pointer; }} blockquote {{ margin
     # 5. 다루고 싶은 이야기 (저경력)
     parts.append("<h2>5. 저경력 페르소나가 다루고 싶은 이야기</h2><p class='muted'>'지금의 나에게 이 여정에서 꼭 "
                  "다루고 싶은 이야기나 고민'에 대한 저경력(0~5년) 페르소나의 답.</p>")
-    for j in JOURNEYS:
+    for j in journeys:
         n = j["n"]
         texts = [quote(t, str(t["answers"][f"j{n}_add"].get("value"))) for t in low
                  if t["answers"].get(f"j{n}_add", {}).get("value")]

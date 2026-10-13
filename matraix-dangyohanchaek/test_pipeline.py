@@ -70,6 +70,8 @@ def test_report_compares_low_and_high_career(tmp_path: Path):
     assert "5. 저경력 페르소나가 다루고 싶은 이야기" in page and "가짜 다루고 싶은 이야기" in page
     assert "2-1 " in page and "(2)" in page  # 3장: 이유별로 어떤 질문에서 몇 명이 골랐는지
     assert "[한국어 아님]" in page and "한국어로 답하지 않은 서술 1개" in page
+    assert "2번째 여정" in page and "1번째 여정" not in page  # 답이 있는 여정만
+    assert report._readable("j1_q4(「경험을 통한 배움」)과 j1_q6_fit, j1_q5의") == "1-4(「경험을 통한 배움」)과 1-6, 1-5의"
     report.write_csv(trials, tmp_path / "answers.csv")
     assert (tmp_path / "answers.csv").read_text(encoding="utf-8-sig").count("\n") == 1 + 4 * 7
 
