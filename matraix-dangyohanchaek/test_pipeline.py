@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 import json
+from collections import Counter
 from pathlib import Path
 
 import build_tasks
@@ -59,3 +60,27 @@ def test_report_compares_low_and_high_career(tmp_path: Path):
     assert "-3.5" in page and "가짜 수정안" in page and "가짜 이유" in page
     report.write_csv(trials, tmp_path / "answers.csv")
     assert (tmp_path / "answers.csv").read_text(encoding="utf-8-sig").count("\n") == 22
+
+
+def test_pool_split_and_stamp():
+    import build_pool
+
+    assert build_pool.split_by_gender(10) == {"Man": 3, "Woman": 7}
+    rows = [{"persona_id": f"p{i}", "dimensions": {"years_experience": y, "gender_identity": g}}
+            for i, (y, g) in enumerate([(y, g) for y in ["0-2", "20+"] for g in ["Man"] * 3 + ["Woman"] * 7])]
+    build_pool.stamp(rows, seed=1)
+    assert {r["dimensions"]["school_level"] for r in rows} == {"초등학교"}
+    assert Counter(r["dimensions"]["work_region"] for r in rows) == {"서울": 10, "경기": 10}
+    assert len({r["display_name"] for r in rows}) == len(rows)
+
+
+def test_report_shows_stamped_attributes(tmp_path: Path):
+    job = tmp_path / "dk-j2"
+    _fake_trial(job, "t1", "0-2", 2, ["j2_q1"])
+    meta = json.loads((job / "t1" / "persona_meta.json").read_text())
+    meta["dimensions"].update(gender_identity="Woman", school_level="초등학교", work_region="경기")
+    (job / "t1" / "persona_meta.json").write_text(json.dumps(meta, ensure_ascii=False))
+
+    trials = report.load_trials([job])
+    assert (trials[0]["gender"], trials[0]["work_region"]) == ("여", "경기")
+    assert "근무 지역 경기 1" in report.build_html(trials)

@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 # 「당교한책」 6개 여정을 MatrAIx 공식 Survey 파이프라인으로 일괄 실행하고 보고서를 만든다.
+# 페르소나: 한국어 모국어 현직 교사, 경력 5구간 × 구간당 남 30% : 여 70%, 학교급=초등학교,
+# 근무 지역=서울·경기 반반 (build_pool.py). 모든 여정에 같은 페르소나를 쓴다.
 #
 # 필요: ANTHROPIC_API_KEY(또는 MATRAIX_ANTHROPIC_API_KEY) 환경 변수, huggingface.co 접속(Persona 1M 다운로드), uv
 #
-#   ./run_all.sh                     # 6개 여정 × 50명 (경력 5개 구간 × 10명)
-#   SAMPLE_SIZE=10 ./run_all.sh      # 시험 실행 (구간당 2명)
+#   ./run_all.sh                     # 6개 여정 × 50명 (경력 5개 구간 × 10명: 남 3, 여 7)
+#   SAMPLE_SIZE=10 ./run_all.sh      # 시험 실행 (구간당 2명: 남 1, 여 1이라 30:70은 맞지 않음)
 #   JOURNEYS="2 5" ./run_all.sh      # 일부 여정만
 #
 # 환경 변수
@@ -25,8 +27,7 @@ CONCURRENCY="${CONCURRENCY:-4}"
 SEED="${SEED:-42}"
 JOURNEYS="${JOURNEYS:-1 2 3 4 5 6}"
 DATASET=persona/datasets/matraix-persona-1m
-# 경력 구간 수 (build_tasks.py의 EXPERIENCE_BINS). 공식 1M 인덱스 표집은 equalTotal에서 구간당 1명만
-# 뽑고 sampleSize를 무시하므로, perCell로 구간당 인원을 직접 지정한다.
+# 경력 구간 수 (build_tasks.py의 EXPERIENCE_BINS). 구간당 인원은 build_pool.py가 성별로 나눠 뽑는다.
 N_BINS=5
 PER_BIN=$(( (SAMPLE_SIZE + N_BINS - 1) / N_BINS ))
 
@@ -50,19 +51,23 @@ fi
 # 3. 질문 세트 → 공식 Survey 과제 6개
 uv run python "$HERE/build_tasks.py" --matraix "$MATRAIX_DIR"
 
-# 4. 여정별: 페르소나 표집 → 일괄 실행
+# 4. 페르소나 묶음 (서울·경기 초등교사, 남 30% : 여 70%)
+POOL=$(uv run python "$HERE/build_pool.py" --matraix "$MATRAIX_DIR" --per-bin "$PER_BIN" --seed "$SEED" | tail -1)
+mapfile -t persona_ids < "$POOL/persona_ids.txt"
+echo "=== 페르소나 ${#persona_ids[@]}명: $POOL"
+
+# 5. 여정별 일괄 실행
 job_dirs=()
 for n in $JOURNEYS; do
   task=$(ls -d application/tasks/dangyohanchaek-j"$n"-* | head -1)
-  job="dk-j${n}-pc${PER_BIN}-s${SEED}"
+  job="dk-j${n}-kr-elem-pc${PER_BIN}-s${SEED}"
   echo "=== 여정 $n: $task → jobs/$job"
   uv run python application/scripts/generate_application_job.py \
     --task "$task" \
     --execution-mode auto \
-    --dataset "$DATASET" \
-    --sample-size "$SAMPLE_SIZE" \
-    --stratified-allocation perCell \
-    --sample-size-per-value-group "$PER_BIN" \
+    --dataset "$POOL" \
+    --persona-ids "${persona_ids[@]}" \
+    --no-strategy \
     --seed "$SEED" \
     --model-name "$MODEL" \
     --n-concurrent-trials "$CONCURRENCY" \
@@ -73,6 +78,6 @@ for n in $JOURNEYS; do
   job_dirs+=("$MATRAIX_DIR/jobs/$job")
 done
 
-# 5. 경력 집단 비교 보고서
+# 6. 경력 집단 비교 보고서
 uv run python "$HERE/report.py" --jobs "${job_dirs[@]}" --out "$HERE/report"
 echo "완료: $HERE/report/report.html"

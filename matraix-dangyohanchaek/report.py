@@ -48,7 +48,11 @@ def _read_json(path: Path) -> dict | None:
         return None
 
 
-def _years_experience(trial: Path, meta: dict) -> str:
+GENDER_LABELS = {"Man": "남", "Woman": "여"}
+
+
+def _dimensions(meta: dict) -> dict:
+    """persona_meta의 속성, 없으면 persona_path의 YAML에서 읽는다 (build_pool.py가 붙인 속성 포함)."""
     dims = dict(meta.get("dimensions") or {})
     if "years_experience" not in dims and meta.get("persona_path"):
         try:
@@ -58,7 +62,7 @@ def _years_experience(trial: Path, meta: dict) -> str:
             dims.update((loaded or {}).get("dimensions") or {})
         except (OSError, ImportError, ValueError):
             pass
-    return str(dims.get("years_experience") or "unknown")
+    return dims
 
 
 def load_trials(job_dirs: list[Path]) -> list[dict]:
@@ -70,13 +74,17 @@ def load_trials(job_dirs: list[Path]) -> list[dict]:
                 continue
             payload = _read_json(result) or {}
             meta = _read_json(trial / "persona_meta.json") or {}
-            years = _years_experience(trial, meta)
+            dims = _dimensions(meta)
+            years = str(dims.get("years_experience") or "unknown")
             trials.append({
                 "job": job.name,
                 "trial": trial.name,
                 "persona_id": str(meta.get("persona_id") or meta.get("id") or ""),
                 "years": years,
                 "group": GROUPS.get(years, "unknown"),
+                "gender": GENDER_LABELS.get(str(dims.get("gender_identity")), str(dims.get("gender_identity") or "")),
+                "school_level": str(dims.get("school_level") or ""),
+                "work_region": str(dims.get("work_region") or ""),
                 "answers": {
                     str(a.get("questionId")): a for a in payload.get("answers") or [] if isinstance(a, dict)
                 },
@@ -134,11 +142,13 @@ def _gap(d: dict) -> float | None:
 def write_csv(trials: list[dict], path: Path) -> None:
     with path.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["job", "trial", "persona_id", "years_experience", "group", "questionId", "value", "rationale"])
+        w.writerow(["job", "trial", "persona_id", "years_experience", "group", "gender", "school_level",
+                    "work_region", "questionId", "value", "rationale"])
         for t in trials:
             for qid, a in t["answers"].items():
                 v = a.get("value")
-                w.writerow([t["job"], t["trial"], t["persona_id"], t["years"], t["group"], qid,
+                w.writerow([t["job"], t["trial"], t["persona_id"], t["years"], t["group"], t["gender"],
+                            t["school_level"], t["work_region"], qid,
                             json.dumps(v, ensure_ascii=False) if isinstance(v, list) else v,
                             a.get("rationale") or ""])
 
@@ -146,6 +156,19 @@ def write_csv(trials: list[dict], path: Path) -> None:
 def build_html(trials: list[dict]) -> str:
     e = html.escape
     counts = Counter(t["group"] for t in trials)
+    stamped = any(t["work_region"] for t in trials)
+    if stamped:
+        genders = Counter(t["gender"] for t in trials)
+        regions = Counter(t["work_region"] for t in trials)
+        levels = "·".join(sorted({t["school_level"] for t in trials if t["school_level"]}))
+        who = (f"한국어 모국어 교사 페르소나 · 학교급 {e(levels)} · 근무 지역 "
+               + ", ".join(f"{e(k)} {v}" for k, v in sorted(regions.items()))
+               + " · 성별 " + ", ".join(f"{e(k)} {v}" for k, v in sorted(genders.items())))
+        caveat = ("페르소나에는 국가 속성이 없어 한국어가 모국어인 동아시아 교사 페르소나를 골랐고, 학교급과 근무 지역은 "
+                  "표집 뒤에 덧붙인 속성입니다. 원래 페르소나 이야기(전공, 근무 기관 등)와 어긋날 수 있습니다.")
+    else:
+        who = "교사 페르소나(role_function = Teaching)"
+        caveat = "페르소나에는 국가 속성이 없어 한국 교사로 한정되지 않았습니다."
     parts: list[str] = []
     parts.append(f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -164,11 +187,10 @@ th {{ color:var(--muted); font-weight:600; }} td.n {{ text-align:right; font-var
 details {{ margin:.4rem 0; }} summary {{ cursor:pointer; }} blockquote {{ margin:.4rem 0; padding-left:10px; border-left:3px solid var(--line); }}
 </style></head><body><main>
 <h1>「당교한책」 질문 세트 경력별 시뮬레이션 보고서</h1>
-<p class="muted">MatrAIx 공식 Survey 파이프라인 · 교사 페르소나(role_function = Teaching) ·
+<p class="muted">MatrAIx 공식 Survey 파이프라인 · {who} ·
 응답 수: 저경력(0~5년) {counts.get(LOW, 0)}명, 중간 경력(6~10년) {counts.get('중간 경력', 0)}명,
 고경력(11년 이상) {counts.get(HIGH, 0)}명 (여정별 응답의 합)</p>
-<p class="note">이 결과는 LLM이 가상 교사 페르소나를 연기해 만든 <b>시뮬레이션</b>입니다. 페르소나에는 국가 속성이
-없어 한국 교사로 한정되지 않았습니다. 질문 재설계의 <b>가설</b>을 세우는 데 쓰고, 실제 저경력 교사 파일럿으로
+<p class="note">이 결과는 LLM이 가상 교사 페르소나를 연기해 만든 <b>시뮬레이션</b>입니다. {caveat} 질문 재설계의 <b>가설</b>을 세우는 데 쓰고, 실제 저경력 교사 파일럿으로
 확인해야 합니다.</p>""")
 
     # 1. 여정 요약
