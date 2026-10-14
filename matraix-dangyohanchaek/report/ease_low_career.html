@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>저경력 답하기 쉬움</title>
+<style>
+:root {
+  --surface-1:#fcfcfb; --surface-2:#f4f3ef; --text-primary:#1f1e1c; --text-secondary:#56554f; --text-muted:#7a7972;
+  --grid:#e6e4de; --axis:#c9c7bf;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme:dark; --surface-1:#1a1a19; --surface-2:#242422; --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#9a998f;
+    --grid:#2f2f2c; --axis:#4a4a45;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme:dark; --surface-1:#1a1a19; --surface-2:#242422; --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#9a998f;
+  --grid:#2f2f2c; --axis:#4a4a45;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--surface-1); color:var(--text-primary);
+  font:15px/1.55 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+main { max-width:920px; margin:0 auto; padding:24px 16px 40px; }
+h1 { font-size:1.3rem; margin:0 0 4px; }
+.sub { color:var(--text-secondary); margin:0 0 16px; font-size:.92rem; }
+.legend { display:flex; flex-wrap:wrap; gap:6px 14px; margin:0 0 8px; padding:0; list-style:none; font-size:.88rem; color:var(--text-secondary); }
+.legend button { all:unset; cursor:pointer; display:inline-flex; align-items:center; gap:6px; padding:2px 4px; border-radius:4px; }
+.legend button:focus-visible { outline:2px solid var(--s1); }
+.legend button[aria-pressed="false"] { opacity:.4; }
+.chart-scroll { overflow-x:auto; }
+.chart { position:relative; width:100%; min-width:620px; }
+#svg { display:block; width:100%; height:auto; overflow:visible; }
+.legend svg, .tip svg { flex:none; }
+.tip { position:absolute; pointer-events:none; background:var(--surface-2); border:1px solid var(--axis); border-radius:8px;
+  padding:8px 10px; font-size:.84rem; min-width:190px; box-shadow:0 4px 14px rgba(0,0,0,.12); opacity:0; transition:opacity .08s; }
+.tip .h { color:var(--text-secondary); margin-bottom:4px; }
+.tip .r { display:flex; align-items:center; gap:8px; white-space:nowrap; }
+.tip .r b { min-width:2.4em; text-align:right; font-variant-numeric:tabular-nums; }
+.tip .r span.t { color:var(--text-secondary); }
+.note { color:var(--text-muted); font-size:.84rem; margin-top:10px; }
+details { margin-top:18px; }
+summary { cursor:pointer; color:var(--text-secondary); }
+.scroll { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; font-size:.86rem; margin-top:8px; }
+th, td { border-bottom:1px solid var(--grid); padding:5px 8px; text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+th:first-child, td:first-child { text-align:left; }
+th { color:var(--text-secondary); font-weight:600; }
+td.min { font-weight:700; }
+</style>
+</head>
+<body>
+<main>
+  <h1>질문별 '답하기 쉬움' — 저경력 교사 (0~5년)</h1>
+  <p class="sub">「당교한책」 여정별 질문 · 1~10점 평균 (10 = 매우 쉬웠다) · 여정마다 저경력 페르소나 20명 · MatrAIx 시뮬레이션 본 실행</p>
+  <ul class="legend" id="legend"></ul>
+  <div class="chart-scroll"><div class="chart" id="chart">
+    <svg id="svg" viewBox="0 0 880 440" role="img" aria-labelledby="svgTitle">
+      <title id="svgTitle">여정 1~6의 질문 1~7별 저경력 교사 답하기 쉬움 평균 꺾은선그래프</title>
+    </svg>
+    <div class="tip" id="tip" role="status" aria-live="polite"></div>
+  </div></div>
+  <p class="note">세로축은 응답이 모인 5~10점 구간만 보여 줍니다 (전체 척도는 1~10점). 여정 1·2는 질문이 6개라 질문 7이 없습니다. 범례를 누르면 여정 선을 켜고 끌 수 있고, 그래프 위에 마우스를 올리면 질문별 값과 제목이 보입니다.</p>
+  <details>
+    <summary>표로 보기 (질문 제목 포함)</summary>
+    <div class="scroll"><table id="table"></table></div>
+  </details>
+</main>
+<script>
+const DATA = [
+  {n:1, theme:"나를 이루어 온 경험은 무엇인가요?", v:[8.15,8.65,7.65,7.5,7.65,7.1],
+   t:["나를 이루는 요소들", "어린 시절의 기억", "경험의 영향력", "경험을 통한 배움", "삶의 태도 형성", "삶의 정체성"]},
+  {n:2, theme:"나는 교사로서 어떤 이야기를 만들어 왔나요?", v:[6.3,7.4,7.5,7.1,7.55,7.0],
+   t:["학생들이 기억하는 교사의 모습", "영향을 준 경험", "전환점이 된 경험", "경험을 통한 성장", "교사로서의 태도", "교사로서의 정체성"]},
+  {n:3, theme:"내게 배운 학생들은 어떤 세상에서 살까요?", v:[6.3,8.1,7.15,6.75,8.25,8.3,7.55],
+   t:["학생들의 현재 모습", "사회 현상 인식", "변화의 영향", "미래 사회 예측", "기대하는 사회상", "중요한 가치", "미래 세대를 위한 교육"]},
+  {n:4, theme:"교실은 어떤 곳이 될 수 있을까요?", v:[7.25,8.25,8.0,8.15,7.0,6.6,8.35],
+   t:["미래 교육의 이미지", "이상적인 교실", "수업의 이상", "현실의 교실", "이상과 현실의 간극", "차이의 원인", "교육의 본질적 가치"]},
+  {n:5, theme:"교사인 나를 둘러싼 환경은 어떠한가요?", v:[7.9,8.9,7.45,7.6,7.45,6.9,6.9],
+   t:["교직 입문의 순간", "현재의 마음", "성장을 돕는 환경", "성장의 장애물", "필요한 환경", "변화의 주체", "현실 진단"]},
+  {n:6, theme:"교사로서 우리의 이야기를 어떻게 써 내려갈까요?", v:[6.4,7.5,8.0,6.35,7.1,5.95,7.0],
+   t:["나의 현재 모습", "함께함의 의미", "대화의 확장", "대화의 의미", "실천적 역할", "여정의 의미", "앞으로의 가르침"]},
+];
+const SHAPES = ["circle","square","triangle","diamond","triangleDown","cross"];
+const W=880, H=440, M={l:52, r:24, t:16, b:50};
+const X0=M.l, X1=W-M.r, Y0=H-M.b, Y1=M.t, YMIN=5, YMAX=10, NQ=7;
+const x = q => X0 + (q-1)*(X1-X0)/(NQ-1);
+const y = v => Y0 - (v-YMIN)*(Y0-Y1)/(YMAX-YMIN);
+const NS="http://www.w3.org/2000/svg";
+const svg=document.getElementById("svg"), tip=document.getElementById("tip"), chart=document.getElementById("chart");
+const el=(name, attrs, parent)=>{ const e=document.createElementNS(NS,name); for(const k in attrs) e.setAttribute(k,attrs[k]); (parent||svg).appendChild(e); return e; };
+const color = i => `var(--s${i+1})`;
+const visible = DATA.map(()=>true);
+
+function marker(shape, cx, cy, r, i, parent){
+  const common={fill:color(i), stroke:"var(--surface-1)", "stroke-width":2};
+  if(shape==="circle") return el("circle",{cx,cy,r,...common},parent);
+  if(shape==="square") return el("rect",{x:cx-r,y:cy-r,width:2*r,height:2*r,rx:1.5,...common},parent);
+  const pts = shape==="triangle" ? [[0,-1.2],[1.1,0.8],[-1.1,0.8]]
+            : shape==="triangleDown" ? [[0,1.2],[1.1,-0.8],[-1.1,-0.8]]
+            : shape==="diamond" ? [[0,-1.3],[1.2,0],[0,1.3],[-1.2,0]]
+            : [[-.4,-1.1],[.4,-1.1],[.4,-.4],[1.1,-.4],[1.1,.4],[.4,.4],[.4,1.1],[-.4,1.1],[-.4,.4],[-1.1,.4],[-1.1,-.4],[-.4,-.4]];
+  return el("polygon",{points:pts.map(([a,b])=>`${cx+a*r},${cy+b*r}`).join(" "),...common},parent);
+}
+
+// grid + axes
+for(let v=YMIN; v<=YMAX; v++){
+  el("line",{x1:X0,x2:X1,y1:y(v),y2:y(v),stroke:"var(--grid)","stroke-width":1});
+  const t=el("text",{x:X0-10,y:y(v)+4,"text-anchor":"end",fill:"var(--text-muted)","font-size":12}); t.textContent=v;
+}
+el("line",{x1:X0,x2:X1,y1:Y0,y2:Y0,stroke:"var(--axis)","stroke-width":1});
+for(let q=1;q<=NQ;q++){
+  const t=el("text",{x:x(q),y:Y0+20,"text-anchor":"middle",fill:"var(--text-secondary)","font-size":12}); t.textContent=`질문 ${q}`;
+}
+const yl=el("text",{x:14,y:(Y0+Y1)/2,"text-anchor":"middle",fill:"var(--text-secondary)","font-size":12,transform:`rotate(-90 14 ${(Y0+Y1)/2})`});
+yl.textContent="답하기 쉬움 (1~10점)";
+const xl=el("text",{x:(X0+X1)/2,y:H-8,"text-anchor":"middle",fill:"var(--text-secondary)","font-size":12}); xl.textContent="여정 안의 질문 순서";
+
+// series
+const groups = DATA.map((d,i)=>{
+  const g=el("g",{"data-series":i});
+  const pts=d.v.map((v,k)=>`${x(k+1)},${y(v)}`).join(" ");
+  el("polyline",{points:pts,fill:"none",stroke:color(i),"stroke-width":2,"stroke-linejoin":"round","stroke-linecap":"round"},g);
+  d.v.forEach((v,k)=>marker(SHAPES[i], x(k+1), y(v), 4.5, i, g));
+  return g;
+});
+// legend
+const legend=document.getElementById("legend");
+DATA.forEach((d,i)=>{
+  const li=document.createElement("li"); const b=document.createElement("button");
+  b.setAttribute("aria-pressed","true");
+  const key=document.createElementNS(NS,"svg"); key.setAttribute("width","26"); key.setAttribute("height","12"); key.setAttribute("aria-hidden","true");
+  const ln=document.createElementNS(NS,"line"); [["x1",1],["x2",25],["y1",6],["y2",6],["stroke",color(i)],["stroke-width",2]].forEach(([k,v])=>ln.setAttribute(k,v)); key.appendChild(ln);
+  marker(SHAPES[i],13,6,4,i,key);
+  b.appendChild(key); b.appendChild(document.createTextNode(`여정 ${d.n} · ${d.theme}`));
+  b.addEventListener("click",()=>{ visible[i]=!visible[i]; b.setAttribute("aria-pressed",String(visible[i])); groups[i].style.display=visible[i]?"":"none"; });
+  li.appendChild(b); legend.appendChild(li);
+});
+
+// crosshair + tooltip
+const hair=el("line",{x1:0,x2:0,y1:Y1,y2:Y0,stroke:"var(--axis)","stroke-width":1,opacity:0});
+const hit=el("rect",{x:X0-20,y:Y1,width:X1-X0+40,height:Y0-Y1,fill:"transparent",tabindex:0,"aria-label":"질문별 값 보기 (좌우 화살표)"});
+let cur=null;
+function show(q){
+  cur=q; hair.setAttribute("x1",x(q)); hair.setAttribute("x2",x(q)); hair.setAttribute("opacity",1);
+  tip.replaceChildren();
+  const h=document.createElement("div"); h.className="h"; h.textContent=`질문 ${q}`; tip.appendChild(h);
+  DATA.map((d,i)=>({d,i})).filter(({d,i})=>visible[i] && d.v[q-1]!=null)
+    .sort((a,b)=>b.d.v[q-1]-a.d.v[q-1])
+    .forEach(({d,i})=>{
+      const r=document.createElement("div"); r.className="r";
+      const key=document.createElementNS(NS,"svg"); key.setAttribute("width","18"); key.setAttribute("height","10");
+      const ln=document.createElementNS(NS,"line"); [["x1",1],["x2",17],["y1",5],["y2",5],["stroke",color(i)],["stroke-width",3]].forEach(([k,v])=>ln.setAttribute(k,v)); key.appendChild(ln);
+      const b=document.createElement("b"); b.textContent=d.v[q-1].toFixed(2);
+      const t=document.createElement("span"); t.className="t"; t.textContent=`여정 ${d.n}${d.t[q-1]?" · "+d.t[q-1]:""}`;
+      r.append(key,b,t); tip.appendChild(r);
+    });
+  const box=chart.getBoundingClientRect(), sx=box.width/W;
+  let left=x(q)*sx+14; tip.style.opacity=1;
+  if(left+tip.offsetWidth>box.width) left=x(q)*sx-14-tip.offsetWidth;
+  tip.style.left=Math.max(0,left)+"px"; tip.style.top=(Y1*sx)+"px";
+}
+function hide(){ cur=null; hair.setAttribute("opacity",0); tip.style.opacity=0; }
+hit.addEventListener("pointermove",ev=>{
+  const p=svg.createSVGPoint(); p.x=ev.clientX; p.y=ev.clientY; const loc=p.matrixTransform(svg.getScreenCTM().inverse());
+  const q=Math.min(NQ,Math.max(1,Math.round((loc.x-X0)/((X1-X0)/(NQ-1))+1))); if(q!==cur) show(q);
+});
+hit.addEventListener("pointerleave",hide);
+hit.addEventListener("focus",()=>show(1));
+hit.addEventListener("blur",hide);
+hit.addEventListener("keydown",ev=>{ if(ev.key==="ArrowRight") show(Math.min(NQ,(cur||0)+1)); if(ev.key==="ArrowLeft") show(Math.max(1,(cur||2)-1)); });
+
+// table
+const table=document.getElementById("table");
+const thead=table.createTHead().insertRow(); ["여정",...Array.from({length:NQ},(_,k)=>`질문 ${k+1}`),"평균"].forEach(h=>{ const th=document.createElement("th"); th.textContent=h; thead.appendChild(th); });
+const tb=table.createTBody();
+DATA.forEach(d=>{
+  const r=tb.insertRow(); const c0=r.insertCell(); c0.textContent=`여정 ${d.n} · ${d.theme}`;
+  const mn=Math.min(...d.v);
+  for(let k=0;k<NQ;k++){ const c=r.insertCell(); const v=d.v[k]; c.textContent=v==null?"–":v.toFixed(2); if(v===mn) { c.className="min"; c.title="이 여정에서 가장 낮은 값"; } }
+  const avg=r.insertCell(); avg.textContent=(d.v.reduce((a,b)=>a+b,0)/d.v.length).toFixed(2);
+});
+</script>
+</body>
+</html>
