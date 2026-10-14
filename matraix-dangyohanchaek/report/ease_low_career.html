@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="ko">
-<head>
+<html lang="ko"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>저경력 답하기 쉬움</title>
@@ -29,7 +28,7 @@ main { max-width:920px; margin:0 auto; padding:24px 16px 40px; }
 h1 { font-size:1.3rem; margin:0 0 4px; }
 .sub { color:var(--text-secondary); margin:0 0 16px; font-size:.92rem; }
 .legend { display:flex; flex-wrap:wrap; gap:6px 14px; margin:0 0 8px; padding:0; list-style:none; font-size:.88rem; color:var(--text-secondary); }
-.legend button { all:unset; cursor:pointer; display:inline-flex; align-items:center; gap:6px; padding:2px 4px; border-radius:4px; }
+.legend .key { display:inline-flex; align-items:center; gap:6px; padding:2px 4px; }
 .legend button:focus-visible { outline:2px solid var(--s1); }
 .legend button[aria-pressed="false"] { opacity:.4; }
 .chart-scroll { overflow-x:auto; }
@@ -57,133 +56,20 @@ td.min { font-weight:700; }
 <main>
   <h1>질문별 '답하기 쉬움' — 저경력 교사 (0~5년)</h1>
   <p class="sub">「당교한책」 여정별 질문 · 1~10점 평균 (10 = 매우 쉬웠다) · 여정마다 저경력 페르소나 20명 · MatrAIx 시뮬레이션 본 실행</p>
-  <ul class="legend" id="legend"></ul>
+  <ul class="legend" id="legend"><li><span class="key"><svg width="26" height="12" aria-hidden="true"><line x1="1" x2="25" y1="6" y2="6" stroke="var(--s1)" stroke-width="2"></line><circle cx="13" cy="6" r="4" fill="var(--s1)" stroke="var(--surface-1)" stroke-width="2"></circle></svg>여정 1 · 나를 이루어 온 경험은 무엇인가요?</span></li><li><span class="key"><svg width="26" height="12" aria-hidden="true"><line x1="1" x2="25" y1="6" y2="6" stroke="var(--s2)" stroke-width="2"></line><rect x="9" y="2" width="8" height="8" rx="1.5" fill="var(--s2)" stroke="var(--surface-1)" stroke-width="2"></rect></svg>여정 2 · 나는 교사로서 어떤 이야기를 만들어 왔나요?</span></li><li><span class="key"><svg width="26" height="12" aria-hidden="true"><line x1="1" x2="25" y1="6" y2="6" stroke="var(--s3)" stroke-width="2"></line><polygon points="13,1.2000000000000002 17.4,9.2 8.6,9.2" fill="var(--s3)" stroke="var(--surface-1)" stroke-width="2"></polygon></svg>여정 3 · 내게 배운 학생들은 어떤 세상에서 살까요?</span></li><li><span class="key"><svg width="26" height="12" aria-hidden="true"><line x1="1" x2="25" y1="6" y2="6" stroke="var(--s4)" stroke-width="2"></line><polygon points="13,0.7999999999999998 17.8,6 13,11.2 8.2,6" fill="var(--s4)" stroke="var(--surface-1)" stroke-width="2"></polygon></svg>여정 4 · 교실은 어떤 곳이 될 수 있을까요?</span></li><li><span class="key"><svg width="26" height="12" aria-hidden="true"><line x1="1" x2="25" y1="6" y2="6" stroke="var(--s5)" stroke-width="2"></line><polygon points="13,10.8 17.4,2.8 8.6,2.8" fill="var(--s5)" stroke="var(--surface-1)" stroke-width="2"></polygon></svg>여정 5 · 교사인 나를 둘러싼 환경은 어떠한가요?</span></li><li><span class="key"><svg width="26" height="12" aria-hidden="true"><line x1="1" x2="25" y1="6" y2="6" stroke="var(--s6)" stroke-width="2"></line><polygon points="11.4,1.5999999999999996 14.6,1.5999999999999996 14.6,4.4 17.4,4.4 17.4,7.6 14.6,7.6 14.6,10.4 11.4,10.4 11.4,7.6 8.6,7.6 8.6,4.4 11.4,4.4" fill="var(--s6)" stroke="var(--surface-1)" stroke-width="2"></polygon></svg>여정 6 · 교사로서 우리의 이야기를 어떻게 써 내려갈까요?</span></li></ul>
   <div class="chart-scroll"><div class="chart" id="chart">
     <svg id="svg" viewBox="0 0 880 440" role="img" aria-labelledby="svgTitle">
       <title id="svgTitle">여정 1~6의 질문 1~7별 저경력 교사 답하기 쉬움 평균 꺾은선그래프</title>
-    </svg>
-    <div class="tip" id="tip" role="status" aria-live="polite"></div>
+    <line x1="52" x2="856" y1="390" y2="390" stroke="var(--grid)" stroke-width="1"></line><text x="42" y="394" text-anchor="end" fill="var(--text-muted)" font-size="12">5</text><line x1="52" x2="856" y1="315.2" y2="315.2" stroke="var(--grid)" stroke-width="1"></line><text x="42" y="319.2" text-anchor="end" fill="var(--text-muted)" font-size="12">6</text><line x1="52" x2="856" y1="240.4" y2="240.4" stroke="var(--grid)" stroke-width="1"></line><text x="42" y="244.4" text-anchor="end" fill="var(--text-muted)" font-size="12">7</text><line x1="52" x2="856" y1="165.6" y2="165.6" stroke="var(--grid)" stroke-width="1"></line><text x="42" y="169.6" text-anchor="end" fill="var(--text-muted)" font-size="12">8</text><line x1="52" x2="856" y1="90.80000000000001" y2="90.80000000000001" stroke="var(--grid)" stroke-width="1"></line><text x="42" y="94.80000000000001" text-anchor="end" fill="var(--text-muted)" font-size="12">9</text><line x1="52" x2="856" y1="16" y2="16" stroke="var(--grid)" stroke-width="1"></line><text x="42" y="20" text-anchor="end" fill="var(--text-muted)" font-size="12">10</text><line x1="52" x2="856" y1="390" y2="390" stroke="var(--axis)" stroke-width="1"></line><text x="52" y="410" text-anchor="middle" fill="var(--text-secondary)" font-size="12">질문 1</text><text x="186" y="410" text-anchor="middle" fill="var(--text-secondary)" font-size="12">질문 2</text><text x="320" y="410" text-anchor="middle" fill="var(--text-secondary)" font-size="12">질문 3</text><text x="454" y="410" text-anchor="middle" fill="var(--text-secondary)" font-size="12">질문 4</text><text x="588" y="410" text-anchor="middle" fill="var(--text-secondary)" font-size="12">질문 5</text><text x="722" y="410" text-anchor="middle" fill="var(--text-secondary)" font-size="12">질문 6</text><text x="856" y="410" text-anchor="middle" fill="var(--text-secondary)" font-size="12">질문 7</text><text x="14" y="203" text-anchor="middle" fill="var(--text-secondary)" font-size="12" transform="rotate(-90 14 203)">답하기 쉬움 (1~10점)</text><text x="454" y="432" text-anchor="middle" fill="var(--text-secondary)" font-size="12">여정 안의 질문 순서</text><g data-series="0"><polyline points="52,154.37999999999997 186,116.97999999999996 320,191.77999999999997 454,203 588,191.77999999999997 722,232.92000000000002" fill="none" stroke="var(--s1)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></polyline><circle cx="52" cy="154.37999999999997" r="4.5" fill="var(--s1)" stroke="var(--surface-1)" stroke-width="2"><title>여정 1 · 질문 1 나를 이루는 요소들: 8.15</title></circle><circle cx="186" cy="116.97999999999996" r="4.5" fill="var(--s1)" stroke="var(--surface-1)" stroke-width="2"><title>여정 1 · 질문 2 어린 시절의 기억: 8.65</title></circle><circle cx="320" cy="191.77999999999997" r="4.5" fill="var(--s1)" stroke="var(--surface-1)" stroke-width="2"><title>여정 1 · 질문 3 경험의 영향력: 7.65</title></circle><circle cx="454" cy="203" r="4.5" fill="var(--s1)" stroke="var(--surface-1)" stroke-width="2"><title>여정 1 · 질문 4 경험을 통한 배움: 7.50</title></circle><circle cx="588" cy="191.77999999999997" r="4.5" fill="var(--s1)" stroke="var(--surface-1)" stroke-width="2"><title>여정 1 · 질문 5 삶의 태도 형성: 7.65</title></circle><circle cx="722" cy="232.92000000000002" r="4.5" fill="var(--s1)" stroke="var(--surface-1)" stroke-width="2"><title>여정 1 · 질문 6 삶의 정체성: 7.10</title></circle></g><g data-series="1"><polyline points="52,292.76 186,210.47999999999996 320,203 454,232.92000000000002 588,199.26000000000002 722,240.4" fill="none" stroke="var(--s2)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></polyline><rect x="47.5" y="288.26" width="9" height="9" rx="1.5" fill="var(--s2)" stroke="var(--surface-1)" stroke-width="2"><title>여정 2 · 질문 1 학생들이 기억하는 교사의 모습: 6.30</title></rect><rect x="181.5" y="205.97999999999996" width="9" height="9" rx="1.5" fill="var(--s2)" stroke="var(--surface-1)" stroke-width="2"><title>여정 2 · 질문 2 영향을 준 경험: 7.40</title></rect><rect x="315.5" y="198.5" width="9" height="9" rx="1.5" fill="var(--s2)" stroke="var(--surface-1)" stroke-width="2"><title>여정 2 · 질문 3 전환점이 된 경험: 7.50</title></rect><rect x="449.5" y="228.42000000000002" width="9" height="9" rx="1.5" fill="var(--s2)" stroke="var(--surface-1)" stroke-width="2"><title>여정 2 · 질문 4 경험을 통한 성장: 7.10</title></rect><rect x="583.5" y="194.76000000000002" width="9" height="9" rx="1.5" fill="var(--s2)" stroke="var(--surface-1)" stroke-width="2"><title>여정 2 · 질문 5 교사로서의 태도: 7.55</title></rect><rect x="717.5" y="235.9" width="9" height="9" rx="1.5" fill="var(--s2)" stroke="var(--surface-1)" stroke-width="2"><title>여정 2 · 질문 6 교사로서의 정체성: 7.00</title></rect></g><g data-series="2"><polyline points="52,292.76 186,158.12000000000003 320,229.17999999999998 454,259.1 588,146.9 722,143.15999999999994 856,199.26000000000002" fill="none" stroke="var(--s3)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></polyline><polygon points="52,287.36 56.95,296.36 47.05,296.36" fill="var(--s3)" stroke="var(--surface-1)" stroke-width="2"><title>여정 3 · 질문 1 학생들의 현재 모습: 6.30</title></polygon><polygon points="186,152.72000000000003 190.95,161.72000000000003 181.05,161.72000000000003" fill="var(--s3)" stroke="var(--surface-1)" stroke-width="2"><title>여정 3 · 질문 2 사회 현상 인식: 8.10</title></polygon><polygon points="320,223.77999999999997 324.95,232.77999999999997 315.05,232.77999999999997" fill="var(--s3)" stroke="var(--surface-1)" stroke-width="2"><title>여정 3 · 질문 3 변화의 영향: 7.15</title></polygon><polygon points="454,253.70000000000002 458.95,262.70000000000005 449.05,262.70000000000005" fill="var(--s3)" stroke="var(--surface-1)" stroke-width="2"><title>여정 3 · 질문 4 미래 사회 예측: 6.75</title></polygon><polygon points="588,141.5 592.95,150.5 583.05,150.5" fill="var(--s3)" stroke="var(--surface-1)" stroke-width="2"><title>여정 3 · 질문 5 기대하는 사회상: 8.25</title></polygon><polygon points="722,137.75999999999993 726.95,146.75999999999993 717.05,146.75999999999993" fill="var(--s3)" stroke="var(--surface-1)" stroke-width="2"><title>여정 3 · 질문 6 중요한 가치: 8.30</title></polygon><polygon points="856,193.86 860.95,202.86 851.05,202.86" fill="var(--s3)" stroke="var(--surface-1)" stroke-width="2"><title>여정 3 · 질문 7 미래 세대를 위한 교육: 7.55</title></polygon></g><g data-series="3"><polyline points="52,221.7 186,146.9 320,165.6 454,154.37999999999997 588,240.4 722,270.32000000000005 856,139.42000000000002" fill="none" stroke="var(--s4)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></polyline><polygon points="52,215.85 57.4,221.7 52,227.54999999999998 46.6,221.7" fill="var(--s4)" stroke="var(--surface-1)" stroke-width="2"><title>여정 4 · 질문 1 미래 교육의 이미지: 7.25</title></polygon><polygon points="186,141.05 191.4,146.9 186,152.75 180.6,146.9" fill="var(--s4)" stroke="var(--surface-1)" stroke-width="2"><title>여정 4 · 질문 2 이상적인 교실: 8.25</title></polygon><polygon points="320,159.75 325.4,165.6 320,171.45 314.6,165.6" fill="var(--s4)" stroke="var(--surface-1)" stroke-width="2"><title>여정 4 · 질문 3 수업의 이상: 8.00</title></polygon><polygon points="454,148.52999999999997 459.4,154.37999999999997 454,160.22999999999996 448.6,154.37999999999997" fill="var(--s4)" stroke="var(--surface-1)" stroke-width="2"><title>여정 4 · 질문 4 현실의 교실: 8.15</title></polygon><polygon points="588,234.55 593.4,240.4 588,246.25 582.6,240.4" fill="var(--s4)" stroke="var(--surface-1)" stroke-width="2"><title>여정 4 · 질문 5 이상과 현실의 간극: 7.00</title></polygon><polygon points="722,264.47 727.4,270.32000000000005 722,276.1700000000001 716.6,270.32000000000005" fill="var(--s4)" stroke="var(--surface-1)" stroke-width="2"><title>여정 4 · 질문 6 차이의 원인: 6.60</title></polygon><polygon points="856,133.57000000000002 861.4,139.42000000000002 856,145.27 850.6,139.42000000000002" fill="var(--s4)" stroke="var(--surface-1)" stroke-width="2"><title>여정 4 · 질문 7 교육의 본질적 가치: 8.35</title></polygon></g><g data-series="4"><polyline points="52,173.07999999999998 186,98.27999999999997 320,206.73999999999998 454,195.52000000000004 588,206.73999999999998 722,247.87999999999997 856,247.87999999999997" fill="none" stroke="var(--s5)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></polyline><polygon points="52,178.48 56.95,169.48 47.05,169.48" fill="var(--s5)" stroke="var(--surface-1)" stroke-width="2"><title>여정 5 · 질문 1 교직 입문의 순간: 7.90</title></polygon><polygon points="186,103.67999999999998 190.95,94.67999999999998 181.05,94.67999999999998" fill="var(--s5)" stroke="var(--surface-1)" stroke-width="2"><title>여정 5 · 질문 2 현재의 마음: 8.90</title></polygon><polygon points="320,212.14 324.95,203.14 315.05,203.14" fill="var(--s5)" stroke="var(--surface-1)" stroke-width="2"><title>여정 5 · 질문 3 성장을 돕는 환경: 7.45</title></polygon><polygon points="454,200.92000000000004 458.95,191.92000000000004 449.05,191.92000000000004" fill="var(--s5)" stroke="var(--surface-1)" stroke-width="2"><title>여정 5 · 질문 4 성장의 장애물: 7.60</title></polygon><polygon points="588,212.14 592.95,203.14 583.05,203.14" fill="var(--s5)" stroke="var(--surface-1)" stroke-width="2"><title>여정 5 · 질문 5 필요한 환경: 7.45</title></polygon><polygon points="722,253.27999999999997 726.95,244.27999999999997 717.05,244.27999999999997" fill="var(--s5)" stroke="var(--surface-1)" stroke-width="2"><title>여정 5 · 질문 6 변화의 주체: 6.90</title></polygon><polygon points="856,253.27999999999997 860.95,244.27999999999997 851.05,244.27999999999997" fill="var(--s5)" stroke="var(--surface-1)" stroke-width="2"><title>여정 5 · 질문 7 현실 진단: 6.90</title></polygon></g><g data-series="5"><polyline points="52,285.28 186,203 320,165.6 454,289.02000000000004 588,232.92000000000002 722,318.94 856,240.4" fill="none" stroke="var(--s6)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></polyline><polygon points="50.2,280.33 53.8,280.33 53.8,283.47999999999996 56.95,283.47999999999996 56.95,287.08 53.8,287.08 53.8,290.22999999999996 50.2,290.22999999999996 50.2,287.08 47.05,287.08 47.05,283.47999999999996 50.2,283.47999999999996" fill="var(--s6)" stroke="var(--surface-1)" stroke-width="2"><title>여정 6 · 질문 1 나의 현재 모습: 6.40</title></polygon><polygon points="184.2,198.05 187.8,198.05 187.8,201.2 190.95,201.2 190.95,204.8 187.8,204.8 187.8,207.95 184.2,207.95 184.2,204.8 181.05,204.8 181.05,201.2 184.2,201.2" fill="var(--s6)" stroke="var(--surface-1)" stroke-width="2"><title>여정 6 · 질문 2 함께함의 의미: 7.50</title></polygon><polygon points="318.2,160.65 321.8,160.65 321.8,163.79999999999998 324.95,163.79999999999998 324.95,167.4 321.8,167.4 321.8,170.54999999999998 318.2,170.54999999999998 318.2,167.4 315.05,167.4 315.05,163.79999999999998 318.2,163.79999999999998" fill="var(--s6)" stroke="var(--surface-1)" stroke-width="2"><title>여정 6 · 질문 3 대화의 확장: 8.00</title></polygon><polygon points="452.2,284.07000000000005 455.8,284.07000000000005 455.8,287.22 458.95,287.22 458.95,290.82000000000005 455.8,290.82000000000005 455.8,293.97 452.2,293.97 452.2,290.82000000000005 449.05,290.82000000000005 449.05,287.22 452.2,287.22" fill="var(--s6)" stroke="var(--surface-1)" stroke-width="2"><title>여정 6 · 질문 4 대화의 의미: 6.35</title></polygon><polygon points="586.2,227.97000000000003 589.8,227.97000000000003 589.8,231.12 592.95,231.12 592.95,234.72000000000003 589.8,234.72000000000003 589.8,237.87 586.2,237.87 586.2,234.72000000000003 583.05,234.72000000000003 583.05,231.12 586.2,231.12" fill="var(--s6)" stroke="var(--surface-1)" stroke-width="2"><title>여정 6 · 질문 5 실천적 역할: 7.10</title></polygon><polygon points="720.2,313.99 723.8,313.99 723.8,317.14 726.95,317.14 726.95,320.74 723.8,320.74 723.8,323.89 720.2,323.89 720.2,320.74 717.05,320.74 717.05,317.14 720.2,317.14" fill="var(--s6)" stroke="var(--surface-1)" stroke-width="2"><title>여정 6 · 질문 6 여정의 의미: 5.95</title></polygon><polygon points="854.2,235.45000000000002 857.8,235.45000000000002 857.8,238.6 860.95,238.6 860.95,242.20000000000002 857.8,242.20000000000002 857.8,245.35 854.2,245.35 854.2,242.20000000000002 851.05,242.20000000000002 851.05,238.6 854.2,238.6" fill="var(--s6)" stroke="var(--surface-1)" stroke-width="2"><title>여정 6 · 질문 7 앞으로의 가르침: 7.00</title></polygon></g></svg>
+    
   </div></div>
-  <p class="note">세로축은 응답이 모인 5~10점 구간만 보여 줍니다 (전체 척도는 1~10점). 여정 1·2는 질문이 6개라 질문 7이 없습니다. 범례를 누르면 여정 선을 켜고 끌 수 있고, 그래프 위에 마우스를 올리면 질문별 값과 제목이 보입니다.</p>
-  <details>
+  <p class="note">세로축은 응답이 모인 5~10점 구간만 보여 줍니다 (전체 척도는 1~10점). 여정 1·2는 질문이 6개라 질문 7이 없습니다. 점 위에 마우스를 올리면 값과 질문 제목이 보입니다 (보기 프로그램이 지원하는 경우). 모든 값은 아래 표에 있습니다.</p>
+  <details open="">
     <summary>표로 보기 (질문 제목 포함)</summary>
-    <div class="scroll"><table id="table"></table></div>
+    <div class="scroll"><table id="table"><thead><tr><th>여정</th><th>질문 1</th><th>질문 2</th><th>질문 3</th><th>질문 4</th><th>질문 5</th><th>질문 6</th><th>질문 7</th><th>평균</th></tr></thead><tbody><tr><td>여정 1 · 나를 이루어 온 경험은 무엇인가요?</td><td>8.15</td><td>8.65</td><td>7.65</td><td>7.50</td><td>7.65</td><td class="min" title="이 여정에서 가장 낮은 값">7.10</td><td>–</td><td>7.78</td></tr><tr><td>여정 2 · 나는 교사로서 어떤 이야기를 만들어 왔나요?</td><td class="min" title="이 여정에서 가장 낮은 값">6.30</td><td>7.40</td><td>7.50</td><td>7.10</td><td>7.55</td><td>7.00</td><td>–</td><td>7.14</td></tr><tr><td>여정 3 · 내게 배운 학생들은 어떤 세상에서 살까요?</td><td class="min" title="이 여정에서 가장 낮은 값">6.30</td><td>8.10</td><td>7.15</td><td>6.75</td><td>8.25</td><td>8.30</td><td>7.55</td><td>7.49</td></tr><tr><td>여정 4 · 교실은 어떤 곳이 될 수 있을까요?</td><td>7.25</td><td>8.25</td><td>8.00</td><td>8.15</td><td>7.00</td><td class="min" title="이 여정에서 가장 낮은 값">6.60</td><td>8.35</td><td>7.66</td></tr><tr><td>여정 5 · 교사인 나를 둘러싼 환경은 어떠한가요?</td><td>7.90</td><td>8.90</td><td>7.45</td><td>7.60</td><td>7.45</td><td class="min" title="이 여정에서 가장 낮은 값">6.90</td><td class="min" title="이 여정에서 가장 낮은 값">6.90</td><td>7.59</td></tr><tr><td>여정 6 · 교사로서 우리의 이야기를 어떻게 써 내려갈까요?</td><td>6.40</td><td>7.50</td><td>8.00</td><td>6.35</td><td>7.10</td><td class="min" title="이 여정에서 가장 낮은 값">5.95</td><td>7.00</td><td>6.90</td></tr></tbody></table></div>
   </details>
 </main>
-<script>
-const DATA = [
-  {n:1, theme:"나를 이루어 온 경험은 무엇인가요?", v:[8.15,8.65,7.65,7.5,7.65,7.1],
-   t:["나를 이루는 요소들", "어린 시절의 기억", "경험의 영향력", "경험을 통한 배움", "삶의 태도 형성", "삶의 정체성"]},
-  {n:2, theme:"나는 교사로서 어떤 이야기를 만들어 왔나요?", v:[6.3,7.4,7.5,7.1,7.55,7.0],
-   t:["학생들이 기억하는 교사의 모습", "영향을 준 경험", "전환점이 된 경험", "경험을 통한 성장", "교사로서의 태도", "교사로서의 정체성"]},
-  {n:3, theme:"내게 배운 학생들은 어떤 세상에서 살까요?", v:[6.3,8.1,7.15,6.75,8.25,8.3,7.55],
-   t:["학생들의 현재 모습", "사회 현상 인식", "변화의 영향", "미래 사회 예측", "기대하는 사회상", "중요한 가치", "미래 세대를 위한 교육"]},
-  {n:4, theme:"교실은 어떤 곳이 될 수 있을까요?", v:[7.25,8.25,8.0,8.15,7.0,6.6,8.35],
-   t:["미래 교육의 이미지", "이상적인 교실", "수업의 이상", "현실의 교실", "이상과 현실의 간극", "차이의 원인", "교육의 본질적 가치"]},
-  {n:5, theme:"교사인 나를 둘러싼 환경은 어떠한가요?", v:[7.9,8.9,7.45,7.6,7.45,6.9,6.9],
-   t:["교직 입문의 순간", "현재의 마음", "성장을 돕는 환경", "성장의 장애물", "필요한 환경", "변화의 주체", "현실 진단"]},
-  {n:6, theme:"교사로서 우리의 이야기를 어떻게 써 내려갈까요?", v:[6.4,7.5,8.0,6.35,7.1,5.95,7.0],
-   t:["나의 현재 모습", "함께함의 의미", "대화의 확장", "대화의 의미", "실천적 역할", "여정의 의미", "앞으로의 가르침"]},
-];
-const SHAPES = ["circle","square","triangle","diamond","triangleDown","cross"];
-const W=880, H=440, M={l:52, r:24, t:16, b:50};
-const X0=M.l, X1=W-M.r, Y0=H-M.b, Y1=M.t, YMIN=5, YMAX=10, NQ=7;
-const x = q => X0 + (q-1)*(X1-X0)/(NQ-1);
-const y = v => Y0 - (v-YMIN)*(Y0-Y1)/(YMAX-YMIN);
-const NS="http://www.w3.org/2000/svg";
-const svg=document.getElementById("svg"), tip=document.getElementById("tip"), chart=document.getElementById("chart");
-const el=(name, attrs, parent)=>{ const e=document.createElementNS(NS,name); for(const k in attrs) e.setAttribute(k,attrs[k]); (parent||svg).appendChild(e); return e; };
-const color = i => `var(--s${i+1})`;
-const visible = DATA.map(()=>true);
 
-function marker(shape, cx, cy, r, i, parent){
-  const common={fill:color(i), stroke:"var(--surface-1)", "stroke-width":2};
-  if(shape==="circle") return el("circle",{cx,cy,r,...common},parent);
-  if(shape==="square") return el("rect",{x:cx-r,y:cy-r,width:2*r,height:2*r,rx:1.5,...common},parent);
-  const pts = shape==="triangle" ? [[0,-1.2],[1.1,0.8],[-1.1,0.8]]
-            : shape==="triangleDown" ? [[0,1.2],[1.1,-0.8],[-1.1,-0.8]]
-            : shape==="diamond" ? [[0,-1.3],[1.2,0],[0,1.3],[-1.2,0]]
-            : [[-.4,-1.1],[.4,-1.1],[.4,-.4],[1.1,-.4],[1.1,.4],[.4,.4],[.4,1.1],[-.4,1.1],[-.4,.4],[-1.1,.4],[-1.1,-.4],[-.4,-.4]];
-  return el("polygon",{points:pts.map(([a,b])=>`${cx+a*r},${cy+b*r}`).join(" "),...common},parent);
-}
 
-// grid + axes
-for(let v=YMIN; v<=YMAX; v++){
-  el("line",{x1:X0,x2:X1,y1:y(v),y2:y(v),stroke:"var(--grid)","stroke-width":1});
-  const t=el("text",{x:X0-10,y:y(v)+4,"text-anchor":"end",fill:"var(--text-muted)","font-size":12}); t.textContent=v;
-}
-el("line",{x1:X0,x2:X1,y1:Y0,y2:Y0,stroke:"var(--axis)","stroke-width":1});
-for(let q=1;q<=NQ;q++){
-  const t=el("text",{x:x(q),y:Y0+20,"text-anchor":"middle",fill:"var(--text-secondary)","font-size":12}); t.textContent=`질문 ${q}`;
-}
-const yl=el("text",{x:14,y:(Y0+Y1)/2,"text-anchor":"middle",fill:"var(--text-secondary)","font-size":12,transform:`rotate(-90 14 ${(Y0+Y1)/2})`});
-yl.textContent="답하기 쉬움 (1~10점)";
-const xl=el("text",{x:(X0+X1)/2,y:H-8,"text-anchor":"middle",fill:"var(--text-secondary)","font-size":12}); xl.textContent="여정 안의 질문 순서";
 
-// series
-const groups = DATA.map((d,i)=>{
-  const g=el("g",{"data-series":i});
-  const pts=d.v.map((v,k)=>`${x(k+1)},${y(v)}`).join(" ");
-  el("polyline",{points:pts,fill:"none",stroke:color(i),"stroke-width":2,"stroke-linejoin":"round","stroke-linecap":"round"},g);
-  d.v.forEach((v,k)=>marker(SHAPES[i], x(k+1), y(v), 4.5, i, g));
-  return g;
-});
-// legend
-const legend=document.getElementById("legend");
-DATA.forEach((d,i)=>{
-  const li=document.createElement("li"); const b=document.createElement("button");
-  b.setAttribute("aria-pressed","true");
-  const key=document.createElementNS(NS,"svg"); key.setAttribute("width","26"); key.setAttribute("height","12"); key.setAttribute("aria-hidden","true");
-  const ln=document.createElementNS(NS,"line"); [["x1",1],["x2",25],["y1",6],["y2",6],["stroke",color(i)],["stroke-width",2]].forEach(([k,v])=>ln.setAttribute(k,v)); key.appendChild(ln);
-  marker(SHAPES[i],13,6,4,i,key);
-  b.appendChild(key); b.appendChild(document.createTextNode(`여정 ${d.n} · ${d.theme}`));
-  b.addEventListener("click",()=>{ visible[i]=!visible[i]; b.setAttribute("aria-pressed",String(visible[i])); groups[i].style.display=visible[i]?"":"none"; });
-  li.appendChild(b); legend.appendChild(li);
-});
-
-// crosshair + tooltip
-const hair=el("line",{x1:0,x2:0,y1:Y1,y2:Y0,stroke:"var(--axis)","stroke-width":1,opacity:0});
-const hit=el("rect",{x:X0-20,y:Y1,width:X1-X0+40,height:Y0-Y1,fill:"transparent",tabindex:0,"aria-label":"질문별 값 보기 (좌우 화살표)"});
-let cur=null;
-function show(q){
-  cur=q; hair.setAttribute("x1",x(q)); hair.setAttribute("x2",x(q)); hair.setAttribute("opacity",1);
-  tip.replaceChildren();
-  const h=document.createElement("div"); h.className="h"; h.textContent=`질문 ${q}`; tip.appendChild(h);
-  DATA.map((d,i)=>({d,i})).filter(({d,i})=>visible[i] && d.v[q-1]!=null)
-    .sort((a,b)=>b.d.v[q-1]-a.d.v[q-1])
-    .forEach(({d,i})=>{
-      const r=document.createElement("div"); r.className="r";
-      const key=document.createElementNS(NS,"svg"); key.setAttribute("width","18"); key.setAttribute("height","10");
-      const ln=document.createElementNS(NS,"line"); [["x1",1],["x2",17],["y1",5],["y2",5],["stroke",color(i)],["stroke-width",3]].forEach(([k,v])=>ln.setAttribute(k,v)); key.appendChild(ln);
-      const b=document.createElement("b"); b.textContent=d.v[q-1].toFixed(2);
-      const t=document.createElement("span"); t.className="t"; t.textContent=`여정 ${d.n}${d.t[q-1]?" · "+d.t[q-1]:""}`;
-      r.append(key,b,t); tip.appendChild(r);
-    });
-  const box=chart.getBoundingClientRect(), sx=box.width/W;
-  let left=x(q)*sx+14; tip.style.opacity=1;
-  if(left+tip.offsetWidth>box.width) left=x(q)*sx-14-tip.offsetWidth;
-  tip.style.left=Math.max(0,left)+"px"; tip.style.top=(Y1*sx)+"px";
-}
-function hide(){ cur=null; hair.setAttribute("opacity",0); tip.style.opacity=0; }
-hit.addEventListener("pointermove",ev=>{
-  const p=svg.createSVGPoint(); p.x=ev.clientX; p.y=ev.clientY; const loc=p.matrixTransform(svg.getScreenCTM().inverse());
-  const q=Math.min(NQ,Math.max(1,Math.round((loc.x-X0)/((X1-X0)/(NQ-1))+1))); if(q!==cur) show(q);
-});
-hit.addEventListener("pointerleave",hide);
-hit.addEventListener("focus",()=>show(1));
-hit.addEventListener("blur",hide);
-hit.addEventListener("keydown",ev=>{ if(ev.key==="ArrowRight") show(Math.min(NQ,(cur||0)+1)); if(ev.key==="ArrowLeft") show(Math.max(1,(cur||2)-1)); });
-
-// table
-const table=document.getElementById("table");
-const thead=table.createTHead().insertRow(); ["여정",...Array.from({length:NQ},(_,k)=>`질문 ${k+1}`),"평균"].forEach(h=>{ const th=document.createElement("th"); th.textContent=h; thead.appendChild(th); });
-const tb=table.createTBody();
-DATA.forEach(d=>{
-  const r=tb.insertRow(); const c0=r.insertCell(); c0.textContent=`여정 ${d.n} · ${d.theme}`;
-  const mn=Math.min(...d.v);
-  for(let k=0;k<NQ;k++){ const c=r.insertCell(); const v=d.v[k]; c.textContent=v==null?"–":v.toFixed(2); if(v===mn) { c.className="min"; c.title="이 여정에서 가장 낮은 값"; } }
-  const avg=r.insertCell(); avg.textContent=(d.v.reduce((a,b)=>a+b,0)/d.v.length).toFixed(2);
-});
-</script>
-</body>
-</html>
+</body></html>
