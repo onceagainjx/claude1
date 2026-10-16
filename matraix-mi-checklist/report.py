@@ -26,7 +26,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from statistics import mean, pvariance
 
-from build_tasks import a1_display
+from build_tasks import FATIGUE_OPTIONS, a1_display
 from child_profiles import build_profiles
 from mi_items import FACETS, FINAL_PER_FACET, INTEL_IDS, ITEM_BY_ID, ITEMS, NAME, SHORT
 from check_items import CHECKS, check
@@ -36,7 +36,8 @@ MIN_AGREE = 0.5     # A1: 의도한 지능을 고른 전문가 비율
 MIN_FACET = 0.5     # A1: 의도한 측면(흥미·능력)을 고른 전문가 비율
 MIN_ICVI = 0.78     # A2: 적합성 3~4점 비율 (Lynn 기준)
 MIN_CLARITY = 3.0   # A2: 이해 난이도 평균 (1~4)
-MIN_ITC = 0.2       # B: 수정된 문항-총점 상관
+MIN_ITC = 0.2       # B: 수정된 문항-총점 상관 (모든 아이가 같은 점수면 계산 불가 → 탈락)
+MAX_HARD = 0.2      # B: 그 문항을 '모르는 낱말'에 적은 아이 비율
 SHORT_PER_FACET = 4  # 비교용 64문항 축약판: 지능·측면당 4
 
 
@@ -236,6 +237,10 @@ def _composite(s: dict) -> tuple[float | None, bool, list[str]]:
         parts.append(max(0.0, min(1.0, s["itc"])))
         if s["itc"] < MIN_ITC:
             fails.append("문항-총점 상관")
+    elif s["n_b"]:
+        fails.append("응답 변산 없음")
+    if s["hard_share"] is not None and s["hard_share"] >= MAX_HARD:
+        fails.append("모르는 낱말")
     if s["disc"] is not None:
         parts.append(max(0.0, min(1.0, s["disc"] / 2)))
     if not parts:
@@ -302,6 +307,35 @@ def _pct(v) -> str:
     return "–" if v is None else f"{v * 100:.0f}%"
 
 
+def summary_html(trials: list[dict], stats: dict[str, dict], kids: list[dict], scores: dict[str, dict],
+                 final: list[dict]) -> list[str]:
+    """보고서 맨 앞 핵심 요약."""
+    e = html.escape
+    items = []
+    src = Counter("기존" if x["orig_no"] else "신규" for x in final)
+    items.append(f"최종 128문항 = 기존 80문항 수정본에서 {src['기존']}문항 + 신규 문항에서 {src['신규']}문항. "
+                 f"지능마다 흥미 {FINAL_PER_FACET} + 능력 {FINAL_PER_FACET}.")
+    failed = [x for x in ITEMS if stats[x["id"]]["fails"]]
+    if failed:
+        reasons = Counter(r for x in failed for r in stats[x["id"]]["fails"])
+        items.append(f"후보 192문항 중 {len(failed)}문항이 기준에 미달해 제외되었다 ("
+                     + ", ".join(f"{e(r)} {n}" for r, n in reasons.most_common()) + "). 문항은 아래 3절에 있다.")
+    forced = [x for x in final if stats[x["id"]]["fails"]]
+    items.append(f"기준 미달인데 자리를 채우려고 뽑힌 문항: {len(forced)}개."
+                 if forced else "최종 128문항은 모두 선정 기준을 충족한다.")
+    if kids:
+        r_all = recovery(kids, scores, [x["id"] for x in ITEMS])
+        r_fin = recovery(kids, scores, [x["id"] for x in final])
+        a = [v for v in alphas(kids, scores, [x["id"] for x in final]).values() if v is not None]
+        items.append(f"가상 학생 {len(kids)}명에게 심어 둔 1순위 강점을 최종 128문항이 {_pct(r_fin['top1'])} 찾아냈고 "
+                     f"(후보 192문항 {_pct(r_all['top1'])}), 상위 3개 강점은 평균 {_pct(r_fin['top3'])}가 일치했다. "
+                     f"지능별 신뢰도(α)는 {min(a):.2f}~{max(a):.2f}.")
+        fat = Counter(str(t["answers"].get("b_fatigue")) for t in trials if t["kind"] == "B")
+        if fat and len(fat) == 1:
+            items.append("지루해진 지점은 가상 학생 모두가 같은 답을 골라 정보가 없다. 길이 부담은 실제 파일럿에서 확인한다.")
+    return ["<h2>요약</h2><ul>"] + [f"<li>{t}</li>" for t in items] + ["</ul>"]
+
+
 def build_html(trials: list[dict], stats: dict[str, dict]) -> str:
     e = html.escape
     kids, scores = child_matrix(trials)
@@ -326,6 +360,7 @@ def build_html(trials: list[dict], stats: dict[str, dict]) -> str:
         "<h1>다중지능 체크리스트 문항 검토</h1>",
         f"<p class='muted'>응답 수: A1 분류 {kinds['A1']}건 · A2 평가 {kinds['A2']}건 · B 가상 학생 {len(kids)}명. "
         "LLM 페르소나 시뮬레이션 결과이므로 실제 학생 파일럿으로 확인해야 한다.</p>",
+        *summary_html(trials, stats, kids, scores, final),
         "<h2>1. 강점 지능 판별 정확도 (B)</h2>",
         "<p>가상 학생에게 심어 둔 강점이 문항 점수에서 다시 나오는지 본다. 같은 응답에서 문항 세트만 바꿔 계산한다.</p>",
     ]
@@ -350,7 +385,8 @@ def build_html(trials: list[dict], stats: dict[str, dict]) -> str:
         fat = Counter(str(t["answers"].get("b_fatigue")) for t in trials if t["kind"] == "B")
         length = [n for t in trials if t["kind"] == "B" and (n := _num(t["answers"].get("b_length"))) is not None]
         parts.append("<h3>길이 부담 (가상 학생)</h3><p>")
-        parts.append(" · ".join(f"{e(k)} {v}명" for k, v in fat.most_common()))
+        labels = {o["id"]: o["label"] for o in FATIGUE_OPTIONS}
+        parts.append(" · ".join(f"{e(labels.get(k, k))} {v}명" for k, v in fat.most_common()))
         parts.append(f"<br>'문장 수가 너무 많았다' 평균 {_f(mean(length)) if length else '–'} / 5</p>")
 
     a_items = [stats[x["id"]] for x in ITEMS if stats[x["id"]]["n_a1"] or stats[x["id"]]["n_a2"]]
@@ -399,7 +435,16 @@ def build_html(trials: list[dict], stats: dict[str, dict]) -> str:
                 f"<td class='num'>{_f(s['composite'])}</td></tr>")
         parts.append("</table></div>")
 
-    parts.append("<h2>3. 전문가 페르소나의 수정 제안 (A)</h2>")
+    parts.append("<h2>3. 기준 미달로 제외된 문항</h2><div class='wrap'><table><tr><th>번호</th><th>지능·측면</th>"
+                 "<th>문항</th><th>미달 기준</th></tr>")
+    for x in ITEMS:
+        s = stats[x["id"]]
+        if s["fails"]:
+            parts.append(f"<tr><td>{x['no']}</td><td>{SHORT[x['intel']]}·{FACETS[x['facet']][:2]}</td>"
+                         f"<td>{e(x['text'])}</td><td>{e(', '.join(s['fails']))}</td></tr>")
+    parts.append("</table></div>")
+
+    parts.append("<h2>4. 전문가 페르소나의 수정 제안 (A)</h2>")
     any_note = False
     for x in ITEMS:
         s = stats[x["id"]]
