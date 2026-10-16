@@ -1,0 +1,2690 @@
+[
+ {
+  "persona_id": "mi-child-001",
+  "name": "지우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "linguistic",
+  "secondary": [
+   "intrapersonal",
+   "spatial"
+  ],
+  "weak": [
+   "musical",
+   "naturalist"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "매일 밤 짧게 일기를 쓴다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다"
+  ],
+  "weak_lines": [
+   "노래 부를 때 음이 자꾸 엇나간다",
+   "곤충을 보면 무서워서 피한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-002",
+  "name": "서윤",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "linguistic",
+  "secondary": [
+   "interpersonal",
+   "spatial"
+  ],
+  "weak": [
+   "naturalist",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다"
+  ],
+  "weak_lines": [
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다",
+   "계획을 세워도 금방 잊어버린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-003",
+  "name": "하준",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "linguistic",
+  "secondary": [
+   "intrapersonal",
+   "spatial"
+  ],
+  "weak": [
+   "bodily",
+   "logical"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다"
+  ],
+  "weak_lines": [
+   "줄넘기 급수 시험에서 자주 떨어진다",
+   "수학 문제가 길어지면 읽다가 포기한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-004",
+  "name": "도윤",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "linguistic",
+  "secondary": [
+   "logical",
+   "musical"
+  ],
+  "weak": [
+   "spatial",
+   "interpersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "한 번 들은 노래를 금방 흥얼거린다"
+  ],
+  "weak_lines": [
+   "처음 가는 곳에서는 자주 길을 헤맨다",
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-005",
+  "name": "서연",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "linguistic",
+  "secondary": [
+   "spatial",
+   "logical"
+  ],
+  "weak": [
+   "intrapersonal",
+   "naturalist"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다"
+  ],
+  "weak_lines": [
+   "내 기분이 왜 그런지 잘 모를 때가 많다",
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-006",
+  "name": "민준",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "linguistic",
+  "secondary": [
+   "bodily",
+   "interpersonal"
+  ],
+  "weak": [
+   "logical",
+   "intrapersonal"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "전학 온 친구에게 먼저 말을 건다"
+  ],
+  "weak_lines": [
+   "계산 실수가 잦아 수학 시간이 부담스럽다",
+   "계획을 세워도 금방 잊어버린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-007",
+  "name": "하은",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "linguistic",
+  "secondary": [
+   "logical",
+   "bodily"
+  ],
+  "weak": [
+   "interpersonal",
+   "spatial"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다"
+  ],
+  "weak_lines": [
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다",
+   "처음 가는 곳에서는 자주 길을 헤맨다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-008",
+  "name": "시우",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "linguistic",
+  "secondary": [
+   "logical",
+   "interpersonal"
+  ],
+  "weak": [
+   "intrapersonal",
+   "musical"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "전학 온 친구에게 먼저 말을 건다"
+  ],
+  "weak_lines": [
+   "내 기분이 왜 그런지 잘 모를 때가 많다",
+   "음악 시간은 그저 그런 시간이다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-009",
+  "name": "지호",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "linguistic",
+  "secondary": [
+   "musical",
+   "logical"
+  ],
+  "weak": [
+   "spatial",
+   "bodily"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다"
+  ],
+  "weak_lines": [
+   "처음 가는 곳에서는 자주 길을 헤맨다",
+   "줄넘기 급수 시험에서 자주 떨어진다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-010",
+  "name": "수아",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "linguistic",
+  "secondary": [
+   "bodily",
+   "naturalist"
+  ],
+  "weak": [
+   "interpersonal",
+   "intrapersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-011",
+  "name": "예준",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "linguistic",
+  "secondary": [
+   "musical",
+   "naturalist"
+  ],
+  "weak": [
+   "bodily",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "피아노를 4년째 배우고 있다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다"
+  ],
+  "weak_lines": [
+   "줄넘기 급수 시험에서 자주 떨어진다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-012",
+  "name": "지아",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "linguistic",
+  "secondary": [
+   "logical",
+   "naturalist"
+  ],
+  "weak": [
+   "bodily",
+   "intrapersonal"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다"
+  ],
+  "weak_lines": [
+   "줄넘기 급수 시험에서 자주 떨어진다",
+   "계획을 세워도 금방 잊어버린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-013",
+  "name": "은우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "logical",
+  "secondary": [
+   "bodily",
+   "linguistic"
+  ],
+  "weak": [
+   "naturalist",
+   "intrapersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "점심시간마다 운동장에서 축구를 한다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다"
+  ],
+  "weak_lines": [
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-014",
+  "name": "유나",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "logical",
+  "secondary": [
+   "naturalist",
+   "spatial"
+  ],
+  "weak": [
+   "intrapersonal",
+   "bodily"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다"
+  ],
+  "weak_lines": [
+   "내 기분이 왜 그런지 잘 모를 때가 많다",
+   "체육 시간에 공이 오면 피하고 싶다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-015",
+  "name": "주원",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "logical",
+  "secondary": [
+   "linguistic",
+   "intrapersonal"
+  ],
+  "weak": [
+   "bodily",
+   "musical"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다"
+  ],
+  "weak_lines": [
+   "체육 시간에 공이 오면 피하고 싶다",
+   "노래 부를 때 음이 자꾸 엇나간다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-016",
+  "name": "채원",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "logical",
+  "secondary": [
+   "bodily",
+   "musical"
+  ],
+  "weak": [
+   "naturalist",
+   "interpersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "음악 시간에 리코더 합주에서 앞장선다"
+  ],
+  "weak_lines": [
+   "곤충을 보면 무서워서 피한다",
+   "모둠 활동보다 혼자 하는 과제가 편하다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-017",
+  "name": "건우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "logical",
+  "secondary": [
+   "linguistic",
+   "bodily"
+  ],
+  "weak": [
+   "interpersonal",
+   "musical"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "태권도 품새 대회에 나간 적이 있다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "음악 시간은 그저 그런 시간이다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-018",
+  "name": "다은",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "logical",
+  "secondary": [
+   "linguistic",
+   "intrapersonal"
+  ],
+  "weak": [
+   "naturalist",
+   "interpersonal"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다"
+  ],
+  "weak_lines": [
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다",
+   "모둠 활동보다 혼자 하는 과제가 편하다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-019",
+  "name": "현우",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "logical",
+  "secondary": [
+   "spatial",
+   "intrapersonal"
+  ],
+  "weak": [
+   "musical",
+   "linguistic"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다"
+  ],
+  "weak_lines": [
+   "음악 시간은 그저 그런 시간이다",
+   "책 읽기는 숙제일 때만 한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-020",
+  "name": "소율",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "logical",
+  "secondary": [
+   "interpersonal",
+   "naturalist"
+  ],
+  "weak": [
+   "musical",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다"
+  ],
+  "weak_lines": [
+   "음악 시간은 그저 그런 시간이다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-021",
+  "name": "우진",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "logical",
+  "secondary": [
+   "spatial",
+   "intrapersonal"
+  ],
+  "weak": [
+   "interpersonal",
+   "musical"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "매일 밤 짧게 일기를 쓴다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "음악 시간은 그저 그런 시간이다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-022",
+  "name": "윤서",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "logical",
+  "secondary": [
+   "musical",
+   "intrapersonal"
+  ],
+  "weak": [
+   "spatial",
+   "naturalist"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "피아노를 4년째 배우고 있다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다"
+  ],
+  "weak_lines": [
+   "처음 가는 곳에서는 자주 길을 헤맨다",
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-023",
+  "name": "선우",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "logical",
+  "secondary": [
+   "bodily",
+   "musical"
+  ],
+  "weak": [
+   "interpersonal",
+   "spatial"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "한 번 들은 노래를 금방 흥얼거린다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "처음 가는 곳에서는 자주 길을 헤맨다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-024",
+  "name": "지민",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "logical",
+  "secondary": [
+   "naturalist",
+   "linguistic"
+  ],
+  "weak": [
+   "intrapersonal",
+   "musical"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다"
+  ],
+  "weak_lines": [
+   "계획을 세워도 금방 잊어버린다",
+   "노래 부를 때 음이 자꾸 엇나간다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-025",
+  "name": "지우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "spatial",
+  "secondary": [
+   "interpersonal",
+   "bodily"
+  ],
+  "weak": [
+   "logical",
+   "linguistic"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "태권도 품새 대회에 나간 적이 있다"
+  ],
+  "weak_lines": [
+   "수학 문제가 길어지면 읽다가 포기한다",
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-026",
+  "name": "서윤",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "spatial",
+  "secondary": [
+   "naturalist",
+   "bodily"
+  ],
+  "weak": [
+   "musical",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "태권도 품새 대회에 나간 적이 있다"
+  ],
+  "weak_lines": [
+   "음악 시간은 그저 그런 시간이다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-027",
+  "name": "하준",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "spatial",
+  "secondary": [
+   "linguistic",
+   "naturalist"
+  ],
+  "weak": [
+   "intrapersonal",
+   "bodily"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "집에서 거북이와 장수풍뎅이를 키운다"
+  ],
+  "weak_lines": [
+   "내 기분이 왜 그런지 잘 모를 때가 많다",
+   "체육 시간에 공이 오면 피하고 싶다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-028",
+  "name": "도윤",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "spatial",
+  "secondary": [
+   "bodily",
+   "intrapersonal"
+  ],
+  "weak": [
+   "logical",
+   "musical"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "방학 계획표를 직접 만들고 대부분 지킨다"
+  ],
+  "weak_lines": [
+   "계산 실수가 잦아 수학 시간이 부담스럽다",
+   "음악 시간은 그저 그런 시간이다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-029",
+  "name": "서연",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "spatial",
+  "secondary": [
+   "interpersonal",
+   "intrapersonal"
+  ],
+  "weak": [
+   "musical",
+   "linguistic"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "방학 계획표를 직접 만들고 대부분 지킨다"
+  ],
+  "weak_lines": [
+   "음악 시간은 그저 그런 시간이다",
+   "책 읽기는 숙제일 때만 한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-030",
+  "name": "민준",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "spatial",
+  "secondary": [
+   "interpersonal",
+   "bodily"
+  ],
+  "weak": [
+   "naturalist",
+   "musical"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "태권도 품새 대회에 나간 적이 있다"
+  ],
+  "weak_lines": [
+   "곤충을 보면 무서워서 피한다",
+   "음악 시간은 그저 그런 시간이다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-031",
+  "name": "하은",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "spatial",
+  "secondary": [
+   "linguistic",
+   "musical"
+  ],
+  "weak": [
+   "intrapersonal",
+   "interpersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "피아노를 4년째 배우고 있다"
+  ],
+  "weak_lines": [
+   "계획을 세워도 금방 잊어버린다",
+   "모둠 활동보다 혼자 하는 과제가 편하다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-032",
+  "name": "시우",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "spatial",
+  "secondary": [
+   "logical",
+   "interpersonal"
+  ],
+  "weak": [
+   "intrapersonal",
+   "naturalist"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다"
+  ],
+  "weak_lines": [
+   "계획을 세워도 금방 잊어버린다",
+   "곤충을 보면 무서워서 피한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-033",
+  "name": "지호",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "spatial",
+  "secondary": [
+   "logical",
+   "musical"
+  ],
+  "weak": [
+   "bodily",
+   "interpersonal"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "한 번 들은 노래를 금방 흥얼거린다"
+  ],
+  "weak_lines": [
+   "체육 시간에 공이 오면 피하고 싶다",
+   "모둠 활동보다 혼자 하는 과제가 편하다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-034",
+  "name": "수아",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "spatial",
+  "secondary": [
+   "naturalist",
+   "intrapersonal"
+  ],
+  "weak": [
+   "interpersonal",
+   "bodily"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다"
+  ],
+  "weak_lines": [
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다",
+   "줄넘기 급수 시험에서 자주 떨어진다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-035",
+  "name": "예준",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "spatial",
+  "secondary": [
+   "interpersonal",
+   "linguistic"
+  ],
+  "weak": [
+   "naturalist",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다"
+  ],
+  "weak_lines": [
+   "곤충을 보면 무서워서 피한다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-036",
+  "name": "지아",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "spatial",
+  "secondary": [
+   "musical",
+   "intrapersonal"
+  ],
+  "weak": [
+   "linguistic",
+   "naturalist"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "피아노를 4년째 배우고 있다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다"
+  ],
+  "weak_lines": [
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다",
+   "곤충을 보면 무서워서 피한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-037",
+  "name": "은우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "bodily",
+  "secondary": [
+   "musical",
+   "spatial"
+  ],
+  "weak": [
+   "linguistic",
+   "intrapersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "태권도 품새 대회에 나간 적이 있다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "점심시간마다 운동장에서 축구를 한다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다"
+  ],
+  "weak_lines": [
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다",
+   "계획을 세워도 금방 잊어버린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-038",
+  "name": "유나",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "bodily",
+  "secondary": [
+   "naturalist",
+   "musical"
+  ],
+  "weak": [
+   "logical",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "점심시간마다 운동장에서 축구를 한다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "한 번 들은 노래를 금방 흥얼거린다"
+  ],
+  "weak_lines": [
+   "계산 실수가 잦아 수학 시간이 부담스럽다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-039",
+  "name": "주원",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "bodily",
+  "secondary": [
+   "interpersonal",
+   "intrapersonal"
+  ],
+  "weak": [
+   "logical",
+   "spatial"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "점심시간마다 운동장에서 축구를 한다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "방학 계획표를 직접 만들고 대부분 지킨다"
+  ],
+  "weak_lines": [
+   "계산 실수가 잦아 수학 시간이 부담스럽다",
+   "처음 가는 곳에서는 자주 길을 헤맨다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-040",
+  "name": "채원",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "bodily",
+  "secondary": [
+   "spatial",
+   "linguistic"
+  ],
+  "weak": [
+   "logical",
+   "interpersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "점심시간마다 운동장에서 축구를 한다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다"
+  ],
+  "weak_lines": [
+   "계산 실수가 잦아 수학 시간이 부담스럽다",
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-041",
+  "name": "건우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "bodily",
+  "secondary": [
+   "spatial",
+   "intrapersonal"
+  ],
+  "weak": [
+   "linguistic",
+   "logical"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "점심시간마다 운동장에서 축구를 한다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다"
+  ],
+  "weak_lines": [
+   "책 읽기는 숙제일 때만 한다",
+   "계산 실수가 잦아 수학 시간이 부담스럽다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-042",
+  "name": "다은",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "bodily",
+  "secondary": [
+   "linguistic",
+   "intrapersonal"
+  ],
+  "weak": [
+   "interpersonal",
+   "logical"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "점심시간마다 운동장에서 축구를 한다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "매일 밤 짧게 일기를 쓴다"
+  ],
+  "weak_lines": [
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다",
+   "계산 실수가 잦아 수학 시간이 부담스럽다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-043",
+  "name": "현우",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "bodily",
+  "secondary": [
+   "spatial",
+   "logical"
+  ],
+  "weak": [
+   "linguistic",
+   "naturalist"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "점심시간마다 운동장에서 축구를 한다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다"
+  ],
+  "weak_lines": [
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다",
+   "곤충을 보면 무서워서 피한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-044",
+  "name": "소율",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "bodily",
+  "secondary": [
+   "interpersonal",
+   "naturalist"
+  ],
+  "weak": [
+   "logical",
+   "linguistic"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "점심시간마다 운동장에서 축구를 한다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다"
+  ],
+  "weak_lines": [
+   "계산 실수가 잦아 수학 시간이 부담스럽다",
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-045",
+  "name": "우진",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "bodily",
+  "secondary": [
+   "logical",
+   "interpersonal"
+  ],
+  "weak": [
+   "intrapersonal",
+   "linguistic"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "점심시간마다 운동장에서 축구를 한다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다"
+  ],
+  "weak_lines": [
+   "내 기분이 왜 그런지 잘 모를 때가 많다",
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-046",
+  "name": "윤서",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "bodily",
+  "secondary": [
+   "logical",
+   "musical"
+  ],
+  "weak": [
+   "linguistic",
+   "intrapersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "점심시간마다 운동장에서 축구를 한다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다",
+   "한 번 들은 노래를 금방 흥얼거린다"
+  ],
+  "weak_lines": [
+   "책 읽기는 숙제일 때만 한다",
+   "계획을 세워도 금방 잊어버린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-047",
+  "name": "선우",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "bodily",
+  "secondary": [
+   "musical",
+   "intrapersonal"
+  ],
+  "weak": [
+   "linguistic",
+   "spatial"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "점심시간마다 운동장에서 축구를 한다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "피아노를 4년째 배우고 있다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다"
+  ],
+  "weak_lines": [
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다",
+   "그림 그리기 시간이 제일 어렵다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-048",
+  "name": "지민",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "bodily",
+  "secondary": [
+   "linguistic",
+   "spatial"
+  ],
+  "weak": [
+   "musical",
+   "naturalist"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "태권도 품새 대회에 나간 적이 있다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "점심시간마다 운동장에서 축구를 한다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다"
+  ],
+  "weak_lines": [
+   "음악 시간은 그저 그런 시간이다",
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-049",
+  "name": "지우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "musical",
+  "secondary": [
+   "logical",
+   "intrapersonal"
+  ],
+  "weak": [
+   "interpersonal",
+   "bodily"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "피아노를 4년째 배우고 있다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "매일 밤 짧게 일기를 쓴다"
+  ],
+  "weak_lines": [
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다",
+   "줄넘기 급수 시험에서 자주 떨어진다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-050",
+  "name": "서윤",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "musical",
+  "secondary": [
+   "logical",
+   "naturalist"
+  ],
+  "weak": [
+   "linguistic",
+   "spatial"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "피아노를 4년째 배우고 있다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다"
+  ],
+  "weak_lines": [
+   "책 읽기는 숙제일 때만 한다",
+   "처음 가는 곳에서는 자주 길을 헤맨다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-051",
+  "name": "하준",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "musical",
+  "secondary": [
+   "logical",
+   "naturalist"
+  ],
+  "weak": [
+   "linguistic",
+   "interpersonal"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "피아노를 4년째 배우고 있다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다"
+  ],
+  "weak_lines": [
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다",
+   "모둠 활동보다 혼자 하는 과제가 편하다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-052",
+  "name": "도윤",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "musical",
+  "secondary": [
+   "intrapersonal",
+   "spatial"
+  ],
+  "weak": [
+   "naturalist",
+   "bodily"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "피아노를 4년째 배우고 있다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다"
+  ],
+  "weak_lines": [
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다",
+   "체육 시간에 공이 오면 피하고 싶다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-053",
+  "name": "서연",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "musical",
+  "secondary": [
+   "linguistic",
+   "logical"
+  ],
+  "weak": [
+   "bodily",
+   "naturalist"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "피아노를 4년째 배우고 있다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다"
+  ],
+  "weak_lines": [
+   "체육 시간에 공이 오면 피하고 싶다",
+   "곤충을 보면 무서워서 피한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-054",
+  "name": "민준",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "musical",
+  "secondary": [
+   "naturalist",
+   "bodily"
+  ],
+  "weak": [
+   "spatial",
+   "linguistic"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "피아노를 4년째 배우고 있다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "태권도 품새 대회에 나간 적이 있다"
+  ],
+  "weak_lines": [
+   "처음 가는 곳에서는 자주 길을 헤맨다",
+   "책 읽기는 숙제일 때만 한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-055",
+  "name": "하은",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "musical",
+  "secondary": [
+   "interpersonal",
+   "spatial"
+  ],
+  "weak": [
+   "naturalist",
+   "linguistic"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "피아노를 4년째 배우고 있다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다"
+  ],
+  "weak_lines": [
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다",
+   "책 읽기는 숙제일 때만 한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-056",
+  "name": "시우",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "musical",
+  "secondary": [
+   "spatial",
+   "linguistic"
+  ],
+  "weak": [
+   "interpersonal",
+   "logical"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "피아노를 4년째 배우고 있다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "학급 문집에 실린 글이 두 편이나 된다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "계산 실수가 잦아 수학 시간이 부담스럽다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-057",
+  "name": "지호",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "musical",
+  "secondary": [
+   "logical",
+   "bodily"
+  ],
+  "weak": [
+   "linguistic",
+   "naturalist"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "피아노를 4년째 배우고 있다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다"
+  ],
+  "weak_lines": [
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다",
+   "곤충을 보면 무서워서 피한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-058",
+  "name": "수아",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "musical",
+  "secondary": [
+   "linguistic",
+   "bodily"
+  ],
+  "weak": [
+   "spatial",
+   "interpersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "피아노를 4년째 배우고 있다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "태권도 품새 대회에 나간 적이 있다"
+  ],
+  "weak_lines": [
+   "처음 가는 곳에서는 자주 길을 헤맨다",
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-059",
+  "name": "예준",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "musical",
+  "secondary": [
+   "linguistic",
+   "interpersonal"
+  ],
+  "weak": [
+   "bodily",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "피아노를 4년째 배우고 있다",
+   "학급 문집에 실린 글이 두 편이나 된다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다"
+  ],
+  "weak_lines": [
+   "체육 시간에 공이 오면 피하고 싶다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-060",
+  "name": "지아",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "musical",
+  "secondary": [
+   "bodily",
+   "interpersonal"
+  ],
+  "weak": [
+   "intrapersonal",
+   "logical"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "피아노를 4년째 배우고 있다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다"
+  ],
+  "weak_lines": [
+   "내 기분이 왜 그런지 잘 모를 때가 많다",
+   "계산 실수가 잦아 수학 시간이 부담스럽다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-061",
+  "name": "은우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "musical",
+   "logical"
+  ],
+  "weak": [
+   "linguistic",
+   "bodily"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다"
+  ],
+  "weak_lines": [
+   "책 읽기는 숙제일 때만 한다",
+   "체육 시간에 공이 오면 피하고 싶다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-062",
+  "name": "유나",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "linguistic",
+   "spatial"
+  ],
+  "weak": [
+   "bodily",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "전학 온 친구에게 먼저 말을 건다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다"
+  ],
+  "weak_lines": [
+   "체육 시간에 공이 오면 피하고 싶다",
+   "계획을 세워도 금방 잊어버린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-063",
+  "name": "주원",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "naturalist",
+   "intrapersonal"
+  ],
+  "weak": [
+   "logical",
+   "linguistic"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "방학 계획표를 직접 만들고 대부분 지킨다"
+  ],
+  "weak_lines": [
+   "계산 실수가 잦아 수학 시간이 부담스럽다",
+   "책 읽기는 숙제일 때만 한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-064",
+  "name": "채원",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "linguistic",
+   "logical"
+  ],
+  "weak": [
+   "spatial",
+   "naturalist"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다"
+  ],
+  "weak_lines": [
+   "그림 그리기 시간이 제일 어렵다",
+   "곤충을 보면 무서워서 피한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-065",
+  "name": "건우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "musical",
+   "naturalist"
+  ],
+  "weak": [
+   "intrapersonal",
+   "spatial"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다"
+  ],
+  "weak_lines": [
+   "내 기분이 왜 그런지 잘 모를 때가 많다",
+   "처음 가는 곳에서는 자주 길을 헤맨다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-066",
+  "name": "다은",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "intrapersonal",
+   "linguistic"
+  ],
+  "weak": [
+   "musical",
+   "naturalist"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "전학 온 친구에게 먼저 말을 건다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "학급 문집에 실린 글이 두 편이나 된다"
+  ],
+  "weak_lines": [
+   "음악 시간은 그저 그런 시간이다",
+   "곤충을 보면 무서워서 피한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-067",
+  "name": "현우",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "spatial",
+   "naturalist"
+  ],
+  "weak": [
+   "linguistic",
+   "intrapersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "집에서 거북이와 장수풍뎅이를 키운다"
+  ],
+  "weak_lines": [
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-068",
+  "name": "소율",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "spatial",
+   "logical"
+  ],
+  "weak": [
+   "musical",
+   "naturalist"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다"
+  ],
+  "weak_lines": [
+   "노래 부를 때 음이 자꾸 엇나간다",
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-069",
+  "name": "우진",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "bodily",
+   "intrapersonal"
+  ],
+  "weak": [
+   "spatial",
+   "linguistic"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "태권도 품새 대회에 나간 적이 있다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다"
+  ],
+  "weak_lines": [
+   "그림 그리기 시간이 제일 어렵다",
+   "책 읽기는 숙제일 때만 한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-070",
+  "name": "윤서",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "logical",
+   "spatial"
+  ],
+  "weak": [
+   "musical",
+   "linguistic"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다"
+  ],
+  "weak_lines": [
+   "음악 시간은 그저 그런 시간이다",
+   "책 읽기는 숙제일 때만 한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-071",
+  "name": "선우",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "bodily",
+   "musical"
+  ],
+  "weak": [
+   "naturalist",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "전학 온 친구에게 먼저 말을 건다",
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "한 번 들은 노래를 금방 흥얼거린다"
+  ],
+  "weak_lines": [
+   "곤충을 보면 무서워서 피한다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-072",
+  "name": "지민",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "interpersonal",
+  "secondary": [
+   "spatial",
+   "musical"
+  ],
+  "weak": [
+   "logical",
+   "linguistic"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "반에서 친구들 사이 다툼이 생기면 중간에서 말린다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "전학 온 친구에게 먼저 말을 건다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "피아노를 4년째 배우고 있다"
+  ],
+  "weak_lines": [
+   "계산 실수가 잦아 수학 시간이 부담스럽다",
+   "책 읽기는 숙제일 때만 한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-073",
+  "name": "지우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "naturalist",
+   "musical"
+  ],
+  "weak": [
+   "interpersonal",
+   "logical"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "매일 밤 짧게 일기를 쓴다",
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "음악 시간에 리코더 합주에서 앞장선다"
+  ],
+  "weak_lines": [
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다",
+   "계산 실수가 잦아 수학 시간이 부담스럽다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-074",
+  "name": "서윤",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "bodily",
+   "spatial"
+  ],
+  "weak": [
+   "interpersonal",
+   "musical"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "매일 밤 짧게 일기를 쓴다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "만들기 시간에 손이 빠르고 작품이 튼튼하다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "노래 부를 때 음이 자꾸 엇나간다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-075",
+  "name": "하준",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "linguistic",
+   "bodily"
+  ],
+  "weak": [
+   "spatial",
+   "interpersonal"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "매일 밤 짧게 일기를 쓴다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "점심시간마다 운동장에서 축구를 한다"
+  ],
+  "weak_lines": [
+   "그림 그리기 시간이 제일 어렵다",
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-076",
+  "name": "도윤",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "spatial",
+   "naturalist"
+  ],
+  "weak": [
+   "bodily",
+   "musical"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "매일 밤 짧게 일기를 쓴다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다"
+  ],
+  "weak_lines": [
+   "체육 시간에 공이 오면 피하고 싶다",
+   "노래 부를 때 음이 자꾸 엇나간다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-077",
+  "name": "서연",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "musical",
+   "logical"
+  ],
+  "weak": [
+   "spatial",
+   "interpersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "매일 밤 짧게 일기를 쓴다",
+   "피아노를 4년째 배우고 있다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다"
+  ],
+  "weak_lines": [
+   "그림 그리기 시간이 제일 어렵다",
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-078",
+  "name": "민준",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "spatial",
+   "interpersonal"
+  ],
+  "weak": [
+   "musical",
+   "naturalist"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "매일 밤 짧게 일기를 쓴다",
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다"
+  ],
+  "weak_lines": [
+   "노래 부를 때 음이 자꾸 엇나간다",
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-079",
+  "name": "하은",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "spatial",
+   "naturalist"
+  ],
+  "weak": [
+   "interpersonal",
+   "bodily"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "매일 밤 짧게 일기를 쓴다",
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다"
+  ],
+  "weak_lines": [
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다",
+   "체육 시간에 공이 오면 피하고 싶다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-080",
+  "name": "시우",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "musical",
+   "logical"
+  ],
+  "weak": [
+   "interpersonal",
+   "naturalist"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "매일 밤 짧게 일기를 쓴다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "곤충을 보면 무서워서 피한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-081",
+  "name": "지호",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "musical",
+   "interpersonal"
+  ],
+  "weak": [
+   "naturalist",
+   "linguistic"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "매일 밤 짧게 일기를 쓴다",
+   "한 번 들은 노래를 금방 흥얼거린다",
+   "전학 온 친구에게 먼저 말을 건다"
+  ],
+  "weak_lines": [
+   "식물 키우기 숙제에서 화분을 시들게 한 적이 있다",
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-082",
+  "name": "수아",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "musical",
+   "bodily"
+  ],
+  "weak": [
+   "interpersonal",
+   "linguistic"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "매일 밤 짧게 일기를 쓴다",
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "음악 시간에 리코더 합주에서 앞장선다",
+   "태권도 품새 대회에 나간 적이 있다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "글쓰기 시간이 오면 첫 문장을 못 써서 한참 앉아 있다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-083",
+  "name": "예준",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "spatial",
+   "musical"
+  ],
+  "weak": [
+   "interpersonal",
+   "bodily"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "매일 밤 짧게 일기를 쓴다",
+   "가족 여행 때 지도 앱 없이도 길을 기억한다",
+   "음악 시간에 리코더 합주에서 앞장선다"
+  ],
+  "weak_lines": [
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다",
+   "줄넘기 급수 시험에서 자주 떨어진다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-084",
+  "name": "지아",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "intrapersonal",
+  "secondary": [
+   "logical",
+   "musical"
+  ],
+  "weak": [
+   "linguistic",
+   "bodily"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "방학 계획표를 직접 만들고 대부분 지킨다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "매일 밤 짧게 일기를 쓴다",
+   "보드게임을 하면 규칙을 제일 먼저 이해하고 친구들에게 알려 준다",
+   "음악 시간에 리코더 합주에서 앞장선다"
+  ],
+  "weak_lines": [
+   "책 읽기는 숙제일 때만 한다",
+   "줄넘기 급수 시험에서 자주 떨어진다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-085",
+  "name": "은우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "naturalist",
+  "secondary": [
+   "linguistic",
+   "spatial"
+  ],
+  "weak": [
+   "interpersonal",
+   "intrapersonal"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "계획을 세워도 금방 잊어버린다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-086",
+  "name": "유나",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "naturalist",
+  "secondary": [
+   "linguistic",
+   "intrapersonal"
+  ],
+  "weak": [
+   "interpersonal",
+   "logical"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "새 책이 오면 그날 밤에 다 읽어 버린다",
+   "방학 계획표를 직접 만들고 대부분 지킨다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "수학 문제가 길어지면 읽다가 포기한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-087",
+  "name": "주원",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "naturalist",
+  "secondary": [
+   "linguistic",
+   "logical"
+  ],
+  "weak": [
+   "spatial",
+   "interpersonal"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "수학 익힘책을 먼저 끝내고 심화 문제를 찾아 푼다"
+  ],
+  "weak_lines": [
+   "그림 그리기 시간이 제일 어렵다",
+   "모둠 활동보다 혼자 하는 과제가 편하다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-088",
+  "name": "채원",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "naturalist",
+  "secondary": [
+   "spatial",
+   "linguistic"
+  ],
+  "weak": [
+   "interpersonal",
+   "musical"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "노래 부를 때 음이 자꾸 엇나간다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-089",
+  "name": "건우",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "naturalist",
+  "secondary": [
+   "musical",
+   "spatial"
+  ],
+  "weak": [
+   "interpersonal",
+   "intrapersonal"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "피아노를 4년째 배우고 있다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다"
+  ],
+  "weak_lines": [
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다",
+   "내 기분이 왜 그런지 잘 모를 때가 많다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-090",
+  "name": "다은",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "naturalist",
+  "secondary": [
+   "interpersonal",
+   "musical"
+  ],
+  "weak": [
+   "bodily",
+   "logical"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "모둠장이 자주 되고 친구들이 의견을 물으러 온다",
+   "한 번 들은 노래를 금방 흥얼거린다"
+  ],
+  "weak_lines": [
+   "줄넘기 급수 시험에서 자주 떨어진다",
+   "수학 문제가 길어지면 읽다가 포기한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-091",
+  "name": "현우",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "naturalist",
+  "secondary": [
+   "musical",
+   "bodily"
+  ],
+  "weak": [
+   "interpersonal",
+   "logical"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "피아노를 4년째 배우고 있다",
+   "점심시간마다 운동장에서 축구를 한다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "계산 실수가 잦아 수학 시간이 부담스럽다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-092",
+  "name": "소율",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "naturalist",
+  "secondary": [
+   "spatial",
+   "logical"
+  ],
+  "weak": [
+   "interpersonal",
+   "musical"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "공책 귀퉁이마다 캐릭터 그림이 그려져 있다",
+   "과학 실험 보고서를 꼼꼼하게 쓴다"
+  ],
+  "weak_lines": [
+   "모둠 활동보다 혼자 하는 과제가 편하다",
+   "음악 시간은 그저 그런 시간이다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-093",
+  "name": "우진",
+  "grade": 5,
+  "gender": "여학생",
+  "primary": "naturalist",
+  "secondary": [
+   "musical",
+   "intrapersonal"
+  ],
+  "weak": [
+   "bodily",
+   "logical"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "피아노를 4년째 배우고 있다",
+   "방학 계획표를 직접 만들고 대부분 지킨다"
+  ],
+  "weak_lines": [
+   "줄넘기 급수 시험에서 자주 떨어진다",
+   "계산 실수가 잦아 수학 시간이 부담스럽다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-094",
+  "name": "윤서",
+  "grade": 6,
+  "gender": "여학생",
+  "primary": "naturalist",
+  "secondary": [
+   "spatial",
+   "musical"
+  ],
+  "weak": [
+   "interpersonal",
+   "logical"
+  ],
+  "style": "modest",
+  "style_text": "자기 자랑을 쑥스러워해서 '잘한다'는 문장에는 점수를 조금 낮게 주는 편이다",
+  "strong_lines": [
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "레고로 큰 성을 설명서 없이 만든 적이 있다",
+   "한 번 들은 노래를 금방 흥얼거린다"
+  ],
+  "weak_lines": [
+   "새 학년에 친구를 사귀는 데 시간이 오래 걸린다",
+   "수학 문제가 길어지면 읽다가 포기한다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-095",
+  "name": "선우",
+  "grade": 5,
+  "gender": "남학생",
+  "primary": "naturalist",
+  "secondary": [
+   "linguistic",
+   "bodily"
+  ],
+  "weak": [
+   "spatial",
+   "logical"
+  ],
+  "style": "plain",
+  "style_text": "솔직하게 있는 그대로 답하는 편이다",
+  "strong_lines": [
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "국어 시간 발표 때 말이 술술 나와 선생님이 놀라곤 한다",
+   "태권도 품새 대회에 나간 적이 있다"
+  ],
+  "weak_lines": [
+   "처음 가는 곳에서는 자주 길을 헤맨다",
+   "계산 실수가 잦아 수학 시간이 부담스럽다"
+  ]
+ },
+ {
+  "persona_id": "mi-child-096",
+  "name": "지민",
+  "grade": 6,
+  "gender": "남학생",
+  "primary": "naturalist",
+  "secondary": [
+   "intrapersonal",
+   "musical"
+  ],
+  "weak": [
+   "linguistic",
+   "bodily"
+  ],
+  "style": "generous",
+  "style_text": "대체로 기분이 좋고 긍정적이라 점수를 조금 후하게 주는 편이다",
+  "strong_lines": [
+   "주말마다 가족과 숲 체험이나 갯벌 체험을 간다",
+   "등굣길에 핀 꽃 이름을 거의 다 안다",
+   "집에서 거북이와 장수풍뎅이를 키운다",
+   "속상한 일이 있으면 혼자 생각한 뒤 스스로 마음을 정리한다",
+   "피아노를 4년째 배우고 있다"
+  ],
+  "weak_lines": [
+   "책 읽기는 숙제일 때만 한다",
+   "체육 시간에 공이 오면 피하고 싶다"
+  ]
+ }
+]
