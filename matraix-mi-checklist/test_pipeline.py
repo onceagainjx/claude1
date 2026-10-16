@@ -123,3 +123,17 @@ def test_report_runs_without_any_results(tmp_path: Path):
     final = report.select(stats, FINAL_PER_FACET)
     assert len(final) == 128
     assert "B 결과 없음" in report.build_html([], stats)
+
+
+def test_expert_panels_split_evenly_without_overlap():
+    import build_panel
+
+    rows = [{"persona_id": f"p{i:02d}",
+             "dimensions": {"years_experience": y, "gender_identity": g}}
+            for i, (y, g) in enumerate((y, g) for y in build_panel.PANEL_BINS
+                                       for g in ["Man"] * 2 + ["Woman"] * 4)]
+    a1, a2 = build_panel.split_panels(rows)
+    assert len(a1) == len(a2) == 12
+    assert not {r["persona_id"] for r in a1} & {r["persona_id"] for r in a2}
+    for panel in (a1, a2):
+        assert Counter(r["dimensions"]["years_experience"] for r in panel) == {y: 3 for y in build_panel.PANEL_BINS}
