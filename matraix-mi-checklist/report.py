@@ -92,10 +92,14 @@ def _numbers_in(text) -> list[int]:
 def _lines_by_item(text) -> dict[int, list[str]]:
     """'번호: 내용' 줄을 문항 번호별로 모은다."""
     out: dict[int, list[str]] = defaultdict(list)
-    for line in str(text or "").splitlines():
-        m = re.match(r"\s*[-*]?\s*\[?(\d{1,3})\s*번?\]?\s*[:：.)]\s*(.+)", line)
-        if m and 1 <= int(m.group(1)) <= len(ITEMS):
-            out[int(m.group(1))].append(m.group(2).strip())
+    text = str(text or "")
+    # 한 줄에 여러 문항을 이어 쓰는 경우("34번: … 66번: …")도 있어, 줄이 아니라 '번호:' 표지로 자른다.
+    marks = list(re.finditer(r"(?:^|(?<=[\s,.;\]]))\[?(\d{1,3})\s*번?\]?\s*[:：)]", text))
+    for m, nxt in zip(marks, marks[1:] + [None]):
+        no = int(m.group(1))
+        body = text[m.end(): nxt.start() if nxt else len(text)].strip().split("\n")[0].strip(" -*·,;")
+        if 1 <= no <= len(ITEMS) and body:
+            out[no].append(body)
     return out
 
 
