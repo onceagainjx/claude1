@@ -33,6 +33,7 @@ from check_items import CHECKS, check
 
 # 문항 선정 기준 (모자라면 기준 미달 문항 중 종합 점수가 높은 것으로 채우고 표시한다)
 MIN_AGREE = 0.5     # A1: 의도한 지능을 고른 전문가 비율
+MIN_FACET = 0.5     # A1: 의도한 측면(흥미·능력)을 고른 전문가 비율
 MIN_ICVI = 0.78     # A2: 적합성 3~4점 비율 (Lynn 기준)
 MIN_CLARITY = 3.0   # A2: 이해 난이도 평균 (1~4)
 MIN_ITC = 0.2       # B: 수정된 문항-총점 상관
@@ -221,6 +222,8 @@ def _composite(s: dict) -> tuple[float | None, bool, list[str]]:
         parts.append(s["agree"])
         if s["agree"] < MIN_AGREE:
             fails.append("지능 일치율")
+    if s["facet_agree"] is not None and s["facet_agree"] < MIN_FACET:
+        fails.append("측면 일치율")
     if s["icvi"] is not None:
         parts.append(s["icvi"])
         if s["icvi"] < MIN_ICVI:
@@ -350,8 +353,31 @@ def build_html(trials: list[dict], stats: dict[str, dict]) -> str:
         parts.append(" · ".join(f"{e(k)} {v}명" for k, v in fat.most_common()))
         parts.append(f"<br>'문장 수가 너무 많았다' 평균 {_f(mean(length)) if length else '–'} / 5</p>")
 
+    a_items = [stats[x["id"]] for x in ITEMS if stats[x["id"]]["n_a1"] or stats[x["id"]]["n_a2"]]
+    if a_items:
+        def _mean(key):
+            vals = [s[key] for s in a_items if s[key] is not None]
+            return mean(vals) if vals else None
+        def _below(key, cut):
+            return sum(1 for s in a_items if s[key] is not None and s[key] < cut)
+        parts.append("<h2>전문가 패널 요약 (A)</h2><div class='wrap'><table><tr><th>지표</th>"
+                     "<th class='num'>평균</th><th class='num'>기준 미달 문항</th></tr>")
+        for label, key, cut, pct in (("지능 일치율", "agree", MIN_AGREE, True),
+                                     ("측면 일치율", "facet_agree", MIN_FACET, True),
+                                     ("I-CVI", "icvi", MIN_ICVI, False),
+                                     ("이해 난이도 (1~4)", "clarity_mean", MIN_CLARITY, False)):
+            m = _mean(key)
+            parts.append(f"<tr><td>{label}</td><td class='num'>{_pct(m) if pct else _f(m)}</td>"
+                         f"<td class='num'>{_below(key, cut)}</td></tr>")
+        parts.append("</table></div>")
+        if all(s["agree"] == 1 for s in a_items if s["agree"] is not None):
+            parts.append("<p>모든 문항에서 교사 페르소나 전원이 의도한 지능을 골랐다. 문항이 뚜렷하다는 뜻이기도 하지만, "
+                         "LLM 페르소나끼리 판단이 비슷해 생기는 천장 효과일 수 있어 이 지표로는 문항을 가려내지 못한다. "
+                         "선정은 측면 일치율, I-CVI, 이해 난이도, 가상 학생 지표가 가른다.</p>")
+
     parts.append("<h2>2. 지능별 선정 결과</h2><p>노란 줄이 최종 128문항에 들어간 문항이다. "
-                 f"기준: 지능 일치율 ≥ {MIN_AGREE:.0%}, I-CVI ≥ {MIN_ICVI}, 이해도 ≥ {MIN_CLARITY}, "
+                 f"기준: 지능 일치율 ≥ {MIN_AGREE:.0%}, 측면 일치율 ≥ {MIN_FACET:.0%}, I-CVI ≥ {MIN_ICVI}, "
+                 f"이해도 ≥ {MIN_CLARITY}, "
                  f"문항-총점 상관 ≥ {MIN_ITC}. 기준 미달인데 뽑힌 문항은 빨간 글씨로 표시한다 "
                  "(그 지능·측면에 기준을 넘는 문항이 모자랐다는 뜻).</p>")
     for intel in INTEL_IDS:
