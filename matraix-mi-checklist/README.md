@@ -28,11 +28,18 @@
 | 6. 실제 파일럿 | 1~2개 학급 실시, 인지면접, 실시 시간·신뢰도 확인 (이 저장소 밖) | |
 
 A1과 A2를 나눈 이유: 같은 설문에서 의도한 지능을 먼저 보면 분류가 그쪽으로 쏠린다.
+같은 이유로 A1에는 후보 번호를 보여 주지 않는다. 후보 번호는 8개 지능 순서로 돌아가서(1 언어, 2 논리, …)
+번호만 봐도 지능을 맞힐 수 있기 때문이다. A1은 블록 안에서 문항 순서를 섞고 1~48 표시 번호를 새로 붙이며,
+질문 id에도 후보 번호를 넣지 않는다 (`build_tasks.a1_display`). 첫 시도에서 번호를 그대로 보여 줬더니
+96문항 모두 일치율 100%가 나와, 그 결과는 버리고 이렇게 고쳤다.
 
 ### 페르소나
 
-- **A (교사)**: MatrAIx Persona 1M에서 `role_function = Teaching`, 경력 3년 이상 4개 구간
-  (3-5, 6-10, 11-20, 20+)에서 같은 수만큼 뽑는다.
+- **A (교사)**: MatrAIx Persona 1M에서 「당교한책」 연구의 표집 조건(`../matraix-dangyohanchaek/build_pool.py`:
+  한국어 모국어 현직 교사, 학생·은퇴·프리랜서·대학 강사 제외, 남 30% : 여 70% 목표, 학교급=초등학교,
+  근무 지역=서울·경기)을 그대로 쓰되, 문항을 판단할 경력이 있어야 하므로 경력 3년 이상 4개 구간
+  (3-5, 6-10, 11-20, 20+)에서 6명씩 24명을 뽑는다 (`build_panel.py`). 경력·성별 칸마다 번갈아 나눠
+  A1 패널 12명과 A2 패널 12명으로 쓴다 (서로 겹치지 않음).
 - **B (학생)**: Persona 1M에는 아동 페르소나가 없어서 직접 만든다 (`child_profiles.py`). 프로필에는 지능 이름이나
   문항 문장을 쓰지 않고 생활 모습만 적는다 ("공책 귀퉁이마다 캐릭터 그림이 그려져 있다"). 답하는 성향도
   겸손/보통/후함 세 가지로 섞었다. 심어 둔 정답은 `child_profiles.json`에 있다.
@@ -58,12 +65,15 @@ A1과 A2를 나눈 이유: 같은 설문에서 의도한 지능을 먼저 보면
 ```bash
 export ANTHROPIC_API_KEY=...        # 채팅이나 저장소에 붙여 넣지 말 것
                                     # (Claude Code 클라우드 환경에서는 MATRAIX_ANTHROPIC_API_KEY 이름도 가능)
-PANEL=4 CHILDREN=16 ./run_all.sh    # 시험 실행
+PANEL_LIMIT=2 CHILDREN=3 BLOCKS=1 RUN_TAG=smoke ./run_all.sh   # 시험 실행 (보고서는 report-smoke/)
 ./run_all.sh                        # 본 실행: A1 48회 + A2 48회 + B 96회 = 192회
-PARTS="B" ./run_all.sh              # 일부만
+PARTS="B" ./run_all.sh              # 일부만 (BLOCKS="2 3"처럼 블록도 고를 수 있음)
 ```
 
-job당 비용 상한은 `MAX_COST_USD`(기본 $5)다. 가상 학생 job은 192문항이라 trial당 응답이 길다.
+비용 상한은 A job마다 `MAX_COST_USD`(기본 $5), B job은 `MAX_COST_B`(기본 $25)다. 시험 실행에서 잰 비용은
+교사 1명당 A1 약 $0.14, A2 약 $0.09, 가상 학생 1명당 약 $0.12였으므로 본 실행은 약 $23이 든다.
+같은 이름의 job이 남아 있으면 이어서 실행하므로, 실패한 job을 새로 돌릴 때는 `RUN_TAG`를 바꾸거나
+`<matraix>/jobs/<job>`을 지운다.
 
 ## 결과물 (`report/`)
 
@@ -81,6 +91,7 @@ job당 비용 상한은 `MAX_COST_USD`(기본 $5)다. 가상 학생 job은 192�
 | `mi_items.py` | 현행 80문항 원문, 수정본과 수정 사유, 신규 112문항 |
 | `items.md` | 사람이 읽는 후보 문항표 (`check_items.py`가 생성) |
 | `check_items.py` | 0단계 기계적 점검 |
+| `build_panel.py` | 서울·경기 초등교사 패널 24명 → A1·A2 패널 12명씩 |
 | `build_tasks.py` | 후보 문항 → MatrAIx Survey 과제 9개 (A1 4개, A2 4개, B 1개) |
 | `child_profiles.py` | 가상 학생 96명 프로필과 페르소나 YAML |
 | `make_child_job.py` | 공식 job 설정에서 페르소나만 가상 학생으로 바꾼다 |

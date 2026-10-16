@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -31,13 +32,17 @@ def test_item_pool_is_balanced():
 
 
 def test_questionnaires_cover_every_item_once():
-    a1 = [q["id"] for b in range(1, 5) for q in build_tasks.a1_questionnaire(b)["questions"] if q["id"].endswith("_intel")]
+    a1 = [x["id"] for b in range(1, 5) for _, x in build_tasks.a1_display(b)]
     a2 = [q["id"] for b in range(1, 5) for q in build_tasks.a2_questionnaire(b)["questions"] if q["id"].endswith("_fit")]
-    assert sorted(q[:4] for q in a1) == sorted(q[:4] for q in a2) == sorted(x["id"] for x in ITEMS)
+    assert sorted(a1) == sorted(q[:4] for q in a2) == sorted(x["id"] for x in ITEMS)
     for b in range(1, 5):
         assert set(Counter(x["intel"] for x in build_tasks.block_items(b)).values()) == {6}
-        # A1에는 의도한 지능이 드러나면 안 된다
-        assert not any("의도" in q["prompt"] for q in build_tasks.a1_questionnaire(b)["questions"])
+        # A1에는 의도한 지능이 드러나면 안 된다: '의도' 표시도, 지능 순서로 돌아가는 후보 번호도 없어야 한다
+        qs = build_tasks.a1_questionnaire(b)["questions"]
+        assert not any("의도" in q["prompt"] for q in qs)
+        assert not any(re.search(r"c\d{3}", q["id"]) for q in qs)
+        shown = [x["intel"] for _, x in build_tasks.a1_display(b)]
+        assert shown[:8] != [x["intel"] for x in build_tasks.block_items(b)][:8]
     child = build_tasks.child_questionnaire()["questions"]
     assert [q["id"] for q in child[:192]] == [x["id"] for x in ITEMS]
 
@@ -67,10 +72,11 @@ def test_report_selects_128_and_recovers_planted_strengths(tmp_path: Path):
     for b in range(1, 5):
         for r in range(3):
             ans = {}
-            for x in build_tasks.block_items(b):
-                ans[f"{x['id']}_intel"] = INTEL_IDS[(INTEL_IDS.index(x["intel"]) + 1) % 8] if x["id"] in bad else x["intel"]
-                ans[f"{x['id']}_facet"] = x["facet"]
-            ans[f"a1_b{b}_ambiguous"] = "없음"
+            for d, x in build_tasks.a1_display(b):
+                ans[f"a1_b{b}_{d:02d}_intel"] = INTEL_IDS[(INTEL_IDS.index(x["intel"]) + 1) % 8] if x["id"] in bad else x["intel"]
+                ans[f"a1_b{b}_{d:02d}_facet"] = x["facet"]
+            shown_c001 = next(d for d, x in build_tasks.a1_display(b) if x["id"] == "c001") if b == 1 else None
+            ans[f"a1_b{b}_ambiguous"] = f"{shown_c001}번: 언어와 자성 사이" if shown_c001 else "없음"
             _write_trial(a1, f"b{b}r{r}", f"t{b}{r}", ans)
     a2 = tmp_path / "a2"
     for b in range(1, 5):
@@ -95,6 +101,7 @@ def test_report_selects_128_and_recovers_planted_strengths(tmp_path: Path):
     assert Counter(t["kind"] for t in trials) == {"A1": 12, "A2": 4, "B": 40}
     stats = report.item_stats(trials)
     assert stats["c001"]["agree"] == 0 and stats["c001"]["confused_with"] == "logical"
+    assert stats["c001"]["ambiguous"] == ["언어와 자성 사이"] * 3
     assert stats["c187"]["suggestions"] == ["전개도를 그림으로 바꾼다"] and stats["c187"]["hard_share"] == 1
     assert stats["c009"]["icvi"] == 1.0 and stats["c009"]["agree"] == 1.0
 

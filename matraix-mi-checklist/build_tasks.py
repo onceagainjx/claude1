@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import shutil
 from pathlib import Path
 
@@ -36,6 +37,18 @@ def block_of(item: dict) -> int:
 
 def block_items(b: int) -> list[dict]:
     return [x for x in ITEMS if block_of(x) == b]
+
+
+def a1_display(b: int) -> list[tuple[int, dict]]:
+    """A1에 보여 줄 (표시 번호, 문항). 후보 번호는 8개 지능 순서로 돌아가 번호만 봐도 지능을 알 수 있으므로,
+    블록 안에서 순서를 섞고 1~48의 표시 번호를 새로 붙인다. 질문 id에도 후보 번호를 넣지 않는다."""
+    items = block_items(b)
+    random.Random(1000 + b).shuffle(items)
+    return list(enumerate(items, start=1))
+
+
+def a1_question_id(b: int, d: int, kind: str) -> str:
+    return f"a1_b{b}_{d:02d}_{kind}"
 
 
 # ---------------------------------------------------------------- A. 가상 전문가
@@ -104,19 +117,19 @@ def a1_questionnaire(b: int) -> dict:
     questions = []
     intel_options = [{"id": i, "label": f"{name}: {desc}"} for i, _, name, desc in INTELLIGENCES]
     facet_options = [{"id": f, "label": label} for f, label in FACETS.items()]
-    for x in block_items(b):
+    for d, x in a1_display(b):
         questions += [
             {
-                "id": f"{x['id']}_intel",
-                "prompt": f"[{x['no']}번] 「{x['text']}」 이 문항이 주로 재는 지능은 무엇인가요?",
+                "id": a1_question_id(b, d, "intel"),
+                "prompt": f"[{d}번] 「{x['text']}」 이 문항이 주로 재는 지능은 무엇인가요?",
                 "type": "single_choice",
                 "construct": "intelligence_classification",
                 "required": True,
                 "options": intel_options,
             },
             {
-                "id": f"{x['id']}_facet",
-                "prompt": f"[{x['no']}번] 「{x['text']}」 이 문항은 흥미 문항인가요, 능력 문항인가요?",
+                "id": a1_question_id(b, d, "facet"),
+                "prompt": f"[{d}번] 「{x['text']}」 이 문항은 흥미 문항인가요, 능력 문항인가요?",
                 "type": "single_choice",
                 "construct": "facet_classification",
                 "required": True,
@@ -133,7 +146,7 @@ def a1_questionnaire(b: int) -> dict:
     })
     return {
         "schemaVersion": "1.0",
-        "id": f"mi_a1_classify_b{b}_v1",
+        "id": f"mi_a1_classify_b{b}_v2",
         "title": f"다중지능 체크리스트 문항 분류 (블록 {b}/4)",
         "description": "교사 페르소나가 의도한 지능을 모르는 상태에서 문항의 지능과 측면을 고른다",
         "questions": questions,

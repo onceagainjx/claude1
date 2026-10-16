@@ -26,6 +26,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from statistics import mean, pvariance
 
+from build_tasks import a1_display
 from child_profiles import build_profiles
 from mi_items import FACETS, FINAL_PER_FACET, INTEL_IDS, ITEM_BY_ID, ITEMS, NAME, SHORT
 from check_items import CHECKS, check
@@ -69,7 +70,7 @@ def load_trials(job_dirs: list[Path]) -> list[dict]:
 
 
 def _kind(answers: dict) -> str:
-    if any(k.endswith("_intel") for k in answers):
+    if any(k.endswith("_intel") or k.endswith("_ambiguous") for k in answers):
         return "A1"
     if any(k.endswith("_clarity") for k in answers):
         return "A2"
@@ -104,6 +105,9 @@ def _lines_by_item(text) -> dict[int, list[str]]:
 
 
 # ---------------------------------------------------------------- 통계
+
+# A1 블록별 표시 번호 → 문항 id (build_tasks.a1_display)
+A1_SHOWN = {b: {d: x["id"] for d, x in a1_display(b)} for b in range(1, 5)}
 
 def _pearson(xs: list[float], ys: list[float]) -> float | None:
     if len(xs) < 3:
@@ -152,13 +156,18 @@ def item_stats(trials: list[dict]) -> dict[str, dict]:
         a = t["answers"]
         if t["kind"] == "A1":
             for qid, v in a.items():
-                if qid.endswith("_intel") and qid[:4] in stats:
-                    stats[qid[:4]]["intel_votes"][str(v)] += 1
-                elif qid.endswith("_facet") and qid[:4] in stats:
-                    stats[qid[:4]]["facet_votes"][str(v)] += 1
-                elif qid.endswith("_ambiguous"):
+                m = re.fullmatch(r"a1_b(\d)_(\d{2})_(intel|facet)", qid)
+                if m:
+                    item = A1_SHOWN[int(m.group(1))].get(int(m.group(2)))
+                    if item:
+                        stats[item]["intel_votes" if m.group(3) == "intel" else "facet_votes"][str(v)] += 1
+                    continue
+                m = re.fullmatch(r"a1_b(\d)_ambiguous", qid)
+                if m:  # 표시 번호로 적힌 메모
                     for no, notes in _lines_by_item(v).items():
-                        stats[by_no[no]]["ambiguous"] += notes
+                        item = A1_SHOWN[int(m.group(1))].get(no)
+                        if item:
+                            stats[item]["ambiguous"] += notes
         elif t["kind"] == "A2":
             for qid, v in a.items():
                 n = _num(v)
