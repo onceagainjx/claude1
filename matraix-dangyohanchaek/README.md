@@ -1,5 +1,7 @@
 # 「당교한책」 질문 세트 × MatrAIx 경력별 시뮬레이션
 
+> 다른 계정·세션에서 이어 갈 때는 먼저 [HANDOFF.md](HANDOFF.md)를 읽는다 (과정, 결과, MatrAIx 절차와 함정, 사이드 프로그램 기획).
+
 「저경력 교사 나답게 가르치기(가칭)」 개발을 위해, 기존 「당교한책」 「워크북: 나의 이야기」 편의
 여섯 여정 질문(40개)을 **MatrAIx 연구팀의 공식 Survey 파이프라인**
 ([MatrAIx-ai/MatrAIx-Persona-8B](https://github.com/MatrAIx-ai/MatrAIx-Persona-8B), MIT)으로
