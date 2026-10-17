@@ -35,6 +35,8 @@ matraix-dangyohanchaek/HANDOFF.md 를 끝까지 읽어. 거기 적힌 맥락, �
 
 모두 `matraix-dangyohanchaek/` 아래에 있다.
 
+같은 브랜치의 `matraix-mi-checklist/` 는 다른 세션이 진행한 별개 과제(128문항 MI 체크리스트 검토)다. 이 인수인계와는 관계없으니 건드리지 않는다.
+
 | 파일 | 역할 |
 |---|---|
 | `journeys.py` | 「당교한책」 프로그램 전제와 6개 여정 질문 40개 (원문: 해설서 4장·6장) |
