@@ -15,6 +15,14 @@ matraix-dangyohanchaek/HANDOFF.md 를 끝까지 읽어. 거기 적힌 맥락, �
 답은 한국어로, 짧고 구체적으로.
 ```
 
+저장소에 접근할 수 없으면 대신 이렇게 시작한다 (내려받은 ZIP을 새 세션에 올린 경우):
+
+```
+올린 matraix-dangyohanchaek.zip 을 작업 디렉터리에 풀고, 그 안의 matraix-dangyohanchaek/HANDOFF.md 를
+끝까지 읽어. 새 저장소에 그대로 커밋한 뒤, 거기 적힌 맥락과 MatrAIx 절차를 따르고
+"9. 다음에 할 일" 가운데 내가 고르는 것부터 이어서 진행해. 답은 한국어로, 짧고 구체적으로.
+```
+
 새 계정에서 준비할 것:
 
 - GitHub: 새 계정이 `onceagainjx/claude1` 에 접근할 수 있어야 한다 (저장소 소유자가 권한을 주거나, 저장소를 새 계정 쪽으로 옮긴다).
