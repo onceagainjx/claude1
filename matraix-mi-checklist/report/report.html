@@ -1,0 +1,687 @@
+<!doctype html><html lang='ko'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>다중지능 문항 검토</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--muted:#6e6e73;--line:#e5e5ea;--bad:#c62828;--good:#2e7d32;--hl:#fff8e1}
+@media (prefers-color-scheme:dark){:root{--bg:#161618;--fg:#f2f2f7;--muted:#a1a1a6;--line:#38383a;--bad:#ef9a9a;--good:#a5d6a7;--hl:#3a3320}}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+max-width:1100px;margin:0 auto;padding:16px;line-height:1.5}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:8px 0 24px}
+th,td{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600}.num{text-align:right;white-space:nowrap}
+.bad{color:var(--bad)}.good{color:var(--good)}.sel{background:var(--hl)}.muted{color:var(--muted)}
+.wrap{overflow-x:auto}</style></head><body>
+<h1>다중지능 체크리스트 문항 검토</h1>
+<p class='muted'>응답 수: A1 분류 48건 · A2 평가 48건 · B 가상 학생 96명. LLM 페르소나 시뮬레이션 결과이므로 실제 학생 파일럿으로 확인해야 한다.</p>
+<h2>요약</h2><ul>
+<li>최종 128문항 = 기존 80문항 수정본에서 55문항 + 신규 문항에서 73문항. 지능마다 흥미 8 + 능력 8.</li>
+<li>후보 192문항 중 14문항이 기준에 미달해 제외되었다 (측면 일치율 5, 문항-총점 상관 3, I-CVI 3, 모르는 낱말 2, 응답 변산 없음 1). 문항은 아래 3절에 있다.</li>
+<li>최종 128문항은 모두 선정 기준을 충족한다.</li>
+<li>가상 학생 96명에게 심어 둔 1순위 강점을 최종 128문항이 92% 찾아냈고 (후보 192문항 97%), 상위 3개 강점은 평균 86%가 일치했다. 지능별 신뢰도(α)는 0.92~0.98.</li>
+<li>지루해진 지점은 가상 학생 모두가 같은 답을 골라 정보가 없다. 길이 부담은 실제 파일럿에서 확인한다.</li>
+</ul>
+<h2>1. 강점 지능 판별 정확도 (B)</h2>
+<p>가상 학생에게 심어 둔 강점이 문항 점수에서 다시 나오는지 본다. 같은 응답에서 문항 세트만 바꿔 계산한다.</p>
+<div class='wrap'><table><tr><th>문항 세트</th><th class='num'>1순위 일치</th><th class='num'>상위 3개 일치</th><th class='num'>약점이 하위 3개에</th></tr>
+<tr><td>후보 192문항</td><td class='num'>97%</td><td class='num'>88%</td><td class='num'>79%</td></tr>
+<tr><td>최종 128문항</td><td class='num'>92%</td><td class='num'>86%</td><td class='num'>83%</td></tr>
+<tr><td>축약 64문항 (비교용)</td><td class='num'>92%</td><td class='num'>86%</td><td class='num'>88%</td></tr>
+</table></div>
+<h3>지능별 신뢰도 (크론바흐 α, 가상 학생)</h3><div class='wrap'><table><tr><th>지능</th><th class='num'>후보 24문항</th><th class='num'>최종 16문항</th></tr>
+<tr><td>언어 지능</td><td class='num'>0.98</td><td class='num'>0.98</td></tr>
+<tr><td>논리수학 지능</td><td class='num'>0.97</td><td class='num'>0.97</td></tr>
+<tr><td>공간 지능</td><td class='num'>0.93</td><td class='num'>0.93</td></tr>
+<tr><td>신체운동 지능</td><td class='num'>0.95</td><td class='num'>0.97</td></tr>
+<tr><td>음악 지능</td><td class='num'>0.99</td><td class='num'>0.98</td></tr>
+<tr><td>대인관계 지능</td><td class='num'>0.97</td><td class='num'>0.97</td></tr>
+<tr><td>자기성찰 지능</td><td class='num'>0.94</td><td class='num'>0.92</td></tr>
+<tr><td>자연친화 지능</td><td class='num'>0.98</td><td class='num'>0.98</td></tr>
+</table></div>
+<h3>길이 부담 (가상 학생)</h3><p>
+145~192번쯤부터 지루했어요 96명
+<br>'문장 수가 너무 많았다' 평균 4.00 / 5</p>
+<h2>전문가 패널 요약 (A)</h2><div class='wrap'><table><tr><th>지표</th><th class='num'>평균</th><th class='num'>기준 미달 문항</th></tr>
+<tr><td>지능 일치율</td><td class='num'>100%</td><td class='num'>0</td></tr>
+<tr><td>측면 일치율</td><td class='num'>97%</td><td class='num'>5</td></tr>
+<tr><td>I-CVI</td><td class='num'>0.99</td><td class='num'>3</td></tr>
+<tr><td>이해 난이도 (1~4)</td><td class='num'>3.86</td><td class='num'>0</td></tr>
+</table></div>
+<p>모든 문항에서 교사 페르소나 전원이 의도한 지능을 골랐다. 문항이 뚜렷하다는 뜻이기도 하지만, LLM 페르소나끼리 판단이 비슷해 생기는 천장 효과일 수 있어 이 지표로는 문항을 가려내지 못한다. 선정은 측면 일치율, I-CVI, 이해 난이도, 가상 학생 지표가 가른다.</p>
+<h2>2. 지능별 선정 결과</h2><p>노란 줄이 최종 128문항에 들어간 문항이다. 기준: 지능 일치율 ≥ 50%, 측면 일치율 ≥ 50%, I-CVI ≥ 0.78, 이해도 ≥ 3.0, 문항-총점 상관 ≥ 0.2. 기준 미달인데 뽑힌 문항은 빨간 글씨로 표시한다 (그 지능·측면에 기준을 넘는 문항이 모자랐다는 뜻).</p>
+<h3>언어 지능</h3><div class='wrap'><table><tr><th>번호</th><th>측면</th><th>문항</th><th class='num'>일치율</th><th>헷갈린 지능</th><th class='num'>측면 일치</th><th class='num'>I-CVI</th><th class='num'>이해도</th><th class='num'>문항-총점</th><th class='num'>변별</th><th class='num'>모름 표시</th><th class='num'>종합</th></tr>
+<tr class='sel'><td>1</td><td>흥미</td><td>나는 책을 읽다 보면 시간 가는 줄 모를 때가 많다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.82</td><td class='num'>1.42</td><td class='num'>0%</td><td class='num'>0.91</td></tr>
+<tr class=''><td>9</td><td>흥미</td><td>나는 낱말 퍼즐이나 끝말잇기 같은 말놀이를 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.74</td><td class='num'>0.63</td><td class='num'>0%</td><td class='num'>0.81</td></tr>
+<tr class='sel'><td>17</td><td>능력</td><td>나는 글을 쓸 때 알맞은 낱말이 잘 떠오른다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.90</td><td class='num'>1.27</td><td class='num'>0%</td><td class='num'>0.91</td></tr>
+<tr class='sel'><td>25</td><td>능력</td><td>나는 국어 시간에 글을 읽고 내 생각을 쓰는 활동이 쉽다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.88</td><td class='num'>1.51</td><td class='num'>0%</td><td class='num'>0.93</td></tr>
+<tr class='sel'><td>33</td><td>흥미</td><td>나는 길을 가다가 간판이나 안내판의 글자를 저절로 읽게 된다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.84</td><td class='num'>0.85</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class='sel'><td>41</td><td>흥미</td><td>나는 친구와 이야기할 때 책에서 읽은 내용을 자주 이야기한다.</td><td class='num'>100%</td><td></td><td class='num'>92%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.91</td><td class='num'>1.40</td><td class='num'>0%</td><td class='num'>0.92</td></tr>
+<tr class='sel'><td>49</td><td>능력</td><td>나는 내 생각을 글로 쓰면 다른 사람이 쉽게 이해한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.89</td><td class='num'>1.20</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>57</td><td>능력</td><td>나는 동시나 짧은 글을 읽고 외우는 것이 어렵지 않다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.82</td><td class='num'>0.86</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class=''><td>65</td><td>능력</td><td>나는 모르는 낱말도 앞뒤 문장을 보고 뜻을 짐작할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.17</td><td class='num'>0.85</td><td class='num'>0.78</td><td class='num'>0%</td><td class='num'>0.79</td></tr>
+<tr class='sel'><td>73</td><td>능력</td><td>나는 친구들이 잘 모르는 낱말을 많이 알고 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.82</td><td class='num'>0.90</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class='sel'><td>81</td><td>흥미</td><td>나는 이야기를 지어내 글로 쓰는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.90</td><td class='num'>1.39</td><td class='num'>0%</td><td class='num'>0.92</td></tr>
+<tr class=''><td>89</td><td>흥미</td><td>나는 재미있는 말장난이나 수수께끼를 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.58</td><td class='num'>0.52</td><td class='num'>0%</td><td class='num'>0.77</td></tr>
+<tr class='sel'><td>97</td><td>흥미</td><td>나는 도서관에 가는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.85</td><td class='num'>1.19</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class='sel'><td>105</td><td>흥미</td><td>나는 새로 알게 된 낱말을 써 보고 싶어진다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.89</td><td class='num'>1.06</td><td class='num'>0%</td><td class='num'>0.88</td></tr>
+<tr class='sel'><td>113</td><td>흥미</td><td>나는 일기나 편지를 쓰는 것이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.67</td><td class='num'>0.83</td><td class='num'>0%</td><td class='num'>0.82</td></tr>
+<tr class=''><td>121</td><td>흥미</td><td>나는 오디오북이나 라디오처럼 귀로 듣는 이야기를 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.65</td><td class='num'>0.46</td><td class='num'>71%</td><td class='num'>0.35</td></tr>
+<tr class=''><td>129</td><td>흥미</td><td>나는 토론 시간에 내 의견을 말하는 것이 기다려진다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.58</td><td class='num'>0.67</td><td class='num'>1.03</td><td class='num'>0%</td><td class='num'>0.81</td></tr>
+<tr class='sel'><td>137</td><td>흥미</td><td>나는 책이나 글에서 마음에 드는 문장을 기억해 둔다.</td><td class='num'>100%</td><td></td><td class='num'>92%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.90</td><td class='num'>1.14</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class=''><td>145</td><td>능력</td><td>나는 읽은 이야기의 줄거리를 친구에게 잘 설명할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.82</td><td class='num'>0.79</td><td class='num'>0%</td><td class='num'>0.84</td></tr>
+<tr class='sel'><td>153</td><td>능력</td><td>나는 내 생각을 말로 차근차근 알기 쉽게 표현할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.74</td><td class='num'>0.96</td><td class='num'>0%</td><td class='num'>0.84</td></tr>
+<tr class='sel'><td>161</td><td>능력</td><td>나는 받아쓰기나 맞춤법 문제를 잘 맞힌다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.84</td><td class='num'>0.79</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class='sel'><td>169</td><td>능력</td><td>나는 긴 글을 읽고 중요한 내용을 잘 찾아낸다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.83</td><td class='num'>0.89</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class=''><td>177</td><td>능력</td><td>나는 선생님의 설명을 듣고 내용을 잘 기억한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.61</td><td class='num'>0.40</td><td class='num'>0%</td><td class='num'>0.76</td></tr>
+<tr class=''><td>185</td><td>능력</td><td>나는 같은 뜻을 여러 가지 다른 말로 바꾸어 표현할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.08</td><td class='num'>0.83</td><td class='num'>0.91</td><td class='num'>0%</td><td class='num'>0.80</td></tr>
+</table></div>
+<h3>논리수학 지능</h3><div class='wrap'><table><tr><th>번호</th><th>측면</th><th>문항</th><th class='num'>일치율</th><th>헷갈린 지능</th><th class='num'>측면 일치</th><th class='num'>I-CVI</th><th class='num'>이해도</th><th class='num'>문항-총점</th><th class='num'>변별</th><th class='num'>모름 표시</th><th class='num'>종합</th></tr>
+<tr class='sel'><td>2</td><td>능력</td><td>나는 두 자리 수 곱셈 같은 계산을 머릿속으로 빨리 할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.83</td><td class='num'>0.90</td><td class='num'>0%</td><td class='num'>0.86</td></tr>
+<tr class='sel'><td>10</td><td>흥미</td><td>나는 수학 문제를 푸는 것이 재미있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.85</td><td class='num'>1.31</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class=''><td>18</td><td>흥미</td><td>나는 새로운 과학 소식(신기한 발명품, 우주 이야기 등)에 관심이 많다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.61</td><td class='num'>0.50</td><td class='num'>0%</td><td class='num'>0.77</td></tr>
+<tr class='sel'><td>26</td><td>흥미</td><td>나는 주변에서 규칙이나 패턴을 찾는 것이 재미있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.89</td><td class='num'>0.89</td><td class='num'>0%</td><td class='num'>0.80</td></tr>
+<tr class='sel'><td>34</td><td>흥미</td><td>나는 궁금한 것이 생기면 그 까닭을 끝까지 알아내려고 한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.77</td><td class='num'>0.54</td><td class='num'>0%</td><td class='num'>0.81</td></tr>
+<tr class=''><td>42</td><td>능력</td><td>나는 친구의 말이나 글에서 앞뒤가 맞지 않는 부분을 잘 찾아낸다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.72</td><td class='num'>0.72</td><td class='num'>0%</td><td class='num'>0.75</td></tr>
+<tr class=''><td>50</td><td>능력</td><td>나는 문제가 생기면 원인을 여러 가지로 생각해 본 뒤 결정한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.77</td><td class='num'>0.70</td><td class='num'>0%</td><td class='num'>0.76</td></tr>
+<tr class='sel'><td>58</td><td>능력</td><td>나는 여러 물건의 같은 점과 다른 점을 잘 찾는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.72</td><td class='num'>0.52</td><td class='num'>0%</td><td class='num'>0.80</td></tr>
+<tr class=''><td>66</td><td>능력</td><td>나는 물건이나 자료를 종류별로 나누어 정리하는 것을 잘한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.75</td><td class='num'>0.66</td><td class='num'>0.47</td><td class='num'>0%</td><td class='num'>0.76</td></tr>
+<tr class='sel'><td>74</td><td>능력</td><td>나는 어떤 일이 일어난 까닭을 차근차근 따져서 설명할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.83</td><td class='num'>0.75</td><td class='num'>0.62</td><td class='num'>0%</td><td class='num'>0.80</td></tr>
+<tr class=''><td>82</td><td>흥미</td><td>나는 바둑이나 체스처럼 작전을 짜는 게임을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.74</td><td class='num'>1.04</td><td class='num'>0%</td><td class='num'>0.79</td></tr>
+<tr class='sel'><td>90</td><td>흥미</td><td>나는 과학 실험을 하는 시간이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.63</td><td class='num'>0.73</td><td class='num'>0%</td><td class='num'>0.80</td></tr>
+<tr class='sel'><td>98</td><td>흥미</td><td>나는 수학 문제를 여러 방법으로 풀어 보는 것이 재미있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>1.33</td><td class='num'>0%</td><td class='num'>0.91</td></tr>
+<tr class=''><td>106</td><td>흥미</td><td>나는 추리 이야기나 탐정 이야기를 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.57</td><td class='num'>0.35</td><td class='num'>0%</td><td class='num'>0.75</td></tr>
+<tr class='sel'><td>114</td><td>흥미</td><td>나는 점수나 기록을 표나 그래프로 정리하는 것이 재미있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.84</td><td class='num'>0.87</td><td class='num'>2%</td><td class='num'>0.84</td></tr>
+<tr class=''><td>122</td><td>흥미</td><td>나는 코딩이나 로봇 프로그래밍에 관심이 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.17</td><td class='num'>0.78</td><td class='num'>0.58</td><td class='num'>0%</td><td class='num'>0.76</td></tr>
+<tr class='sel'><td>130</td><td>흥미</td><td>나는 어려운 문제를 만나면 꼭 풀고 싶어진다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.84</td><td class='num'>0.83</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class='sel'><td>138</td><td>흥미</td><td>나는 물건이 어떻게 움직이는지 그 까닭이 궁금하다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.78</td><td class='num'>0.67</td><td class='num'>0%</td><td class='num'>0.82</td></tr>
+<tr class='sel'><td>146</td><td>능력</td><td>나는 문제를 풀 때 순서를 정해 차근차근 해결한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.76</td><td class='num'>0.82</td><td class='num'>0%</td><td class='num'>0.83</td></tr>
+<tr class='sel'><td>154</td><td>능력</td><td>나는 수나 모양이 늘어선 규칙을 빨리 찾아낸다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.87</td><td class='num'>0.97</td><td class='num'>0%</td><td class='num'>0.87</td></tr>
+<tr class='sel'><td>162</td><td>능력</td><td>나는 표나 그래프를 보고 내용을 잘 이해한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.88</td><td class='num'>0.85</td><td class='num'>0%</td><td class='num'>0.86</td></tr>
+<tr class=''><td>170</td><td>능력</td><td>나는 어림해서 계산한 값이 실제 답과 비슷하다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.82</td><td class='num'>0.74</td><td class='num'>0%</td><td class='num'>0.77</td></tr>
+<tr class='sel'><td>178</td><td>능력</td><td>나는 게임을 할 때 이기는 방법을 잘 찾아낸다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.67</td><td class='num'>0.83</td><td class='num'>0%</td><td class='num'>0.82</td></tr>
+<tr class='sel'><td>186</td><td>능력</td><td>나는 실험 결과를 보고 그렇게 된 까닭을 짐작할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.79</td><td class='num'>0.92</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+</table></div>
+<h3>공간 지능</h3><div class='wrap'><table><tr><th>번호</th><th>측면</th><th>문항</th><th class='num'>일치율</th><th>헷갈린 지능</th><th class='num'>측면 일치</th><th class='num'>I-CVI</th><th class='num'>이해도</th><th class='num'>문항-총점</th><th class='num'>변별</th><th class='num'>모름 표시</th><th class='num'>종합</th></tr>
+<tr class=''><td>3</td><td>능력</td><td>나는 비슷한 색깔의 작은 차이도 잘 알아본다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.51</td><td class='num'>0.24</td><td class='num'>0%</td><td class='num'>0.72</td></tr>
+<tr class='sel'><td>11</td><td>흥미</td><td>나는 기억하고 싶은 장면을 사진이나 그림으로 남기는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.46</td><td class='num'>0.42</td><td class='num'>0%</td><td class='num'>0.73</td></tr>
+<tr class='sel'><td>19</td><td>흥미</td><td>나는 미로 찾기나 큐브 맞추기처럼 모양과 방향을 생각하는 놀이를 즐긴다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.73</td><td class='num'>0.79</td><td class='num'>0%</td><td class='num'>0.82</td></tr>
+<tr class='sel'><td>27</td><td>능력</td><td>나는 처음 가 본 곳에서도 길을 잘 찾는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.69</td><td class='num'>1.36</td><td class='num'>0%</td><td class='num'>0.87</td></tr>
+<tr class='sel'><td>35</td><td>흥미</td><td>나는 그림 그리기를 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.61</td><td class='num'>1.07</td><td class='num'>0%</td><td class='num'>0.83</td></tr>
+<tr class='sel'><td>43</td><td>능력</td><td>나는 물건의 길이나 넓이를 눈으로 보고 대략 맞힐 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.61</td><td class='num'>0.45</td><td class='num'>0%</td><td class='num'>0.76</td></tr>
+<tr class='sel'><td>51</td><td>흥미</td><td>나는 내 방이나 책상을 어떻게 꾸밀지 생각하는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.51</td><td class='num'>0.45</td><td class='num'>0%</td><td class='num'>0.75</td></tr>
+<tr class='sel'><td>59</td><td>능력</td><td>나는 물건이나 그림을 보고 비슷하게 따라 그릴 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.59</td><td class='num'>0.69</td><td class='num'>0%</td><td class='num'>0.79</td></tr>
+<tr class='sel'><td>67</td><td>능력</td><td>나는 레고나 과학 상자를 설명서대로 조립하는 것을 잘한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.59</td><td class='num'>0.46</td><td class='num'>0%</td><td class='num'>0.76</td></tr>
+<tr class=''><td>75</td><td>흥미</td><td>나는 마인드맵이나 그림으로 정리하며 공부하는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.53</td><td class='num'>0.26</td><td class='num'>8%</td><td class='num'>0.62</td></tr>
+<tr class=''><td>83</td><td>흥미</td><td>나는 그림이 많은 책이나 만화를 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>0.67</td><td class='num'>4.00</td><td class='num'>0.34</td><td class='num'>0.40</td><td class='num'>0%</td><td class='num'>0.64</td></tr>
+<tr class='sel'><td>91</td><td>흥미</td><td>나는 지도를 보는 것이 재미있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.69</td><td class='num'>0.85</td><td class='num'>0%</td><td class='num'>0.82</td></tr>
+<tr class='sel'><td>99</td><td>흥미</td><td>나는 블록으로 내가 생각한 모양을 만드는 것이 좋다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.70</td><td class='num'>0.88</td><td class='num'>0%</td><td class='num'>0.83</td></tr>
+<tr class=''><td>107</td><td>흥미</td><td>나는 옷이나 물건의 색깔이 서로 어울리는지 신경 쓴다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.31</td><td class='num'>0.11</td><td class='num'>0%</td><td class='num'>0.67</td></tr>
+<tr class=''><td>115</td><td>흥미</td><td>나는 머릿속으로 장면을 그리며 상상하는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.58</td><td class='num'>0.32</td><td class='num'>0.17</td><td class='num'>0%</td><td class='num'>0.65</td></tr>
+<tr class='sel'><td>123</td><td>흥미</td><td>나는 종이접기를 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.54</td><td class='num'>0.37</td><td class='num'>0%</td><td class='num'>0.75</td></tr>
+<tr class='sel'><td>131</td><td>흥미</td><td>나는 멋진 건물이나 디자인을 보면 자세히 살펴본다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.25</td><td class='num'>0.74</td><td class='num'>0.46</td><td class='num'>0%</td><td class='num'>0.74</td></tr>
+<tr class='sel'><td>139</td><td>능력</td><td>나는 처음 보는 지도도 쉽게 읽을 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.74</td><td class='num'>1.13</td><td class='num'>0%</td><td class='num'>0.86</td></tr>
+<tr class='sel'><td>147</td><td>능력</td><td>나는 물건을 다른 방향에서 보면 어떤 모양일지 떠올릴 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.74</td><td class='num'>0.72</td><td class='num'>0%</td><td class='num'>0.75</td></tr>
+<tr class=''><td>155</td><td>능력</td><td>나는 숨은그림찾기나 틀린그림찾기를 잘한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.48</td><td class='num'>0.16</td><td class='num'>0%</td><td class='num'>0.71</td></tr>
+<tr class=''><td>163</td><td>능력</td><td>나는 이야기를 들으면 장면이 머릿속에 그림처럼 떠오른다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.17</td><td class='num'>0.03</td><td class='num'>0%</td><td class='num'>0.64</td></tr>
+<tr class='sel'><td>171</td><td>능력</td><td>나는 가방이나 상자에 물건을 빈틈없이 잘 넣는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.68</td><td class='num'>0.49</td><td class='num'>0%</td><td class='num'>0.79</td></tr>
+<tr class='sel'><td>179</td><td>능력</td><td>나는 종이접기 설명 그림을 보고 그대로 접을 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.71</td><td class='num'>0.46</td><td class='num'>0%</td><td class='num'>0.79</td></tr>
+<tr class=''><td>187</td><td>능력</td><td>나는 직육면체의 전개도를 쉽게 이해한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.59</td><td class='num'>0.51</td><td class='num'>0%</td><td class='num'>0.70</td></tr>
+</table></div>
+<h3>신체운동 지능</h3><div class='wrap'><table><tr><th>번호</th><th>측면</th><th>문항</th><th class='num'>일치율</th><th>헷갈린 지능</th><th class='num'>측면 일치</th><th class='num'>I-CVI</th><th class='num'>이해도</th><th class='num'>문항-총점</th><th class='num'>변별</th><th class='num'>모름 표시</th><th class='num'>종합</th></tr>
+<tr class='sel'><td>4</td><td>능력</td><td>나는 운동을 잘하는 편이다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.83</td><td class='num'>0.96</td><td class='num'>0%</td><td class='num'>0.86</td></tr>
+<tr class=''><td>12</td><td>흥미</td><td>나는 만들기처럼 손으로 하는 활동을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.41</td><td class='num'>0.55</td><td class='num'>0%</td><td class='num'>0.74</td></tr>
+<tr class='sel'><td>20</td><td>흥미</td><td>나는 쉬는 시간에 밖에 나가 몸을 움직이며 놀고 싶다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.89</td><td class='num'>1.07</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class=''><td>28</td><td>흥미</td><td>나는 말할 때 손짓이나 몸짓을 많이 쓴다.</td><td class='num'>100%</td><td></td><td class='num'>25%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.54</td><td class='num'>0.24</td><td class='num'>0%</td><td class='num'>0.73</td></tr>
+<tr class='sel'><td>36</td><td>흥미</td><td>나는 새로운 물건을 보면 손으로 직접 만져 보며 알아본다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.52</td><td class='num'>0.36</td><td class='num'>0%</td><td class='num'>0.74</td></tr>
+<tr class='sel'><td>44</td><td>능력</td><td>나는 처음 하는 운동도 한두 번 해 보면 금방 따라 한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>0.98</td><td class='num'>0%</td><td class='num'>0.87</td></tr>
+<tr class=''><td>52</td><td>능력</td><td>나는 TV나 영상 속 춤을 보고 조금 연습하면 따라 출 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.57</td><td class='num'>0.32</td><td class='num'>0%</td><td class='num'>0.75</td></tr>
+<tr class='sel'><td>60</td><td>능력</td><td>나는 줄넘기나 공 다루기처럼 몸을 정확하게 움직이는 활동을 잘한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.78</td><td class='num'>1.16</td><td class='num'>0%</td><td class='num'>0.87</td></tr>
+<tr class='sel'><td>68</td><td>흥미</td><td>나는 여러 가지 운동을 해 보는 것이 좋다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.90</td><td class='num'>1.11</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class=''><td>76</td><td>능력</td><td>나는 말하지 않고 몸짓만으로도 내 뜻을 전할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.44</td><td class='num'>0.09</td><td class='num'>0%</td><td class='num'>0.70</td></tr>
+<tr class='sel'><td>84</td><td>흥미</td><td>나는 체육 시간이 가장 기다려진다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.89</td><td class='num'>1.21</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>92</td><td>흥미</td><td>나는 가만히 오래 앉아 있으면 몸이 근질근질하다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.82</td><td class='num'>0.77</td><td class='num'>0%</td><td class='num'>0.84</td></tr>
+<tr class='sel'><td>100</td><td>흥미</td><td>나는 직접 몸으로 해 보며 배우는 활동을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.75</td><td class='num'>0.52</td><td class='num'>0%</td><td class='num'>0.80</td></tr>
+<tr class=''><td>108</td><td>흥미</td><td>나는 춤추는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.31</td><td class='num'>0.08</td><td class='num'>0%</td><td class='num'>0.67</td></tr>
+<tr class='sel'><td>116</td><td>흥미</td><td>나는 자전거나 킥보드 타기를 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.70</td><td class='num'>0.39</td><td class='num'>0%</td><td class='num'>0.78</td></tr>
+<tr class=''><td>124</td><td>흥미</td><td>나는 역할극에서 몸으로 표현하는 것이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.45</td><td class='num'>0.17</td><td class='num'>0%</td><td class='num'>0.71</td></tr>
+<tr class='sel'><td>132</td><td>흥미</td><td>나는 술래잡기처럼 몸으로 하는 놀이를 할 때 신난다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.82</td><td class='num'>0.79</td><td class='num'>0%</td><td class='num'>0.84</td></tr>
+<tr class='sel'><td>140</td><td>능력</td><td>나는 공을 주고받는 것을 잘한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.87</td><td class='num'>1.01</td><td class='num'>0%</td><td class='num'>0.88</td></tr>
+<tr class='sel'><td>148</td><td>능력</td><td>나는 달리기가 빠른 편이다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.81</td><td class='num'>0.65</td><td class='num'>0%</td><td class='num'>0.83</td></tr>
+<tr class='sel'><td>156</td><td>능력</td><td>나는 몸의 균형을 잘 잡는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.74</td><td class='num'>0.79</td><td class='num'>0%</td><td class='num'>0.83</td></tr>
+<tr class=''><td>164</td><td>능력</td><td>나는 가위질이나 바느질처럼 꼼꼼한 손 작업을 잘한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.25</td><td class='num'>0.33</td><td class='num'>0.68</td><td class='num'>0%</td><td class='num'>0.68</td></tr>
+<tr class=''><td>172</td><td>능력</td><td>나는 다른 사람의 몸짓이나 말투를 똑같이 흉내 낼 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.23</td><td class='num'>-0.02</td><td class='num'>0%</td><td class='num'>0.65</td></tr>
+<tr class='sel'><td>180</td><td>능력</td><td>나는 운동 동작을 한 번 보면 순서를 잘 기억한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.69</td><td class='num'>0.80</td><td class='num'>0%</td><td class='num'>0.82</td></tr>
+<tr class='sel'><td>188</td><td>능력</td><td>나는 몸을 쓰는 게임에서 반응이 빠르다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.87</td><td class='num'>0.84</td><td class='num'>0%</td><td class='num'>0.86</td></tr>
+</table></div>
+<h3>음악 지능</h3><div class='wrap'><table><tr><th>번호</th><th>측면</th><th>문항</th><th class='num'>일치율</th><th>헷갈린 지능</th><th class='num'>측면 일치</th><th class='num'>I-CVI</th><th class='num'>이해도</th><th class='num'>문항-총점</th><th class='num'>변별</th><th class='num'>모름 표시</th><th class='num'>종합</th></tr>
+<tr class='sel'><td>5</td><td>능력</td><td>나는 노래를 음정에 맞게 잘 부르는 편이다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.83</td><td class='num'>1.30</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>13</td><td>능력</td><td>나는 다른 사람이 노래하거나 연주할 때 틀린 음을 쉽게 알아차린다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.17</td><td class='num'>0.89</td><td class='num'>1.42</td><td class='num'>0%</td><td class='num'>0.87</td></tr>
+<tr class='sel'><td>21</td><td>흥미</td><td>나는 음악을 자주 찾아 듣는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.93</td><td class='num'>1.46</td><td class='num'>0%</td><td class='num'>0.93</td></tr>
+<tr class='sel'><td>29</td><td>흥미</td><td>나는 음악이 없는 생활은 상상하기 어렵다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.58</td><td class='num'>0.94</td><td class='num'>1.48</td><td class='num'>0%</td><td class='num'>0.91</td></tr>
+<tr class='sel'><td>37</td><td>흥미</td><td>나는 신나는 음악이 나오면 저절로 손이나 발로 박자를 맞춘다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.84</td><td class='num'>1.17</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class=''><td>45</td><td>능력</td><td>나는 친구들과 노래할 때 화음을 넣어 부를 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.86</td><td class='num'>1.26</td><td class='num'>9%</td><td class='num'>0.78</td></tr>
+<tr class=''><td>53</td><td>능력</td><td>나는 악보를 보면 노래의 멜로디를 어느 정도 알 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.83</td><td class='num'>1.66</td><td class='num'>23%</td><td class='num'>0.75</td></tr>
+<tr class='sel'><td>61</td><td>흥미</td><td>나는 악기를 연주하는 것이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.89</td><td class='num'>1.76</td><td class='num'>0%</td><td class='num'>0.95</td></tr>
+<tr class='sel'><td>69</td><td>능력</td><td>나는 음악에 맞춰 손뼉으로 박자를 잘 맞춘다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>0.98</td><td class='num'>0%</td><td class='num'>0.87</td></tr>
+<tr class=''><td>77</td><td>능력</td><td>나는 짧은 노랫말에 어울리는 멜로디를 지어 부를 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.87</td><td class='num'>1.07</td><td class='num'>1%</td><td class='num'>0.81</td></tr>
+<tr class='sel'><td>85</td><td>흥미</td><td>나는 노래 부르는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.95</td><td class='num'>1.55</td><td class='num'>0%</td><td class='num'>0.94</td></tr>
+<tr class='sel'><td>93</td><td>흥미</td><td>나는 쉴 때 음악을 틀어 놓는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.93</td><td class='num'>1.39</td><td class='num'>0%</td><td class='num'>0.92</td></tr>
+<tr class='sel'><td>101</td><td>흥미</td><td>나는 혼자 있을 때 노래를 흥얼거린다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.91</td><td class='num'>1.61</td><td class='num'>0%</td><td class='num'>0.94</td></tr>
+<tr class='sel'><td>109</td><td>흥미</td><td>나는 음악 시간이 기다려진다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.94</td><td class='num'>1.77</td><td class='num'>0%</td><td class='num'>0.97</td></tr>
+<tr class=''><td>117</td><td>흥미</td><td>나는 빗소리나 새소리 같은 주변 소리에 귀를 기울인다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.51</td><td class='num'>0.42</td><td class='num'>0%</td><td class='num'>0.74</td></tr>
+<tr class=''><td>125</td><td>흥미</td><td>나는 좋아하는 노래가 생기면 여러 번 반복해서 듣는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.81</td><td class='num'>1.02</td><td class='num'>0%</td><td class='num'>0.86</td></tr>
+<tr class=''><td>133</td><td>흥미</td><td>나는 공연이나 음악회에 가 보고 싶다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.79</td><td class='num'>0.76</td><td class='num'>0%</td><td class='num'>0.83</td></tr>
+<tr class=''><td>141</td><td>흥미</td><td>나는 새로운 악기를 배워 보고 싶다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.88</td><td class='num'>1.09</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class='sel'><td>149</td><td>능력</td><td>나는 한두 번 들은 노래를 금방 따라 부른다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.89</td><td class='num'>1.50</td><td class='num'>0%</td><td class='num'>0.93</td></tr>
+<tr class='sel'><td>157</td><td>능력</td><td>나는 노래를 듣고 어떤 악기 소리인지 구별할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.75</td><td class='num'>0.88</td><td class='num'>1.17</td><td class='num'>0%</td><td class='num'>0.88</td></tr>
+<tr class='sel'><td>165</td><td>능력</td><td>나는 리코더나 단소 같은 악기를 잘 다룬다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.87</td><td class='num'>1.49</td><td class='num'>0%</td><td class='num'>0.92</td></tr>
+<tr class='sel'><td>173</td><td>능력</td><td>나는 노래의 빠르기나 분위기를 잘 알아챈다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.87</td><td class='num'>0.93</td><td class='num'>0%</td><td class='num'>0.87</td></tr>
+<tr class=''><td>181</td><td>능력</td><td>나는 들은 멜로디를 악기로 따라 연주할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.08</td><td class='num'>0.83</td><td class='num'>1.65</td><td class='num'>7%</td><td class='num'>0.83</td></tr>
+<tr class='sel'><td>189</td><td>능력</td><td>나는 노래를 부를 때 박자를 놓치지 않는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.88</td><td class='num'>1.25</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+</table></div>
+<h3>대인관계 지능</h3><div class='wrap'><table><tr><th>번호</th><th>측면</th><th>문항</th><th class='num'>일치율</th><th>헷갈린 지능</th><th class='num'>측면 일치</th><th class='num'>I-CVI</th><th class='num'>이해도</th><th class='num'>문항-총점</th><th class='num'>변별</th><th class='num'>모름 표시</th><th class='num'>종합</th></tr>
+<tr class='sel'><td>6</td><td>능력</td><td>나는 친구의 고민을 끝까지 들어 주는 편이다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.67</td><td class='num'>0.78</td><td class='num'>0%</td><td class='num'>0.81</td></tr>
+<tr class='sel'><td>14</td><td>흥미</td><td>나는 친구들과 팀을 이루어 하는 활동이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.83</td><td class='num'>1.17</td><td class='num'>0%</td><td class='num'>0.88</td></tr>
+<tr class=''><td>22</td><td>흥미</td><td>나는 친구가 모르는 것을 물어보면 쉽게 알려 주는 것이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.50</td><td class='num'>0.42</td><td class='num'>0%</td><td class='num'>0.74</td></tr>
+<tr class='sel'><td>30</td><td>능력</td><td>나는 모둠 활동에서 친구들의 의견을 모아 정리하는 역할을 맡는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.85</td><td class='num'>1.49</td><td class='num'>0%</td><td class='num'>0.92</td></tr>
+<tr class='sel'><td>38</td><td>흥미</td><td>나는 친구들과 함께 어울릴 때 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>1.19</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class='sel'><td>46</td><td>능력</td><td>나는 모둠에서 친구들이 다투면 화해하도록 도울 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.85</td><td class='num'>1.33</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>54</td><td>능력</td><td>나는 처음 만난 친구와도 금방 친해진다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.82</td><td class='num'>1.53</td><td class='num'>0%</td><td class='num'>0.92</td></tr>
+<tr class='sel'><td>62</td><td>능력</td><td>나는 친구들이 하는 놀이에 &#x27;같이 하자&#x27;고 말하며 쉽게 낄 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.83</td><td class='num'>0.82</td><td class='num'>1.44</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>70</td><td>흥미</td><td>나는 친구가 어려워하는 것을 도와주는 것이 좋다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.81</td><td class='num'>0.88</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class=''><td>78</td><td>흥미</td><td>나는 재미있는 소식을 친구들과 나누는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.79</td><td class='num'>0.71</td><td class='num'>0%</td><td class='num'>0.83</td></tr>
+<tr class='sel'><td>86</td><td>흥미</td><td>나는 친구들과 함께 하는 모둠 활동이 좋다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>1.30</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>94</td><td>흥미</td><td>나는 새로운 친구를 사귀는 것이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.81</td><td class='num'>1.28</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class=''><td>102</td><td>흥미</td><td>나는 친구들의 생각을 들어 보는 것이 재미있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.76</td><td class='num'>0.54</td><td class='num'>0%</td><td class='num'>0.81</td></tr>
+<tr class='sel'><td>110</td><td>흥미</td><td>나는 학급 행사를 준비할 때 앞장서고 싶다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>1.09</td><td class='num'>0%</td><td class='num'>0.88</td></tr>
+<tr class='sel'><td>118</td><td>흥미</td><td>나는 쉬는 시간에 친구들과 이야기하는 것이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>1.24</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class=''><td>126</td><td>흥미</td><td>나는 나중에 다른 사람을 돕는 일을 하고 싶다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>0.75</td><td class='num'>4.00</td><td class='num'>0.45</td><td class='num'>0.35</td><td class='num'>0%</td><td class='num'>0.68</td></tr>
+<tr class='sel'><td>134</td><td>흥미</td><td>나는 친구들과 함께 계획을 세워 무언가를 하는 것이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>1.35</td><td class='num'>0%</td><td class='num'>0.91</td></tr>
+<tr class=''><td>142</td><td>능력</td><td>나는 친구의 표정만 보아도 기분을 알아챈다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.61</td><td class='num'>0.55</td><td class='num'>0%</td><td class='num'>0.78</td></tr>
+<tr class='sel'><td>150</td><td>능력</td><td>나는 친구들이 고민이 있을 때 나를 찾아온다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.81</td><td class='num'>1.00</td><td class='num'>0%</td><td class='num'>0.86</td></tr>
+<tr class='sel'><td>158</td><td>능력</td><td>나는 모둠 활동에서 친구마다 맡을 일을 잘 나눈다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.79</td><td class='num'>1.32</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class=''><td>166</td><td>능력</td><td>나는 친구의 입장이 되어 생각할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.65</td><td class='num'>0.52</td><td class='num'>0%</td><td class='num'>0.78</td></tr>
+<tr class=''><td>174</td><td>능력</td><td>나는 내 생각과 다른 의견도 끝까지 들을 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.39</td><td class='num'>0.20</td><td class='num'>0%</td><td class='num'>0.70</td></tr>
+<tr class='sel'><td>182</td><td>능력</td><td>나는 친구들에게 무엇을 하자고 하면 잘 따라 준다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.50</td><td class='num'>0.80</td><td class='num'>0.75</td><td class='num'>0%</td><td class='num'>0.80</td></tr>
+<tr class=''><td>190</td><td>능력</td><td>나는 다른 사람의 기분이 상하지 않게 말할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.48</td><td class='num'>0.45</td><td class='num'>0%</td><td class='num'>0.74</td></tr>
+</table></div>
+<h3>자기성찰 지능</h3><div class='wrap'><table><tr><th>번호</th><th>측면</th><th>문항</th><th class='num'>일치율</th><th>헷갈린 지능</th><th class='num'>측면 일치</th><th class='num'>I-CVI</th><th class='num'>이해도</th><th class='num'>문항-총점</th><th class='num'>변별</th><th class='num'>모름 표시</th><th class='num'>종합</th></tr>
+<tr class=''><td>7</td><td>흥미</td><td>나는 하루를 마치면 오늘 한 일을 스스로 돌아본다.</td><td class='num'>100%</td><td></td><td class='num'>0%</td><td class='num'>1.00</td><td class='num'>3.75</td><td class='num'>0.89</td><td class='num'>1.65</td><td class='num'>0%</td><td class='num'>0.93</td></tr>
+<tr class=''><td>15</td><td>능력</td><td>나는 어려운 일이 생겨도 쉽게 포기하지 않는다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.10</td><td class='num'>0.09</td><td class='num'>0%</td><td class='num'>0.63</td></tr>
+<tr class=''><td>23</td><td>능력</td><td>나에게는 꼭 이루고 싶은 꿈이나 목표가 있다.</td><td class='num'>100%</td><td></td><td class='num'>0%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.45</td><td class='num'>0.35</td><td class='num'>0%</td><td class='num'>0.72</td></tr>
+<tr class='sel'><td>31</td><td>능력</td><td>나는 나의 장점과 단점을 잘 알고 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.64</td><td class='num'>0.36</td><td class='num'>0%</td><td class='num'>0.76</td></tr>
+<tr class='sel'><td>39</td><td>흥미</td><td>나는 혼자 조용히 내 생각을 정리하는 시간이 필요하다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.75</td><td class='num'>0.80</td><td class='num'>1.37</td><td class='num'>0%</td><td class='num'>0.88</td></tr>
+<tr class=''><td>47</td><td>흥미</td><td>나는 내 할 일과 일정을 수첩이나 공책에 적어 정리한다.</td><td class='num'>100%</td><td></td><td class='num'>0%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.77</td><td class='num'>1.50</td><td class='num'>1%</td><td class='num'>0.89</td></tr>
+<tr class=''><td>55</td><td>능력</td><td>나는 내 재능을 키우기 위해 꾸준히 노력하는 것이 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.13</td><td class='num'>0.17</td><td class='num'>0%</td><td class='num'>0.58</td></tr>
+<tr class='sel'><td>63</td><td>능력</td><td>나는 어떤 일을 할 때 스스로 계획을 세울 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.65</td><td class='num'>0.90</td><td class='num'>0%</td><td class='num'>0.82</td></tr>
+<tr class='sel'><td>71</td><td>능력</td><td>나는 내 기분이 왜 그런지 스스로 알아차린다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.50</td><td class='num'>0.64</td><td class='num'>0.80</td><td class='num'>0%</td><td class='num'>0.77</td></tr>
+<tr class=''><td>79</td><td>흥미</td><td>나는 일을 마치고 나면 잘한 점과 아쉬운 점을 돌아본다.</td><td class='num'>100%</td><td></td><td class='num'>0%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.87</td><td class='num'>1.31</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>87</td><td>흥미</td><td>나는 내가 어떤 사람인지 생각해 보는 것이 좋다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.83</td><td class='num'>0.70</td><td class='num'>0%</td><td class='num'>0.84</td></tr>
+<tr class=''><td>95</td><td>흥미</td><td>나는 나만의 일기장이나 비밀 공책을 갖고 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>0.58</td><td class='num'>4.00</td><td class='num'>0.70</td><td class='num'>0.98</td><td class='num'>0%</td><td class='num'>0.75</td></tr>
+<tr class='sel'><td>103</td><td>흥미</td><td>나는 내 꿈에 대해 생각하는 시간이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.56</td><td class='num'>0.25</td><td class='num'>0%</td><td class='num'>0.74</td></tr>
+<tr class='sel'><td>111</td><td>흥미</td><td>나는 혼자서도 즐겁게 할 수 있는 취미가 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.39</td><td class='num'>0.12</td><td class='num'>0%</td><td class='num'>0.69</td></tr>
+<tr class='sel'><td>119</td><td>흥미</td><td>나는 내 마음을 글이나 그림으로 표현해 보는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.59</td><td class='num'>0.56</td><td class='num'>0%</td><td class='num'>0.77</td></tr>
+<tr class='sel'><td>127</td><td>흥미</td><td>나는 위인의 이야기를 읽으면 나라면 어떻게 했을지 생각해 본다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.67</td><td class='num'>0.64</td><td class='num'>0.39</td><td class='num'>0%</td><td class='num'>0.74</td></tr>
+<tr class='sel'><td>135</td><td>흥미</td><td>나는 내가 좋아하는 것과 싫어하는 것을 생각해 보는 것이 재미있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.72</td><td class='num'>0.46</td><td class='num'>0%</td><td class='num'>0.79</td></tr>
+<tr class='sel'><td>143</td><td>흥미</td><td>나는 스스로 정한 목표를 이루었을 때 가장 뿌듯하다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.51</td><td class='num'>0.16</td><td class='num'>0%</td><td class='num'>0.71</td></tr>
+<tr class='sel'><td>151</td><td>능력</td><td>나는 화가 나도 스스로 마음을 가라앉힐 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.63</td><td class='num'>0.77</td><td class='num'>0%</td><td class='num'>0.80</td></tr>
+<tr class=''><td>159</td><td>능력</td><td>나는 내가 실수한 점을 인정하고 고칠 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>–</td><td class='num'>0.00</td><td class='num'>0%</td><td class='num'>0.75</td></tr>
+<tr class='sel'><td>167</td><td>능력</td><td>나는 친구들이 뭐라고 해도 내 생각대로 결정할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>0.83</td><td class='num'>3.67</td><td class='num'>0.49</td><td class='num'>0.47</td><td class='num'>0%</td><td class='num'>0.69</td></tr>
+<tr class='sel'><td>175</td><td>능력</td><td>나는 내가 무엇을 할 때 행복한지 알고 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.62</td><td class='num'>0.54</td><td class='num'>0%</td><td class='num'>0.78</td></tr>
+<tr class='sel'><td>183</td><td>능력</td><td>나는 해야 할 일을 하고 싶은 일보다 먼저 할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.63</td><td class='num'>0.78</td><td class='num'>0%</td><td class='num'>0.74</td></tr>
+<tr class='sel'><td>191</td><td>능력</td><td>나는 힘들 때 나에게 힘이 되는 말을 스스로 해 줄 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.33</td><td class='num'>0.71</td><td class='num'>0.80</td><td class='num'>0%</td><td class='num'>0.78</td></tr>
+</table></div>
+<h3>자연친화 지능</h3><div class='wrap'><table><tr><th>번호</th><th>측면</th><th>문항</th><th class='num'>일치율</th><th>헷갈린 지능</th><th class='num'>측면 일치</th><th class='num'>I-CVI</th><th class='num'>이해도</th><th class='num'>문항-총점</th><th class='num'>변별</th><th class='num'>모름 표시</th><th class='num'>종합</th></tr>
+<tr class='sel'><td>8</td><td>흥미</td><td>나는 동물을 돌보는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.83</td><td class='num'>1.34</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>16</td><td>능력</td><td>나는 공원이나 산에서 이름을 아는 식물이 많다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.90</td><td class='num'>2.08</td><td class='num'>0%</td><td class='num'>0.98</td></tr>
+<tr class='sel'><td>24</td><td>능력</td><td>나는 주변의 나무나 꽃을 보고 계절이 바뀌는 것을 먼저 알아챈다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.86</td><td class='num'>1.48</td><td class='num'>0%</td><td class='num'>0.92</td></tr>
+<tr class=''><td>32</td><td>흥미</td><td>나는 시골이나 숲에 가면 자연 속에서 노는 것이 즐겁다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.76</td><td class='num'>1.00</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class='sel'><td>40</td><td>흥미</td><td>나는 동물이나 자연을 다룬 TV 프로그램이나 영상을 즐겨 본다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>1.27</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>48</td><td>능력</td><td>나는 동물이나 식물에 대해 아는 것이 많다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.93</td><td class='num'>1.81</td><td class='num'>0%</td><td class='num'>0.97</td></tr>
+<tr class='sel'><td>56</td><td>흥미</td><td>나는 동물원이나 식물원에 가는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.83</td><td class='num'>1.22</td><td class='num'>0%</td><td class='num'>0.89</td></tr>
+<tr class=''><td>64</td><td>흥미</td><td>나는 캠핑이나 등산처럼 자연 속에서 하는 활동을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.75</td><td class='num'>1.00</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class='sel'><td>72</td><td>흥미</td><td>나는 동물이나 식물에 대해 궁금한 것이 생기면 찾아본다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.90</td><td class='num'>1.45</td><td class='num'>0%</td><td class='num'>0.93</td></tr>
+<tr class='sel'><td>80</td><td>흥미</td><td>나는 곤충 도감이나 식물 도감 같은 책을 즐겨 본다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.93</td><td class='num'>1.84</td><td class='num'>0%</td><td class='num'>0.97</td></tr>
+<tr class='sel'><td>88</td><td>흥미</td><td>나는 곤충이나 작은 동물을 보면 가까이에서 관찰한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.81</td><td class='num'>1.91</td><td class='num'>0%</td><td class='num'>0.95</td></tr>
+<tr class='sel'><td>96</td><td>흥미</td><td>나는 화분이나 텃밭에서 식물을 키우는 것이 좋다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.86</td><td class='num'>1.27</td><td class='num'>0%</td><td class='num'>0.90</td></tr>
+<tr class='sel'><td>104</td><td>흥미</td><td>나는 돌, 나뭇잎, 조개껍데기 같은 것을 모은다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.75</td><td class='num'>0.82</td><td class='num'>1.28</td><td class='num'>0%</td><td class='num'>0.88</td></tr>
+<tr class=''><td>112</td><td>흥미</td><td>나는 환경을 보호하는 일에 관심이 많다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.75</td><td class='num'>0.73</td><td class='num'>0%</td><td class='num'>0.82</td></tr>
+<tr class=''><td>120</td><td>흥미</td><td>나는 밤하늘의 별이나 구름 모양을 바라보는 것을 좋아한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.81</td><td class='num'>0.86</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class='sel'><td>128</td><td>능력</td><td>나는 비슷하게 생긴 동물이나 식물의 차이를 잘 구별한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.91</td><td class='num'>1.39</td><td class='num'>0%</td><td class='num'>0.92</td></tr>
+<tr class='sel'><td>136</td><td>능력</td><td>나는 새소리나 곤충 소리를 듣고 무엇인지 알 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.93</td><td class='num'>1.38</td><td class='num'>0%</td><td class='num'>0.92</td></tr>
+<tr class=''><td>144</td><td>능력</td><td>나는 동물이나 식물을 특징에 따라 무리 지어 나눌 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.25</td><td class='num'>0.88</td><td class='num'>1.25</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class='sel'><td>152</td><td>능력</td><td>나는 식물이 잘 자라려면 무엇이 필요한지 알고 잘 돌본다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.92</td><td class='num'>0.87</td><td class='num'>1.39</td><td class='num'>0%</td><td class='num'>0.91</td></tr>
+<tr class='sel'><td>160</td><td>능력</td><td>나는 동물의 행동을 보고 기분이나 상태를 짐작할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.91</td><td class='num'>1.44</td><td class='num'>0%</td><td class='num'>0.93</td></tr>
+<tr class=''><td>168</td><td>능력</td><td>나는 하늘을 보고 비가 올지 짐작할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.74</td><td class='num'>0.83</td><td class='num'>0%</td><td class='num'>0.83</td></tr>
+<tr class=''><td>176</td><td>능력</td><td>나는 자연에서 본 것을 자세히 관찰해 기록할 수 있다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.71</td><td class='num'>1.05</td><td class='num'>0%</td><td class='num'>0.85</td></tr>
+<tr class=''><td>184</td><td>능력</td><td>나는 도감에서 내가 찾는 생물을 쉽게 찾아낸다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>3.00</td><td class='num'>0.87</td><td class='num'>1.17</td><td class='num'>0%</td><td class='num'>0.82</td></tr>
+<tr class='sel'><td>192</td><td>능력</td><td>나는 과학 시간에 동물이나 식물 단원을 잘한다.</td><td class='num'>100%</td><td></td><td class='num'>100%</td><td class='num'>1.00</td><td class='num'>4.00</td><td class='num'>0.84</td><td class='num'>1.12</td><td class='num'>0%</td><td class='num'>0.88</td></tr>
+</table></div>
+<h2>3. 기준 미달로 제외된 문항</h2><div class='wrap'><table><tr><th>번호</th><th>지능·측면</th><th>문항</th><th>미달 기준</th></tr>
+<tr><td>7</td><td>자성·흥미</td><td>나는 하루를 마치면 오늘 한 일을 스스로 돌아본다.</td><td>측면 일치율</td></tr>
+<tr><td>15</td><td>자성·능력</td><td>나는 어려운 일이 생겨도 쉽게 포기하지 않는다.</td><td>문항-총점 상관</td></tr>
+<tr><td>23</td><td>자성·능력</td><td>나에게는 꼭 이루고 싶은 꿈이나 목표가 있다.</td><td>측면 일치율</td></tr>
+<tr><td>28</td><td>신체·흥미</td><td>나는 말할 때 손짓이나 몸짓을 많이 쓴다.</td><td>측면 일치율</td></tr>
+<tr><td>47</td><td>자성·흥미</td><td>나는 내 할 일과 일정을 수첩이나 공책에 적어 정리한다.</td><td>측면 일치율</td></tr>
+<tr><td>53</td><td>음악·능력</td><td>나는 악보를 보면 노래의 멜로디를 어느 정도 알 수 있다.</td><td>모르는 낱말</td></tr>
+<tr><td>55</td><td>자성·능력</td><td>나는 내 재능을 키우기 위해 꾸준히 노력하는 것이 있다.</td><td>문항-총점 상관</td></tr>
+<tr><td>79</td><td>자성·흥미</td><td>나는 일을 마치고 나면 잘한 점과 아쉬운 점을 돌아본다.</td><td>측면 일치율</td></tr>
+<tr><td>83</td><td>공간·흥미</td><td>나는 그림이 많은 책이나 만화를 좋아한다.</td><td>I-CVI</td></tr>
+<tr><td>95</td><td>자성·흥미</td><td>나는 나만의 일기장이나 비밀 공책을 갖고 있다.</td><td>I-CVI</td></tr>
+<tr><td>121</td><td>언어·흥미</td><td>나는 오디오북이나 라디오처럼 귀로 듣는 이야기를 좋아한다.</td><td>모르는 낱말</td></tr>
+<tr><td>126</td><td>대인·흥미</td><td>나는 나중에 다른 사람을 돕는 일을 하고 싶다.</td><td>I-CVI</td></tr>
+<tr><td>159</td><td>자성·능력</td><td>나는 내가 실수한 점을 인정하고 고칠 수 있다.</td><td>응답 변산 없음</td></tr>
+<tr><td>163</td><td>공간·능력</td><td>나는 이야기를 들으면 장면이 머릿속에 그림처럼 떠오른다.</td><td>문항-총점 상관</td></tr>
+</table></div>
+<h2>4. 전문가 페르소나의 수정 제안 (A)</h2>
+<p><b>3. 나는 비슷한 색깔의 작은 차이도 잘 알아본다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>&#x27;비슷한 색깔의 작은 차이도 잘 알아본다&#x27;는 공간 지능보다 감각적 변별력에 가까워 구성 개념 대표성이 다소 낮음. &#x27;나는 비슷해 보이는 색깔의 차이를 잘 구분한다&#x27;로 수정 권장. /</li>
+<li>&#x27;비슷한 색깔의 작은 차이도 잘 알아본다&#x27;는 공간 지능보다 지각·감각 능력에 가까워 보임. 공간 지능의 핵심인 방향·위치·형태 파악과 연결되는 문항으로 수정 검토 필요. 예) &#x27;나는 지도를 보고 길을 잘 찾을 수 있다.&#x27;</li>
+<li>&#x27;비슷한 색깔의 작은 차이도 잘 알아본다&#x27;는 공간 지능보다 지각 변별력에 가까우므로 &#x27;나는 그림이나 지도에서 위치나 방향을 잘 파악한다&#x27;로 수정 검토 권장</li>
+<li>&#x27;비슷한 색깔의 작은 차이도 잘 알아본다&#x27;는 공간 지능보다 감각적 변별력에 가까워 보임. → &#x27;나는 그림에서 색깔이나 모양의 차이를 잘 알아본다&#x27;로 수정 권장. /</li>
+<li>&#x27;비슷한 색깔의 작은 차이도 잘 알아본다&#x27;는 공간 지능보다 시각적 변별력에 가까우므로, &#x27;나는 그림에서 색깔이나 모양의 작은 차이도 잘 알아본다&#x27;로 수정 권장. 어려운 낱말: 없음</li>
+<li>&#x27;비슷한 색깔의 작은 차이도 잘 알아본다&#x27;는 공간 지능보다 감각 지능에 가까운 표현으로 보임. &#x27;비슷하게 생긴 도형이나 그림의 차이도 잘 알아본다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>4. 나는 운동을 잘하는 편이다.</b> <span class='muted'>신체운동 지능</span></p><ul>
+<li>&#x27;운동을 잘하는 편이다&#x27;는 지나치게 포괄적이어서 신체운동 지능의 세부 특성(신체 조절, 균형, 협응 등)을 변별하기 어려움. 예) &#x27;나는 새로운 동작을 보면 따라 하기 쉽다.&#x27;</li>
+<li>&#x27;운동을 잘하는 편이다&#x27;는 너무 포괄적이어서 변별력이 낮음. → &#x27;나는 새로운 운동 동작을 빨리 익히는 편이다&#x27;로 수정 권장. /</li>
+<li>&#x27;운동을 잘하는 편이다&#x27;는 너무 포괄적이어서 신체운동 지능의 구체적 행동을 반영하기 어려움. &#x27;나는 새로운 운동 동작을 빨리 익히는 편이다&#x27;로 수정 권고.</li>
+</ul>
+<p><b>8. 나는 동물을 돌보는 것을 좋아한다.</b> <span class='muted'>자연친화 지능</span></p><ul>
+<li>동물 돌보기는 자연친화 지능의 흥미 측면을 잘 반영하나, 도시 학생 중 동물을 접하기 어려운 경우가 있어 &#x27;나는 동물이나 식물을 관찰하고 돌보는 것을 좋아한다&#x27;로 수정 권장. /</li>
+</ul>
+<p><b>12. 나는 만들기처럼 손으로 하는 활동을 좋아한다.</b> <span class='muted'>신체운동 지능</span></p><ul>
+<li>신체운동 지능의 핵심인 대근육·신체 조절보다 손 기술(소근육)에 치우쳐 있어 대표성이 다소 부족함. &#x27;만들기처럼 손으로 하는 활동&#x27; → &#x27;달리기나 공놀이처럼 몸을 움직이는 활동&#x27;으로 수정 권장.</li>
+<li>&#x27;만들기처럼 손으로 하는 활동&#x27;은 신체운동 지능보다 공간·조형 지능에 가까워 보임. &#x27;몸을 크게 움직이는 활동(달리기, 줄넘기 등)을 좋아한다&#x27;로 수정 제안.</li>
+<li>나는 손으로 직접 만들거나 조립하는 활동을 좋아한다. (신체운동 지능의 핵심인 신체 조작 능력을 더 명확히 반영, &#x27;만들기&#x27;만으로는 미술 활동과 혼동 가능)</li>
+<li>신체운동 지능을 측정하려면 손 조작보다 몸 전체 움직임을 포함하는 표현이 더 적합함. 예) &#x27;나는 만들기나 몸으로 하는 활동을 좋아한다.&#x27;</li>
+</ul>
+<p><b>13. 나는 다른 사람이 노래하거나 연주할 때 틀린 음을 쉽게 알아차린다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;틀린 음&#x27;이라는 표현이 다소 전문적으로 느껴질 수 있음. &#x27;음이 틀린 것&#x27;보다 &#x27;음이 맞지 않는 부분&#x27;으로 수정 권장. 어려운 낱말: &#x27;틀린 음&#x27;</li>
+<li>&#x27;틀린 음&#x27;이라는 표현이 일부 학생에게 낯설 수 있으므로 &#x27;잘못된 음&#x27;이나 &#x27;음이 틀린 부분&#x27;으로 바꾸는 것을 고려할 수 있음.</li>
+<li>&#x27;틀린 음&#x27;이라는 표현이 5~6학년에게 다소 모호할 수 있으므로 &#x27;음이 틀린 부분&#x27;으로 수정 권장. 어려운 낱말: 틀린 음(음정 개념 연결 필요)</li>
+</ul>
+<p><b>15. 나는 어려운 일이 생겨도 쉽게 포기하지 않는다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>자기성찰 지능의 &#x27;능력&#x27; 문항이지만 인내심·의지력에 가까워 구인 대표성이 약함. &#x27;어려운 일이 생겨도 쉽게 포기하지 않는다&#x27; → &#x27;내 감정이나 생각을 돌아보며 스스로를 잘 이해한다&#x27;로 수정 권장.</li>
+<li>&#x27;쉽게 포기하지 않는다&#x27;는 자기성찰보다 인내심·의지력 측정에 가까움. &#x27;나는 내가 왜 그런 행동을 했는지 스스로 돌아본다&#x27;로 수정 제안.</li>
+<li>(분류 망설임) 자기성찰 지능과 대인관계 지능 사이에서 망설였습니다. &#x27;포기하지 않는다&#x27;는 표현이 자기 조절(자기성찰)에 해당하지만 사회적 맥락에서도 볼 수 있어서 고민했습니다.</li>
+</ul>
+<p><b>18. 나는 새로운 과학 소식(신기한 발명품, 우주 이야기 등)에 관심이 많다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;과학 소식&#x27;보다 &#x27;과학 뉴스&#x27;가 더 친숙할 수 있으나 큰 문제는 아님.</li>
+</ul>
+<p><b>20. 나는 쉬는 시간에 밖에 나가 몸을 움직이며 놀고 싶다.</b> <span class='muted'>신체운동 지능</span></p><ul>
+<li>&#x27;쉬는 시간에 밖에 나가 몸을 움직이며 놀고 싶다&#x27;는 날씨나 학교 환경에 따라 불가능한 경우가 있어 응답이 왜곡될 수 있음. → &#x27;나는 밖에서 몸을 움직이며 노는 것을 좋아한다.&#x27;로 수정 권장.</li>
+</ul>
+<p><b>21. 나는 음악을 자주 찾아 듣는다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;음악을 자주 찾아 듣는다&#x27;는 음악 지능의 흥미보다 습관에 가까워 변별력이 다소 낮음. → &#x27;나는 좋아하는 음악이 생기면 계속 찾아 듣는다&#x27;로 수정 권장.</li>
+<li>음악 지능의 흥미 측정 문항으로 &#x27;음악을 자주 찾아 듣는다&#x27;는 음악 지능보다 음악 소비 습관에 가까움. → &#x27;나는 노래나 음악이 흘러나오면 귀를 기울이게 된다.&#x27;로 수정 권장.</li>
+</ul>
+<p><b>23. 나에게는 꼭 이루고 싶은 꿈이나 목표가 있다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>(분류 망설임) 자기성찰 지능과 intrapersonal로 분류했으나 &#x27;꿈이나 목표&#x27;라는 표현이 동기·희망과 관련되어 interpersonal과 잠시 망설였음.</li>
+</ul>
+<p><b>26. 나는 주변에서 규칙이나 패턴을 찾는 것이 재미있다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;패턴&#x27;이라는 낱말이 다소 생소할 수 있으므로 &#x27;반복되는 규칙&#x27;으로 바꾸는 것을 권장함.</li>
+<li>&#x27;패턴&#x27;이라는 낱말이 저학년에게 낯설 수 있으므로 &#x27;반복되는 규칙&#x27;으로 바꾸는 것을 권장함. → &#x27;나는 주변에서 반복되는 규칙을 찾는 것이 재미있다.&#x27;</li>
+<li>&#x27;패턴&#x27;이라는 낱말이 5~6학년 일부 학생에게 낯설 수 있으므로 &#x27;나는 주변에서 반복되는 규칙을 찾는 것이 재미있다.&#x27;로 수정 권장.</li>
+<li>&#x27;패턴&#x27;이라는 낱말이 5~6학년 일부 학생에게 낯설 수 있음 → &#x27;나는 주변에서 규칙이나 반복되는 모양을 찾는 것이 재미있다.&#x27;로 수정 권장</li>
+<li>&#x27;패턴&#x27;이라는 낱말이 5학년 일부 학생에게 낯설 수 있음 → &#x27;나는 주변에서 규칙이나 반복되는 모양을 찾는 것이 재미있다.&#x27;로 수정 권장</li>
+</ul>
+<p><b>28. 나는 말할 때 손짓이나 몸짓을 많이 쓴다.</b> <span class='muted'>신체운동 지능</span></p><ul>
+<li>(분류 망설임) 신체운동 지능과 언어 지능 사이에서 망설였습니다. 손짓·몸짓이 신체 표현이지만 의사소통 맥락이기도 해서 고민했습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 언어 지능 사이에서 망설였습니다. 손짓·몸짓은 신체 표현이지만 말하기와 연결된 소통 행동이기도 해서 어느 쪽으로 분류할지 고민했습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 언어 지능 사이에서 잠시 고민했습니다. 손짓·몸짓이 신체 표현이기도 하지만 의사소통의 보조 수단이라는 점에서 언어 지능과도 연결될 수 있다고 생각했습니다.</li>
+</ul>
+<p><b>29. 나는 음악이 없는 생활은 상상하기 어렵다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;상상하기 어렵다&#x27;는 이중 부정 구조가 포함되어 있어 5~6학년 일부 학생에게 혼란을 줄 수 있음. &#x27;나는 음악을 매우 좋아해서 음악 없이는 하루도 지내기 어렵다&#x27;로 수정 권장.</li>
+<li>&#x27;상상하기 어렵다&#x27;는 이중 부정적 표현이 어린 학생에게 혼란을 줄 수 있으므로 &#x27;나는 음악이 있는 생활을 매우 좋아한다.&#x27;로 수정 권장.</li>
+</ul>
+<p><b>33. 나는 길을 가다가 간판이나 안내판의 글자를 저절로 읽게 된다.</b> <span class='muted'>언어 지능</span></p><ul>
+<li>&#x27;안내판&#x27;이라는 낱말을 일부 학생이 낯설게 느낄 수 있음. → &#x27;나는 길을 가다가 간판이나 표지판의 글자를 저절로 읽게 된다&#x27;로 수정 권장. /</li>
+<li>언어 지능 흥미 문항으로는 적합하나 독서 흥미와 직접 연결이 약함. &#x27;나는 간판이나 안내판의 글자를 보면 저절로 읽게 된다&#x27;로 간결하게 수정 권장.</li>
+<li>언어 지능 흥미 문항으로는 다소 약함. &#x27;간판을 저절로 읽게 된다&#x27;는 언어에 대한 능동적 흥미보다 습관에 가까움. &#x27;나는 새로운 낱말이나 표현을 보면 뜻이 궁금해진다&#x27;로 수정 권장.</li>
+<li>&#x27;안내판&#x27;이 일부 학생에게 낯설 수 있음. 수정안 → &#x27;나는 길을 가다가 간판이나 표지판의 글자를 저절로 읽게 된다.&#x27; /</li>
+<li>&#x27;안내판&#x27;이라는 낱말을 일부 학생이 낯설어할 수 있으므로 &#x27;나는 길을 가다가 간판이나 표지판의 글자를 저절로 읽게 된다&#x27;로 수정 권장.</li>
+<li>&#x27;저절로 읽게 된다&#x27;는 표현이 언어 지능의 흥미보다 자동화된 읽기 습관에 가까우므로 적합성이 다소 낮음. /</li>
+</ul>
+<p><b>34. 나는 궁금한 것이 생기면 그 까닭을 끝까지 알아내려고 한다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;까닭&#x27;이라는 낱말은 5~6학년에게 익숙하나, 논리수학 지능보다 일반적 호기심을 측정할 수 있음. &#x27;나는 어떤 일이 왜 일어났는지 그 이유를 끝까지 알아내려고 한다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>36. 나는 새로운 물건을 보면 손으로 직접 만져 보며 알아본다.</b> <span class='muted'>신체운동 지능</span></p><ul>
+<li>(분류 망설임) 신체운동 지능과 자연친화 지능 사이에서 망설였습니다. 손으로 만져 보는 행동이 신체운동 지능의 촉각적 탐색으로 볼 수도 있고, 새로운 사물에 대한 자연친화적 관찰 행동으로 볼 수도 있어 판단이 어려웠습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 자연친화 지능 사이에서 망설였습니다. 손으로 만져 보며 탐색하는 행동이 신체운동 지능의 촉각적 학습 방식으로도, 자연친화 지능의 관찰·탐구 성향으로도 해석될 수 있어 고르기 어려웠습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 자연친화 지능 사이에서 잠시 망설였습니다. 손으로 만져 보는 행동이 신체운동적 탐색인지 자연친화적 호기심인지 구분이 어려웠습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 자연친화 지능 사이에서 망설였음(손으로 만져보며 탐색하는 행동이 신체운동적 측면인지 자연탐구적 호기심인지 모호함).</li>
+<li>(분류 망설임) 신체운동 지능과 자연친화 지능 사이에서 잠깐 망설였습니다. 손으로 만져 보는 행동이 신체운동적 탐색인지 자연친화적 관찰 성향인지 모호하게 느껴졌으나 신체운동 지능으로 분류했습니다. 또한 30번(레고·과학 상자 조립)은 공간 지능과 논리수학 지능 사이에서 고민했으며, 설명서를 따라 3차원 구조물을 구성하는 공간적 측면에 무게를 두어 공간 지능으로 분류했습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 자연친화 지능 사이에서 잠시 망설였습니다. &#x27;손으로 직접 만져 보며 알아본다&#x27;는 행동이 촉각적 탐색(신체운동)인지 사물 탐구(자연친화)인지 모호하게 느껴졌으나, 손의 감각적 사용이라는 측면에서 신체운동으로 분류했습니다.</li>
+</ul>
+<p><b>42. 나는 친구의 말이나 글에서 앞뒤가 맞지 않는 부분을 잘 찾아낸다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;앞뒤가 맞지 않는 부분&#x27;이라는 표현이 5~6학년에게 다소 추상적일 수 있음. &#x27;앞뒤가 맞지 않는&#x27; → &#x27;이상하거나 틀린&#x27;으로 쉽게 바꾸는 것을 권장.</li>
+<li>&#x27;앞뒤가 맞지 않는 부분&#x27;→&#x27;서로 어긋나는 부분&#x27;으로 수정 권장. &#x27;앞뒤가 맞지 않는다&#x27;는 표현이 5학년 일부 학생에게 다소 추상적으로 느껴질 수 있음.</li>
+<li>&#x27;앞뒤가 맞지 않는 부분&#x27;은 5~6학년에게 다소 추상적일 수 있음. → &#x27;나는 친구의 말이나 글에서 이상하거나 틀린 부분을 잘 찾아낸다.&#x27;로 수정 권장. 어려운 낱말: &#x27;앞뒤가 맞지 않는&#x27;</li>
+<li>&#x27;앞뒤가 맞지 않는 부분&#x27;은 5~6학년 중 일부에게 추상적으로 느껴질 수 있음. &#x27;말이 앞뒤가 안 맞는 부분&#x27;으로 수정 권장.</li>
+<li>&#x27;앞뒤가 맞지 않는 부분&#x27;은 5~6학년에게 다소 추상적일 수 있음 → &#x27;앞뒤가 맞지 않는 부분&#x27;을 &#x27;앞에서 한 말과 뒤에서 한 말이 다른 부분&#x27;으로 수정 권장.</li>
+<li>나는 친구의 말이나 글에서 앞뒤가 맞지 않는 부분을 잘 찾아낸다. (&#x27;앞뒤가 맞지 않는&#x27;이라는 표현이 5~6학년에게 다소 추상적일 수 있음, &#x27;앞뒤가 안 맞는&#x27;으로 구어체로 바꾸면 더 쉬움)</li>
+</ul>
+<p><b>43. 나는 물건의 길이나 넓이를 눈으로 보고 대략 맞힐 수 있다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>&#x27;넓이&#x27;라는 낱말은 5학년 수학 교과에서 다루지만, &#x27;대략&#x27;이라는 표현이 일부 학생에게 어색할 수 있으므로 &#x27;어림잡아&#x27;로 바꾸는 것을 제안함.</li>
+</ul>
+<p><b>45. 나는 친구들과 노래할 때 화음을 넣어 부를 수 있다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;화음&#x27;이라는 음악 전문 용어를 모르는 학생이 있을 수 있음. &#x27;화음을 넣어 부를 수 있다&#x27; → &#x27;다른 음을 함께 넣어 부를 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;화음&#x27;이라는 낱말이 음악 수업 경험에 따라 생소할 수 있으므로 &#x27;화음(여러 음을 함께 내어 부르기)&#x27;처럼 괄호 설명 추가 권장.</li>
+<li>&#x27;화음&#x27;은 음악 전문 용어로 일부 학생이 모를 수 있음. → &#x27;나는 친구들과 노래할 때 다른 음을 함께 넣어 부를 수 있다.&#x27;로 수정 권장. 어려운 낱말: &#x27;화음&#x27;</li>
+<li>&#x27;화음&#x27;은 5~6학년 중 음악 경험이 적은 학생에게 낯설 수 있음. &#x27;화음&#x27;에 짧은 설명 추가 또는 &#x27;두 가지 소리를 함께 내는 화음&#x27;처럼 부연 권장.</li>
+<li>&#x27;화음&#x27;은 음악 교과 용어이나 모든 학생이 체감적으로 이해하기 어려울 수 있음. &#x27;화음을 넣어 부를 수 있다&#x27; → &#x27;다른 소리를 섞어 함께 노래할 수 있다&#x27;로 수정 권장. 어려운 낱말: &#x27;화음&#x27;</li>
+<li>&#x27;화음&#x27;이라는 낱말이 일부 학생에게 낯설 수 있음 → &#x27;화음&#x27;을 &#x27;서로 다른 음을 함께 내는 것&#x27;으로 풀어 쓰거나 괄호 설명 추가 권장.</li>
+</ul>
+<p><b>47. 나는 내 할 일과 일정을 수첩이나 공책에 적어 정리한다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>&#x27;일정&#x27;이라는 낱말이 저학년에게는 낯설 수 있으나 5~6학년은 대체로 이해 가능. &#x27;수첩&#x27;은 요즘 학생들에게 생소할 수 있으므로 &#x27;수첩이나 메모장&#x27;으로 수정 권장</li>
+</ul>
+<p><b>50. 나는 문제가 생기면 원인을 여러 가지로 생각해 본 뒤 결정한다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;원인을 여러 가지로 생각해 본 뒤 결정한다&#x27;는 표현이 다소 복합적임 → &#x27;나는 문제가 생기면 왜 그런지 여러 가지로 생각해 보고 결정한다&#x27;로 수정 권장.</li>
+<li>&#x27;원인을 여러 가지로 생각해 본 뒤 결정한다&#x27; → &#x27;여러 가지 이유를 생각해 보고 결정한다&#x27; (어려운 낱말: 원인)</li>
+<li>&#x27;원인을 여러 가지로 생각해 본 뒤 결정한다&#x27;에서 &#x27;원인&#x27;보다 &#x27;이유&#x27;가 5~6학년에게 더 친숙한 낱말임. 수정안: 나는 문제가 생기면 이유를 여러 가지로 생각해 본 뒤 결정한다.</li>
+<li>&#x27;원인을 여러 가지로 생각해 본 뒤 결정한다&#x27; — &#x27;원인&#x27;보다 &#x27;방법&#x27;이 더 자연스러움 → &#x27;나는 문제가 생기면 해결 방법을 여러 가지로 생각해 본 뒤 결정한다&#x27;로 수정 권장</li>
+<li>&#x27;원인을 여러 가지로 생각해 본 뒤 결정한다&#x27;에서 &#x27;원인&#x27;보다 &#x27;이유&#x27;가 5~6학년에게 더 친숙할 수 있음 → &#x27;나는 문제가 생기면 이유를 여러 가지로 생각해 본 뒤 결정한다&#x27;로 수정 권장</li>
+<li>&#x27;원인을 여러 가지로 생각해 본 뒤 결정한다&#x27;에서 &#x27;원인&#x27;보다 &#x27;이유나 방법&#x27;이 더 자연스러울 수 있음. 수정안 → 나는 문제가 생기면 이유나 방법을 여러 가지로 생각해 본 뒤 결정한다.</li>
+</ul>
+<p><b>53. 나는 악보를 보면 노래의 멜로디를 어느 정도 알 수 있다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;악보&#x27;라는 낱말이 악기 교육 경험이 없는 학생에게 어려울 수 있음. → &#x27;나는 악보(음표가 적힌 종이)를 보면 노래의 멜로디를 어느 정도 알 수 있다&#x27;처럼 괄호 설명 추가 권장.</li>
+<li>&#x27;악보를 보면 노래의 멜로디를 어느 정도 알 수 있다&#x27; → &#x27;악보를 보면 노래가 어떤 소리인지 어느 정도 알 수 있다&#x27; (악보·멜로디를 모르는 학생 고려)</li>
+<li>&#x27;악보&#x27;를 읽지 못하는 학생이 많아 능력 문항으로서 변별이 지나치게 좁을 수 있음 → &#x27;나는 악보를 보면 노래의 높낮이를 어느 정도 알 수 있다&#x27;로 표현 명확화 권장.</li>
+<li>&#x27;악보를 보면 노래의 멜로디를 어느 정도 알 수 있다&#x27; → &#x27;악보를 보면 노래가 어떻게 흘러가는지 어느 정도 알 수 있다&#x27; (어려운 낱말: 멜로디 - 대부분 알지만 일부 학생에게 낯설 수 있음)</li>
+<li>&#x27;악보&#x27;를 모르는 학생이 있을 수 있음. 수정안: 나는 악보(음표가 적힌 종이)를 보면 노래의 멜로디를 어느 정도 알 수 있다.</li>
+<li>&#x27;악보&#x27;라는 낱말이 음악 교육 경험에 따라 생소할 수 있음 → &#x27;나는 악보(음표가 적힌 종이)를 보면 노래의 멜로디를 어느 정도 알 수 있다&#x27;처럼 괄호 설명 추가 권장</li>
+</ul>
+<p><b>55. 나는 내 재능을 키우기 위해 꾸준히 노력하는 것이 있다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>&#x27;재능&#x27;이라는 낱말이 5학년 일부 학생에게 다소 추상적일 수 있음. → &#x27;내가 잘하는 것을 더 잘하기 위해 꾸준히 노력하는 것이 있다&#x27;로 수정 권장.</li>
+<li>&#x27;재능을 키우기 위해 꾸준히 노력하는 것이 있다&#x27; → &#x27;잘하고 싶은 것을 위해 꾸준히 연습하는 것이 있다&#x27; (재능 개념이 다소 추상적)</li>
+<li>&#x27;재능&#x27;이라는 낱말이 일부 학생에게 생소할 수 있음 → &#x27;나는 내가 잘하는 것을 더 잘하기 위해 꾸준히 노력하는 것이 있다&#x27;로 수정 권장.</li>
+<li>&#x27;내 재능을 키우기 위해 꾸준히 노력하는 것이 있다&#x27; → &#x27;내가 잘하고 싶은 것을 위해 꾸준히 연습하는 것이 있다&#x27; (어려운 낱말: 재능)</li>
+<li>&#x27;재능&#x27;이라는 낱말이 다소 추상적임. 수정안: 나는 내가 잘하는 것을 더 잘하기 위해 꾸준히 노력하는 것이 있다.</li>
+<li>&#x27;재능&#x27;이라는 낱말이 다소 추상적임 → &#x27;나는 내가 잘하는 것을 더 잘하기 위해 꾸준히 노력하는 것이 있다&#x27;로 수정 권장</li>
+</ul>
+<p><b>58. 나는 여러 물건의 같은 점과 다른 점을 잘 찾는다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>(분류 망설임) 논리수학 지능과 자연친화 지능 사이에서 망설였습니다. 물건의 같은 점과 다른 점을 찾는 것이 분류(자연친화)인지 논리적 비교(논리수학)인지 애매했습니다.</li>
+</ul>
+<p><b>62. 나는 친구들이 하는 놀이에 &#x27;같이 하자&#x27;고 말하며 쉽게 낄 수 있다.</b> <span class='muted'>대인관계 지능</span></p><ul>
+<li>&#x27;낄 수 있다&#x27;는 표현이 다소 비격식적이므로 &#x27;나는 친구들이 하는 놀이에 쉽게 함께할 수 있다.&#x27;로 수정 권장.</li>
+</ul>
+<p><b>65. 나는 모르는 낱말도 앞뒤 문장을 보고 뜻을 짐작할 수 있다.</b> <span class='muted'>언어 지능</span></p><ul>
+<li>&#x27;앞뒤 문장&#x27;이라는 표현이 5학년 일부에게 낯설 수 있음. &#x27;나는 모르는 낱말이 나와도 앞뒤 내용을 보고 뜻을 짐작할 수 있다&#x27;로 수정 권장. /</li>
+<li>&#x27;앞뒤 문장을 보고 뜻을 짐작할 수 있다&#x27;에서 &#x27;짐작&#x27;이라는 낱말을 어려워하는 학생이 있을 수 있음. &#x27;추측&#x27;보다는 낫지만 &#x27;대충 알아낼 수 있다&#x27;처럼 풀어 쓰는 것도 고려 가능.</li>
+<li>&#x27;앞뒤 문장을 보고 뜻을 짐작한다&#x27;는 표현이 5학년 일부 학생에게 다소 추상적일 수 있음. → &#x27;나는 모르는 낱말이 나와도 앞뒤 내용을 보면 무슨 뜻인지 짐작할 수 있다.&#x27;로 수정 권장.</li>
+<li>&#x27;앞뒤 문장을 보고 뜻을 짐작할 수 있다&#x27;에서 &#x27;짐작&#x27;이라는 낱말을 일부 학생이 어려워할 수 있으므로 &#x27;앞뒤 내용을 보고 뜻을 알아낼 수 있다&#x27;로 수정 검토 권장</li>
+<li>&#x27;앞뒤 문장을 보고 뜻을 짐작할 수 있다&#x27;에서 &#x27;짐작&#x27;이 5학년 일부에게 다소 어려울 수 있음. → &#x27;나는 모르는 낱말도 앞뒤 내용을 보고 무슨 뜻인지 알아낼 수 있다&#x27;로 수정 권장. /</li>
+<li>&#x27;앞뒤 문장&#x27;이라는 표현이 일부 학생에게 낯설 수 있음. &#x27;나는 모르는 낱말도 주변 문장을 보고 뜻을 짐작할 수 있다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>66. 나는 물건이나 자료를 종류별로 나누어 정리하는 것을 잘한다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;자료&#x27;라는 낱말이 저학년에게 어려울 수 있으나 5~6학년 수준에서는 허용 범위. 그대로 유지 가능. /</li>
+<li>&#x27;자료&#x27;라는 낱말이 5학년 이하 학생에게 다소 어려울 수 있음. &#x27;물건이나 정보를 종류별로 나누어 정리하는 것을 잘한다&#x27;로 수정 권장.</li>
+<li>(분류 망설임) 논리수학 지능과 자연친화 지능 사이에서 망설였습니다. 종류별로 분류·정리하는 능력이 논리수학 지능의 분류 사고와도, 자연친화 지능의 분류 성향과도 연결되기 때문입니다.</li>
+<li>(분류 망설임) 논리수학 지능과 자연친화 지능 사이에서 망설였음(분류 행동이 두 지능 모두에 해당 가능).</li>
+<li>(분류 망설임) 논리수학 지능과 자연친화 지능 사이에서 망설임(분류 행동이 논리적 범주화인지 자연친화적 분류인지 경계가 모호했음).</li>
+</ul>
+<p><b>67. 나는 레고나 과학 상자를 설명서대로 조립하는 것을 잘한다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>(분류 망설임) 공간 지능과 신체운동 지능 사이에서 고민했습니다. 조립이라는 행위가 손의 정교한 움직임(신체운동)과 공간적 구성(공간 지능) 모두를 포함하기 때문입니다.</li>
+<li>(분류 망설임) 공간 지능과 신체운동 지능 사이에서 망설였음(조립은 손 작업이기도 하고 공간적 사고이기도 함).</li>
+<li>(분류 망설임) 공간 지능과 신체운동 지능 사이에서 망설였습니다. 레고 조립은 손의 정교한 움직임(신체운동)이기도 하지만, 설명서를 보고 3D 형태를 구성하는 공간적 이해가 핵심이라 판단하여 공간 지능으로 분류했습니다.</li>
+<li>(분류 망설임) 공간 지능과 신체운동 지능 사이에서 망설임(조립은 손 조작이기도 하지만 공간적 상상력이 더 핵심이라고 판단함).</li>
+<li>(분류 망설임) 공간 지능과 논리수학 지능 사이에서 고민했습니다. 설명서를 따라 조립하는 것은 공간적 상상력도 필요하지만 순서와 규칙을 따르는 논리적 사고도 포함되기 때문입니다.</li>
+<li>(분류 망설임) 공간 지능과 논리수학 지능 사이에서 고민했습니다. 설명서대로 조립하는 것이 공간적 시각화 능력인지 논리적 순서 추론 능력인지 판단이 쉽지 않았습니다.</li>
+</ul>
+<p><b>71. 나는 내 기분이 왜 그런지 스스로 알아차린다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>&#x27;알아차린다&#x27;는 표현이 다소 추상적일 수 있음. &#x27;나는 내 기분이 왜 그런지 스스로 알 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;알아차린다&#x27;는 표현이 5~6학년 일부 학생에게 낯설 수 있음. &#x27;나는 내 기분이 왜 그런지 스스로 알 수 있다&#x27;로 수정 권고.</li>
+<li>&#x27;알아차린다&#x27;가 일부 학생에게 어색할 수 있음. 수정안 → &#x27;나는 내 기분이 왜 그런지 스스로 느낄 수 있다.&#x27; /</li>
+</ul>
+<p><b>75. 나는 마인드맵이나 그림으로 정리하며 공부하는 것을 좋아한다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>&#x27;마인드맵&#x27;이 낯선 학생이 있을 수 있음. &#x27;마인드맵이나 그림으로 정리하며&#x27; → &#x27;생각 지도나 그림으로 정리하며&#x27;로 수정 권장.</li>
+<li>&#x27;마인드맵&#x27;이라는 낱말을 모르는 학생이 있을 수 있으므로 &#x27;마인드맵(생각 그물)&#x27;으로 병기 권장.</li>
+<li>&#x27;마인드맵&#x27;은 외래어로 낯선 학생이 있을 수 있음. → &#x27;나는 생각 그물(마인드맵)이나 그림으로 정리하며 공부하는 것을 좋아한다.&#x27;처럼 괄호 병기 권장. 어려운 낱말: &#x27;마인드맵&#x27;</li>
+<li>&#x27;마인드맵&#x27;이라는 용어를 모르는 학생이 있을 수 있음. &#x27;마인드맵(생각을 가지처럼 뻗어 나가며 정리하는 방법)&#x27;으로 괄호 설명 추가 권장.</li>
+<li>&#x27;마인드맵&#x27;은 외래어로 일부 학생에게 낯설 수 있음. &#x27;마인드맵(생각 그물)이나 그림으로 정리하며&#x27;로 괄호 설명 추가 권장. 어려운 낱말: &#x27;마인드맵&#x27;</li>
+<li>&#x27;마인드맵&#x27;이 영어 외래어로 모든 학생이 알지 못할 수 있음 → &#x27;마인드맵(생각 지도)&#x27;처럼 한국어 설명을 괄호에 추가 권장.</li>
+</ul>
+<p><b>77. 나는 짧은 노랫말에 어울리는 멜로디를 지어 부를 수 있다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;노랫말&#x27;, &#x27;멜로디&#x27;가 혼용되어 있어 통일 필요. &#x27;멜로디&#x27; → &#x27;곡&#x27;으로 순화 권장.</li>
+<li>&#x27;노랫말&#x27;은 대체로 알지만 &#x27;멜로디를 지어 부른다&#x27;는 표현이 다소 어려울 수 있으므로 &#x27;나만의 가락을 만들어 부를 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;노랫말&#x27;, &#x27;멜로디를 지어 부를 수 있다&#x27;는 표현이 다소 어려울 수 있음. → &#x27;나는 짧은 가사에 어울리는 멜로디를 만들어 부를 수 있다.&#x27;로 수정 권장. 어려운 낱말: &#x27;노랫말&#x27;, &#x27;멜로디&#x27;</li>
+<li>&#x27;노랫말&#x27;은 이해하기 쉽지만 &#x27;멜로디를 지어 부를 수 있다&#x27;는 표현이 작곡 경험이 없는 학생에게 모호할 수 있음. &#x27;짧은 노랫말에 맞는 멜로디(노래 가락)를 스스로 만들어 부를 수 있다&#x27;로 수정 제안.</li>
+<li>&#x27;노랫말에 어울리는 멜로디를 지어 부를 수 있다&#x27;에서 &#x27;멜로디&#x27;는 대부분 알지만 &#x27;지어 부른다&#x27;는 표현이 다소 어색할 수 있음. &#x27;짧은 노랫말에 맞는 멜로디를 만들어 부를 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;노랫말&#x27;은 자연스럽지만 &#x27;멜로디를 지어 부를 수 있다&#x27;에서 &#x27;멜로디&#x27;가 외래어임 → &#x27;가락&#x27;으로 대체 권장.</li>
+</ul>
+<p><b>82. 나는 바둑이나 체스처럼 작전을 짜는 게임을 좋아한다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;체스&#x27;는 생소한 학생이 많으므로 &#x27;바둑이나 장기처럼 작전을 짜는 게임을 좋아한다&#x27;로 수정 권장</li>
+<li>&#x27;체스&#x27;는 친숙도가 낮을 수 있음 → &#x27;나는 바둑이나 장기처럼 작전을 짜는 게임을 좋아한다&#x27;로 수정 권장.</li>
+<li>&#x27;바둑이나 체스처럼 작전을 짜는 게임&#x27; → 체스는 일부 학생에게 낯설 수 있으므로 &#x27;바둑이나 장기처럼 작전을 짜는 게임&#x27;으로 수정 권장</li>
+<li>&#x27;체스&#x27;는 일부 학생에게 생소할 수 있음 → &#x27;바둑이나 장기처럼 작전을 짜는 게임&#x27;으로 수정 권장.</li>
+<li>&#x27;체스&#x27;는 국내 초등학생에게 친숙도가 낮음. &#x27;장기나 바둑처럼 작전을 짜는 게임&#x27;으로 수정 권장.</li>
+<li>&#x27;체스&#x27;가 생소한 학생이 있을 수 있음. 수정안 → 나는 바둑이나 체스(장기)처럼 작전을 짜는 게임을 좋아한다.</li>
+</ul>
+<p><b>83. 나는 그림이 많은 책이나 만화를 좋아한다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>&#x27;그림이 많은 책이나 만화를 좋아한다&#x27;는 공간 지능보다 시각적 선호 일반에 해당하여 변별 타당도 낮음. → &#x27;나는 그림이나 도형을 보며 어떤 모양인지 파악하는 것을 좋아한다&#x27;로 수정 권장.</li>
+<li>그림 많은 책 선호가 공간 지능보다 시각적 취향 측정에 가까워 구성 타당도 재검토 필요.</li>
+<li>&#x27;그림이 많은 책이나 만화를 좋아한다&#x27;는 공간 지능보다 시각적 선호 일반으로 읽힐 수 있음 → &#x27;나는 지도나 설계도처럼 공간을 나타낸 그림을 보는 것을 좋아한다&#x27;로 수정 권장</li>
+<li>그림이 많은 책 선호가 공간 지능보다 시각적 흥미 일반에 가까워 변별력이 낮음. 수정안 → 나는 지도나 설계도처럼 그림으로 된 자료를 보는 것을 좋아한다.</li>
+</ul>
+<p><b>95. 나는 나만의 일기장이나 비밀 공책을 갖고 있다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>자기성찰 지능 측정 의도에 비해 &#x27;비밀 공책 소유 여부&#x27;는 행동 지표로서 대표성이 약함. &#x27;나는 내 마음이나 생각을 글로 적는 것을 좋아한다&#x27;로 수정 권장.</li>
+<li>나는 나만의 일기장이나 비밀 공책을 쓰는 것이 좋다. (소유 여부보다 활동 선호를 묻는 방향으로 수정 권장, 자기성찰 흥미 측정과 연결이 약함)</li>
+<li>&#x27;나만의 일기장이나 비밀 공책을 갖고 있다&#x27;는 자기성찰 흥미보다 행동 습관에 가까워 구성 개념 부합도가 낮음. &#x27;나는 내 마음속 이야기나 생각을 혼자 적거나 기록하는 것이 좋다&#x27;로 수정 권장.</li>
+<li>일기장·비밀 공책 소유 여부는 자기성찰 지능보다 습관·환경 요인에 가까우므로 &#x27;나는 내 마음이나 생각을 혼자 기록하거나 정리하는 것을 좋아한다.&#x27;로 수정 권장.</li>
+<li>나는 내 생각이나 느낌을 혼자 적는 공책(일기장 등)을 갖고 있다. — &#x27;비밀 공책&#x27;이라는 표현이 흥미 측정보다 소유 여부에 치우쳐 있어 수정 필요.</li>
+<li>&#x27;나만의 일기장이나 비밀 공책을 갖고 있다&#x27;는 소유 여부를 묻는 것으로 자기성찰 흥미와 직접 연결되기 어려움. 수정안 → &#x27;나는 내 생각이나 느낌을 혼자만의 공간에 적거나 표현하는 것이 좋다.&#x27;</li>
+</ul>
+<p><b>97. 나는 도서관에 가는 것을 좋아한다.</b> <span class='muted'>언어 지능</span></p><ul>
+<li>도서관 방문 선호는 언어 지능보다 환경·접근성 변수에 영향을 받을 수 있어 적합성이 다소 낮음. /</li>
+<li>도서관 방문 선호는 환경 접근성에 따라 달라질 수 있어 &#x27;나는 책을 찾아서 읽는 것을 좋아한다&#x27;로 수정 권장. /</li>
+</ul>
+<p><b>104. 나는 돌, 나뭇잎, 조개껍데기 같은 것을 모은다.</b> <span class='muted'>자연친화 지능</span></p><ul>
+<li>&#x27;조개껍데기&#x27;가 도시 학생에게 생소할 수 있음. &#x27;조개껍데기(조개 껍질)&#x27;로 괄호 병기 권장. /</li>
+<li>&#x27;조개껍데기&#x27;는 대부분 알지만 도시 아동에게 다소 생소할 수 있으므로 &#x27;조개껍데기(조개 껍질)&#x27;처럼 보조 표현 추가 검토 권장</li>
+<li>&#x27;조개껍데기&#x27;가 일부 학생에게 생소할 수 있으나 전반적으로 이해 가능. 유지 가능.</li>
+</ul>
+<p><b>106. 나는 추리 이야기나 탐정 이야기를 좋아한다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;추리 이야기&#x27;는 논리수학 지능보다 언어 지능과 혼동될 수 있음. 구인 변별력 재검토 필요.</li>
+<li>&#x27;추리 이야기&#x27;는 논리수학 지능보다 언어 지능과 중복될 수 있음. 구분을 명확히 하려면 &#x27;나는 수수께끼나 논리 퀴즈 풀기를 좋아한다&#x27;로 수정 제안.</li>
+<li>논리수학 지능 문항으로서 추리·탐정 이야기 선호가 논리수학 지능을 직접 측정한다기보다 언어 지능과 혼재될 수 있음 → 구성 타당도 재검토 권장.</li>
+</ul>
+<p><b>107. 나는 옷이나 물건의 색깔이 서로 어울리는지 신경 쓴다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>공간 지능보다 심미적 감각(예술 지능)에 가까운 내용임. 공간 지능 구인과의 연결 논리를 보완하거나 문항 교체 권장.</li>
+</ul>
+<p><b>109. 나는 음악 시간이 기다려진다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;음악 시간이 기다려진다&#x27;는 수업 선호도이지 음악 지능 흥미를 직접 반영하지 않을 수 있음. &#x27;음악을 듣거나 연주하는 것이 기다려진다&#x27;로 수정 권장.</li>
+<li>음악 지능 흥미 문항으로서 &#x27;음악 시간이 기다려진다&#x27;는 교과 수업 선호도를 측정하는 것으로 오해될 수 있음. &#x27;나는 음악을 듣거나 부르는 것이 기다려진다&#x27;로 수정 권장</li>
+</ul>
+<p><b>110. 나는 학급 행사를 준비할 때 앞장서고 싶다.</b> <span class='muted'>대인관계 지능</span></p><ul>
+<li>대인관계 지능보다 리더십 성향을 측정하는 문항에 가까움. &#x27;앞장서고 싶다&#x27; → &#x27;친구들과 함께 준비하는 것이 즐겁다&#x27;로 수정 권장.</li>
+<li>&#x27;앞장서고 싶다&#x27;는 흥미보다 리더십 욕구를 측정하는 경향이 있음. &#x27;나는 친구들과 함께 행사를 준비하고 의견을 나누는 것이 즐겁다&#x27;로 수정 제안.</li>
+</ul>
+<p><b>111. 나는 혼자서도 즐겁게 할 수 있는 취미가 있다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>자기성찰 지능의 흥미 문항이지만 취미 유무를 묻는 것에 그쳐 구인 대표성이 부족함. &#x27;혼자 생각하거나 일기를 쓰는 것처럼 나 자신을 돌아보는 시간이 좋다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>112. 나는 환경을 보호하는 일에 관심이 많다.</b> <span class='muted'>자연친화 지능</span></p><ul>
+<li>환경 보호 관심은 자연친화 지능의 한 측면이나, 도덕·사회 가치관과 혼동될 수 있음. 구인 변별력 재검토 권장.</li>
+</ul>
+<p><b>115. 나는 머릿속으로 장면을 그리며 상상하는 것을 좋아한다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>&#x27;머릿속으로 장면을 그리며 상상하는 것&#x27; → 표현이 다소 추상적이므로 &#x27;머릿속으로 그림처럼 떠올리며 상상하는 것&#x27;으로 수정 권장</li>
+<li>&#x27;머릿속으로 장면을 그리며&#x27;가 다소 추상적임. 수정안 → 나는 눈을 감고 어떤 장면을 머릿속에 그려 보며 상상하는 것을 좋아한다.</li>
+</ul>
+<p><b>117. 나는 빗소리나 새소리 같은 주변 소리에 귀를 기울인다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;귀를 기울인다&#x27;는 표현이 음악 지능보다 자연친화 지능과 혼동될 수 있음. → &#x27;나는 빗소리나 새소리처럼 주변의 다양한 소리를 듣는 것이 즐겁다&#x27;로 수정 권장.</li>
+<li>음악 지능 문항으로서 &#x27;빗소리나 새소리&#x27;에 귀 기울이는 행동은 자연친화 지능과 혼동될 수 있음 → &#x27;나는 노래나 악기 소리의 미묘한 차이를 잘 알아챈다&#x27;로 수정 권장.</li>
+<li>빗소리·새소리 감상이 음악 지능보다 자연친화 지능과 혼동될 수 있음. 수정안 → 나는 음악을 들을 때 멜로디나 리듬의 변화에 귀를 기울인다.</li>
+<li>음악 지능 문항으로 &#x27;빗소리나 새소리 같은 주변 소리에 귀를 기울인다&#x27;는 자연친화 지능과 혼동될 수 있음. 음악 지능과의 구분을 명확히 할 필요 있음.</li>
+<li>(분류 망설임) 음악 지능과 자연친화 지능 사이에서 망설였음. &#x27;빗소리, 새소리&#x27;는 자연 소리이지만 소리에 귀를 기울이는 청각적 민감성은 음악 지능에 더 가깝다고 판단함.</li>
+<li>(분류 망설임) 음악 지능과 자연친화 지능 사이에서 망설였습니다. 빗소리·새소리에 귀를 기울이는 행동이 소리 감수성(음악 지능)인지 자연 현상 관찰(자연친화 지능)인지 구분이 어려웠습니다.</li>
+</ul>
+<p><b>119. 나는 내 마음을 글이나 그림으로 표현해 보는 것을 좋아한다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>(분류 망설임) 자기성찰 지능과 언어 지능 사이에서 망설였음. &#x27;글이나 그림으로 표현&#x27;이라는 표현이 언어 지능을 연상시키지만, &#x27;내 마음을&#x27;이라는 자기 이해 측면이 더 강하다고 판단하여 자기성찰 지능으로 분류함.</li>
+<li>(분류 망설임) 자기성찰 지능과 언어 지능 사이에서 망설였습니다. &#x27;내 마음을 글이나 그림으로 표현&#x27;한다는 내용이 자기 자신을 이해하고 표현하는 자기성찰적 측면과 글쓰기라는 언어적 측면 모두에 걸쳐 있어 판단이 어려웠습니다.</li>
+<li>(분류 망설임) 자기성찰 지능과 언어 지능 사이에서 망설였습니다. &#x27;내 마음을 글이나 그림으로 표현&#x27;한다는 표현이 언어 지능의 쓰기 측면과도 겹쳐 보였지만, 자신의 감정을 인식하고 표현하려는 동기 자체가 자기성찰 지능에 더 가깝다고 판단했습니다.</li>
+<li>(분류 망설임) 자기성찰 지능과 언어 지능 사이에서 망설였음(내 마음을 글이나 그림으로 표현한다는 점에서 언어·공간 지능과 겹침).</li>
+<li>(분류 망설임) 자기성찰 지능과 언어 지능 사이에서 망설였음. &#x27;글이나 그림으로 표현&#x27;이라는 표현이 언어 또는 공간 지능과도 연결될 수 있어 고민했으나, &#x27;내 마음을 표현&#x27;이라는 자기 이해 측면에서 자기성찰로 분류함.</li>
+<li>(분류 망설임) 자기성찰 지능과 언어 지능 사이에서 망설였습니다. &#x27;내 마음을 글이나 그림으로 표현&#x27;한다는 내용이 자기 이해(자기성찰)와 글쓰기(언어) 두 측면을 모두 담고 있어 분류가 어려웠습니다.</li>
+</ul>
+<p><b>121. 나는 오디오북이나 라디오처럼 귀로 듣는 이야기를 좋아한다.</b> <span class='muted'>언어 지능</span></p><ul>
+<li>&#x27;오디오북&#x27;이라는 낱말을 모르는 학생이 있을 수 있음. &#x27;귀로 듣는 이야기(오디오북·라디오 이야기 등)&#x27;처럼 괄호 설명을 추가하거나, &#x27;나는 이야기를 귀로 듣는 것을 좋아한다&#x27;로 단순화 권장.</li>
+<li>&#x27;오디오북&#x27;이나 &#x27;라디오&#x27;라는 단어가 5~6학년 중 일부에게 낯설 수 있음. → &#x27;나는 귀로 듣는 이야기(오디오북, 라디오 등)를 좋아한다.&#x27;로 보완 권장. /</li>
+<li>&#x27;오디오북&#x27;이라는 낱말을 5~6학년이 생소하게 느낄 수 있음 → &#x27;오디오북(귀로 듣는 책)&#x27;처럼 괄호 설명 추가 권장</li>
+<li>&#x27;오디오북&#x27;이라는 낱말을 모르는 학생이 있을 수 있음. &#x27;오디오북(귀로 듣는 책)&#x27;처럼 괄호 설명 추가 권장.</li>
+<li>&#x27;오디오북&#x27;이 생소한 학생이 있을 수 있으므로 &#x27;오디오북(귀로 듣는 책)&#x27;처럼 괄호 설명을 추가하거나 &#x27;라디오나 팟캐스트처럼 귀로 듣는 이야기&#x27;로 수정 권장.</li>
+<li>&#x27;오디오북&#x27;이라는 낱말이 생소한 학생이 있을 수 있으므로 &#x27;나는 귀로 듣는 이야기(오디오북·라디오 등)를 좋아한다.&#x27;처럼 괄호 보충 또는 &#x27;나는 이야기를 귀로 듣는 것을 좋아한다.&#x27;로 수정 권장.</li>
+</ul>
+<p><b>122. 나는 코딩이나 로봇 프로그래밍에 관심이 있다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;로봇 프로그래밍&#x27;이 다소 생소할 수 있음 → &#x27;로봇 프로그래밍(로봇에게 명령을 입력하는 것)&#x27; 등 짧은 설명 추가 권장</li>
+<li>&#x27;로봇 프로그래밍&#x27;이 5~6학년 일부에게 생소할 수 있음. &#x27;코딩이나 로봇 만들기에 관심이 있다&#x27;로 수정 권장.</li>
+<li>&#x27;로봇 프로그래밍&#x27;은 이해하기 쉬우나 &#x27;코딩&#x27;만으로도 충분하므로 &#x27;나는 코딩이나 로봇 만들기에 관심이 있다.&#x27;로 수정 권장.</li>
+<li>나는 코딩이나 로봇 만들기에 관심이 있다. — &#x27;프로그래밍&#x27;이 어려울 수 있으므로 &#x27;로봇 만들기&#x27;로 대체 권장.</li>
+<li>&#x27;로봇 프로그래밍&#x27;은 친숙하나 &#x27;코딩&#x27;과 함께 쓸 때 중복 느낌이 있음 → 표현 유지 가능하나 &#x27;로봇 만들기 프로그래밍&#x27;으로 풀어 쓰는 것도 검토 권장</li>
+<li>&#x27;로봇 프로그래밍&#x27;이 일부 학생에게 생소할 수 있음. 수정안 → &#x27;나는 코딩이나 로봇을 직접 움직이게 만드는 것에 관심이 있다.&#x27;</li>
+</ul>
+<p><b>123. 나는 종이접기를 좋아한다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>(분류 망설임) 종이접기는 손의 정교한 움직임(신체운동)과 공간적 사고(공간 지능) 사이에서 고민하였으나, 공간 지능으로 분류하였습니다.</li>
+<li>(분류 망설임) 종이접기는 손의 정교한 움직임(신체운동)과 공간적 형태 변환(공간) 두 지능 모두에 해당한다고 느꼈으나, 형태를 머릿속에 그리는 공간 능력이 더 핵심이라 판단하여 공간 지능으로 분류했습니다.</li>
+</ul>
+<p><b>126. 나는 나중에 다른 사람을 돕는 일을 하고 싶다.</b> <span class='muted'>대인관계 지능</span></p><ul>
+<li>장래 희망을 묻는 문항은 현재의 대인관계 지능 흥미를 측정하기 어려우므로 &#x27;나는 친구나 가족이 힘들 때 도와주는 것이 즐겁다.&#x27;로 수정 권장.</li>
+<li>나는 나중에 다른 사람을 돕는 일을 하고 싶다. — 미래 직업 희망을 묻는 문항으로 대인관계 지능 흥미보다 진로 태도에 가까워 내용 타당도 재검토 필요.</li>
+<li>&#x27;나중에 다른 사람을 돕는 일을 하고 싶다&#x27;는 진로 희망을 묻는 것으로 대인관계 지능 흥미 측정과 구성 타당도가 낮음. 수정안 → &#x27;나는 어려움에 처한 친구를 도와주는 것이 즐겁다.&#x27;</li>
+<li>(분류 망설임) 대인관계 지능과 자기성찰 지능 사이에서 망설였습니다. &#x27;다른 사람을 돕고 싶다&#x27;는 표현이 대인관계 지향적이지만, 미래 목표를 생각하는 자기성찰적 측면도 있어 고민했습니다. 또한 38번은 신체운동 지능(몸짓)과 언어 지능(말하기) 사이에서 잠시 망설였습니다.</li>
+<li>(분류 망설임) 대인관계 지능과 자기성찰 지능 사이에서 망설였습니다. &#x27;다른 사람을 돕고 싶다&#x27;는 대인관계 지향적 흥미로 볼 수도 있지만, 자신의 미래 목표에 대한 성찰로도 해석될 수 있었습니다.</li>
+<li>(분류 망설임) 대인관계 지능과 자기성찰 지능 사이에서 망설였습니다. &#x27;다른 사람을 돕고 싶다&#x27;는 표현이 대인관계 지향성을 나타내지만, 미래 목표에 대한 자기 인식이라는 점에서 자기성찰 지능과도 연결될 수 있었습니다.</li>
+</ul>
+<p><b>127. 나는 위인의 이야기를 읽으면 나라면 어떻게 했을지 생각해 본다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>&#x27;위인&#x27;이라는 낱말이 일부 학생에게 어렵게 느껴질 수 있음 → &#x27;위인(훌륭한 사람)&#x27;으로 괄호 설명 추가 권장</li>
+<li>&#x27;위인&#x27;이라는 낱말과 문장 구조가 다소 복잡함 → &#x27;나는 위인 이야기를 읽으면 내가 그 상황이라면 어떻게 했을지 생각해 본다.&#x27;로 수정 권장</li>
+</ul>
+<p><b>129. 나는 토론 시간에 내 의견을 말하는 것이 기다려진다.</b> <span class='muted'>언어 지능</span></p><ul>
+<li>&#x27;기다려진다&#x27;는 표현이 일부 학생에게 어색할 수 있음. &#x27;나는 토론 시간에 내 의견을 말하고 싶어진다&#x27;로 수정 권장. /</li>
+<li>&#x27;기다려진다&#x27;는 표현이 5학년 일부에게 의미 파악이 어려울 수 있으므로 &#x27;나는 토론 시간에 내 의견을 말하는 것이 즐겁다&#x27;로 수정 검토 권장</li>
+<li>&#x27;기다려진다&#x27;라는 표현이 5학년 일부에게 의미가 명확하지 않을 수 있음. → &#x27;나는 토론 시간에 내 의견을 말하는 것이 즐겁다&#x27;로 수정 권장. /</li>
+<li>&#x27;기다려진다&#x27;는 표현이 일부 학생에게 어색할 수 있음. &#x27;나는 토론 시간에 내 의견을 말하는 것이 즐겁다&#x27;로 수정 권장.</li>
+<li>&#x27;기다려진다&#x27;라는 표현이 다소 간접적이어서 의미 파악이 어려울 수 있음. &#x27;나는 토론 시간에 내 의견을 말하고 싶다&#x27;로 수정 권고.</li>
+</ul>
+<p><b>131. 나는 멋진 건물이나 디자인을 보면 자세히 살펴본다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>&#x27;디자인&#x27;이라는 외래어가 학생에 따라 이해 수준이 다를 수 있음. &#x27;나는 멋진 건물이나 꾸밈새를 보면 자세히 살펴본다&#x27;로 수정 권장. /</li>
+<li>&#x27;디자인&#x27;이 5학년 일부 학생에게 다소 추상적으로 느껴질 수 있음. &#x27;모양이나 꾸밈새&#x27;로 바꾸거나 예시를 추가하는 것 검토 필요.</li>
+<li>&#x27;디자인&#x27;이라는 낱말을 어려워하는 학생이 있을 수 있음. → &#x27;나는 멋진 건물이나 꾸밈새를 보면 자세히 살펴본다.&#x27;로 수정 권장.</li>
+<li>&#x27;디자인&#x27;이라는 낱말이 저학력 학생에게 다소 추상적일 수 있으므로 &#x27;나는 멋진 건물이나 물건의 모양을 보면 자세히 살펴본다&#x27;로 수정 검토 권장</li>
+<li>&#x27;디자인&#x27;이라는 낱말이 추상적으로 느껴질 수 있음. → &#x27;나는 멋진 건물이나 그림을 보면 자세히 살펴본다&#x27;로 수정 권장. /</li>
+<li>&#x27;디자인&#x27;이라는 낱말을 모르는 학생이 있을 수 있음. &#x27;나는 멋진 건물이나 꾸밈새를 보면 자세히 살펴본다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>133. 나는 공연이나 음악회에 가 보고 싶다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>음악회 방문 경험이 없는 학생에게는 흥미 측정보다 경험 유무를 측정할 위험이 있음. → &#x27;나는 노래나 악기 연주를 직접 들으러 가고 싶다&#x27;로 수정 권장. /</li>
+<li>&#x27;음악회&#x27;라는 낱말이 일부 학생에게 낯설 수 있음. &#x27;나는 공연이나 음악 발표회에 가 보고 싶다&#x27;로 수정 권고.</li>
+<li>&#x27;음악회&#x27;가 학생들에게 친숙하지 않을 수 있음. 수정안 → &#x27;나는 공연이나 콘서트에 가 보고 싶다.&#x27; /</li>
+<li>&#x27;공연&#x27;, &#x27;음악회&#x27; 어휘는 대부분 이해하나, 음악 지능의 흥미를 나타내기에 수동적 관람 선호 문항으로 능동적 흥미와 구분이 필요함. /</li>
+</ul>
+<p><b>144. 나는 동물이나 식물을 특징에 따라 무리 지어 나눌 수 있다.</b> <span class='muted'>자연친화 지능</span></p><ul>
+<li>&#x27;무리 지어 나눌 수 있다&#x27;에서 &#x27;무리 짓다&#x27;가 5~6학년에게 다소 생소할 수 있음. &#x27;특징에 따라 종류별로 나눌 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;무리 지어 나눌 수 있다&#x27;→&#x27;종류별로 나눌 수 있다&#x27;로 수정하면 더 쉽게 이해할 수 있음.</li>
+<li>&#x27;무리 지어 나눌 수 있다&#x27;는 분류 개념으로 다소 어려울 수 있음. → &#x27;나는 동물이나 식물을 비슷한 특징끼리 묶어 나눌 수 있다.&#x27;로 수정 권장. 어려운 낱말: &#x27;무리 지어&#x27;</li>
+<li>&#x27;무리 지어 나눌 수 있다&#x27;는 표현이 다소 낯설 수 있음. &#x27;특징에 따라 종류별로 나눌 수 있다&#x27;로 수정 권장. 어려운 낱말: &#x27;무리 지어&#x27;</li>
+<li>&#x27;무리 지어 나눌 수 있다&#x27;에서 &#x27;무리 짓다&#x27;라는 표현이 5학년 초반 학생에게는 다소 생소할 수 있음 → &#x27;특징에 따라 종류별로 나눌 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;무리 지어 나눌 수 있다&#x27;에서 &#x27;무리 짓다&#x27;라는 표현이 다소 생소할 수 있음. &#x27;특징에 따라 종류별로 나눌 수 있다&#x27;로 수정 권장</li>
+</ul>
+<p><b>147. 나는 물건을 다른 방향에서 보면 어떤 모양일지 떠올릴 수 있다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>&#x27;다른 방향에서 보면 어떤 모양일지 떠올릴 수 있다&#x27; → &#x27;다른 쪽에서 보면 어떤 모양일지 머릿속에 그릴 수 있다&#x27;로 수정 권장</li>
+<li>&#x27;다른 방향에서 보면 어떤 모양일지 떠올릴 수 있다&#x27;는 표현이 다소 추상적임 → &#x27;나는 물건을 옆이나 뒤에서 보면 어떤 모양일지 머릿속에 그릴 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;물건을 다른 방향에서 보면 어떤 모양일지 떠올릴 수 있다&#x27; → &#x27;물건을 옆이나 뒤에서 보면 어떤 모양일지 생각해 낼 수 있다&#x27;로 수정 권장</li>
+</ul>
+<p><b>148. 나는 달리기가 빠른 편이다.</b> <span class='muted'>신체운동 지능</span></p><ul>
+<li>&#x27;달리기가 빠른 편이다&#x27;는 신체운동 지능의 다양한 측면 중 속도만을 측정하여 대표성이 부족함. → &#x27;나는 운동할 때 몸의 움직임을 잘 조절할 수 있다.&#x27;로 수정 권장.</li>
+</ul>
+<p><b>164. 나는 가위질이나 바느질처럼 꼼꼼한 손 작업을 잘한다.</b> <span class='muted'>신체운동 지능</span></p><ul>
+<li>&#x27;바느질&#x27;은 현재 초등 5~6학년 실과 교육과정에서 다루나 경험 편차가 큼. &#x27;나는 가위질이나 바느질처럼 손으로 꼼꼼하게 하는 작업을 잘한다&#x27;로 어순 조정 권장. /</li>
+<li>&#x27;바느질&#x27;은 최근 학생들의 생활 경험에서 멀어진 소재로 공감도가 낮을 수 있음. &#x27;뜨개질이나 바느질&#x27; 대신 &#x27;종이접기나 만들기처럼 손이 많이 가는 작업&#x27;으로 대체 검토 필요.</li>
+<li>&#x27;바느질&#x27;은 경험이 없는 학생에게 낯설 수 있음. → &#x27;나는 가위질이나 종이 접기처럼 꼼꼼한 손 작업을 잘한다.&#x27;로 수정 권장.</li>
+<li>&#x27;바느질&#x27;은 학교 실과 시간에 배우지만 5학년 초반에는 경험이 없는 학생이 있을 수 있으므로 &#x27;나는 가위질이나 종이접기처럼 꼼꼼한 손 작업을 잘한다&#x27;로 수정 검토 권장</li>
+<li>&#x27;바느질&#x27;은 경험이 없는 학생에게 낯설 수 있음. &#x27;나는 가위질이나 종이접기처럼 꼼꼼한 손 작업을 잘한다&#x27;로 수정 권장.</li>
+<li>&#x27;바느질&#x27;이 현재 초등 5~6학년 경험과 멀어질 수 있음. &#x27;나는 가위질이나 종이접기처럼 꼼꼼한 손 작업을 잘한다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>165. 나는 리코더나 단소 같은 악기를 잘 다룬다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;단소&#x27;는 학교 교육과정에 따라 접한 경험이 없는 학생도 있으므로 &#x27;나는 리코더나 실로폰 같은 악기를 잘 다룬다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>166. 나는 친구의 입장이 되어 생각할 수 있다.</b> <span class='muted'>대인관계 지능</span></p><ul>
+<li>&#x27;입장이 되어&#x27;라는 표현이 일부 학생에게 다소 어려울 수 있음. &#x27;나는 친구의 마음이 되어 생각할 수 있다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>167. 나는 친구들이 뭐라고 해도 내 생각대로 결정할 수 있다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>&#x27;내 생각대로 결정할 수 있다&#x27;는 표현이 자기성찰보다 고집이나 독립심으로 오해될 소지 있음. &#x27;나는 스스로 생각해서 결정을 내릴 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;친구들이 뭐라고 해도 내 생각대로 결정할 수 있다&#x27;는 자기성찰 지능보다 고집·독립심으로 오해될 소지가 있음. 예) &#x27;나는 어떤 일을 할 때 내가 왜 그 선택을 했는지 스스로 설명할 수 있다.&#x27;로 수정 검토 필요.</li>
+<li>자기성찰 지능보다 독립성·고집 측정으로 오해될 소지 있음. → &#x27;나는 스스로 생각하고 결정을 내릴 수 있다.&#x27;로 수정 권장.</li>
+<li>&#x27;친구들이 뭐라고 해도 내 생각대로 결정할 수 있다&#x27;는 자기성찰보다 독립심·고집 측면으로 읽힐 수 있어 적합성 낮음. &#x27;나는 내가 왜 그런 결정을 했는지 스스로 설명할 수 있다&#x27;로 수정 검토 권장</li>
+<li>&#x27;친구들이 뭐라고 해도 내 생각대로 결정할 수 있다&#x27;는 자기성찰보다 고집이나 자기주장으로 오해될 수 있으며, &#x27;뭐라고 해도&#x27;라는 표현이 부정적 뉘앙스를 줄 수 있음. → &#x27;나는 내가 옳다고 생각하면 스스로 결정을 내릴 수 있다&#x27;로 수정 권장.</li>
+<li>자기성찰 지능보다 자기주장 성향을 측정하는 문항으로 오해될 수 있음. &#x27;나는 스스로 생각해서 내 행동을 결정할 수 있다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>170. 나는 어림해서 계산한 값이 실제 답과 비슷하다.</b> <span class='muted'>논리수학 지능</span></p><ul>
+<li>&#x27;어림해서 계산한 값&#x27;에서 &#x27;어림&#x27;이라는 표현이 일부 학생에게 낯설 수 있음. &#x27;대략 계산한 값이 실제 답과 비슷하다&#x27;로 수정 권장.</li>
+<li>&#x27;어림해서 계산한 값&#x27;→&#x27;대충 어림잡아 계산한 값&#x27;으로 풀어 쓰거나, &#x27;어림셈한 값&#x27;으로 표현 통일 권장. &#x27;어림&#x27;이라는 낱말 자체는 교과서에 등장하나 &#x27;어림해서 계산한 값이 실제 답과 비슷하다&#x27;는 문장 구조가 다소 복잡함.</li>
+<li>&#x27;어림해서 계산한 값&#x27;은 수학 용어로 일부 학생에게 어려울 수 있음. → &#x27;나는 대충 계산해도 실제 답과 비슷하게 맞힌다.&#x27;로 수정 권장. 어려운 낱말: &#x27;어림해서&#x27;, &#x27;값&#x27;</li>
+<li>&#x27;어림해서 계산한 값&#x27;에서 &#x27;어림&#x27;이라는 낱말이 일부 학생에게 낯설 수 있음. &#x27;대략 짐작해서 계산한 값&#x27;으로 수정하거나 &#x27;어림(대략 짐작하여 계산하기)&#x27;으로 괄호 설명 추가 권장.</li>
+<li>&#x27;어림해서 계산한 값&#x27;에서 &#x27;어림&#x27;이라는 낱말이 5~6학년 일부에게 낯설 수 있음. &#x27;대략 계산한 값이 실제 답과 비슷하다&#x27;로 수정 권장. 어려운 낱말: &#x27;어림&#x27;</li>
+<li>&#x27;어림해서 계산한 값&#x27;에서 &#x27;어림&#x27;이 수학 용어로 교과서에 나오지만 일부 학생이 낯설어할 수 있음 → &#x27;대략 계산한 값&#x27;으로 병기 권장.</li>
+</ul>
+<p><b>172. 나는 다른 사람의 몸짓이나 말투를 똑같이 흉내 낼 수 있다.</b> <span class='muted'>신체운동 지능</span></p><ul>
+<li>(분류 망설임) 신체운동 지능과 대인관계 지능 사이에서 망설였습니다. 몸짓을 흉내 내는 것은 신체운동 지능에 해당하지만, 다른 사람의 말투를 따라 하는 측면은 대인관계 지능과도 연결될 수 있어 고민이 되었습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 대인관계 지능 사이에서 망설였습니다. 몸짓 흉내는 신체운동 능력이지만, 타인의 말투까지 따라 하는 것은 대인관계 지능의 공감·관찰 요소와도 겹쳐 보였습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 대인관계 지능 사이에서 망설였습니다. 몸짓 흉내는 신체운동 능력이지만 다른 사람의 말투까지 흉내 낸다는 점에서 대인관계 지능과도 연결될 수 있다고 느꼈습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 대인관계 지능 사이에서 망설였습니다. 몸짓 흉내는 신체운동 지능에 가깝지만, 다른 사람의 말투를 모방하는 측면에서 대인관계 지능도 고려되었습니다. 또한 45번은 자기성찰 지능과 논리수학 지능 사이에서 잠시 고민하였으나, 일정 관리와 자기 조절의 측면이 더 강하다고 판단하여 자기성찰 지능으로 분류하였습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 대인관계 지능 사이에서 망설였습니다. 몸짓 흉내는 신체 능력이지만 타인 관찰과 공감 요소도 있어 고민했습니다.</li>
+<li>(분류 망설임) 신체운동 지능과 대인관계 지능 사이에서 망설였습니다. 몸짓 흉내는 신체운동 능력이지만 타인 관찰이라는 대인관계 요소도 있어 고민했습니다.</li>
+</ul>
+<p><b>181. 나는 들은 멜로디를 악기로 따라 연주할 수 있다.</b> <span class='muted'>음악 지능</span></p><ul>
+<li>&#x27;멜로디를 악기로 따라 연주&#x27;는 악기 보유 여부에 따라 응답이 달라질 수 있음. → &#x27;나는 들은 멜로디를 악기나 입으로 따라 할 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;들은 멜로디를 악기로 따라 연주할 수 있다&#x27; → &#x27;들은 노래를 악기로 따라 연주할 수 있다&#x27; (멜로디 대신 노래로 대체)</li>
+<li>&#x27;들은 멜로디를 악기로 따라 연주할 수 있다&#x27; → &#x27;들은 노래를 악기로 따라 연주할 수 있다&#x27; (어려운 낱말: 멜로디)</li>
+<li>&#x27;멜로디&#x27;는 외래어로 일부 학생에게 낯설 수 있음. 수정안: 나는 들은 노래의 가락을 악기로 따라 연주할 수 있다.</li>
+<li>&#x27;멜로디&#x27;가 외래어이므로 &#x27;나는 들은 노래를 악기로 따라 연주할 수 있다&#x27;로 단순화 권장</li>
+<li>&#x27;멜로디를 악기로 따라 연주&#x27;는 악기를 배우지 않은 학생에게 해당되지 않을 수 있음 → &#x27;나는 들은 노래의 멜로디를 콧노래나 악기로 흉내 낼 수 있다&#x27;로 수정 권장.</li>
+</ul>
+<p><b>182. 나는 친구들에게 무엇을 하자고 하면 잘 따라 준다.</b> <span class='muted'>대인관계 지능</span></p><ul>
+<li>&#x27;무엇을 하자고 하면 잘 따라 준다&#x27; → 의미가 리더십인지 친화력인지 모호함, &#x27;내가 제안하면 친구들이 잘 따라 준다&#x27;로 수정 권장</li>
+<li>&#x27;친구들에게 무엇을 하자고 하면 잘 따라 준다&#x27; → 문장이 &#x27;내가 제안하면 친구들이 잘 따른다&#x27;는 뜻인지 모호함. &#x27;내가 친구들에게 무엇을 하자고 하면 친구들이 잘 따라 준다&#x27;로 주어를 명확히 수정 권장</li>
+<li>&#x27;잘 따라 준다&#x27;는 표현이 모호함. 수정안: 나는 친구들에게 같이 하자고 하면 친구들이 잘 따라와 준다.</li>
+<li>&#x27;무엇을 하자고 하면 잘 따라 준다&#x27; — 문장 주어가 모호하여 오독 가능 → &#x27;나는 친구들에게 놀이나 활동을 제안하면 친구들이 잘 따라 준다&#x27;로 수정 권장</li>
+<li>&#x27;잘 따라 준다&#x27;는 표현이 리더십(대인관계 지능)보다 인기도를 측정하는 것처럼 읽힐 수 있음. &#x27;나는 친구들이 내 의견을 잘 받아들인다&#x27;로 수정 권장.</li>
+<li>&#x27;친구들에게 무엇을 하자고 하면 잘 따라 준다&#x27;는 문장이 &#x27;친구들이 내 말을 잘 따른다&#x27;는 의미인지 &#x27;내가 친구들을 잘 따른다&#x27;는 의미인지 모호함. → &#x27;나는 친구들에게 무엇을 하자고 제안하면 친구들이 잘 따라 준다.&#x27;로 명확하게 수정 권장.</li>
+</ul>
+<p><b>183. 나는 해야 할 일을 하고 싶은 일보다 먼저 할 수 있다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>&#x27;해야 할 일을 하고 싶은 일보다 먼저 할 수 있다&#x27; → &#x27;하고 싶은 일이 있어도 해야 할 일을 먼저 할 수 있다&#x27;로 어순 수정 권장</li>
+<li>&#x27;해야 할 일을 하고 싶은 일보다 먼저 할 수 있다&#x27;는 이중 비교 구조가 복잡함 → &#x27;나는 놀고 싶어도 해야 할 일을 먼저 할 수 있다&#x27;로 단순화 권장.</li>
+<li>&#x27;해야 할 일을 하고 싶은 일보다 먼저 할 수 있다&#x27; → 구조가 다소 복잡하므로 &#x27;하고 싶은 일이 있어도 해야 할 일을 먼저 할 수 있다&#x27;로 수정 권장</li>
+<li>&#x27;해야 할 일을 하고 싶은 일보다 먼저&#x27;라는 구조가 5~6학년에게 다소 복잡할 수 있음. 수정안: 나는 놀고 싶어도 해야 할 일을 먼저 할 수 있다.</li>
+<li>&#x27;해야 할 일을 하고 싶은 일보다 먼저 할 수 있다&#x27;는 문장 구조가 복잡하여 이해가 어려울 수 있음 → &#x27;나는 놀고 싶어도 해야 할 일을 먼저 할 수 있다&#x27;로 수정 권장</li>
+<li>&#x27;해야 할 일을 하고 싶은 일보다 먼저 할 수 있다&#x27;는 문장 구조가 다소 복잡함. &#x27;나는 놀고 싶을 때도 해야 할 일을 먼저 한다&#x27;로 단순화 권장.</li>
+</ul>
+<p><b>184. 나는 도감에서 내가 찾는 생물을 쉽게 찾아낸다.</b> <span class='muted'>자연친화 지능</span></p><ul>
+<li>&#x27;도감&#x27;이라는 낱말이 생소한 학생이 있을 수 있음. → &#x27;나는 생물 도감(동식물 그림이 담긴 책)에서 내가 찾는 생물을 쉽게 찾아낸다&#x27;처럼 괄호 설명 추가 권장.</li>
+<li>&#x27;도감&#x27;이라는 낱말이 생소한 학생이 있을 수 있으므로 &#x27;동식물 도감(그림 사전)&#x27;으로 괄호 보충 권장</li>
+<li>&#x27;도감&#x27;이라는 낱말이 일부 학생에게 생소할 수 있음 → &#x27;나는 동식물 책(도감)에서 내가 찾는 생물을 쉽게 찾아낸다&#x27;처럼 괄호 보충 권장.</li>
+<li>&#x27;도감에서 내가 찾는 생물을 쉽게 찾아낸다&#x27; → &#x27;도감&#x27;이 낯선 학생이 있을 수 있으므로 &#x27;생물 도감(동물·식물 책)에서 내가 찾는 생물을 쉽게 찾아낸다&#x27;로 수정 권장 (어려운 낱말: 도감)</li>
+<li>&#x27;도감&#x27;이라는 낱말을 모르는 학생이 있을 수 있음. 수정안: 나는 도감(동식물 그림책)에서 내가 찾는 생물을 쉽게 찾아낸다.</li>
+<li>&#x27;도감&#x27; — 5~6학년 중 뜻을 모르는 학생이 있을 수 있음 → &#x27;생물 도감(동식물 그림 사전)&#x27;으로 괄호 설명 추가 권장</li>
+</ul>
+<p><b>185. 나는 같은 뜻을 여러 가지 다른 말로 바꾸어 표현할 수 있다.</b> <span class='muted'>언어 지능</span></p><ul>
+<li>&#x27;같은 뜻을 여러 가지 다른 말로 바꾸어&#x27;라는 표현이 다소 추상적임. &#x27;나는 어떤 말을 다른 말로 바꾸어 표현할 수 있다&#x27;로 단순화 권장.</li>
+<li>&#x27;같은 뜻을 여러 가지 다른 말로 바꾸어&#x27;라는 표현이 다소 추상적임. → &#x27;나는 같은 내용을 다른 말로 바꾸어 표현할 수 있다.&#x27;로 단순화 권장. /</li>
+<li>&#x27;같은 뜻을 여러 가지 다른 말로 바꾸어&#x27;라는 표현이 5학년 초반 학생에게 다소 추상적일 수 있음 → &#x27;나는 같은 뜻을 가진 다른 말을 여러 개 떠올릴 수 있다.&#x27;로 단순화 권장</li>
+<li>&#x27;바꾸어 표현할 수 있다&#x27;는 표현이 다소 추상적이므로 &#x27;나는 같은 내용을 여러 가지 다른 말로 바꾸어 말할 수 있다.&#x27;로 수정 권장.</li>
+<li>나는 같은 뜻을 여러 가지 다른 말로 바꾸어 표현할 수 있다. — &#x27;같은 뜻을 다른 말로 바꾸어&#x27;라는 표현이 다소 추상적이므로 예시 추가 권장.</li>
+<li>&#x27;같은 뜻을 여러 가지 다른 말로 바꾸어&#x27;라는 표현이 다소 길고 복잡함 → &#x27;나는 하나의 뜻을 여러 가지 말로 다르게 표현할 수 있다.&#x27;로 단순화 권장</li>
+</ul>
+<p><b>187. 나는 직육면체의 전개도를 쉽게 이해한다.</b> <span class='muted'>공간 지능</span></p><ul>
+<li>&#x27;직육면체의 전개도&#x27;는 수학 교과 용어로 5학년 이상에서 배우지만, 해당 단원을 학습하지 않은 학생이나 개념이 약한 학생에게 어려울 수 있음. &#x27;상자를 펼쳐 놓은 그림(전개도)을 쉽게 이해한다&#x27;처럼 풀어쓰기 권장.</li>
+<li>&#x27;직육면체의 전개도&#x27;는 수학 교과 용어로 5학년 이상 학습 내용이나, 6학년에게는 적합하고 5학년 초반에는 아직 학습 전일 수 있음. 학년 시기를 고려해 사용 권장.</li>
+<li>&#x27;전개도&#x27;라는 낱말은 수학 교과 용어로 5학년 이상이면 대부분 알지만 일부 학생은 어려워할 수 있어 확인 권장</li>
+<li>&#x27;직육면체의 전개도&#x27;는 5학년 수학 용어로 이해 가능하나, 저학년 혼용 시 어려울 수 있음. 사용 학년을 5~6학년으로 명확히 제한하면 적합.</li>
+<li>&#x27;직육면체의 전개도&#x27;는 수학 용어로 5학년 이상이면 배우지만 일부 학생에게 어려울 수 있음. &#x27;나는 상자를 펼친 모양(전개도)을 머릿속으로 쉽게 그릴 수 있다.&#x27;로 수정 권장.</li>
+<li>&#x27;직육면체의 전개도&#x27;는 특정 교과 학습 성취도와 혼동될 수 있으므로 &#x27;나는 상자를 펼쳤을 때 어떤 모양이 될지 머릿속으로 그릴 수 있다.&#x27;로 수정 권장.</li>
+</ul>
+<p><b>191. 나는 힘들 때 나에게 힘이 되는 말을 스스로 해 줄 수 있다.</b> <span class='muted'>자기성찰 지능</span></p><ul>
+<li>&#x27;나에게 힘이 되는 말을 스스로 해 줄 수 있다&#x27;는 표현이 5~6학년에게 다소 낯설 수 있음. &#x27;나는 힘들 때 스스로를 격려하는 말을 할 수 있다&#x27;로 수정 권장.</li>
+<li>&#x27;나에게 힘이 되는 말을 스스로 해 줄 수 있다&#x27;는 표현이 5~6학년에게 다소 추상적이므로 &#x27;나는 힘든 일이 있을 때 스스로를 달래며 다시 힘을 낼 수 있다.&#x27;로 수정 권장.</li>
+<li>나는 힘들 때 나에게 힘이 되는 말을 스스로 해 줄 수 있다. — &#x27;스스로에게 힘이 되는 말을 한다&#x27;는 개념이 추상적이어서 저성취 학생이 이해하기 어려울 수 있음. &#x27;힘들 때 마음속으로 &#x27;할 수 있어&#x27;라고 스스로 말할 수 있다.&#x27;로 구체화 권장.</li>
+<li>&#x27;나에게 힘이 되는 말을 스스로 해 줄 수 있다&#x27;는 표현이 다소 추상적임. 수정안 → &#x27;나는 힘들 때 스스로를 달래며 다시 힘을 낼 수 있다.&#x27;</li>
+<li>나는 힘들 때 스스로 나를 응원하는 말을 할 수 있다. → &#x27;힘이 되는 말을 스스로 해 줄 수 있다&#x27;는 표현이 다소 복잡하므로 단순화 권장</li>
+<li>&#x27;나에게 힘이 되는 말을 스스로 해 줄 수 있다&#x27;는 표현이 5학년 학생에게 다소 추상적임 → &#x27;나는 힘들 때 스스로 &#x27;할 수 있어&#x27;라고 마음속으로 다독일 수 있다.&#x27;로 수정 권장</li>
+</ul>
+</body></html>
